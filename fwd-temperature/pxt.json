@@ -1,6 +1,6 @@
 {
     "name": "fwd-temperature",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "FWD Edu Temperature",
     "license": "MIT",
     "dependencies": {
