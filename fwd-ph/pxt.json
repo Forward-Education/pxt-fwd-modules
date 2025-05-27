@@ -1,0 +1,24 @@
+{
+    "name": "fwd-ph",
+    "version": "1.0.0",
+    "description": "FWD Edu pH",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
+        "jacdac-acidity": "github:microsoft/pxt-jacdac/acidity"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}

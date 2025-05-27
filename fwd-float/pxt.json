@@ -1,0 +1,24 @@
+{
+    "name": "fwd-float",
+    "version": "1.0.0",
+    "description": "FWD Edu Float",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
+        "jacdac-button": "github:microsoft/pxt-jacdac/button"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}

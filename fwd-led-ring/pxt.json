@@ -1,0 +1,19 @@
+{
+    "name": "fwd-led-ring",
+    "version": "1.0.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 LED Ring",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
+        "jacdac-led": "github:microsoft/pxt-jacdac/led"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "fwd-energy",
+    "version": "1.0.0",
+    "description": "FWD Edu Energy",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
+        "jacdac-dc-current": "github:microsoft/pxt-jacdac/dc-current-measurement",
+        "jacdac-dc-voltage": "github:microsoft/pxt-jacdac/dc-voltage-measurement"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}

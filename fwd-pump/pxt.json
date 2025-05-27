@@ -1,0 +1,24 @@
+{
+    "name": "fwd-pump",
+    "version": "1.0.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Pump",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
+        "jacdac-relay": "github:microsoft/pxt-jacdac/relay"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}

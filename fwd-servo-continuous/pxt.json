@@ -1,0 +1,20 @@
+{
+    "name": "fwd-servo-continuous",
+    "version": "1.0.0",
+    "description": "FWD Edu Servo Continuous",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base",
+        "fwd-servo-base": "github:Forward-Education/pxt-fwd-base/fwd-servo-base"
+    },
+    "files": [
+        "blocks.ts",
+        "driving.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}
