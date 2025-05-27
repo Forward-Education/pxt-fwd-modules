@@ -1,6 +1,6 @@
 {
     "name": "fwd-smart-solder",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "FWD Edu Smart Solder",
     "license": "MIT",
     "dependencies": {
