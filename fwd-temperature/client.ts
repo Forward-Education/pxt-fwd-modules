@@ -1,4 +1,4 @@
-namespace sensors {
+namespace fwdSensors {
     //% fixedInstances
     export class FwdTemperatureClient extends modules.TemperatureClient {
         constructor(role: string) {

@@ -4,8 +4,8 @@
     "description": "FWD Edu Temperature",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base",
-        "jacdac-temperature": "github:microsoft/pxt-jacdac/temperature"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#b0ef72582bd023b284cd5b4accfebc712c5a169f",
+        "jacdac-temperature": "github:microsoft/pxt-jacdac/temperature#v1.9.32"
     },
     "files": [
         "client.ts"

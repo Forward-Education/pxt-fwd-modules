@@ -1,4 +1,4 @@
-namespace sensors {
+namespace fwdSensors {
     //% fixedInstances
     export class FwdSolarClient extends modules.LightLevelClient {
         MAX_REPORT_BRIGHTNESS = 100

@@ -1,4 +1,4 @@
-namespace motors {
+namespace fwdMotors {
     /**
      * Reports what speed the servo is set to
      */

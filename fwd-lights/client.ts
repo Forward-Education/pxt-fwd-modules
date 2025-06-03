@@ -1,4 +1,4 @@
-namespace lights {
+namespace fwdLights {
     /**
      * Controls LED lights
      **/

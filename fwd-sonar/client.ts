@@ -1,4 +1,4 @@
-namespace sensors {
+namespace fwdSensors {
     //% fixedInstances
     export class FwdSonarClient extends modules.DistanceClient {
         constructor(role: string) {

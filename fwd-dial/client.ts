@@ -1,4 +1,4 @@
-namespace buttons {
+namespace fwdButtons {
     export const enum DialDirection {
         //% block="↻"
         CW,

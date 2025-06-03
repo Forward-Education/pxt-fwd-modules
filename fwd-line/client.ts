@@ -1,4 +1,4 @@
-namespace sensors {
+namespace fwdSensors {
     export const enum LineSensorState {
         //% block="OFF"
         OFF = 0,

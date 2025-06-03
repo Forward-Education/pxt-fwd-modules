@@ -1,4 +1,4 @@
-namespace sensors {
+namespace fwdSensors {
     //% fixedInstances
     export class FwdPhClient extends modules.AcidityClient {
         private calibrated: boolean = false

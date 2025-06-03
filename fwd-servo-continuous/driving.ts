@@ -1,14 +1,14 @@
-namespace motors {
+namespace fwdMotors {
     function createDrivingControls() {
         let enabled = false
-        let leftMotor: motors.FwdServoClient
-        let rightMotor: motors.FwdServoClient
+        let leftMotor: fwdMotors.FwdServoClient
+        let rightMotor: fwdMotors.FwdServoClient
         let leftBias = 1
         let rightBias = 1
 
         function initMotors(
-            left: motors.FwdServoClient,
-            right: motors.FwdServoClient,
+            left: fwdMotors.FwdServoClient,
+            right: fwdMotors.FwdServoClient,
             bias = 0
         ) {
             leftMotor = left

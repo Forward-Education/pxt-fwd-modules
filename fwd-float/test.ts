@@ -2,18 +2,20 @@
 // onFloatChange(state: FloatState, handler: () => void)
 // floatStateConditional(state: FloatState): boolean
 // floatState(): string
-sensors.float1.onFloatChange(sensors.FloatState.raised, () => {
+fwdSensors.float1.onFloatChange(fwdSensors.FloatState.raised, () => {
     console.log("Event: raised")
 })
-sensors.float1.onFloatChange(sensors.FloatState.lowered, () => {
+fwdSensors.float1.onFloatChange(fwdSensors.FloatState.lowered, () => {
     console.log("Event: lowered")
 })
 basic.forever(() => {
-    if (sensors.float1.floatStateConditional(sensors.FloatState.raised)) {
-        console.log("State: " + sensors.float1.floatState())
+    if (fwdSensors.float1.floatStateConditional(fwdSensors.FloatState.raised)) {
+        console.log("State: " + fwdSensors.float1.floatState())
     }
-    if (sensors.float1.floatStateConditional(sensors.FloatState.lowered)) {
-        console.log("State: " + sensors.float1.floatState())
+    if (
+        fwdSensors.float1.floatStateConditional(fwdSensors.FloatState.lowered)
+    ) {
+        console.log("State: " + fwdSensors.float1.floatState())
     }
     basic.pause(1000)
 })

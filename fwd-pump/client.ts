@@ -1,4 +1,4 @@
-namespace motors {
+namespace fwdMotors {
     //% fixedInstances
     export class FwdPumpClient extends modules.RelayClient {
         constructor(role: string) {
@@ -32,14 +32,14 @@ namespace motors {
          * @param duration how long to run the pump
          */
         //% group="Pump"
-        //% block="run $this for $duration s"
-        //% duration.defl=1 duration.min=1 duration.max=5
+        //% block="run $this for $duration"
+        //% duration.shadow="timePicker"
         //% blockId=fwd_pump_timed_run
         timedRun(duration: number): void {
             control.inBackground(() => {
-                super.setActive(true)
-                basic.pause(duration * 1000)
-                super.setActive(false)
+                this.setActive(true)
+                basic.pause(duration)
+                this.setActive(false)
             })
         }
     }

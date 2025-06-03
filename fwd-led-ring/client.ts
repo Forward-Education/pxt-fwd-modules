@@ -1,4 +1,4 @@
-namespace lights {
+namespace fwdLights {
     //% group="LED Ring"
     //% blockId=fwd_led_names
     export const enum PixelNames {

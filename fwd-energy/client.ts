@@ -1,4 +1,4 @@
-namespace sensors {
+namespace fwdSensors {
     //% fixedInstances
     export class FwdDcVoltageClient extends modules.DcVoltageMeasurementClient {
         constructor(role: string) {

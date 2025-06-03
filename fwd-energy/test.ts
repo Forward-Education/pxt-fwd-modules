@@ -4,23 +4,39 @@
 // sensor tests (voltage, current)
 // <sensor>(): number
 // isPastThreshold(threshold: number, direction: ThresholdDirection): boolean
-console.log("Voltage: " + sensors.voltage1.voltage()) // this line just ensures client is detected immediately (input block interferes)
-console.log("Current: " + sensors.current1.current()) // this line just ensures client is detected immediately (input block interferes)
+console.log("Voltage: " + fwdSensors.voltage1.voltage()) // this line just ensures client is detected immediately (input block interferes)
+console.log("Current: " + fwdSensors.current1.current()) // this line just ensures client is detected immediately (input block interferes)
 input.onButtonPressed(Button.A, function () {
-    if (sensors.voltage1.isPastThreshold(5, sensors.ThresholdDirection.Over)) {
-        console.log(sensors.voltage1.voltage() + " is over 5V")
-    }
-    if (sensors.voltage1.isPastThreshold(5, sensors.ThresholdDirection.Under)) {
-        console.log(sensors.voltage1.voltage() + " is under 5V")
+    if (
+        fwdSensors.voltage1.isPastThreshold(
+            5,
+            fwdSensors.ThresholdDirection.Over
+        )
+    ) {
+        console.log(fwdSensors.voltage1.voltage() + " is over 5V")
     }
     if (
-        sensors.current1.isPastThreshold(100, sensors.ThresholdDirection.Over)
+        fwdSensors.voltage1.isPastThreshold(
+            5,
+            fwdSensors.ThresholdDirection.Under
+        )
     ) {
-        console.log(sensors.current1.current() + " is over 100mA")
+        console.log(fwdSensors.voltage1.voltage() + " is under 5V")
     }
     if (
-        sensors.current1.isPastThreshold(100, sensors.ThresholdDirection.Under)
+        fwdSensors.current1.isPastThreshold(
+            100,
+            fwdSensors.ThresholdDirection.Over
+        )
     ) {
-        console.log(sensors.current1.current() + " is under 100mA")
+        console.log(fwdSensors.current1.current() + " is over 100mA")
+    }
+    if (
+        fwdSensors.current1.isPastThreshold(
+            100,
+            fwdSensors.ThresholdDirection.Under
+        )
+    ) {
+        console.log(fwdSensors.current1.current() + " is under 100mA")
     }
 })

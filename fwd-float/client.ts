@@ -1,9 +1,9 @@
-namespace sensors {
+namespace fwdSensors {
     export const enum FloatState {
         //% block="raised"
         raised = 1,
         //% block="lowered"
-        lowered = 0
+        lowered = 0,
     }
 
     //% fixedInstances

@@ -1,4 +1,4 @@
-namespace buttons {
+namespace fwdButtons {
     //% fixedInstances
     export class FwdSolderBtnClient extends modules.ButtonClient {
         constructor(role: string) {
@@ -52,7 +52,7 @@ namespace buttons {
     export const BTN6 = new FwdSolderBtnClient("BTN6")
 }
 
-namespace lights {
+namespace fwdLights {
     //% fixedInstances
     export class FwdSolderLightClient extends modules.LightbulbClient {
         constructor(role: string) {
