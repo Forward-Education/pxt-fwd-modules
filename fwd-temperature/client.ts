@@ -25,12 +25,12 @@ namespace fwdSensors {
         //% blockId=fwd_temperature_is_past_threshold
         isPastThreshold(
             threshold: number,
-            direction: ThresholdDirection
+            direction: fwdEnums.OverUnder
         ): boolean {
             const difference = this.temperature() - threshold > 0
             const isPastThreshold =
-                (direction === ThresholdDirection.Over && difference) ||
-                (direction === ThresholdDirection.Under && !difference)
+                (direction === fwdEnums.OverUnder.Over && difference) ||
+                (direction === fwdEnums.OverUnder.Under && !difference)
             return isPastThreshold
         }
     }

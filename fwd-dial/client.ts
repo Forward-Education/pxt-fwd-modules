@@ -1,11 +1,4 @@
 namespace fwdButtons {
-    export const enum DialDirection {
-        //% block="↻"
-        CW,
-        //% block="↺"
-        CCW,
-    }
-
     //% fixedInstances
     export class FwdDialClient extends modules.RotaryEncoderClient {
         private _cwAction: () => void
@@ -48,8 +41,11 @@ namespace fwdButtons {
         //% block="on $this rotated $direction"
         //% blockId=fwd_dial_on_rotated
         //% weight=98
-        onRotated(direction: DialDirection, handler: () => void): void {
-            if (direction === DialDirection.CW) {
+        onRotated(
+            direction: fwdEnums.ClockwiseCounterclockwise,
+            handler: () => void
+        ): void {
+            if (direction === fwdEnums.ClockwiseCounterclockwise.CW) {
                 this._cwAction = handler
             } else {
                 this._ccwAction = handler

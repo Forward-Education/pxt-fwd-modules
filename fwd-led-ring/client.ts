@@ -1,7 +1,5 @@
 namespace fwdLights {
-    //% group="LED Ring"
-    //% blockId=fwd_led_names
-    export const enum PixelNames {
+    export const enum LEDRingPixels {
         //% block="PXL1"
         PXL1 = 0,
         //% block="PXL2"
@@ -21,7 +19,7 @@ namespace fwdLights {
     }
 
     //% fixedInstances
-    export class FwdLEDClient extends modules.LedClient {
+    export class FwdLEDRingClient extends modules.LedClient {
         MAX_REPORT_BRIGHTNESS = 10
         MAX_SERVICE_BRIGHTNESS = 100
         toBlocksBrightness(serviceBrightness: number): number {
@@ -81,7 +79,7 @@ namespace fwdLights {
         //% block="set $this $index to $rgb=colorNumberPicker"
         //% blockId=fwd_led_set_single_pixel_colour
         //% group="LED Lights"
-        fwdSetPixelColour(index: PixelNames | number, rgb: number): void {
+        fwdSetPixelColour(index: LEDRingPixels, rgb: number): void {
             super.setPixelColor(index, rgb)
         }
 
@@ -122,11 +120,11 @@ namespace fwdLights {
     }
 
     //% fixedInstance whenUsed
-    export const ledRing1 = new FwdLEDClient("ledRing1")
+    export const ledRing1 = new FwdLEDRingClient("ledRing1")
     //% fixedInstance whenUsed
-    export const ledRing2 = new FwdLEDClient("ledRing2")
+    export const ledRing2 = new FwdLEDRingClient("ledRing2")
     //% fixedInstance whenUsed
-    export const ledRing3 = new FwdLEDClient("ledRing3")
+    export const ledRing3 = new FwdLEDRingClient("ledRing3")
     //% fixedInstance whenUsed
-    export const ledRing4 = new FwdLEDClient("ledRing4")
+    export const ledRing4 = new FwdLEDRingClient("ledRing4")
 }

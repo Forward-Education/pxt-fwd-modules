@@ -1,11 +1,4 @@
 namespace fwdSensors {
-    export const enum LineSensorState {
-        //% block="OFF"
-        OFF = 0,
-        //% block="ON"
-        ON = 1,
-    }
-
     //% fixedInstances
     export class FwdLineFollowerClient extends modules.ReflectedLightClient {
         constructor(role: string) {
@@ -18,7 +11,7 @@ namespace fwdSensors {
         //% group="Line"
         //% block="$this state"
         //% blockId=fwd_line_sensor_state
-        fwdLineSensorState(): LineSensorState {
+        fwdLineSensorState(): fwdEnums.OnOff {
             return Math.round(super.brightness() / 100)
         }
 
@@ -29,7 +22,7 @@ namespace fwdSensors {
         //% group="Line"
         //% block="$this is $state"
         //% blockId=fwd_line_sensor_state_check
-        fwdIsLineSensorState(state: LineSensorState): boolean {
+        fwdIsLineSensorState(state: fwdEnums.OnOff): boolean {
             return state === this.fwdLineSensorState()
         }
 

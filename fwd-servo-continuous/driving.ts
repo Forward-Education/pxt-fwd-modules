@@ -1,14 +1,14 @@
 namespace fwdMotors {
     function createDrivingControls() {
         let enabled = false
-        let leftMotor: fwdMotors.FwdServoClient
-        let rightMotor: fwdMotors.FwdServoClient
+        let leftMotor: fwdBase.FwdServoClient
+        let rightMotor: fwdBase.FwdServoClient
         let leftBias = 1
         let rightBias = 1
 
         function initMotors(
-            left: fwdMotors.FwdServoClient,
-            right: fwdMotors.FwdServoClient,
+            left: fwdBase.FwdServoClient,
+            right: fwdBase.FwdServoClient,
             bias = 0
         ) {
             leftMotor = left
@@ -46,13 +46,6 @@ namespace fwdMotors {
         }
     }
 
-    export const enum DrivingDirection {
-        //% block="forward"
-        Forward = 1,
-        //% block="reverse"
-        Reverse = -1,
-    }
-
     export const drivingControls = createDrivingControls()
 
     /*
@@ -69,8 +62,8 @@ namespace fwdMotors {
     //% bias.defl=0
     //% inlineInputMode=external
     export function setupDriving(
-        left: FwdServoClient,
-        right: FwdServoClient,
+        left: fwdBase.FwdServoClient,
+        right: fwdBase.FwdServoClient,
         bias = 0
     ) {
         drivingControls.initMotors(left, right, bias)
@@ -86,7 +79,7 @@ namespace fwdMotors {
     //% block="drive $direction at $speed"
     //% blockId=fwd_driving_drive
     //% speed.shadow="speedPicker"
-    export function drive(direction: DrivingDirection, speed: number) {
+    export function drive(direction: fwdEnums.ForwardReverse, speed: number) {
         drivingControls.drive(direction, speed)
     }
 

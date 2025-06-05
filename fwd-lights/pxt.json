@@ -3,8 +3,8 @@
     "version": "1.0.11",
     "description": "Controls LED lights",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#b0ef72582bd023b284cd5b4accfebc712c5a169f",
-        "lightbulb": "github:Forward-Education/pxt-fwd-base/lightbulb#b0ef72582bd023b284cd5b4accfebc712c5a169f"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#d086e1fda5daf986149bebf1007ec7ff12fc1523",
+        "fwd-lightbulb": "github:Forward-Education/pxt-fwd-base/lightbulb#d086e1fda5daf986149bebf1007ec7ff12fc1523"
     },
     "files": [
         "client.ts"

@@ -25,12 +25,12 @@ namespace fwdSensors {
         //% blockId=fwd_dcvoltage_is_past_threshold
         isPastThreshold(
             threshold: number,
-            direction: ThresholdDirection
+            direction: fwdEnums.OverUnder
         ): boolean {
             const difference = this.voltage() - threshold > 0
             const isPastThreshold =
-                (direction === ThresholdDirection.Over && difference) ||
-                (direction === ThresholdDirection.Under && !difference)
+                (direction === fwdEnums.OverUnder.Over && difference) ||
+                (direction === fwdEnums.OverUnder.Under && !difference)
             return isPastThreshold
         }
     }
@@ -72,12 +72,12 @@ namespace fwdSensors {
         //% blockId=fwd_dccurrent_is_past_threshold
         isPastThreshold(
             threshold: number,
-            direction: ThresholdDirection
+            direction: fwdEnums.OverUnder
         ): boolean {
             const difference = this.current() - threshold > 0
             const isPastThreshold =
-                (direction === ThresholdDirection.Over && difference) ||
-                (direction === ThresholdDirection.Under && !difference)
+                (direction === fwdEnums.OverUnder.Over && difference) ||
+                (direction === fwdEnums.OverUnder.Under && !difference)
             return isPastThreshold
         }
     }

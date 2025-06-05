@@ -1,11 +1,4 @@
 namespace fwdSensors {
-    export const enum FloatState {
-        //% block="raised"
-        raised = 1,
-        //% block="lowered"
-        lowered = 0,
-    }
-
     //% fixedInstances
     export class FwdFloatClient extends modules.ButtonClient {
         constructor(role: string) {
@@ -18,10 +11,10 @@ namespace fwdSensors {
         //% group="Float"
         //% block="on $this $state"
         //% blockId=fwd_float_on_change
-        onFloatChange(state: FloatState, handler: () => void) {
-            if (state === FloatState.raised) {
+        onFloatChange(state: fwdEnums.RaisedLowered, handler: () => void) {
+            if (state === fwdEnums.RaisedLowered.Raised) {
                 super.onEvent(jacdac.ButtonEvent.Down, handler)
-            } else if (state === FloatState.lowered) {
+            } else if (state === fwdEnums.RaisedLowered.Lowered) {
                 super.onEvent(jacdac.ButtonEvent.Up, handler)
             }
         }
@@ -32,8 +25,8 @@ namespace fwdSensors {
         //% group="Float"
         //% block="$this is $state"
         //% blockId=fwd_float_state_conditional
-        floatStateConditional(state: FloatState): boolean {
-            if (state === FloatState.raised) {
+        floatStateConditional(state: fwdEnums.RaisedLowered): boolean {
+            if (state === fwdEnums.RaisedLowered.Raised) {
                 return super.pressed()
             } else {
                 return !super.pressed()
@@ -48,9 +41,9 @@ namespace fwdSensors {
         //% blockId=fwd_float_state
         floatState(): number {
             if (super.pressed()) {
-                return FloatState.raised
+                return fwdEnums.RaisedLowered.Raised
             } else {
-                return FloatState.lowered
+                return fwdEnums.RaisedLowered.Lowered
             }
         }
     }
