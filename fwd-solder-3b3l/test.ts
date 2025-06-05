@@ -25,26 +25,3 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(1000)
     console.log("Test End")
 })
-
-fwdButtons.BTN2.onEvent(jacdac.ButtonEvent.Down, function () {
-    delay = 3000
-})
-fwdButtons.BTN1.onEvent(jacdac.ButtonEvent.Down, function () {
-    delay = 1000
-})
-fwdButtons.BTN3.onEvent(jacdac.ButtonEvent.Down, function () {
-    delay = 5000
-})
-let delay = 0
-delay = 3000
-basic.forever(function () {
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.On)
-    basic.pause(delay)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.On)
-    basic.pause(delay)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.On)
-    basic.pause(delay)
-})
