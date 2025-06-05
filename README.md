@@ -38,6 +38,12 @@ When the version or commit is not specified for the dependency, most of the time
 
 Kit extensions can safely take advantage of the autobump GitHub action since they have less risk of introducing critical errors. It automatically bumps the version anytime a change is pushed to main. This prevents software developers from being a gatekeeper to lesson content.
 
+## Development
+
+Since the kit extensions are the last item in the dependency chain and have specified the versions of their module dependencies you can safely have changes in main of pxt-fwd-base and pxt-fwd-modules without affecting production.
+
+After making changes to pxt-fwd-base you can use 'update-dependency.py' to quickly set that dependency throughout pxt-fwd-modules to either the new commit hash or version. Remember to run './init.sh' afterwards to update your intellisense.
+
 ## Common Issues
 
 An extension is introduced as a dependency more than once and there are inconsistencies in name, version, or organization.
