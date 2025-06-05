@@ -1,21 +1,21 @@
 namespace fwdLights {
     export const enum LEDRingPixels {
-        //% block="PXL1"
-        PXL1 = 0,
-        //% block="PXL2"
-        PXL2 = 1,
-        //% block="PXL3"
-        PXL3 = 2,
-        //% block="PXL4"
-        PXL4 = 3,
-        //% block="PXL5"
-        PXL5 = 4,
-        //% block="PXL6"
-        PXL6 = 5,
-        //% block="PXL7"
-        PXL7 = 6,
-        //% block="PXL8"
-        PXL8 = 7,
+        //% block="1"
+        PIX1 = 0,
+        //% block="2"
+        PIX2 = 1,
+        //% block="3"
+        PIX3 = 2,
+        //% block="4"
+        PIX4 = 3,
+        //% block="5"
+        PIX5 = 4,
+        //% block="6"
+        PIX6 = 5,
+        //% block="7"
+        PIX7 = 6,
+        //% block="8"
+        PIX8 = 7,
     }
 
     //% fixedInstances
@@ -44,53 +44,43 @@ namespace fwdLights {
          * @param brightness Level between 0 (off) and 10 (full power)
          */
         //% block="set $this brightness to $value"
-        //% blockId=fwd_led_set_brightness
-        //% group="LED Lights"
+        //% blockId=fwd_led_ring_set_brightness
+        //% group="LED Ring"
         //% value.min=0 value.max=10 value.defl=10
-        fwdSetBrightness(value: number): void {
+        setBrightness(value: number): void {
             super.setBrightness(this.toServiceBrightness(value))
-        }
-
-        /**
-         * Returns how many lights make up an LED ring
-         */
-        //% block="$this number of pixels"
-        //% blockId=fwd_led_num_pixels
-        //% group="LED Lights"
-        fwdNumPixels(): number {
-            return super.numPixels()
         }
 
         /**
          * Returns the brightness level of the ring, 0-10
          */
         //% block="$this brightness"
-        //% blockId=fwd_led_get_brightness
-        //% group="LED Lights"
-        fwdBrightness(): number {
+        //% blockId=fwd_led_ring_get_brightness
+        //% group="LED Ring"
+        brightness(): number {
             return this.toBlocksBrightness(super.brightness())
         }
 
         /**
          * Set a specific LED to a color
-         * @param index the LED number
+         * @param pixel the pixel number
          * @param rgb color value using either the blocks color picker or hex
          */
-        //% block="set $this $index to $rgb=colorNumberPicker"
-        //% blockId=fwd_led_set_single_pixel_colour
-        //% group="LED Lights"
-        fwdSetPixelColour(index: LEDRingPixels, rgb: number): void {
-            super.setPixelColor(index, rgb)
+        //% block="set $this pixel $pixel to $rgb=colorNumberPicker"
+        //% blockId=fwd_led_ring_set_pixel_color
+        //% group="LED Ring"
+        setPixelColor(pixel: LEDRingPixels, rgb: number): void {
+            super.setPixelColor(pixel, rgb)
         }
 
         /**
          * Set all LEDs to a color
          * @param rgb color value using either the blocks color picker or hex
          */
-        //% block="set all $this LEDs to $rgb=colorNumberPicker"
-        //% blockId=fwd_led_set_all_pixels_colour
-        //% group="LED Lights"
-        fwdSetAllPixelsColour(rgb: number): void {
+        //% block="set all $this pixels to $rgb=colorNumberPicker"
+        //% blockId=fwd_led_set_all_pixels_color
+        //% group="LED Ring"
+        setAllPixelsColor(rgb: number): void {
             super.setAll(rgb)
         }
 
@@ -99,10 +89,10 @@ namespace fwdLights {
          * @param offset The number of positions to rotate. Positive are clockwise, negative are counter-clockwise
          */
         //% block="rotate $this pattern by $offset"
-        //% blockId=fwd_led_rotate_pattern
-        //% group="LED Lights"
+        //% blockId=fwd_led_ring_rotate
+        //% group="LED Ring"
         //% offset.defl=1
-        fwdRotate(offset: number): void {
+        rotate(offset: number): void {
             super.rotate(offset)
         }
 
@@ -111,10 +101,10 @@ namespace fwdLights {
          * @param offset The number of positions to shift. Positive are clockwise, negative are counter-clockwise
          */
         //% block="shift $this pattern by $offset"
-        //% blockId=fwd_led_shift_pattern
-        //% group="LED Lights"
+        //% blockId=fwd_led_ring_shift
+        //% group="LED Ring"
         //% offset.defl=1
-        fwdShift(offset: number): void {
+        shift(offset: number): void {
             super.shift(offset)
         }
     }
