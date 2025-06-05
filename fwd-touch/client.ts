@@ -10,7 +10,7 @@ namespace fwdButtons {
          * @param event Button pressed (down), held, released (up)
          */
         //% group="Touch"
-        //% block="on $this $event"
+        //% block="on $client $event"
         //% blockId=fwd_touch_on_event
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
@@ -20,7 +20,7 @@ namespace fwdButtons {
          * Returns the ms duration of the last button hold in ms
          */
         //% group="Touch"
-        //% block="$this hold duration (ms)"
+        //% block="$client hold duration (ms)"
         //% blockId=fwd_touch_hold_duration
         holdDuration(): number {
             return super.holdDuration()
@@ -30,7 +30,7 @@ namespace fwdButtons {
          * Returns true if the button is currently pressed, otherwise false
          */
         //% group="Touch"
-        //% block="$this pressed"
+        //% block="$client pressed"
         //% blockId=fwd_touch_is_pressed
         isPressed(): boolean {
             return super.pressed()

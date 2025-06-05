@@ -3,7 +3,7 @@ namespace fwdLights {
      * Controls LED lights
      **/
     //% fixedInstances blockGap=8
-    export class LightsClient extends modules.LightbulbClient {
+    export class LightsClient extends fwdBase.LightbulbClient {
         constructor(role: string) {
             super(role)
         }
@@ -12,7 +12,7 @@ namespace fwdLights {
          * Returns true if the light brightness is anything other than 0%.
          */
         //% group="Lights"
-        //% block="$this is on"
+        //% block="$client is on"
         //% blockId=fwd_lights_is_on
         isOn(): boolean {
             return super.isOn()
@@ -23,8 +23,8 @@ namespace fwdLights {
          * For non-dimmable lights, the value should be clamp to 0xffff for any non-zero value.
          */
         //% group="Lights"
-        //% blockId=jacdac_lights_brightness___set
-        //% block="set %lights brightness to %value (\\%)"
+        //% blockId=fwd_lights_set_brightness
+        //% block="set $client brightness to $value (\\%)"
         //% weight=100
         //% value.min=0
         //% value.max=100

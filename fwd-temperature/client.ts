@@ -9,7 +9,7 @@ namespace fwdSensors {
          * Returns the sensor's temperature reading in °C.
          */
         //% group="Temperature Probe"
-        //% block="$this °C"
+        //% block="$client °C"
         //% blockId=fwd_temperature_get_temperature
         temperature(): number {
             return super.temperature()
@@ -21,7 +21,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="Temperature Probe"
-        //% block="$this is $direction $threshold (\\°C)"
+        //% block="$client is $direction $threshold °C"
         //% blockId=fwd_temperature_is_past_threshold
         isPastThreshold(
             threshold: number,

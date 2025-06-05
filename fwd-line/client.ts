@@ -9,9 +9,9 @@ namespace fwdSensors {
          * Returns whether or not the line sensor is detecting a reflection
          */
         //% group="Line"
-        //% block="$this state"
+        //% block="$client state"
         //% blockId=fwd_line_sensor_state
-        fwdLineSensorState(): fwdEnums.OnOff {
+        lineSensorState(): fwdEnums.OnOff {
             return Math.round(super.brightness() / 100)
         }
 
@@ -20,19 +20,19 @@ namespace fwdSensors {
          * @param state ON or OFF
          */
         //% group="Line"
-        //% block="$this is $state"
-        //% blockId=fwd_line_sensor_state_check
-        fwdIsLineSensorState(state: fwdEnums.OnOff): boolean {
-            return state === this.fwdLineSensorState()
+        //% block="$client is $state"
+        //% blockId=fwd_line_is_line_sensor_state
+        isLineSensorState(state: fwdEnums.OnOff): boolean {
+            return state === this.lineSensorState()
         }
 
         /**
          * Runs code when the sensor changes from one state to another
          */
         //% group="Line"
-        //% block="on $this state changes"
-        //% blockId=fwd_line_sensor_on_state_change
-        fwdOnLineSensorStateChange(handler: () => void): void {
+        //% block="on $client state changes"
+        //% blockId=fwd_line_on_line_sensor_state_change
+        onLineSensorStateChange(handler: () => void): void {
             super.onReadingChangedBy(0.5, handler)
         }
     }

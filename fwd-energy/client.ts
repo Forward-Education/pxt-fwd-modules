@@ -9,7 +9,7 @@ namespace fwdSensors {
          * Returns the sensor's voltage reading in V.
          */
         //% group="Energy"
-        //% block="%this V"
+        //% block="$client V"
         //% blockId=fwd_dcvoltage_get_voltage
         voltage(): number {
             return super.reading()
@@ -21,7 +21,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="Energy"
-        //% block="$this is $direction $threshold (\\V)"
+        //% block="$client is $direction $threshold V"
         //% blockId=fwd_dcvoltage_is_past_threshold
         isPastThreshold(
             threshold: number,
@@ -54,7 +54,7 @@ namespace fwdSensors {
          * Returns the sensor's current reading in mA.
          */
         //% group="Energy"
-        //% block="%this mA"
+        //% block="$client mA"
         //% blockId=fwd_dccurrent_get_current
         current(): number {
             const amps = super.reading()
@@ -68,7 +68,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="Energy"
-        //% block="$this is $direction $threshold (\\mA)"
+        //% block="$client is $direction $threshold mA"
         //% blockId=fwd_dccurrent_is_past_threshold
         isPastThreshold(
             threshold: number,

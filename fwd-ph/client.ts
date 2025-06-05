@@ -15,7 +15,7 @@ namespace fwdSensors {
          * Returns the sensor's pH reading.
          */
         //% group="pH"
-        //% block="$this pH"
+        //% block="$client pH"
         //% blockId=fwd_ph_get_ph
         ph(): number {
             if (this.calibrated) {
@@ -40,7 +40,7 @@ namespace fwdSensors {
          * @param reading2
          */
         //% group="pH"
-        //% block="Calibrate $this Measures $standard1 as $reading1 Measures $standard2 as $reading2"
+        //% block="Calibrate $client Measures $standard1 as $reading1 Measures $standard2 as $reading2"
         //% blockId=fwd_ph_calibrate
         //% inlineInputMode=external
         calibrate(
@@ -62,7 +62,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="pH"
-        //% block="$this is $direction $threshold (\\pH)"
+        //% block="$client is $direction $threshold pH"
         //% blockId=fwd_ph_is_past_threshold
         isPastThreshold(
             threshold: number,

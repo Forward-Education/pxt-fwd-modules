@@ -43,7 +43,7 @@ namespace fwdLights {
          * Set the brightness of the LED ring
          * @param brightness Level between 0 (off) and 10 (full power)
          */
-        //% block="set $this brightness to $value"
+        //% block="set $client brightness to $value"
         //% blockId=fwd_led_ring_set_brightness
         //% group="LED Ring"
         //% value.min=0 value.max=10 value.defl=10
@@ -54,7 +54,7 @@ namespace fwdLights {
         /**
          * Returns the brightness level of the ring, 0-10
          */
-        //% block="$this brightness"
+        //% block="$client brightness"
         //% blockId=fwd_led_ring_get_brightness
         //% group="LED Ring"
         brightness(): number {
@@ -66,7 +66,7 @@ namespace fwdLights {
          * @param pixel the pixel number
          * @param rgb color value using either the blocks color picker or hex
          */
-        //% block="set $this pixel $pixel to $rgb=colorNumberPicker"
+        //% block="set $client pixel $pixel to $rgb=colorNumberPicker"
         //% blockId=fwd_led_ring_set_pixel_color
         //% group="LED Ring"
         setPixelColor(pixel: LEDRingPixels, rgb: number): void {
@@ -77,7 +77,7 @@ namespace fwdLights {
          * Set all LEDs to a color
          * @param rgb color value using either the blocks color picker or hex
          */
-        //% block="set all $this pixels to $rgb=colorNumberPicker"
+        //% block="set all $client pixels to $rgb=colorNumberPicker"
         //% blockId=fwd_led_set_all_pixels_color
         //% group="LED Ring"
         setAllPixelsColor(rgb: number): void {
@@ -88,7 +88,7 @@ namespace fwdLights {
          * Rotate the light pattern left or right, wrapping the last pixel back to the first
          * @param offset The number of positions to rotate. Positive are clockwise, negative are counter-clockwise
          */
-        //% block="rotate $this pattern by $offset"
+        //% block="rotate $client pattern by $offset"
         //% blockId=fwd_led_ring_rotate
         //% group="LED Ring"
         //% offset.defl=1
@@ -100,7 +100,7 @@ namespace fwdLights {
          * Shift the light pattern left or right. If the light pattern is shifted past the first or last light, that part of the pattern is removed.
          * @param offset The number of positions to shift. Positive are clockwise, negative are counter-clockwise
          */
-        //% block="shift $this pattern by $offset"
+        //% block="shift $client pattern by $offset"
         //% blockId=fwd_led_ring_shift
         //% group="LED Ring"
         //% offset.defl=1

@@ -9,7 +9,7 @@ namespace fwdSensors {
          * Returns the sensor's distance reading in meters
          */
         //% group="Sonar"
-        //% block="$this distance (m)"
+        //% block="$client distance (m)"
         //% blockId=fwd_sonar_get_distance
         fwdDistance(): number {
             return super.distance()
@@ -21,7 +21,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="Sonar"
-        //% block="$this is $direction $threshold m"
+        //% block="$client is $direction $threshold m"
         //% blockId=fwd_solar_is_distance_past_threshold
         fwdDistancePastThreshold(
             threshold: number,
