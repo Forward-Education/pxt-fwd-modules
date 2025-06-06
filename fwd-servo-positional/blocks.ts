@@ -1,36 +1,5 @@
 namespace fwdMotors {
     /**
-     * Reports what angle the servo is set to
-     */
-    //% group="Servo - 270° Positional"
-    //% block="$servo angle (°)"
-    //% blockId=fwd_servopos_get_angle
-    export function getAngle(servo: fwdBase.FwdServoClient): number {
-        return servo.getAngle()
-    }
-
-    /**
-     * Preset servo positions based on a clock's hour hand
-     */
-    //% group="Servo - 270° Positional"
-    //% block="position %position"
-    //% blockId=fwd_servopos_position_presets
-    //% position.defl=0
-    export function positionPresets(position: ServoClockPositions): number {
-        return position as number
-    }
-
-    /**
-     * Is the servo enabled or disabled? Enabled = true, disabled = false
-     */
-    //% group="Servo - 270° Positional"
-    //% block="$servo is enabled"
-    //% blockId=fwd_servopos_is_enabled
-    export function posIsEnabled(servo: fwdBase.FwdServoClient): boolean {
-        return servo.enabled()
-    }
-
-    /**
      * Set the servo to enabled or disabled
      * @param state enabled = true, disabled = false
      */
@@ -73,6 +42,37 @@ namespace fwdMotors {
         angle: number
     ): void {
         servo.setAngleAndWait(angle)
+    }
+
+    /**
+     * Reports what angle the servo is set to
+     */
+    //% group="Servo - 270° Positional"
+    //% block="$servo angle (°)"
+    //% blockId=fwd_servopos_get_angle
+    export function getAngle(servo: fwdBase.FwdServoClient): number {
+        return servo.getAngle()
+    }
+
+    /**
+     * Preset servo positions based on a clock's hour hand
+     */
+    //% group="Servo - 270° Positional"
+    //% block="position %position"
+    //% blockId=fwd_servopos_position_presets
+    //% position.defl=0
+    export function positionPresets(position: ServoClockPositions): number {
+        return position as number
+    }
+
+    /**
+     * Is the servo enabled or disabled? Enabled = true, disabled = false
+     */
+    //% group="Servo - 270° Positional"
+    //% block="$servo is enabled"
+    //% blockId=fwd_servopos_is_enabled
+    export function posIsEnabled(servo: fwdBase.FwdServoClient): boolean {
+        return servo.enabled()
     }
 
     export const enum ServoClockPositions {

@@ -1,25 +1,5 @@
 namespace fwdMotors {
     /**
-     * Reports what speed the servo is set to
-     */
-    //% group="Servo - Continuous"
-    //% block="$servo speed (\\%)"
-    //% blockId=fwd_servocon_get_speed
-    export function getSpeed(servo: fwdBase.FwdServoClient): number {
-        return servo.getSpeed()
-    }
-
-    /**
-     * Is the servo enabled or disabled? Enabled = true, disabled = false
-     */
-    //% group="Servo - Continuous"
-    //% block="$servo is enabled"
-    //% blockId=fwd_servocon_is_enabled
-    export function conIsEnabled(servo: fwdBase.FwdServoClient): boolean {
-        return servo.enabled()
-    }
-
-    /**
      * Set the servo to enabled or disabled
      * @param state enabled = true, disabled = false
      */
@@ -47,5 +27,25 @@ namespace fwdMotors {
         speed: number
     ): void {
         servo.setSpeed(speed)
+    }
+
+    /**
+     * Reports what speed the servo is set to
+     */
+    //% group="Servo - Continuous"
+    //% block="$servo speed (\\%)"
+    //% blockId=fwd_servocon_get_speed
+    export function getSpeed(servo: fwdBase.FwdServoClient): number {
+        return servo.getSpeed()
+    }
+
+    /**
+     * Is the servo enabled or disabled? Enabled = true, disabled = false
+     */
+    //% group="Servo - Continuous"
+    //% block="$servo is enabled"
+    //% blockId=fwd_servocon_is_enabled
+    export function conIsEnabled(servo: fwdBase.FwdServoClient): boolean {
+        return servo.enabled()
     }
 }
