@@ -27,7 +27,7 @@ namespace fwdButtons {
          * It does not reset to 0 after 1 full rotation. Instead it continues to increment.
          */
         //% group="Dial"
-        //% block="$client position"
+        //% block="$this position"
         //% blockId=fwd_dial_position
         position(): number {
             return super.position()
@@ -38,7 +38,7 @@ namespace fwdButtons {
          * @param direction choose between clockwise (CW) and counterclockwise (CCW)
          */
         //% group="Dial"
-        //% block="on $client rotated $direction"
+        //% block="on $this rotated $direction"
         //% blockId=fwd_dial_on_rotated
         //% weight=98
         onRotated(
@@ -73,7 +73,7 @@ namespace fwdButtons {
          * @param event button down, hold, or up
          */
         //% group="Dial"
-        //% block="on $client $event"
+        //% block="on $this $event"
         //% blockId=fwd_dialbutton_on_event
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
@@ -83,7 +83,7 @@ namespace fwdButtons {
          * Returns how long the button has been held in ms.
          */
         //% group="Dial"
-        //% block="$client hold duration (ms)"
+        //% block="$this hold duration (ms)"
         //% blockId=fwd_dialbutton_hold_duration
         holdDuration(): number {
             return super.holdDuration()
@@ -93,7 +93,7 @@ namespace fwdButtons {
          * Returns true if the button is currently pressed, otherwise false.
          */
         //% group="Dial"
-        //% block="$client pressed"
+        //% block="$this pressed"
         //% blockId=fwd_dialbutton_is_pressed
         isPressed(): boolean {
             return super.pressed()

@@ -26,7 +26,7 @@ namespace fwdSensors {
          * Returns the sensor's light level as a number between 0-100
          */
         //% group="Solar"
-        //% block="$client light level (\\%)"
+        //% block="$this light level (\\%)"
         //% blockId=fwd_solar_get_light_level
         lightLevel(): number {
             return super.lightLevel()
@@ -38,7 +38,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="Solar"
-        //% block="$client is $direction $threshold \\%"
+        //% block="$this is $direction $threshold \\%"
         //% blockId=fwd_solar_is_past_threshold
         //% threshold.min=0 threshold.max=100 threshold.defl=5
         isPastThreshold(

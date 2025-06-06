@@ -9,7 +9,7 @@ namespace fwdSensors {
          * Returns the sensor's moisture level as a number between 0-100
          */
         //% group="Moisture"
-        //% block="$client level (\\%)"
+        //% block="$this level (\\%)"
         //% blockId=fwd_moisture_get_moisture_level
         moistureLevel(): number {
             return super.moisture()
@@ -21,7 +21,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="Moisture"
-        //% block="$client is $direction $threshold \\%"
+        //% block="$this is $direction $threshold \\%"
         //% blockId=fwd_moisture_is_past_threshold
         //% threshold.min=0 threshold.max=100 threshold.defl=5
         isPastThreshold(

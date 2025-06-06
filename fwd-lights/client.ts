@@ -12,7 +12,7 @@ namespace fwdLights {
          * Returns true if the light brightness is anything other than 0%.
          */
         //% group="Lights"
-        //% block="$client is on"
+        //% block="$this is on"
         //% blockId=fwd_lights_is_on
         isOn(): boolean {
             return super.isOn()
@@ -24,7 +24,7 @@ namespace fwdLights {
          */
         //% group="Lights"
         //% blockId=fwd_lights_set_brightness
-        //% block="set $client brightness to $value (\\%)"
+        //% block="set $this brightness to $value (\\%)"
         //% weight=100
         //% value.min=0
         //% value.max=100

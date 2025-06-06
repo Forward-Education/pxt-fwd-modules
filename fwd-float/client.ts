@@ -9,7 +9,7 @@ namespace fwdSensors {
          * Code to run when the chosen event occurs.
          */
         //% group="Float"
-        //% block="on $client $state"
+        //% block="on $this $state"
         //% blockId=fwd_float_on_change
         onFloatChange(state: fwdEnums.RaisedLowered, handler: () => void) {
             if (state === fwdEnums.RaisedLowered.Raised) {
@@ -23,7 +23,7 @@ namespace fwdSensors {
          * Returns true if the sensor is in the designated state.
          */
         //% group="Float"
-        //% block="$client is $state"
+        //% block="$this is $state"
         //% blockId=fwd_float_state_conditional
         floatStateConditional(state: fwdEnums.RaisedLowered): boolean {
             if (state === fwdEnums.RaisedLowered.Raised) {
@@ -37,7 +37,7 @@ namespace fwdSensors {
          * Returns the sensor state, 1 is raised and 0 is lowered.
          */
         //% group="Float"
-        //% block="$client state"
+        //% block="$this state"
         //% blockId=fwd_float_state
         floatState(): number {
             if (super.pressed()) {

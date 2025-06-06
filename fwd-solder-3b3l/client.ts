@@ -10,7 +10,7 @@ namespace fwdButtons {
          * @param event Button pressed (down), held, released (up)
          */
         //% group="Smart Solder"
-        //% block="on $client $event"
+        //% block="on $this $event"
         //% blockId=fwd_solder3b3lbtn_on_event
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
@@ -20,7 +20,7 @@ namespace fwdButtons {
          * Returns the ms duration of the last button hold in ms
          */
         //% group="Smart Solder"
-        //% block="$client hold duration (ms)"
+        //% block="$this hold duration (ms)"
         //% blockId=fwd_solder3b3lbtn_hold_duration
         holdDuration(): number {
             return super.holdDuration()
@@ -30,7 +30,7 @@ namespace fwdButtons {
          * Returns true if the button is currently pressed, otherwise false
          */
         //% group="Smart Solder"
-        //% block="$client pressed"
+        //% block="$this pressed"
         //% blockId=fwd_solder3b3lbtn_is_pressed
         isPressed(): boolean {
             return super.pressed()
@@ -63,7 +63,7 @@ namespace fwdLights {
          * Returns true if the light brightness is anything other than 0%.
          */
         //% group="Lights"
-        //% block="$client is on"
+        //% block="$this is on"
         //% blockId=fwd_solder3b3llight_is_on
         isOn(): boolean {
             return super.isOn()
@@ -73,7 +73,7 @@ namespace fwdLights {
          * Turn the light on or off.
          */
         //% group="Smart Solder"
-        //% block="set $client to $onOff"
+        //% block="set $this to $onOff"
         //% blockId=fwd_solder3b3llight_set_on_off
         setOnOff(onOff: fwdEnums.OnOff) {
             if (onOff === fwdEnums.OnOff.On) {
