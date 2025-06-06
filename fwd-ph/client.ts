@@ -33,7 +33,7 @@ namespace fwdSensors {
 
         /**
          * Returns true when the pH is past the provided threshold in the designated direction.
-         * @param threshold what pH to check against
+         * @param threshold the pH to check against
          * @param direction over or under the threshold
          */
         //% group="pH"
@@ -53,10 +53,10 @@ namespace fwdSensors {
         /**
          * Calibrates the pH probe against 2 solutions with a known pH for accurate readings.
          * The calibration will not apply to the live value displayed in MakeCode when the Micro:bit is connected.
-         * @param standard1
-         * @param reading1
-         * @param standard2
-         * @param reading2
+         * @param standard1 the known pH of the standard, generally 4, 7, or 10
+         * @param reading1 the measured pH of standard1
+         * @param standard2 the known pH of the standard, generally 4, 7, or 10
+         * @param reading2 the measured pH of standard2
          */
         //% group="pH"
         //% block="Calibrate $this Measures $standard1 as $reading1 Measures $standard2 as $reading2"

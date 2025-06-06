@@ -48,10 +48,10 @@ namespace fwdMotors {
 
     export const drivingControls = createDrivingControls()
 
-    /*
-     * Use this block before using the other driving blocks to set which motors get treated as left and right
-     * @param left set which motor will be treated as the left motor
-     * @param right set which motor will be treated as the right motor
+    /**
+     * Use this block before using the other driving blocks to set which servo clients get treated as left and right.
+     * @param left the servo client to use as the left motor
+     * @param right the servo client to use as the right motor
      * @param bias if the motors don't spin at quite the same rate, use the bias to balance them
      */
     //% group="Driving"
@@ -69,11 +69,10 @@ namespace fwdMotors {
         drivingControls.initMotors(left, right, bias)
     }
 
-    /*
-     * Drive either forwards or backwards
-     * (requires setup driving to used first)
-     * @param direction choose forwards or backwards
-     * @param speed choose 0-100% speed
+    /**
+     * Drive forwards or backwards at the desired speed (requires setup driving to used first).
+     * @param direction forwards or backwards
+     * @param speed 0% (stationary) to 100% (max speed)
      */
     //% group="Driving"
     //% block="drive $direction at $speed"
@@ -83,8 +82,8 @@ namespace fwdMotors {
         drivingControls.drive(direction, speed)
     }
 
-    /*
-     * Stop driving or turning. Sets speeds to zero.
+    /**
+     * Stop driving or turning. Sets speed to 0%.
      */
     //% group="Driving"
     //% block="stop motors"
@@ -93,9 +92,9 @@ namespace fwdMotors {
         drivingControls.drive(1, 0)
     }
 
-    /*
-     * Turns the vehicle left or right in place by turning the wheels in opposite directions
-     * @param angle Positive angles turn right, negative angles turn left
+    /**
+     * Turns the vehicle left or right in place by spinning the wheels in opposite directions.
+     * @param angle positive angles turn right, negative angles turn left
      */
     //% group="Driving"
     //% block="turn $angle ° in place"

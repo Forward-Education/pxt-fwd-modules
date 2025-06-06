@@ -17,7 +17,7 @@ namespace fwdSensors {
 
         /**
          * Returns true when the temperature is past the provided threshold in the designated direction.
-         * @param threshold what temperature to check against
+         * @param threshold the temperature (°C) to check against
          * @param direction over or under the threshold
          */
         //% group="Temperature Probe"

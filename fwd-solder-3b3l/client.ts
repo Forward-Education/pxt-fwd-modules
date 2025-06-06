@@ -8,6 +8,7 @@ namespace fwdButtons {
         /**
          * Code to run when a chosen event occurs
          * @param event Button pressed (down), held, released (up)
+         * @param handler the code to run
          */
         //% group="Smart Solder"
         //% block="on $this $event"
@@ -60,17 +61,8 @@ namespace fwdLights {
         }
 
         /**
-         * Returns true if the light brightness is anything other than 0%.
-         */
-        //% group="Smart Solder"
-        //% block="$this is on"
-        //% blockId=fwd_solder3b3llight_is_on
-        isOn(): boolean {
-            return super.isOn()
-        }
-
-        /**
          * Turn the light on or off.
+         * @param onOff on or off
          */
         //% group="Smart Solder"
         //% block="set $this to $onOff"
@@ -81,6 +73,16 @@ namespace fwdLights {
             } else {
                 super.setBrightness(0)
             }
+        }
+
+        /**
+         * Returns true if the light brightness is anything other than 0%.
+         */
+        //% group="Smart Solder"
+        //% block="$this is on"
+        //% blockId=fwd_solder3b3llight_is_on
+        isOn(): boolean {
+            return super.isOn()
         }
     }
 

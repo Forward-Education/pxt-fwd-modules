@@ -24,6 +24,7 @@ namespace fwdButtons {
         /**
          * Run code when the dial is rotated in the chosen direction.
          * @param direction choose between clockwise (CW) and counterclockwise (CCW)
+         * @param handler the code to run
          */
         //% group="Dial"
         //% block="on $this rotated $direction"
@@ -70,6 +71,7 @@ namespace fwdButtons {
         /**
          * Code to run when the chosen event occurs. The hold event fires every 100ms that the button is held.
          * @param event button down, hold, or up
+         * @param handler the code to run
          */
         //% group="Dial"
         //% block="on $this $event"

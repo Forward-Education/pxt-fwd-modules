@@ -8,6 +8,7 @@ namespace fwdButtons {
         /**
          * Code to run when a chosen event occurs
          * @param event Button pressed (down), held, released (up)
+         * @param handler the code to run
          */
         //% group="Touch"
         //% block="on $this $event"

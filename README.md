@@ -44,9 +44,14 @@ Since the kit extensions are the last item in the dependency chain and have spec
 
 After making changes to pxt-fwd-base you can use 'update-dependency.py' to quickly set that dependency throughout pxt-fwd-modules to either the new commit hash or version. Remember to run './init.sh' afterwards to update your intellisense.
 
+Extension approval from micro:bit is a surprisingly rigorous process. Some things to do to meet their standards:
+
+-   make sure function and parameter descriptions are complete by clicking on blocks in the JavaScript MakeCode view
+-   follow the observable code formatting throughout these extension repos, it's the way it is for a reason
+
 ## Block Order
 
-Blocks are first formally grouped by module. Then they are informally grouped by service (if a module uses more than one service). The order within a service is event blocks, action blocks, status blocks, conditional blocks. I'm not sure if these are formal block categories. You can tell the block type by it's shape. The order within a block type is a qualitative assessment of it's usefulness. More useful to less useful.
+Blocks are first formally grouped by module. Then they are informally grouped by service (if a module uses more than one service). The order within a service is event blocks, action blocks, status blocks, conditional blocks. I'm not sure if these are formal block categories. You can tell the block type by it's shape. The order within a block type is a qualitative assessment of it's usefulness. More useful to less useful. Exceptions can be made. For example, the calibrate pH action block is the only action block for pH and it fits much nicer below the other block types.
 
 module -> service -> block type -> usefulness
 

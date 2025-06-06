@@ -40,31 +40,9 @@ namespace fwdLights {
         }
 
         /**
-         * Set the brightness of the LED ring
-         * @param brightness Level between 0 (off) and 10 (full power)
-         */
-        //% block="set $this brightness to $value"
-        //% blockId=fwd_led_ring_set_brightness
-        //% group="LED Ring"
-        //% value.min=0 value.max=10 value.defl=10
-        setBrightness(value: number): void {
-            super.setBrightness(this.toServiceBrightness(value))
-        }
-
-        /**
-         * Returns the brightness level of the ring, 0-10
-         */
-        //% block="$this brightness"
-        //% blockId=fwd_led_ring_get_brightness
-        //% group="LED Ring"
-        brightness(): number {
-            return this.toBlocksBrightness(super.brightness())
-        }
-
-        /**
-         * Set a specific LED to a color
-         * @param pixel the pixel number
-         * @param rgb color value using either the blocks color picker or hex
+         * Set a specific pixel to a color.
+         * @param pixel the pixel number (1-8)
+         * @param rgb the hex value of the color
          */
         //% block="set $this pixel $pixel to $rgb=colorNumberPicker"
         //% blockId=fwd_led_ring_set_pixel_color
@@ -74,8 +52,8 @@ namespace fwdLights {
         }
 
         /**
-         * Set all LEDs to a color
-         * @param rgb color value using either the blocks color picker or hex
+         * Set all pixels to a color.
+         * @param rgb the hex value of the color
          */
         //% block="set all $this pixels to $rgb=colorNumberPicker"
         //% blockId=fwd_led_set_all_pixels_color
@@ -85,8 +63,20 @@ namespace fwdLights {
         }
 
         /**
+         * Set the brightness of the pixels.
+         * @param brightness a number between 0 (off) and 10 (full power)
+         */
+        //% block="set $this brightness to $value"
+        //% blockId=fwd_led_ring_set_brightness
+        //% group="LED Ring"
+        //% brightness.min=0 brightness.max=10 brightness.defl=10
+        setBrightness(brightness: number): void {
+            super.setBrightness(this.toServiceBrightness(brightness))
+        }
+
+        /**
          * Rotate the light pattern left or right, wrapping the last pixel back to the first
-         * @param offset The number of positions to rotate. Positive are clockwise, negative are counter-clockwise
+         * @param offset the number of positions to rotate, +ve = cw and -ve = ccw
          */
         //% block="rotate $this pattern by $offset"
         //% blockId=fwd_led_ring_rotate
@@ -98,7 +88,7 @@ namespace fwdLights {
 
         /**
          * Shift the light pattern left or right. If the light pattern is shifted past the first or last light, that part of the pattern is removed.
-         * @param offset The number of positions to shift. Positive are clockwise, negative are counter-clockwise
+         * @param offset the number of positions to shift, +ve = cw and -ve = ccw
          */
         //% block="shift $this pattern by $offset"
         //% blockId=fwd_led_ring_shift
@@ -106,6 +96,16 @@ namespace fwdLights {
         //% offset.defl=1
         shift(offset: number): void {
             super.shift(offset)
+        }
+
+        /**
+         * Returns the brightness level of the ring (0-10).
+         */
+        //% block="$this brightness"
+        //% blockId=fwd_led_ring_get_brightness
+        //% group="LED Ring"
+        brightness(): number {
+            return this.toBlocksBrightness(super.brightness())
         }
     }
 

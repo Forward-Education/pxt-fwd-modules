@@ -7,6 +7,8 @@ namespace fwdSensors {
 
         /**
          * Code to run when the chosen event occurs.
+         * @param state raised or lowered
+         * @param handler the code to run
          */
         //% group="Float"
         //% block="on $this $state"
@@ -35,6 +37,7 @@ namespace fwdSensors {
 
         /**
          * Returns true if the sensor is in the designated state.
+         * @param state raised or lowered
          */
         //% group="Float"
         //% block="$this is $state"

@@ -9,6 +9,21 @@ namespace fwdLights {
         }
 
         /**
+         * Set the brightness of a light or light strip. Brightness peaks at different percentages for different lights.
+         * Try a range of percentages to find the zone of control for your specific light.
+         * @param brightness 0%-100%
+         */
+        //% group="Lights"
+        //% blockId=fwd_lights_set_brightness
+        //% block="set $this brightness to $value (\\%)"
+        //% brightness.min=0
+        //% brightness.max=100
+        //% brightness.defl=100
+        setBrightness(brightness: number) {
+            super.setBrightness(brightness)
+        }
+
+        /**
          * Returns true if the light brightness is anything other than 0%.
          */
         //% group="Lights"
@@ -16,21 +31,6 @@ namespace fwdLights {
         //% blockId=fwd_lights_is_on
         isOn(): boolean {
             return super.isOn()
-        }
-
-        /**
-         * Indicates the brightness of the light bulb. Zero means completely off and 0xffff means completely on.
-         * For non-dimmable lights, the value should be clamp to 0xffff for any non-zero value.
-         */
-        //% group="Lights"
-        //% blockId=fwd_lights_set_brightness
-        //% block="set $this brightness to $value (\\%)"
-        //% weight=100
-        //% value.min=0
-        //% value.max=100
-        //% value.defl=100
-        setBrightness(value: number) {
-            super.setBrightness(value)
         }
     }
 

@@ -17,7 +17,7 @@ namespace fwdSensors {
 
         /**
          * Returns true when the moisture level is past the provided threshold in the designated direction.
-         * @param threshold what moisture level to check against
+         * @param threshold the moisture level (%) to check against
          * @param direction over or under the threshold
          */
         //% group="Moisture"

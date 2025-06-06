@@ -17,7 +17,7 @@ namespace fwdSensors {
 
         /**
          * Returns true when the distance is past the provided threshold in the designated direction.
-         * @param threshold what distance to check against
+         * @param threshold the distance (m) to check against
          * @param direction over or under the threshold
          */
         //% group="Sonar"

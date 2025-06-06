@@ -1,6 +1,7 @@
 namespace fwdMotors {
     /**
      * Set the servo to enabled or disabled
+     * @param servo the servo client to set the status of
      * @param state enabled = true, disabled = false
      */
     //% group="Servo - Continuous"
@@ -15,8 +16,9 @@ namespace fwdMotors {
     }
 
     /**
-     * Set what speed the servo should run at
-     * @param speed Can be set between 100% foward and -100% reverse
+     * Set what speed the servo should run at.
+     * @param servo the servo client to set the speed of
+     * @param speed a percentage between 100% (full speed foward) and -100% (full speed reverse)
      */
     //% group="Servo - Continuous"
     //% block="set $servo to $speed \\%"
@@ -30,7 +32,8 @@ namespace fwdMotors {
     }
 
     /**
-     * Reports what speed the servo is set to
+     * Reports what speed the servo is set to.
+     * @param servo the servo client to get the speed of
      */
     //% group="Servo - Continuous"
     //% block="$servo speed (\\%)"
@@ -41,6 +44,7 @@ namespace fwdMotors {
 
     /**
      * Is the servo enabled or disabled? Enabled = true, disabled = false
+     * @param servo the servo client to get the status of
      */
     //% group="Servo - Continuous"
     //% block="$servo is enabled"

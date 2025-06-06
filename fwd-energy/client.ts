@@ -19,7 +19,7 @@ namespace fwdSensors {
 
         /**
          * Returns true when the current is past the provided threshold in the designated direction.
-         * @param threshold what current to check against
+         * @param threshold the current (mA) to check against
          * @param direction over or under the threshold
          */
         //% group="Energy"
@@ -64,7 +64,7 @@ namespace fwdSensors {
 
         /**
          * Returns true when the voltage is past the provided threshold in the designated direction.
-         * @param threshold what voltage to check against
+         * @param threshold the voltage (V) to check against
          * @param direction over or under the threshold
          */
         //% group="Energy"

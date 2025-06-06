@@ -7,6 +7,7 @@ namespace fwdSensors {
 
         /**
          * Runs code when the sensor changes from one state to another
+         * @param handler the code to run
          */
         //% group="Line"
         //% block="on $this state changes"
@@ -27,7 +28,7 @@ namespace fwdSensors {
 
         /**
          * Checks for a specific line sensor state
-         * @param state ON or OFF
+         * @param state on or off
          */
         //% group="Line"
         //% block="$this is $state"
