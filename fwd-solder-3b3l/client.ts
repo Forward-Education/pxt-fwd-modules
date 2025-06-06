@@ -62,7 +62,7 @@ namespace fwdLights {
         /**
          * Returns true if the light brightness is anything other than 0%.
          */
-        //% group="Lights"
+        //% group="Smart Solder"
         //% block="$this is on"
         //% blockId=fwd_solder3b3llight_is_on
         isOn(): boolean {
