@@ -1,9 +1,30 @@
 namespace fwdMotors {
     /**
+     * Reports what angle the servo is set to
+     */
+    //% group="Servo - 270° Positional"
+    //% block="$servo angle (°)"
+    //% blockId=fwd_servopos_get_angle
+    export function getAngle(servo: fwdBase.FwdServoClient): number {
+        return servo.getAngle()
+    }
+
+    /**
+     * Preset servo positions based on a clock's hour hand
+     */
+    //% group="Servo - 270° Positional"
+    //% block="position %position"
+    //% blockId=fwd_servopos_position_presets
+    //% position.defl=0
+    export function positionPresets(position: ServoClockPositions): number {
+        return position as number
+    }
+
+    /**
      * Is the servo enabled or disabled? Enabled = true, disabled = false
      */
     //% group="Servo - 270° Positional"
-    //% block="$servo state"
+    //% block="$servo is enabled"
     //% blockId=fwd_servopos_is_enabled
     export function posIsEnabled(servo: fwdBase.FwdServoClient): boolean {
         return servo.enabled()
@@ -14,7 +35,7 @@ namespace fwdMotors {
      * @param state enabled = true, disabled = false
      */
     //% group="Servo - 270° Positional"
-    //% block="set $servo $state"
+    //% block="turn $servo $state"
     //% blockId=fwd_servopos_set_enabled
     //% state.shadow="toggleOnOff"
     export function posSetEnabled(
@@ -25,16 +46,6 @@ namespace fwdMotors {
     }
 
     /**
-     * Reports what angle the servo is set to
-     */
-    //% group="Servo - 270° Positional"
-    //% block="$servo angle (°)"
-    //% blockId=fwd_servopos_get_angle
-    export function getAngle(servo: fwdBase.FwdServoClient) {
-        return servo.getAngle()
-    }
-
-    /**
      * Set what angle the servo should point to and immediately run the next block
      * @param angle servo angle
      */
@@ -42,7 +53,10 @@ namespace fwdMotors {
     //% block="set $servo to $angle °"
     //% blockId=fwd_servopos_set_angle
     //% angle.min=0 angle.max=270
-    export function setAngle(servo: fwdBase.FwdServoClient, angle: number) {
+    export function setAngle(
+        servo: fwdBase.FwdServoClient,
+        angle: number
+    ): void {
         servo.setAngle(angle)
     }
 
@@ -57,7 +71,7 @@ namespace fwdMotors {
     export function setAngleAndWait(
         servo: fwdBase.FwdServoClient,
         angle: number
-    ) {
+    ): void {
         servo.setAngleAndWait(angle)
     }
 
@@ -82,16 +96,5 @@ namespace fwdMotors {
         Pos8 = 30,
         //% block="🕘 09:00"
         Pos9 = 0,
-    }
-
-    /**
-     * Preset servo positions based on a clock's hour hand
-     */
-    //% group="Servo - 270° Positional"
-    //% block="position %position"
-    //% blockId=fwd_servopos_position_presets
-    //% position.defl=0
-    export function positionPresets(position: ServoClockPositions): number {
-        return position as number
     }
 }

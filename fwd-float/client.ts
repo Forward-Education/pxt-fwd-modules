@@ -20,20 +20,6 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true if the sensor is in the designated state.
-         */
-        //% group="Float"
-        //% block="$this is $state"
-        //% blockId=fwd_float_state_conditional
-        floatStateConditional(state: fwdEnums.RaisedLowered): boolean {
-            if (state === fwdEnums.RaisedLowered.Raised) {
-                return super.pressed()
-            } else {
-                return !super.pressed()
-            }
-        }
-
-        /**
          * Returns the sensor state, 1 is raised and 0 is lowered.
          */
         //% group="Float"
@@ -44,6 +30,20 @@ namespace fwdSensors {
                 return fwdEnums.RaisedLowered.Raised
             } else {
                 return fwdEnums.RaisedLowered.Lowered
+            }
+        }
+
+        /**
+         * Returns true if the sensor is in the designated state.
+         */
+        //% group="Float"
+        //% block="$this is $state"
+        //% blockId=fwd_float_state_conditional
+        floatStateConditional(state: fwdEnums.RaisedLowered): boolean {
+            if (state === fwdEnums.RaisedLowered.Raised) {
+                return super.pressed()
+            } else {
+                return !super.pressed()
             }
         }
     }

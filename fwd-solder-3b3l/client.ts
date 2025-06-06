@@ -30,7 +30,7 @@ namespace fwdButtons {
          * Returns true if the button is currently pressed, otherwise false
          */
         //% group="Smart Solder"
-        //% block="$this pressed"
+        //% block="$this is pressed"
         //% blockId=fwd_solder3b3lbtn_is_pressed
         isPressed(): boolean {
             return super.pressed()

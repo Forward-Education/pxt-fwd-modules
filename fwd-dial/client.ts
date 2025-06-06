@@ -22,25 +22,12 @@ namespace fwdButtons {
         }
 
         /**
-         * The position of the dial relative to it's starting position when it was connected.
-         * 0 is the starting position. A clockwise click is +1. A counterclockwise click is -1.
-         * It does not reset to 0 after 1 full rotation. Instead it continues to increment.
-         */
-        //% group="Dial"
-        //% block="$this position"
-        //% blockId=fwd_dial_position
-        position(): number {
-            return super.position()
-        }
-
-        /**
          * Run code when the dial is rotated in the chosen direction.
          * @param direction choose between clockwise (CW) and counterclockwise (CCW)
          */
         //% group="Dial"
         //% block="on $this rotated $direction"
         //% blockId=fwd_dial_on_rotated
-        //% weight=98
         onRotated(
             direction: fwdEnums.ClockwiseCounterclockwise,
             handler: () => void
@@ -50,6 +37,18 @@ namespace fwdButtons {
             } else {
                 this._ccwAction = handler
             }
+        }
+
+        /**
+         * The position of the dial relative to it's starting position when it was connected.
+         * 0 is the starting position. A clockwise click is +1. A counterclockwise click is -1.
+         * It does not reset to 0 after 1 full rotation. Instead it continues to increment.
+         */
+        //% group="Dial"
+        //% block="$this position"
+        //% blockId=fwd_dial_position
+        position(): number {
+            return super.position()
         }
     }
 
@@ -93,7 +92,7 @@ namespace fwdButtons {
          * Returns true if the button is currently pressed, otherwise false.
          */
         //% group="Dial"
-        //% block="$this pressed"
+        //% block="$this is pressed"
         //% blockId=fwd_dialbutton_is_pressed
         isPressed(): boolean {
             return super.pressed()

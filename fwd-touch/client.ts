@@ -30,7 +30,7 @@ namespace fwdButtons {
          * Returns true if the button is currently pressed, otherwise false
          */
         //% group="Touch"
-        //% block="$this pressed"
+        //% block="$this is pressed"
         //% blockId=fwd_touch_is_pressed
         isPressed(): boolean {
             return super.pressed()

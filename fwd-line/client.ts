@@ -6,6 +6,16 @@ namespace fwdSensors {
         }
 
         /**
+         * Runs code when the sensor changes from one state to another
+         */
+        //% group="Line"
+        //% block="on $this state changes"
+        //% blockId=fwd_line_on_line_sensor_state_change
+        onLineSensorStateChange(handler: () => void): void {
+            super.onReadingChangedBy(0.5, handler)
+        }
+
+        /**
          * Returns whether or not the line sensor is detecting a reflection
          */
         //% group="Line"
@@ -24,16 +34,6 @@ namespace fwdSensors {
         //% blockId=fwd_line_is_line_sensor_state
         isLineSensorState(state: fwdEnums.OnOff): boolean {
             return state === this.lineSensorState()
-        }
-
-        /**
-         * Runs code when the sensor changes from one state to another
-         */
-        //% group="Line"
-        //% block="on $this state changes"
-        //% blockId=fwd_line_on_line_sensor_state_change
-        onLineSensorStateChange(handler: () => void): void {
-            super.onReadingChangedBy(0.5, handler)
         }
     }
 

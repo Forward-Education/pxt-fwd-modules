@@ -32,6 +32,25 @@ namespace fwdSensors {
         }
 
         /**
+         * Returns true when the pH is past the provided threshold in the designated direction.
+         * @param threshold what pH to check against
+         * @param direction over or under the threshold
+         */
+        //% group="pH"
+        //% block="$this is $direction $threshold pH"
+        //% blockId=fwd_ph_is_past_threshold
+        isPastThreshold(
+            threshold: number,
+            direction: fwdEnums.OverUnder
+        ): boolean {
+            const difference = this.ph() - threshold > 0
+            const isPastThreshold =
+                (direction === fwdEnums.OverUnder.Over && difference) ||
+                (direction === fwdEnums.OverUnder.Under && !difference)
+            return isPastThreshold
+        }
+
+        /**
          * Calibrates the pH probe against 2 solutions with a known pH for accurate readings.
          * The calibration will not apply to the live value displayed in MakeCode when the Micro:bit is connected.
          * @param standard1
@@ -54,25 +73,6 @@ namespace fwdSensors {
             this.standard2 = standard2
             this.reading2 = reading2
             this.calibrated = true
-        }
-
-        /**
-         * Returns true when the pH is past the provided threshold in the designated direction.
-         * @param threshold what pH to check against
-         * @param direction over or under the threshold
-         */
-        //% group="pH"
-        //% block="$this is $direction $threshold pH"
-        //% blockId=fwd_ph_is_past_threshold
-        isPastThreshold(
-            threshold: number,
-            direction: fwdEnums.OverUnder
-        ): boolean {
-            const difference = this.ph() - threshold > 0
-            const isPastThreshold =
-                (direction === fwdEnums.OverUnder.Over && difference) ||
-                (direction === fwdEnums.OverUnder.Under && !difference)
-            return isPastThreshold
         }
     }
 

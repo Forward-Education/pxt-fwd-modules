@@ -9,7 +9,7 @@ namespace fwdMotors {
          * Returns true if the pump is running and false if it's stopped.
          */
         //% group="Pump"
-        //% block="$this on"
+        //% block="$this is on"
         //% blockId=fwd_pump_is_on
         isOn(): boolean {
             return super.active()
@@ -20,7 +20,7 @@ namespace fwdMotors {
          * @param on on = true, off = false
          */
         //% group="Pump"
-        //% block="set $this $on"
+        //% block="turn $this $on"
         //% blockId=fwd_pump_set_on
         //% on.shadow="toggleOnOff"
         setOn(on: boolean): void {
