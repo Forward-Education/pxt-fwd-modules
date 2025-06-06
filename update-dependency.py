@@ -8,7 +8,7 @@ def find_and_update_pxt_files(
 ) -> None:
     """
     Finds all pxt.json files in the current directory and its subdirectories
-    and updates the specified dependency.
+    and updates the specified dependency, always ensuring a trailing newline.
     """
     start_directory = "." # Always start from the current directory
     print(f"Searching for pxt.json files in '{start_directory}' and its subdirectories...")
@@ -23,6 +23,7 @@ def find_and_update_pxt_files(
                 try:
                     with open(file_path, "r+") as f:
                         content: Dict[str, Any] = json.load(f)
+                        changed_file = False # Flag to track if the file content changed
 
                         if "dependencies" in content and dependency_name in content["dependencies"]:
                             current_dependency_url: str = content["dependencies"][dependency_name]
@@ -30,6 +31,12 @@ def find_and_update_pxt_files(
                             # Check if the dependency URL starts with "github:"
                             if not current_dependency_url.startswith("github:"):
                                 print(f"  Skipping '{dependency_name}' in '{file_path}': Not a GitHub dependency URL.")
+                                # Still ensure trailing newline if the file is processed but not updated
+                                f.seek(0)
+                                current_file_content = f.read()
+                                if not current_file_content.endswith('\n'):
+                                    f.write('\n') # Add newline at the end if missing
+                                    f.truncate() # Remove any extra content after the new line
                                 continue # Move to the next file
 
                             # Split the URL by '#' to get the base URL and the current version/commit
@@ -43,9 +50,7 @@ def find_and_update_pxt_files(
 
                             if updated_dependency_url != current_dependency_url:
                                 content["dependencies"][dependency_name] = updated_dependency_url
-                                f.seek(0)  # Rewind to the beginning of the file
-                                json.dump(content, f, indent=4)
-                                f.truncate()  # Truncate any remaining old content
+                                changed_file = True
                                 print(
                                     f"  Updated '{dependency_name}' in '{file_path}' to '{new_version}'"
                                 )
@@ -57,6 +62,22 @@ def find_and_update_pxt_files(
                             print(
                                 f"  '{dependency_name}' dependency not found in '{file_path}'"
                             )
+                            # If dependency not found, but the file was loaded, we might need to add a newline
+                            
+                        # Regardless of whether content was updated, ensure a trailing newline
+                        if changed_file:
+                            f.seek(0)  # Rewind to the beginning of the file
+                            json.dump(content, f, indent=4)
+                            f.write('\n') # Always add a trailing newline
+                            f.truncate()  # Truncate any remaining old content
+                        else:
+                            # If no changes were made to the JSON content, check for trailing newline
+                            f.seek(0)
+                            current_file_content = f.read()
+                            if not current_file_content.endswith('\n'):
+                                f.write('\n') # Add newline at the end if missing
+                                f.truncate() # Remove any extra content after the new line
+
 
                 except FileNotFoundError:
                     print(f"Error: File not found at {file_path}")
