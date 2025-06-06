@@ -42,31 +42,31 @@ namespace fwdLights {
         /**
          * Set a specific pixel to a color.
          * @param pixel the pixel number (1-8)
-         * @param rgb the hex value of the color
+         * @param color the hex value of the color
          */
-        //% block="set $this pixel $pixel to $rgb=colorNumberPicker"
+        //% block="set $this pixel $pixel to $color=colorNumberPicker"
         //% blockId=fwd_led_ring_set_pixel_color
         //% group="LED Ring"
-        setPixelColor(pixel: LEDRingPixels, rgb: number): void {
-            super.setPixelColor(pixel, rgb)
+        setPixelColor(pixel: LEDRingPixels, color: number): void {
+            super.setPixelColor(pixel, color)
         }
 
         /**
          * Set all pixels to a color.
-         * @param rgb the hex value of the color
+         * @param color the hex value of the color
          */
-        //% block="set all $this pixels to $rgb=colorNumberPicker"
+        //% block="set all $this pixels to $color=colorNumberPicker"
         //% blockId=fwd_led_set_all_pixels_color
         //% group="LED Ring"
-        setAllPixelsColor(rgb: number): void {
-            super.setAll(rgb)
+        setAllPixelsColor(color: number): void {
+            super.setAll(color)
         }
 
         /**
          * Set the brightness of the pixels.
          * @param brightness a number between 0 (off) and 10 (full power)
          */
-        //% block="set $this brightness to $value"
+        //% block="set $this brightness to $brightness"
         //% blockId=fwd_led_ring_set_brightness
         //% group="LED Ring"
         //% brightness.min=0 brightness.max=10 brightness.defl=10

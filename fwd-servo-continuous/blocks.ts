@@ -1,6 +1,6 @@
 namespace fwdMotors {
     /**
-     * Set the servo to enabled or disabled
+     * Set the servo to enabled or disabled.
      * @param servo the servo client to set the status of
      * @param state enabled = true, disabled = false
      */

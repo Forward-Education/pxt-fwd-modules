@@ -15,7 +15,7 @@ namespace fwdLights {
          */
         //% group="Lights"
         //% blockId=fwd_lights_set_brightness
-        //% block="set $this brightness to $value (\\%)"
+        //% block="set $this brightness to $brightness (\\%)"
         //% brightness.min=0
         //% brightness.max=100
         //% brightness.defl=100

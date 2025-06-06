@@ -11,7 +11,7 @@ namespace fwdSensors {
          * @param handler the code to run
          */
         //% group="Float"
-        //% block="on $this $state"
+        //% block="on $this $event"
         //% blockId=fwd_float_on_change
         onFloatChange(event: fwdEnums.RaisedLowered, handler: () => void) {
             if (event === fwdEnums.RaisedLowered.Raised) {

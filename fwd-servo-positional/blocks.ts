@@ -1,6 +1,6 @@
 namespace fwdMotors {
     /**
-     * Set the servo to enabled or disabled
+     * Set the servo to enabled or disabled.
      * @param servo the servo client to set the status of
      * @param state enabled = true, disabled = false
      */
@@ -16,7 +16,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Set the angle of the servo and immediately run the next block
+     * Set the angle of the servo and immediately run the next block.
      * @param servo the servo client to set the angle of
      * @param angle servo angle
      */
@@ -32,7 +32,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Set the angle of the servo and wait for the movement to finish before running the next block
+     * Set the angle of the servo and wait for the movement to finish before running the next block.
      * @param servo the servo client to set the angle of
      * @param angle servo angle
      */
@@ -59,12 +59,12 @@ namespace fwdMotors {
     }
 
     /**
-     * Preset servo positions based on a clock's hour hand
+     * Preset servo positions based on a clock's hour hand.
+     * @param position pos0 through pos9 where the number represents the clock hour position
      */
     //% group="Servo - 270° Positional"
-    //% block="position %position"
+    //% block="position $position"
     //% blockId=fwd_servopos_position_presets
-    //% position.defl=0
     export function positionPresets(position: ServoClockPositions): number {
         return position as number
     }
