@@ -6,18 +6,18 @@ namespace fwdSensors {
         }
 
         /**
-         * Runs code when the sensor changes from one state to another
+         * Runs code when the sensor changes between detection and no detection states.
          * @param handler the code to run
          */
         //% group="Line"
-        //% block="on $this state changes"
+        //% block="on $this state change"
         //% blockId=fwd_line_on_line_sensor_state_change
         onLineSensorStateChange(handler: () => void): void {
             super.onReadingChangedBy(0.5, handler)
         }
 
         /**
-         * Returns whether or not the line sensor is detecting a reflection
+         * Returns the sensor state, true is detection and false is no detection.
          */
         //% group="Line"
         //% block="$this state"
@@ -27,7 +27,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Checks for a specific line sensor state
+         * Returns true if the sensor is in the designated state.
          * @param state on or off
          */
         //% group="Line"

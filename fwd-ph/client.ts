@@ -51,8 +51,8 @@ namespace fwdSensors {
         }
 
         /**
-         * Calibrates the pH probe against 2 solutions with a known pH for accurate readings.
-         * The calibration will not apply to the live value displayed in MakeCode when the Micro:bit is connected.
+         * Calibrates the pH probe against 2 solutions with a known pH to ensure accurate readings.
+         * The calibration will not apply to the live value displayed in MakeCode when the micro:bit is connected.
          * @param standard1 the known pH of the standard, generally 4, 7, or 10
          * @param reading1 the measured pH of standard1
          * @param standard2 the known pH of the standard, generally 4, 7, or 10

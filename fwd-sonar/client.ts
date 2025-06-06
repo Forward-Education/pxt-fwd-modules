@@ -6,7 +6,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's distance reading in meters
+         * Returns the sensor's distance reading (m).
          */
         //% group="Sonar"
         //% block="$this distance (m)"
@@ -16,7 +16,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the distance is past the provided threshold in the designated direction.
+         * Returns true when the distance (m) is past the provided threshold in the designated direction.
          * @param threshold the distance (m) to check against
          * @param direction over or under the threshold
          */

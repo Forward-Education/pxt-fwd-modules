@@ -6,7 +6,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's temperature reading in °C.
+         * Returns the sensor's temperature reading (°C).
          */
         //% group="Temperature Probe"
         //% block="$this °C"
@@ -16,7 +16,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the temperature is past the provided threshold in the designated direction.
+         * Returns true when the temperature (°C) is past the provided threshold in the designated direction.
          * @param threshold the temperature (°C) to check against
          * @param direction over or under the threshold
          */

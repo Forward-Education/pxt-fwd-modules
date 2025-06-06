@@ -6,7 +6,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's moisture level as a number between 0-100
+         * Returns the sensor's moisture level reading (%).
          */
         //% group="Moisture"
         //% block="$this level (\\%)"
@@ -16,7 +16,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the moisture level is past the provided threshold in the designated direction.
+         * Returns true when the moisture level (%) is past the provided threshold in the designated direction.
          * @param threshold the moisture level (%) to check against
          * @param direction over or under the threshold
          */

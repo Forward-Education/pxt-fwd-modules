@@ -7,7 +7,7 @@ namespace fwdButtons {
 
         /**
          * Code to run when a chosen event occurs
-         * @param event Button pressed (down), held, released (up)
+         * @param event button down, hold, or up
          * @param handler the code to run
          */
         //% group="Touch"
@@ -18,7 +18,7 @@ namespace fwdButtons {
         }
 
         /**
-         * Returns the ms duration of the last button hold in ms
+         * Returns the duration (ms) of the button hold in ms
          */
         //% group="Touch"
         //% block="$this hold duration (ms)"

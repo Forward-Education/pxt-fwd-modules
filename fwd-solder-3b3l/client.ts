@@ -7,7 +7,7 @@ namespace fwdButtons {
 
         /**
          * Code to run when a chosen event occurs
-         * @param event Button pressed (down), held, released (up)
+         * @param event button down, hold, or up
          * @param handler the code to run
          */
         //% group="Smart Solder"

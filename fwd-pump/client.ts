@@ -18,7 +18,7 @@ namespace fwdMotors {
         }
 
         /**
-         * Turn on the pump for the chosen number of seconds.
+         * Turn on the pump for the selected duration.
          * @param duration how long to run the pump
          */
         //% group="Pump"

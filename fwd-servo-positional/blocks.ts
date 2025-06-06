@@ -16,7 +16,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Set what angle the servo should point to and immediately run the next block
+     * Set the angle of the servo and immediately run the next block
      * @param servo the servo client to set the angle of
      * @param angle servo angle
      */
@@ -32,7 +32,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Set what angle the servo should point to, and wait for the movement to finish before running the next block
+     * Set the angle of the servo and wait for the movement to finish before running the next block
      * @param servo the servo client to set the angle of
      * @param angle servo angle
      */
@@ -48,7 +48,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Reports what angle the servo is set to
+     * Returns the angle that the servo is set to.
      * @param servo the servo client to get the angle of
      */
     //% group="Servo - 270° Positional"
@@ -70,7 +70,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Is the servo enabled or disabled? Enabled = true, disabled = false
+     * Returns whether the servo is enabled, enabled = true, disabled = false.
      * @param servo the servo client to get the status of
      */
     //% group="Servo - 270° Positional"

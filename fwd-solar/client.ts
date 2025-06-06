@@ -23,7 +23,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's light level as a number between 0-100
+         * Returns the sensor's light level reading (%).
          */
         //% group="Solar"
         //% block="$this light level (\\%)"
@@ -33,7 +33,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the light level is past the provided threshold in the designated direction.
+         * Returns true when the light level (%) is past the provided threshold in the designated direction.
          * @param threshold the light level (%) to check against
          * @param direction over or under the threshold
          */

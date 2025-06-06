@@ -6,7 +6,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's current reading in mA.
+         * Returns the sensor's current reading (mA).
          */
         //% group="Energy"
         //% block="$this mA"
@@ -18,7 +18,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the current is past the provided threshold in the designated direction.
+         * Returns true when the current (mA) is past the provided threshold in the designated direction.
          * @param threshold the current (mA) to check against
          * @param direction over or under the threshold
          */
@@ -53,7 +53,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's voltage reading in V.
+         * Returns the sensor's voltage reading (V).
          */
         //% group="Energy"
         //% block="$this V"
@@ -63,7 +63,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the voltage is past the provided threshold in the designated direction.
+         * Returns true when the voltage (V) is past the provided threshold in the designated direction.
          * @param threshold the voltage (V) to check against
          * @param direction over or under the threshold
          */
