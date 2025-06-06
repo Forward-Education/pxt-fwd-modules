@@ -44,6 +44,12 @@ Since the kit extensions are the last item in the dependency chain and have spec
 
 After making changes to pxt-fwd-base you can use 'update-dependency.py' to quickly set that dependency throughout pxt-fwd-modules to either the new commit hash or version. Remember to run './init.sh' afterwards to update your intellisense.
 
+## Block Order
+
+Blocks are first formally grouped by module. Then they are informally grouped by service (if a module uses more than one service). The order within a service is event blocks, status blocks, conditional blocks, action blocks. I'm not sure if these are formal block categories. You can tell the block type by it's shape. The order within a block type is a qualitative assessment of it's usefulness. More useful to less useful.
+
+module -> service -> block type -> usefulness
+
 ## Common Issues
 
 An extension is introduced as a dependency more than once and there are inconsistencies in name, version, or organization.

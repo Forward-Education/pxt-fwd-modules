@@ -11,7 +11,6 @@ namespace fwdSensors {
         //% group="Energy"
         //% block="$this mA"
         //% blockId=fwd_dccurrent_get_current
-        //% weight=4
         current(): number {
             const amps = super.reading()
             const milliamps = Math.round(amps * 1000)
@@ -26,7 +25,6 @@ namespace fwdSensors {
         //% group="Energy"
         //% block="$this is $direction $threshold mA"
         //% blockId=fwd_dccurrent_is_past_threshold
-        //% weight=2
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder
@@ -60,7 +58,6 @@ namespace fwdSensors {
         //% group="Energy"
         //% block="$this V"
         //% blockId=fwd_dcvoltage_get_voltage
-        //% weight=3
         voltage(): number {
             return super.reading()
         }
@@ -73,7 +70,6 @@ namespace fwdSensors {
         //% group="Energy"
         //% block="$this is $direction $threshold V"
         //% blockId=fwd_dcvoltage_is_past_threshold
-        //% weight=1
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder
