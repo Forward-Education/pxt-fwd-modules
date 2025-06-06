@@ -87,7 +87,7 @@ namespace fwdLights {
         }
 
         /**
-         * Shift the light pattern left or right. If the light pattern is shifted past the first or last light, that part of the pattern is removed.
+         * Shift the light pattern left or right. If the light pattern is shifted past the first or last pixel, that part of the pattern is removed.
          * @param offset the number of positions to shift, +ve = cw and -ve = ccw
          */
         //% block="shift $this pattern by $offset"

@@ -18,7 +18,6 @@ namespace fwdLights {
         //% block="set $this brightness to $brightness (\\%)"
         //% brightness.min=0
         //% brightness.max=100
-        //% brightness.defl=100
         setBrightness(brightness: number) {
             super.setBrightness(brightness)
         }

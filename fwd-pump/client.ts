@@ -18,11 +18,11 @@ namespace fwdMotors {
         }
 
         /**
-         * Turn on the pump for the selected duration.
-         * @param duration how long to run the pump
+         * Turn on the pump for the selected duration (ms).
+         * @param duration how long to run the pump (ms)
          */
         //% group="Pump"
-        //% block="run $this for $duration"
+        //% block="run $this for $duration ms"
         //% duration.shadow="timePicker"
         //% blockId=fwd_pump_timed_run
         timedRun(duration: number): void {

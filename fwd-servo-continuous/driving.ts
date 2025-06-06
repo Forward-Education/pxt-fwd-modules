@@ -75,7 +75,7 @@ namespace fwdMotors {
      * @param speed 0% (stationary) to 100% (max speed)
      */
     //% group="Driving"
-    //% block="drive $direction at $speed"
+    //% block="drive $direction at $speed %"
     //% blockId=fwd_driving_drive
     //% speed.shadow="speedPicker"
     export function drive(direction: fwdEnums.ForwardReverse, speed: number) {

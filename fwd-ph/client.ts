@@ -55,7 +55,7 @@ namespace fwdSensors {
          * The calibration will not apply to the live value displayed in MakeCode when the micro:bit is connected.
          * @param standard1 the known pH of standard1, generally 4, 7, or 10
          * @param reading1 the measured pH of standard1
-         * @param standard2 the known pH of the standard2, generally 4, 7, or 10
+         * @param standard2 the known pH of standard2, generally 4, 7, or 10
          * @param reading2 the measured pH of standard2
          */
         //% group="pH"
