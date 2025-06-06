@@ -4,8 +4,8 @@ namespace fwdMotors {
      */
     //% group="Servo - 270° Positional"
     //% block="$servo state"
-    //% blockId=fwd_servo_is_enabled
-    export function isEnabled(servo: fwdBase.FwdServoClient): boolean {
+    //% blockId=fwd_servopos_is_enabled
+    export function posIsEnabled(servo: fwdBase.FwdServoClient): boolean {
         return servo.enabled()
     }
 
@@ -15,9 +15,9 @@ namespace fwdMotors {
      */
     //% group="Servo - 270° Positional"
     //% block="set $servo $state"
-    //% blockId=fwd_servo_set_enabled
+    //% blockId=fwd_servopos_set_enabled
     //% state.shadow="toggleOnOff"
-    export function setEnabled(
+    export function posSetEnabled(
         servo: fwdBase.FwdServoClient,
         state: boolean
     ): void {
@@ -89,7 +89,7 @@ namespace fwdMotors {
      */
     //% group="Servo - 270° Positional"
     //% block="position %position"
-    //% blockId=fwd_servopos_position_enum
+    //% blockId=fwd_servopos_position_presets
     //% position.defl=0
     export function positionPresets(position: ServoClockPositions): number {
         return position as number

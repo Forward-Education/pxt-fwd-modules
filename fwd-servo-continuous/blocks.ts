@@ -4,8 +4,8 @@ namespace fwdMotors {
      */
     //% group="Servo - Continuous"
     //% block="$servo state"
-    //% blockId=fwd_servo_is_enabled
-    export function isEnabled(servo: fwdBase.FwdServoClient): boolean {
+    //% blockId=fwd_servocon_is_enabled
+    export function conIsEnabled(servo: fwdBase.FwdServoClient): boolean {
         return servo.enabled()
     }
 
@@ -15,9 +15,9 @@ namespace fwdMotors {
      */
     //% group="Servo - Continuous"
     //% block="set $servo $state"
-    //% blockId=fwd_servo_set_enabled
+    //% blockId=fwd_servocon_set_enabled
     //% state.shadow="toggleOnOff"
-    export function setEnabled(
+    export function conSetEnabled(
         servo: fwdBase.FwdServoClient,
         state: boolean
     ): void {
