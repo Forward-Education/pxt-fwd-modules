@@ -48,6 +48,12 @@ Extension approval from micro:bit is a surprisingly rigorous process. Some thing
 
 -   make sure function and parameter descriptions are complete by clicking on blocks in the JavaScript MakeCode view
 -   follow the observable code formatting throughout these extension repos, it's the way it is for a reason
+-   make sure the icon, pxt.json description, readme, and repo about section all say it's for v2 micro:bit
+-   generally, spell out words entirely throughout the code unless it's a universal abbreviation like LED (i.e. don't shorten position1 to pos1)
+
+You may find usage of \% instead \$ for prefacing block variables in the block text (i.e. set \%this to 0°). Don't use \%. It's the old way and was replaced in favor of $.
+
+The repo about section is what gets queried by the extension search and the pxt.json description is what populates the tile preview in MakeCode UI. The title in the tile preview comes from the pxt.json name and must match (these standards)[https://makecode.com/extensions/naming-conventions]. If you set the h1 in your readme to the name of your repo it seems to be ignored by MakeCode docs generator. This is a good thing because the docs generator makes an h1 automatically. If our README h1 was included there would be two h1's.
 
 ## Block Order
 
