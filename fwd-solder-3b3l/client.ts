@@ -62,13 +62,14 @@ namespace fwdLights {
 
         /**
          * Turn the light on or off.
-         * @param onOff on or off
+         * @param on true to turn on, false to turn off
          */
         //% group="Smart Solder"
-        //% block="set $this to $onOff"
+        //% block="set $this to $on"
         //% blockId=fwd_solder3b3llight_set_on_off
-        setOnOff(onOff: fwdEnums.OnOff) {
-            if (onOff === fwdEnums.OnOff.On) {
+        //% on.shadow="toggleOnOff"
+        setOnOff(on: boolean) {
+            if (on) {
                 super.setBrightness(100)
             } else {
                 super.setBrightness(0)
