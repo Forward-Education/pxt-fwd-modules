@@ -33,7 +33,7 @@ namespace fwdButtons {
             direction: fwdEnums.ClockwiseCounterclockwise,
             handler: () => void
         ): void {
-            if (direction === fwdEnums.ClockwiseCounterclockwise.CW) {
+            if (direction === fwdEnums.ClockwiseCounterclockwise.Clockwise) {
                 this._cwAction = handler
             } else {
                 this._ccwAction = handler

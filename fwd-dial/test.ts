@@ -1,11 +1,12 @@
 // dial tests
 // position()
 // onRotated(direction: DialDirection, handler: () => void): void
-fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.CW, () =>
+fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Clockwise, () =>
     console.log("turned -> position " + fwdButtons.dial1.position())
 )
-fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.CCW, () =>
-    console.log("turned <- position " + +fwdButtons.dial1.position())
+fwdButtons.dial1.onRotated(
+    fwdEnums.ClockwiseCounterclockwise.Counterclockwise,
+    () => console.log("turned <- position " + +fwdButtons.dial1.position())
 )
 
 // button tests
