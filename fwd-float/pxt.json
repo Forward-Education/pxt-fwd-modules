@@ -1,6 +1,6 @@
 {
     "name": "fwd-float",
-    "version": "1.0.11",
+    "version": "1.0.3",
     "description": "FWD Edu Float",
     "license": "MIT",
     "dependencies": {

@@ -1,6 +1,6 @@
 {
     "name": "fwd-lights",
-    "version": "1.0.11",
+    "version": "1.0.3",
     "description": "Controls LED lights",
     "dependencies": {
         "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.5",

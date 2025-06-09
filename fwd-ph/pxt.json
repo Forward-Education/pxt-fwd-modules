@@ -1,6 +1,6 @@
 {
     "name": "fwd-ph",
-    "version": "1.0.11",
+    "version": "1.0.3",
     "description": "FWD Edu pH",
     "license": "MIT",
     "dependencies": {
