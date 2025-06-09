@@ -1,6 +1,6 @@
 {
     "name": "fwd-servo-positional",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "FWD Edu Servo Positional",
     "license": "MIT",
     "dependencies": {

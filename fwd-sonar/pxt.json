@@ -1,6 +1,6 @@
 {
     "name": "fwd-sonar",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "FWD Edu Climate Action Kit Gen. 2 Sonar",
     "license": "MIT",
     "dependencies": {
