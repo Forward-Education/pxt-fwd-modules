@@ -1,21 +1,21 @@
 namespace fwdLights {
     export const enum LEDRingPixels {
         //% block="1"
-        PIX1 = 0,
+        Pixel1 = 0,
         //% block="2"
-        PIX2 = 1,
+        Pixel2 = 1,
         //% block="3"
-        PIX3 = 2,
+        Pixel3 = 2,
         //% block="4"
-        PIX4 = 3,
+        Pixel4 = 3,
         //% block="5"
-        PIX5 = 4,
+        Pixel5 = 4,
         //% block="6"
-        PIX6 = 5,
+        Pixel6 = 5,
         //% block="7"
-        PIX7 = 6,
+        Pixel7 = 6,
         //% block="8"
-        PIX8 = 7,
+        Pixel8 = 7,
     }
 
     //% fixedInstances
