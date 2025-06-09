@@ -4,7 +4,7 @@
     "description": "FWD Edu Climate Action Kit Gen. 2 Dial",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.4",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.5",
         "jacdac-rotary-encoder": "github:microsoft/pxt-jacdac/rotary-encoder#v1.9.32",
         "jacdac-button": "github:microsoft/pxt-jacdac/button#v1.9.32"
     },
