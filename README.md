@@ -51,7 +51,7 @@ Extension approval from micro:bit is a surprisingly rigorous process. Some thing
 
 You may find usage of \% instead \$ for prefacing block variables in the block text (i.e. set \%this to 0°). Don't use \%. It's the old way and was replaced in favor of $.
 
-The repo about section is what gets queried by the extension search and the pxt.json description is what populates the tile preview in MakeCode UI. The title in the tile preview comes from the pxt.json name and must match [these standards][https://makecode.com/extensions/naming-conventions]. If you set the h1 in your readme to the name of your repo it seems to be ignored by MakeCode docs generator. This is a good thing because the docs generator makes an h1 automatically. If our README h1 was included there would be two h1's.
+The repo about section is what gets queried by the extension search and the pxt.json description is what populates the tile preview in MakeCode UI. The title in the tile preview comes from the pxt.json name and must match [these standards](https://makecode.com/extensions/naming-conventions). If you set the h1 in your readme to the name of your repo it seems to be ignored by MakeCode docs generator. This is a good thing because the docs generator makes an h1 automatically. If our README h1 was included there would be two h1's.
 
 ## Block Order
 
