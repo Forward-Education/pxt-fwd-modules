@@ -27,16 +27,14 @@ Another way is to run 'mkc' to see if the 'test.ts' program compiles. This compi
 
 ## Versioning
 
-'mkc bump' creates a new version of the extension. Always run it from the top level of the repo. It will update the pxt.json files for all nested extensions. In other words, do not bump an indivudual module. Always bump the whole module library.
+'mkc bump' creates a new version of the extension. Always run it from the top level of the repo so that it will update the pxt.json files for all subdirectories. In other words, do not bump an indivudual module. Bump the whole module library.
 
 You can specify either the version or commit of a dependency.
 
 > "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#v1.0.0</br>
 > "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#253d6ef9d5641a783ec666412b6e9bd9fea0eeb0
 
-When the version or commit is not specified for the dependency, most of the time MakeCode pick up the most recent tag, or the most recent commit if there are no tags. However, most of the time is not all of the time and specifying a version reduces the risk of bad code making it into production, so always specify the versions of dependencies for production. Kit extensions should not be dependencies of other extensions because their version gets bumped automatically with every tutorial addition or change.
-
-Kit extensions can safely take advantage of the autobump GitHub action since they have less risk of introducing critical errors. It automatically bumps the version anytime a change is pushed to main. This prevents software developers from being a gatekeeper to lesson content.
+When the version or commit is not specified for the dependency, most of the time MakeCode pick up the most recent tag, or the most recent commit if there are no tags. However, most of the time is not all of the time and specifying a version reduces the risk of bad code making it into production, so always specify the versions of dependencies for production.
 
 ## Development
 
@@ -53,7 +51,7 @@ Extension approval from micro:bit is a surprisingly rigorous process. Some thing
 
 You may find usage of \% instead \$ for prefacing block variables in the block text (i.e. set \%this to 0°). Don't use \%. It's the old way and was replaced in favor of $.
 
-The repo about section is what gets queried by the extension search and the pxt.json description is what populates the tile preview in MakeCode UI. The title in the tile preview comes from the pxt.json name and must match (these standards)[https://makecode.com/extensions/naming-conventions]. If you set the h1 in your readme to the name of your repo it seems to be ignored by MakeCode docs generator. This is a good thing because the docs generator makes an h1 automatically. If our README h1 was included there would be two h1's.
+The repo about section is what gets queried by the extension search and the pxt.json description is what populates the tile preview in MakeCode UI. The title in the tile preview comes from the pxt.json name and must match [these standards][https://makecode.com/extensions/naming-conventions]. If you set the h1 in your readme to the name of your repo it seems to be ignored by MakeCode docs generator. This is a good thing because the docs generator makes an h1 automatically. If our README h1 was included there would be two h1's.
 
 ## Block Order
 
