@@ -59,7 +59,7 @@ namespace fwdSensors {
          * @param reading2 the measured pH of standard2
          */
         //% group="pH"
-        //% block="Calibrate $this Measures $standard1 as $reading1 Measures $standard2 as $reading2"
+        //% block="calibrate $this measures $standard1 as $reading1 measures $standard2 as $reading2"
         //% blockId=fwd_ph_calibrate
         //% inlineInputMode=external
         calibrate(
@@ -77,11 +77,11 @@ namespace fwdSensors {
     }
 
     //% fixedInstance whenUsed
-    export const ph1 = new FwdPhClient("ph1")
+    export const ph1 = new FwdPhClient("pH1")
     //% fixedInstance whenUsed
-    export const ph2 = new FwdPhClient("ph2")
+    export const ph2 = new FwdPhClient("pH2")
     //% fixedInstance whenUsed
-    export const ph3 = new FwdPhClient("ph3")
+    export const ph3 = new FwdPhClient("pH3")
     //% fixedInstance whenUsed
-    export const ph4 = new FwdPhClient("ph4")
+    export const ph4 = new FwdPhClient("pH4")
 }
