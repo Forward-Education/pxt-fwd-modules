@@ -9,10 +9,10 @@ namespace fwdSensors {
          * Speed measured by the sensor.
          * Positive is recommended to be clockwise rotation and negative counterclockwise
          */
-        //% callInDebugger
-        //% group="Speed"
-        //% weight=1
-        speed(): number {
+        //% group="RPM"
+        //% block="$this RPM"
+        //% blockId=fwd_rpm_get_rpm
+        rpm(): number {
             return this.reading()
         }
     }
