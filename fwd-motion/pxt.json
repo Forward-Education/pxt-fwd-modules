@@ -1,0 +1,24 @@
+{
+    "name": "fwd-motion",
+    "version": "1.0.4",
+    "description": "Senses motion.",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#95f837529d0b631154a8a5d6fdbe4df781bdd1c7",
+        "jacdac-motion": "github:microsoft/pxt-jacdac/motion#v1.9.32"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
