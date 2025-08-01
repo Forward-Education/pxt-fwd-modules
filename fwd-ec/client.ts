@@ -1,4 +1,4 @@
-namespace modules {
+namespace fwdSensors {
     /**
      * A sensor measuring ElectricalConductivity.
      **/
