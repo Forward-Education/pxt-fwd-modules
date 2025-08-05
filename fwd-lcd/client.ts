@@ -1,16 +1,5 @@
 namespace fwdLights {
     /**
-     * Initializing the LCD makes it's blocks work more reliably in "on start".
-     * Initialization will delay your program execution by 3 seconds.
-     */
-    //% block="initialize LCD's"
-    //% blockId=fwd_lcd_initialize
-    //% group="LCD"
-    export function initialize() {
-        pause(3000)
-    }
-
-    /**
      * Takes a number and rounds it to the provided decimal point.
      */
     //% block="round $number_ to $decimals decimals"
@@ -72,15 +61,22 @@ namespace fwdLights {
             }
 
             if (line < 0 || line > 1) {
+                
+                
                 super.setCursor(0, 0)
-                super.show("                ")
-                super.setCursor(0, 0)
+                basic.pause(1000)
                 super.show("err:!1-2")
+                basic.pause(1000)
             } else {
+                let blanks = "";
+                let numberOfBlanks = 16 - message.length;
+                for (let i = 0; i < numberOfBlanks; i++) {
+                    blanks += " ";
+                }
                 super.setCursor(0, line)
-                super.show("                ")
-                super.setCursor(0, line)
-                super.show(message)
+                basic.pause(300)
+                super.show(message + blanks);
+                basic.pause(300)
             }
         }
 
