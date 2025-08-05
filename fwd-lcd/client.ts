@@ -1,5 +1,6 @@
-// doing any kind of string manipulation before display seems to create unpredictable behavior
-// best to put exactly what you want in the function parameter rather than rely on assignment
+// Doing any kind of string manipulation before display seems to create unpredictable behavior.
+// Best to put exactly what you want in the function parameter rather than rely on assignment.
+// There are seemingly unnecessary returns but they also prevent unpredictable behavior.
 
 namespace fwdLights {
     /**
@@ -9,7 +10,7 @@ namespace fwdLights {
     //% block="initialize LCD's"
     //% blockId=fwd_lcd_initialize
     //% group="LCD"
-    export function initialize() {
+    export function initialize_lcd() {
         pause(500)
     }
 
@@ -32,7 +33,7 @@ namespace fwdLights {
 
     //% fixedInstances blockGap=8
     export class LCDClient extends modules.CursorCharacterScreenClient {
-        private readonly delay = 20
+        private readonly delay = 500
 
         constructor(role: string) {
             super(role)
@@ -55,6 +56,7 @@ namespace fwdLights {
             let string_ = number_.toString()
             if (string_.length > 16) {
                 this.printLineString(">16 chars", line)
+                return
             } else {
                 this.printLineString(number_.toString(), line)
             }
@@ -75,19 +77,21 @@ namespace fwdLights {
         printLineString(string_: string, line: number) {
             line -= 1
 
-            if (string_.length > 16) {
-                this.setCursorAndWait(0, 0)
-                this.printAndWait(string_.substr(0, 16))
-            }
-            
             if (line < 0 || line > 1) {
                 this.setCursorAndWait(0, 0)
                 this.printAndWait("err:!1-2        ")
-            } else {
-                let blanks = this.makeBlanksString(string_.length, 16)
-                this.setCursorAndWait(0, line)
-                this.printAndWait(string_ + blanks);
+                return
             }
+
+            if (string_.length > 16) {
+                this.setCursorAndWait(0, line)
+                this.printAndWait(string_.substr(0, 16))
+                return
+            }
+
+            let blanks = this.makeBlanksString(string_.length, 16)
+            this.setCursorAndWait(0, line)
+            this.printAndWait(string_ + blanks);
         }
 
         /**
@@ -106,6 +110,7 @@ namespace fwdLights {
             let string_ = number_.toString()
             if (string_.length > 8) {
                 this.printQuadrantString(">8 chars", quadrant)
+                return
             } else {
                 this.printQuadrantString(number_.toString(), quadrant)
             }
@@ -127,10 +132,6 @@ namespace fwdLights {
             let col = 0
             let row = 0
 
-            if (string_.length > 8) {
-                string_ = string_.substr(0, 8)
-            }
-
             switch (quadrant) {
                 case 1:
                     break
@@ -147,11 +148,19 @@ namespace fwdLights {
                     row = 1
                     break
                 default:
-                    string_ = "err:!1-4"
+                    this.setCursorAndWait(col, row)
+                    this.printAndWait("err:!1-4")
+                    return
+            }
+
+            this.setCursorAndWait(col, row)
+
+            if (string_.length > 8) {
+                this.printAndWait(string_.substr(0, 8))
+                return
             }
 
             let blanks = this.makeBlanksString(string_.length, 8)
-            this.setCursorAndWait(col, row)
             this.printAndWait(string_ + blanks)
         }
 
