@@ -1,4 +1,18 @@
+// doing any kind of string manipulation before display seems to create unpredictable behavior
+// best to put exactly what you want in the function parameter rather than rely on assignment
+
 namespace fwdLights {
+    /**
+     * Initializing the LCD makes it's blocks work more reliably in "on start".
+     * Initialization will delay your program execution by 500 ms.
+     */
+    //% block="initialize LCD's"
+    //% blockId=fwd_lcd_initialize
+    //% group="LCD"
+    export function initialize() {
+        pause(500)
+    }
+
     /**
      * Takes a number and rounds it to the provided decimal point.
      */
@@ -18,17 +32,18 @@ namespace fwdLights {
 
     //% fixedInstances blockGap=8
     export class LCDClient extends modules.CursorCharacterScreenClient {
-        private readonly delay = 250
+        private readonly delay = 20
 
         constructor(role: string) {
             super(role)
+            super.setEnabled(1)
         }
 
         /**
          * Prints the provided number on the designated line of the LCD. Limited to 16 characters.
          * A number over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
-         * This block has a half-second pause built-in to ensure proper processing of commands.
+         * This block has a 20 ms pause built-in to ensure proper processing of commands.
          * @param number_ the number to print
          * @param line the line to print the number on
          */
@@ -38,18 +53,18 @@ namespace fwdLights {
         //% group="LCD"
         printLineNumber(number_: number, line: number) {
             let string_ = number_.toString()
-
             if (string_.length > 16) {
-                string_ = ">16 chars"
+                this.printLineString(">16 chars", line)
+            } else {
+                this.printLineString(number_.toString(), line)
             }
-            this.printLineString(string_, line)
         }
 
         /**
          * Prints the provided text on the designated line of the LCD. Limited to 16 characters.
          * A string over 16 characters gets truncated.
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
-         * This block has a half-second pause built-in to ensure proper processing of commands.
+         * This block has a 20 ms pause built-in to ensure proper processing of commands.
          * @param string_ the string to print
          * @param line the line to print the string on
          */
@@ -79,7 +94,7 @@ namespace fwdLights {
          * Prints the provided number on the designated quadrant of the LCD. Limited to 8 characters.
          * A number over 8 characters is replaced with the message ">8 chars".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
-         * This block has a half-second pause built-in to ensure proper processing of commands.
+         * This block has a 20 ms pause built-in to ensure proper processing of commands.
          * @param number_ the number to print
          * @param quadrant the quadrant to print the number on
          */
@@ -89,18 +104,18 @@ namespace fwdLights {
         //% group="LCD"
         printQuadrantNumber(number_: number, quadrant: number) {
             let string_ = number_.toString()
-
             if (string_.length > 8) {
-                string_ = ">8 chars"
+                this.printQuadrantString(">8 chars", quadrant)
+            } else {
+                this.printQuadrantString(number_.toString(), quadrant)
             }
-            this.printQuadrantString(string_, quadrant)
         }
 
         /**
          * Prints the provided text on the designated quadrant of the LCD. Limited to 8 characters.
          * A string over 8 characters gets truncated.
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
-         * This block has a half-second pause built-in to ensure proper processing of commands.
+         * This block has a 20 ms pause built-in to ensure proper processing of commands.
          * @param string_ the string_ to print
          * @param quadrant the quadrant to print the string_ on
          */
