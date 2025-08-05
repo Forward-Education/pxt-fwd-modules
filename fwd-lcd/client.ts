@@ -18,6 +18,8 @@ namespace fwdLights {
 
     //% fixedInstances blockGap=8
     export class LCDClient extends modules.CursorCharacterScreenClient {
+        private readonly delay = 250
+
         constructor(role: string) {
             super(role)
         }
@@ -26,6 +28,7 @@ namespace fwdLights {
          * Prints the provided number on the designated line of the LCD. Limited to 16 characters.
          * A number over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
+         * This block has a half-second pause built-in to ensure proper processing of commands.
          * @param number_ the number to print
          * @param line the line to print the number on
          */
@@ -46,37 +49,29 @@ namespace fwdLights {
          * Prints the provided text on the designated line of the LCD. Limited to 16 characters.
          * A string over 16 characters gets truncated.
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
-         * @param message the message to print
-         * @param line the line to print the message on
+         * This block has a half-second pause built-in to ensure proper processing of commands.
+         * @param string_ the string to print
+         * @param line the line to print the string on
          */
-        //% block="print string $message on line $line of $this"
+        //% block="print string $string_ on line $line of $this"
         //% line.min=1 line.max=2 line.defl=1
         //% blockId=fwd_lcd_print_line_string
         //% group="LCD"
-        printLineString(message: string, line: number) {
+        printLineString(string_: string, line: number) {
             line -= 1
 
-            if (message.length > 16) {
-                message = message.substr(0, 16)
+            if (string_.length > 16) {
+                this.setCursorAndWait(0, 0)
+                this.printAndWait(string_.substr(0, 16))
             }
-
+            
             if (line < 0 || line > 1) {
-                
-                
-                super.setCursor(0, 0)
-                basic.pause(1000)
-                super.show("err:!1-2")
-                basic.pause(1000)
+                this.setCursorAndWait(0, 0)
+                this.printAndWait("err:!1-2        ")
             } else {
-                let blanks = "";
-                let numberOfBlanks = 16 - message.length;
-                for (let i = 0; i < numberOfBlanks; i++) {
-                    blanks += " ";
-                }
-                super.setCursor(0, line)
-                basic.pause(300)
-                super.show(message + blanks);
-                basic.pause(300)
+                let blanks = this.makeBlanksString(string_.length, 16)
+                this.setCursorAndWait(0, line)
+                this.printAndWait(string_ + blanks);
             }
         }
 
@@ -84,6 +79,7 @@ namespace fwdLights {
          * Prints the provided number on the designated quadrant of the LCD. Limited to 8 characters.
          * A number over 8 characters is replaced with the message ">8 chars".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
+         * This block has a half-second pause built-in to ensure proper processing of commands.
          * @param number_ the number to print
          * @param quadrant the quadrant to print the number on
          */
@@ -104,26 +100,27 @@ namespace fwdLights {
          * Prints the provided text on the designated quadrant of the LCD. Limited to 8 characters.
          * A string over 8 characters gets truncated.
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
-         * @param message the message to print
-         * @param quadrant the quadrant to print the message on
+         * This block has a half-second pause built-in to ensure proper processing of commands.
+         * @param string_ the string_ to print
+         * @param quadrant the quadrant to print the string_ on
          */
-        //% block="print string $message on quadrant $quadrant of $this"
+        //% block="print string $string_ on quadrant $quadrant of $this"
         //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
         //% blockId=fwd_lcd_print_quadrant_string
         //% group="LCD"
-        printQuadrantString(message: string, quadrant: number) {
+        printQuadrantString(string_: string, quadrant: number) {
             let col = 0
             let row = 0
 
-            if (message.length > 8) {
-                message = message.substr(0, 8)
+            if (string_.length > 8) {
+                string_ = string_.substr(0, 8)
             }
 
             switch (quadrant) {
                 case 1:
                     break
                 case 2:
-                    col = 16 - message.length
+                    col = 16 - string_.length
                     row = 0
                     break
                 case 3:
@@ -131,17 +128,35 @@ namespace fwdLights {
                     row = 1
                     break
                 case 4:
-                    col = 16 - message.length
+                    col = 16 - string_.length
                     row = 1
                     break
                 default:
-                    message = "err:!1-4"
+                    string_ = "err:!1-4"
             }
 
-            super.setCursor(col, row)
-            super.show("        ")
-            super.setCursor(col, row)
-            super.show(message)
+            let blanks = this.makeBlanksString(string_.length, 8)
+            this.setCursorAndWait(col, row)
+            this.printAndWait(string_ + blanks)
+        }
+
+        setCursorAndWait(x:number, y:number) {
+            super.setCursor(x, y)
+            pause(this.delay)
+        }
+
+        printAndWait(string_: string) {
+            super.show(string_)
+            pause(this.delay)
+        }
+
+        makeBlanksString(stringLength: number, totalChars: number): string {
+            let blanks = ""
+            let numberOfBlanks = totalChars - stringLength
+            for (let i = 0; i < numberOfBlanks; i++) {
+                blanks += " ";
+            }
+            return blanks
         }
     }
 
