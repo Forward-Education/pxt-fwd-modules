@@ -1,6 +1,7 @@
-// Doing any kind of string manipulation before display seems to create unpredictable behavior.
-// Best to put exactly what you want in the function parameter rather than rely on assignment.
-// There are seemingly unnecessary returns but they also prevent unpredictable behavior.
+// Doing any kind of string manipulation of the parameter seems to create unpredictable behavior.
+// Best to only use the unmanipulated string or a string literal.
+// There are seemingly unnecessary returns after some printAndWait() calls. 
+// Those returns seemed to prevent unpredictable behavior in testing.
 
 namespace fwdLights {
     /**
@@ -33,7 +34,7 @@ namespace fwdLights {
 
     //% fixedInstances blockGap=8
     export class LCDClient extends modules.CursorCharacterScreenClient {
-        private readonly delay = 500
+        private readonly delay = 20
 
         constructor(role: string) {
             super(role)
@@ -44,7 +45,7 @@ namespace fwdLights {
          * Prints the provided number on the designated line of the LCD. Limited to 16 characters.
          * A number over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
-         * This block has a 20 ms pause built-in to ensure proper processing of commands.
+         * This block has a 40 ms pause built-in to ensure proper processing of commands.
          * @param number_ the number to print
          * @param line the line to print the number on
          */
@@ -53,20 +54,14 @@ namespace fwdLights {
         //% blockId=fwd_lcd_print_line_number
         //% group="LCD"
         printLineNumber(number_: number, line: number) {
-            let string_ = number_.toString()
-            if (string_.length > 16) {
-                this.printLineString(">16 chars", line)
-                return
-            } else {
-                this.printLineString(number_.toString(), line)
-            }
+            this.printLineString(number_.toString(), line)
         }
 
         /**
          * Prints the provided text on the designated line of the LCD. Limited to 16 characters.
-         * A string over 16 characters gets truncated.
+         * A string over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
-         * This block has a 20 ms pause built-in to ensure proper processing of commands.
+         * This block has a 40 ms pause built-in to ensure proper processing of commands.
          * @param string_ the string to print
          * @param line the line to print the string on
          */
@@ -85,20 +80,19 @@ namespace fwdLights {
 
             if (string_.length > 16) {
                 this.setCursorAndWait(0, line)
-                this.printAndWait(string_.substr(0, 16))
+                this.printAndWait(">16 chars")
                 return
             }
 
-            let blanks = this.makeBlanksString(string_.length, 16)
             this.setCursorAndWait(0, line)
-            this.printAndWait(string_ + blanks);
+            this.printAndWait(string_);
         }
 
         /**
          * Prints the provided number on the designated quadrant of the LCD. Limited to 8 characters.
          * A number over 8 characters is replaced with the message ">8 chars".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
-         * This block has a 20 ms pause built-in to ensure proper processing of commands.
+         * This block has a 40 ms pause built-in to ensure proper processing of commands.
          * @param number_ the number to print
          * @param quadrant the quadrant to print the number on
          */
@@ -107,20 +101,14 @@ namespace fwdLights {
         //% blockId=fwd_lcd_print_quadrant_number
         //% group="LCD"
         printQuadrantNumber(number_: number, quadrant: number) {
-            let string_ = number_.toString()
-            if (string_.length > 8) {
-                this.printQuadrantString(">8 chars", quadrant)
-                return
-            } else {
-                this.printQuadrantString(number_.toString(), quadrant)
-            }
+            this.printQuadrantString(number_.toString(), quadrant)
         }
 
         /**
          * Prints the provided text on the designated quadrant of the LCD. Limited to 8 characters.
-         * A string over 8 characters gets truncated.
+         * A string over 8 characters is replaced with the message ">8 chars".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
-         * This block has a 20 ms pause built-in to ensure proper processing of commands.
+         * This block has a 40 ms pause built-in to ensure proper processing of commands.
          * @param string_ the string_ to print
          * @param quadrant the quadrant to print the string_ on
          */
@@ -156,12 +144,11 @@ namespace fwdLights {
             this.setCursorAndWait(col, row)
 
             if (string_.length > 8) {
-                this.printAndWait(string_.substr(0, 8))
+                this.printAndWait(">8 chars")
                 return
             }
 
-            let blanks = this.makeBlanksString(string_.length, 8)
-            this.printAndWait(string_ + blanks)
+            this.printAndWait(string_)
         }
 
         setCursorAndWait(x:number, y:number) {
@@ -170,7 +157,8 @@ namespace fwdLights {
         }
 
         printAndWait(string_: string) {
-            super.show(string_)
+            let blanks = this.makeBlanksString(string_.length, 16)
+            super.show(string_ + blanks)
             pause(this.delay)
         }
 
