@@ -8,7 +8,7 @@ namespace fwdSensors {
      * Initializing the LCD makes it's blocks work more reliably in "on start".
      * Initialization will delay your program execution by 500 ms.
      */
-    //% block="initialize LCD's"
+    //% block="initialize LCD"
     //% blockId=fwd_lcd_initialize
     //% group="LCD"
     export function initializeLcd() {
