@@ -1,6 +1,6 @@
 {
     "name": "fwd-pump",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "FWD Edu Climate Action Kit Gen. 2 Pump",
     "license": "MIT",
     "dependencies": {
