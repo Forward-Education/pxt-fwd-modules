@@ -1,0 +1,5 @@
+fwdLights.initializeLcd()
+fwdLights.lcd1.printQuadrantString("", 1)
+fwdLights.lcd1.printQuadrantNumber(0, 1)
+fwdLights.lcd1.printLineNumber(0, 1)
+fwdLights.lcd1.printLineString("test", 1)
