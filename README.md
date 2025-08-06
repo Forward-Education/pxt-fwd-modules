@@ -16,11 +16,16 @@ The rationale for this architecture starts with the fact that for maximum reliab
 
 In theory you can have everything in a singular extension and also specify dependency tags, but then you have to either use a tag that you intend to create but haven't yet (commit with 1.0.1 dependency version and then bump to 1.0.1) or do multiple consecutive dependency update then bump cycles of the same repo to cascade the changes down the chain. Interesting in theory, but not fun in practice.
 
+### Rules
+
+1. An extension's dependencies should always have specified versions.
+2. Don't host more than 1 layer in the same repo (tutorials excepted).
+
 ## Development
 
 Since the products / tutorials are the last item in the dependency chain and have specified the versions of their dependencies, you can safely have changes in the base and module library layers without affecting production. There is maximum control over production code.
 
-After making changes to base you can use 'update-dependency.py' in the module library to quickly update that dependency throughout the modules. Remember to run './init.sh' afterwards to update intellisense.
+After making changes to base and updating pxt-fwd-modules remember to run './init.sh' afterwards to update intellisense and then './test-all.sh' to run compilation tests.
 
 You may find usage of \% instead \$ for prefacing block variables in the block text (i.e. set \%this to 0°). Don't use \%. It's the old way and was replaced in favor of $.
 
@@ -45,9 +50,9 @@ If the h1 in the README matches the name of the extension in pxt.json then it is
 
 Test files are specified under "testFiles" in pxt.json can be executed in two ways.
 
-One way is to import the extension using the import button on the MakeCode homepage. For the module library import an individual module rather than the whole library. The test files will compile into 1 program that automatically runs in the simulator. You can generally add the appropriate simulators using 'ADD SIMULATORS' button and view console logs in 'Show data' view. You can edit the module files in MakeCode and push / pull changes using the GitHub interface. This interface is accessible through a button next to the project name in the bottom bar.
+One way is to import the extension using the import button on the MakeCode homepage. For the module library import an individual module rather than the whole library. The test files will compile into 1 program that automatically runs in the simulator. You can **generally** add the appropriate simulators using 'ADD SIMULATORS' button and view console logs in 'Show data' view. You can edit the module files in MakeCode and push / pull changes using the GitHub interface. This interface is accessible through a button next to the project name in the bottom bar.
 
-The other way is to run 'mkc' to see if the test files compile. This compilation test also happens through the makecode.yml GitHub action, where applicable (product extensions). You can deploy the program to a micro:bit with 'mkc -d'.
+The other way is to run 'mkc' to see if the test files compile. This compilation test also happens through the makecode.yml GitHub action, where applicable (product extensions). You can deploy the program to a micro:bit with 'mkc -d'. There is a size limit on a package built by 'mkc'. That's why pxt-fwd-all-blocks doesn't have tests. There are too many blocks to stay under the file size limit.
 
 It's admirable to strive for functional testing where you see the blocks in action, but simple compilation tests are always a great starting point. For a compilation test, all you have to do is drag one of each block into your program and copy that JavaScript. Functional tests can always be added later. Functional tests are only suitable for individual modules, not product extensions.
 
@@ -70,6 +75,8 @@ You can specify the version of a dependency by either the tag or commit .
 
 When the version is not specified for the dependency, most of the time MakeCode picks the most recent tag, or the most recent commit if there are no tags. However, most of the time is not all of the time and specifying a version reduces the risk of bad code making it into production, so always specify the versions of dependencies for production.
 
+Be sure to track changes to pxt-fwd-base and pxt-fwd-modules using changelog.md.
+
 ## General Info
 
 ### Extension Approval
@@ -85,7 +92,7 @@ Extension approval is a surprisingly rigorous process that is necessary to avoid
 
 ### Block Order
 
-Blocks are first formally grouped by module. Then they are informally grouped by service (if a module uses more than one service). Then the order is by block type: event blocks, action blocks, status blocks, conditional blocks. You can tell the block type by it's shape. Use existing modules as a reference. Then the order is by a qualitative assessment of usefulness. More useful to less useful.
+Blocks are first formally grouped by module. Then they are informally grouped by service (if a module uses more than one service). Then the order is by block type. You can tell the block type by it's shape. Use existing modules as a reference. Then the order is by a qualitative assessment of usefulness. More useful to less useful. Block order should be defined using block weight property, as instructed in MakeCode docs. The blocks will be sorted from highest to lowest weight.
 
 module -> service -> block type -> usefulness
 
