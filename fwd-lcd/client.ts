@@ -11,7 +11,7 @@ namespace fwdLights {
     //% block="initialize LCD's"
     //% blockId=fwd_lcd_initialize
     //% group="LCD"
-    export function initialize_lcd() {
+    export function initializeLcd() {
         pause(500)
     }
 
@@ -38,7 +38,7 @@ namespace fwdLights {
 
         constructor(role: string) {
             super(role)
-            super.setEnabled(1)
+            super.setEnabled(1) // prevents an issue where the first setCursor() call doesn't work
         }
 
         /**
