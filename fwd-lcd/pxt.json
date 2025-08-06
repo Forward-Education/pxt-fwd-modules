@@ -4,7 +4,7 @@
     "description": "FWD Edu LCD",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.9",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.10",
         "jacdac-cursor-character-screen": "github:jacdac/pxt-jacdac/cursor-character-screen#v1.9.38"
     },
     "files": [

@@ -32,7 +32,7 @@ namespace fwdMotors {
     }
 
     /**
-     * Set the angle of the servo and wait for the movement to finish before running the next block.
+     * Set the angle of the servo and wait 1 second so the movement finishes before running the next block.
      * @param servo the servo client to set the angle of
      * @param angle servo angle
      */

@@ -4,7 +4,7 @@
     "description": "FWD Edu Electrical Conductivity",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.9",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.10",
         "jacdac-electrical-conductivity": "github:jacdac/pxt-jacdac/electrical-conductivity#v1.9.38"
     },
     "files": [
