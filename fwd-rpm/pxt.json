@@ -4,7 +4,7 @@
     "description": "FWD Edu RPM",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.8"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.9"
     },
     "files": [
         "client.ts"
