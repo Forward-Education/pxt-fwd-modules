@@ -3,7 +3,7 @@
 // There are seemingly unnecessary returns after some printAndWait() calls. 
 // Those returns seemed to prevent unpredictable behavior in testing.
 
-namespace fwdLights {
+namespace fwdSensors {
     /**
      * Initializing the LCD makes it's blocks work more reliably in "on start".
      * Initialization will delay your program execution by 500 ms.
