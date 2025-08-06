@@ -16,6 +16,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but with 
 
 ### Removed
 
--   update-dependency script, just use vs code search and replace instead
+-   Removed update-dependency script, just use vs code search and replace instead
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/1.0.10...HEAD
+[unreleased]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.0.10...HEAD
