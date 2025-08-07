@@ -13,6 +13,7 @@ namespace fwdMotors {
         //% block="turn $this $on"
         //% blockId=fwd_pump_set_on
         //% on.shadow="toggleOnOff"
+        //% weight=100
         setOn(on: boolean): void {
             super.setActive(on)
         }
@@ -25,6 +26,7 @@ namespace fwdMotors {
         //% block="run $this for $duration ms"
         //% duration.shadow="timePicker"
         //% blockId=fwd_pump_timed_run
+        //% weight=99
         timedRun(duration: number): void {
             control.inBackground(() => {
                 this.setActive(true)
@@ -39,6 +41,7 @@ namespace fwdMotors {
         //% group="Pump"
         //% block="$this is on"
         //% blockId=fwd_pump_is_on
+        //% weight=98
         isOn(): boolean {
             return super.active()
         }

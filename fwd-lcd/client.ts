@@ -1,6 +1,6 @@
 // Doing any kind of string manipulation of the parameter seems to create unpredictable behavior.
 // Best to only use the unmanipulated string or a string literal.
-// There are seemingly unnecessary returns after some printAndWait() calls. 
+// There are seemingly unnecessary returns after some printAndWait() calls.
 // Those returns seemed to prevent unpredictable behavior in testing.
 
 namespace fwdSensors {
@@ -11,6 +11,7 @@ namespace fwdSensors {
     //% block="initialize LCD"
     //% blockId=fwd_lcd_initialize
     //% group="LCD"
+    //% weight=100
     export function initializeLcd() {
         pause(500)
     }
@@ -22,6 +23,7 @@ namespace fwdSensors {
     //% decimals.min=0 decimals.max=4 decimals.defl=0
     //% blockId=fwd_lcd_round
     //% group="LCD"
+    //% weight=95
     export function round(number_: number, decimals: number): number {
         if (decimals < 0) {
             return number_
@@ -42,22 +44,6 @@ namespace fwdSensors {
         }
 
         /**
-         * Prints the provided number on the designated line of the LCD. Limited to 16 characters.
-         * A number over 16 characters is replaced with the message ">16 chars".
-         * An invalid line parameter triggers the message "err:!1-2" on line 1.
-         * This block has a 40 ms pause built-in to ensure proper processing of commands.
-         * @param number_ the number to print
-         * @param line the line to print the number on
-         */
-        //% block="print number $number_ on line $line of $this"
-        //% line.min=1 line.max=2 line.defl=1
-        //% blockId=fwd_lcd_print_line_number
-        //% group="LCD"
-        printLineNumber(number_: number, line: number) {
-            this.printLineString(number_.toString(), line)
-        }
-
-        /**
          * Prints the provided text on the designated line of the LCD. Limited to 16 characters.
          * A string over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
@@ -69,6 +55,7 @@ namespace fwdSensors {
         //% line.min=1 line.max=2 line.defl=1
         //% blockId=fwd_lcd_print_line_string
         //% group="LCD"
+        //% weight=99
         printLineString(string_: string, line: number) {
             line -= 1
 
@@ -85,23 +72,7 @@ namespace fwdSensors {
             }
 
             this.setCursorAndWait(0, line)
-            this.printAndWait(string_);
-        }
-
-        /**
-         * Prints the provided number on the designated quadrant of the LCD. Limited to 8 characters.
-         * A number over 8 characters is replaced with the message ">8 chars".
-         * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
-         * This block has a 40 ms pause built-in to ensure proper processing of commands.
-         * @param number_ the number to print
-         * @param quadrant the quadrant to print the number on
-         */
-        //% block="print number $number_ on quadrant $quadrant of $this"
-        //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
-        //% blockId=fwd_lcd_print_quadrant_number
-        //% group="LCD"
-        printQuadrantNumber(number_: number, quadrant: number) {
-            this.printQuadrantString(number_.toString(), quadrant)
+            this.printAndWait(string_)
         }
 
         /**
@@ -116,6 +87,7 @@ namespace fwdSensors {
         //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
         //% blockId=fwd_lcd_print_quadrant_string
         //% group="LCD"
+        //% weight=98
         printQuadrantString(string_: string, quadrant: number) {
             let col = 0
             let row = 0
@@ -151,7 +123,41 @@ namespace fwdSensors {
             this.printAndWait(string_)
         }
 
-        setCursorAndWait(x:number, y:number) {
+        /**
+         * Prints the provided number on the designated line of the LCD. Limited to 16 characters.
+         * A number over 16 characters is replaced with the message ">16 chars".
+         * An invalid line parameter triggers the message "err:!1-2" on line 1.
+         * This block has a 40 ms pause built-in to ensure proper processing of commands.
+         * @param number_ the number to print
+         * @param line the line to print the number on
+         */
+        //% block="print number $number_ on line $line of $this"
+        //% line.min=1 line.max=2 line.defl=1
+        //% blockId=fwd_lcd_print_line_number
+        //% group="LCD"
+        //% weight=97
+        printLineNumber(number_: number, line: number) {
+            this.printLineString(number_.toString(), line)
+        }
+
+        /**
+         * Prints the provided number on the designated quadrant of the LCD. Limited to 8 characters.
+         * A number over 8 characters is replaced with the message ">8 chars".
+         * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
+         * This block has a 40 ms pause built-in to ensure proper processing of commands.
+         * @param number_ the number to print
+         * @param quadrant the quadrant to print the number on
+         */
+        //% block="print number $number_ on quadrant $quadrant of $this"
+        //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
+        //% blockId=fwd_lcd_print_quadrant_number
+        //% group="LCD"
+        //% weight=96
+        printQuadrantNumber(number_: number, quadrant: number) {
+            this.printQuadrantString(number_.toString(), quadrant)
+        }
+
+        setCursorAndWait(x: number, y: number) {
             super.setCursor(x, y)
             pause(this.delay)
         }
@@ -166,7 +172,7 @@ namespace fwdSensors {
             let blanks = ""
             let numberOfBlanks = totalChars - stringLength
             for (let i = 0; i < numberOfBlanks; i++) {
-                blanks += " ";
+                blanks += " "
             }
             return blanks
         }

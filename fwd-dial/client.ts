@@ -29,6 +29,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="on $this rotated $direction"
         //% blockId=fwd_dial_on_rotated
+        //% weight=100
         onRotated(
             direction: fwdEnums.ClockwiseCounterclockwise,
             handler: () => void
@@ -48,6 +49,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="$this position"
         //% blockId=fwd_dial_position
+        //% weight=99
         position(): number {
             return super.position()
         }
@@ -76,6 +78,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="on $this $event"
         //% blockId=fwd_dialbutton_on_event
+        //% weight=98
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
         }
@@ -86,6 +89,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="$this hold duration (ms)"
         //% blockId=fwd_dialbutton_hold_duration
+        //% weight=97
         holdDuration(): number {
             return super.holdDuration()
         }
@@ -96,6 +100,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="$this is pressed"
         //% blockId=fwd_dialbutton_is_pressed
+        //% weight=96
         isPressed(): boolean {
             return super.pressed()
         }

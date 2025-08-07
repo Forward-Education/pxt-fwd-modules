@@ -18,6 +18,7 @@ namespace fwdLights {
         //% block="set $this brightness to $brightness (\\%)"
         //% brightness.min=0
         //% brightness.max=100
+        //% weight=100
         setBrightness(brightness: number) {
             super.setBrightness(brightness)
         }
@@ -28,6 +29,7 @@ namespace fwdLights {
         //% group="Lights"
         //% block="$this is on"
         //% blockId=fwd_lights_is_on
+        //% weight=99
         isOn(): boolean {
             return super.isOn()
         }

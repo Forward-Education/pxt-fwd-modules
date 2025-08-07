@@ -13,6 +13,7 @@ namespace fwdButtons {
         //% group="Smart Solder"
         //% block="on $this $event"
         //% blockId=fwd_solder3b3lbtn_on_event
+        //% weight=100
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
         }
@@ -23,6 +24,7 @@ namespace fwdButtons {
         //% group="Smart Solder"
         //% block="$this hold duration (ms)"
         //% blockId=fwd_solder3b3lbtn_hold_duration
+        //% weight=99
         holdDuration(): number {
             return super.holdDuration()
         }
@@ -33,6 +35,7 @@ namespace fwdButtons {
         //% group="Smart Solder"
         //% block="$this is pressed"
         //% blockId=fwd_solder3b3lbtn_is_pressed
+        //% weight=98
         isPressed(): boolean {
             return super.pressed()
         }
@@ -68,6 +71,7 @@ namespace fwdLights {
         //% block="set $this to $on"
         //% blockId=fwd_solder3b3llight_set_on_off
         //% on.shadow="toggleOnOff"
+        //% weight=100
         setOnOff(on: boolean) {
             if (on) {
                 super.setBrightness(100)
@@ -82,6 +86,7 @@ namespace fwdLights {
         //% group="Smart Solder"
         //% block="$this is on"
         //% blockId=fwd_solder3b3llight_is_on
+        //% weight=99
         isOn(): boolean {
             return super.isOn()
         }

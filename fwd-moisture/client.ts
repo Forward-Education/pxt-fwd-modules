@@ -11,6 +11,7 @@ namespace fwdSensors {
         //% group="Moisture"
         //% block="$this level (\\%)"
         //% blockId=fwd_moisture_get_moisture_level
+        //% weight=100
         moistureLevel(): number {
             return super.moisture()
         }
@@ -24,6 +25,7 @@ namespace fwdSensors {
         //% block="$this is $direction $threshold \\%"
         //% blockId=fwd_moisture_is_past_threshold
         //% threshold.min=0 threshold.max=100 threshold.defl=5
+        //% weight=99
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder

@@ -47,6 +47,7 @@ namespace fwdLights {
         //% block="set $this pixel $pixel to $color=colorNumberPicker"
         //% blockId=fwd_led_ring_set_pixel_color
         //% group="LED Ring"
+        //% weight=100
         setPixelColor(pixel: LEDRingPixels, color: number): void {
             super.setPixelColor(pixel, color)
         }
@@ -58,6 +59,7 @@ namespace fwdLights {
         //% block="set all $this pixels to $color=colorNumberPicker"
         //% blockId=fwd_led_set_all_pixels_color
         //% group="LED Ring"
+        //% weight=99
         setAllPixelsColor(color: number): void {
             super.setAll(color)
         }
@@ -70,6 +72,7 @@ namespace fwdLights {
         //% blockId=fwd_led_ring_set_brightness
         //% group="LED Ring"
         //% brightness.min=0 brightness.max=10 brightness.defl=10
+        //% weight=98
         setBrightness(brightness: number): void {
             super.setBrightness(this.toServiceBrightness(brightness))
         }
@@ -82,6 +85,7 @@ namespace fwdLights {
         //% blockId=fwd_led_ring_rotate
         //% group="LED Ring"
         //% offset.defl=1
+        //% weight=97
         rotate(offset: number): void {
             super.rotate(offset)
         }
@@ -94,6 +98,7 @@ namespace fwdLights {
         //% blockId=fwd_led_ring_shift
         //% group="LED Ring"
         //% offset.defl=1
+        //% weight=96
         shift(offset: number): void {
             super.shift(offset)
         }
@@ -104,6 +109,7 @@ namespace fwdLights {
         //% block="$this brightness"
         //% blockId=fwd_led_ring_get_brightness
         //% group="LED Ring"
+        //% weight=95
         brightness(): number {
             return this.toBlocksBrightness(super.brightness())
         }

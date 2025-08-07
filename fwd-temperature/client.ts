@@ -11,6 +11,7 @@ namespace fwdSensors {
         //% group="Temperature Probe"
         //% block="$this °C"
         //% blockId=fwd_temperature_get_temperature
+        //% weight=100
         temperature(): number {
             return super.temperature()
         }
@@ -23,6 +24,7 @@ namespace fwdSensors {
         //% group="Temperature Probe"
         //% block="$this is $direction $threshold °C"
         //% blockId=fwd_temperature_is_past_threshold
+        //% weight=99
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder
