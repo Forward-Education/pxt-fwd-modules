@@ -6,7 +6,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Run code when motion is detected.
+         * Run code when the sensor first detects motion after a period of stasis.
          * @param handler the code to run
          */
         //% group="PIR"
@@ -18,7 +18,7 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when motion has been detected in the past 3 seconds.
+         * Returns true when the sensor has detected motion within the last 3 seconds.
          */
         //% group="PIR"
         //% block="$this detects motion"
@@ -30,11 +30,11 @@ namespace fwdSensors {
     }
 
     //% fixedInstance whenUsed
-    export const ph1 = new FwdPirClient("pir1")
+    export const pir1 = new FwdPirClient("pir1")
     //% fixedInstance whenUsed
-    export const ph2 = new FwdPirClient("pir2")
+    export const pir2 = new FwdPirClient("pir2")
     //% fixedInstance whenUsed
-    export const ph3 = new FwdPirClient("pir3")
+    export const pir3 = new FwdPirClient("pir3")
     //% fixedInstance whenUsed
-    export const ph4 = new FwdPirClient("pir4")
+    export const pir4 = new FwdPirClient("pir4")
 }
