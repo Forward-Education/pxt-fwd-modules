@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but with 
 
 ### Changed
 
--   ...
+-   Explicitly defined block order using weights
 
 ### Removed
 
