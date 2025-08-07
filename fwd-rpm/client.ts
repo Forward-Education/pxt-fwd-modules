@@ -12,6 +12,7 @@ namespace fwdSensors {
         //% group="RPM"
         //% block="$this RPM"
         //% blockId=fwd_rpm_get_rpm
+        //% weight=100
         rpm(): number {
             return this.reading()
         }

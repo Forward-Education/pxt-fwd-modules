@@ -1,0 +1,24 @@
+{
+    "name": "fwd-pir",
+    "version": "1.0.10",
+    "description": "FWD Edu PIR",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.10",
+        "jacdac-motion": "github:jacdac/pxt-jacdac/motion#v1.9.38"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "8.0.13",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
