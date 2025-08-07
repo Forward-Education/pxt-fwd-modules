@@ -8,6 +8,7 @@ namespace fwdMotors {
     //% block="turn $servo $state"
     //% blockId=fwd_servocon_set_enabled
     //% state.shadow="toggleOnOff"
+    //% weight=100
     export function conSetEnabled(
         servo: fwdBase.FwdServoClient,
         state: boolean
@@ -24,6 +25,7 @@ namespace fwdMotors {
     //% block="set $servo to $speed \\%"
     //% blockId=fwd_servocon_set_speed
     //% speed.min=-100 speed.max=100
+    //% weight=99
     export function setSpeed(
         servo: fwdBase.FwdServoClient,
         speed: number
@@ -38,6 +40,7 @@ namespace fwdMotors {
     //% group="Servo - Continuous"
     //% block="$servo speed (\\%)"
     //% blockId=fwd_servocon_get_speed
+    //% weight=98
     export function getSpeed(servo: fwdBase.FwdServoClient): number {
         return servo.getSpeed()
     }
@@ -49,6 +52,7 @@ namespace fwdMotors {
     //% group="Servo - Continuous"
     //% block="$servo is enabled"
     //% blockId=fwd_servocon_is_enabled
+    //% weight=97
     export function conIsEnabled(servo: fwdBase.FwdServoClient): boolean {
         return servo.enabled()
     }

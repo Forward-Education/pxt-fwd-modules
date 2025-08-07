@@ -8,6 +8,7 @@ namespace fwdMotors {
     //% block="turn $servo $state"
     //% blockId=fwd_servopos_set_enabled
     //% state.shadow="toggleOnOff"
+    //% weight=100
     export function posSetEnabled(
         servo: fwdBase.FwdServoClient,
         state: boolean
@@ -24,6 +25,7 @@ namespace fwdMotors {
     //% block="set $servo to $angle °"
     //% blockId=fwd_servopos_set_angle
     //% angle.min=0 angle.max=270
+    //% weight=99
     export function setAngle(
         servo: fwdBase.FwdServoClient,
         angle: number
@@ -40,6 +42,7 @@ namespace fwdMotors {
     //% block="set $servo to $angle ° and wait"
     //% blockId=fwd_servopos_set_angle_and_wait
     //% angle.min=0 angle.max=270
+    //% weight=98
     export function setAngleAndWait(
         servo: fwdBase.FwdServoClient,
         angle: number
@@ -54,6 +57,7 @@ namespace fwdMotors {
     //% group="Servo - 270° Positional"
     //% block="$servo angle (°)"
     //% blockId=fwd_servopos_get_angle
+    //% weight=97
     export function getAngle(servo: fwdBase.FwdServoClient): number {
         return servo.getAngle()
     }
@@ -65,6 +69,7 @@ namespace fwdMotors {
     //% group="Servo - 270° Positional"
     //% block="position $position"
     //% blockId=fwd_servopos_position_presets
+    //% weight=96
     export function positionPresets(position: ServoClockPositions): number {
         return position as number
     }
@@ -76,6 +81,7 @@ namespace fwdMotors {
     //% group="Servo - 270° Positional"
     //% block="$servo is enabled"
     //% blockId=fwd_servopos_is_enabled
+    //% weight=95
     export function posIsEnabled(servo: fwdBase.FwdServoClient): boolean {
         return servo.enabled()
     }

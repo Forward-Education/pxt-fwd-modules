@@ -55,12 +55,12 @@ namespace fwdMotors {
      * @param bias if the motors don't spin at quite the same rate, use the bias to balance them
      */
     //% group="Driving"
-    //% weight=20
     //% block="setup driving|left motor $left|right motor $right||left/right bias $bias"
     //% blockId=fwd_driving_setup
     //% bias.shadow="speedPicker"
     //% bias.defl=0
     //% inlineInputMode=external
+    //% weight=100
     export function setupDriving(
         left: fwdBase.FwdServoClient,
         right: fwdBase.FwdServoClient,
@@ -78,6 +78,7 @@ namespace fwdMotors {
     //% block="drive $direction at $speed %"
     //% blockId=fwd_driving_drive
     //% speed.shadow="speedPicker"
+    //% weight=99
     export function drive(direction: fwdEnums.ForwardReverse, speed: number) {
         drivingControls.drive(direction, speed)
     }
@@ -88,6 +89,7 @@ namespace fwdMotors {
     //% group="Driving"
     //% block="stop motors"
     //% blockId=fwd_driving_stop
+    //% weight=98
     export function stop() {
         drivingControls.drive(1, 0)
     }
@@ -100,6 +102,7 @@ namespace fwdMotors {
     //% block="turn $angle ° in place"
     //% blockId=fwd_driving_turn_in_place
     //% angle.min=-359 angle.max=359
+    //% weight=97
     export function turn(angle: number) {
         drivingControls.turnInPlace(angle)
     }
