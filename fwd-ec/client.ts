@@ -14,6 +14,7 @@ namespace fwdSensors {
         //% group="Relative EC"
         //% block="$this mV"
         //% blockId=fwd_ec_get_ec
+        //% weight=100
         ec(): number {
             return super.reading()
         }
@@ -26,6 +27,7 @@ namespace fwdSensors {
         //% group="Relative EC"
         //% block="$this is $direction $threshold mV"
         //% blockId=fwd_ec_is_past_threshold
+        //% weight=99
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder
