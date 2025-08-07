@@ -8,11 +8,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but with 
 
 ### Added
 
--   ...
+-   Added PIR module blocks
 
 ### Changed
 
--   Explicitly defined block order using weights
+-   Explicitly defined block order using weight property rather than relying on order of declaration
 
 ### Removed
 
