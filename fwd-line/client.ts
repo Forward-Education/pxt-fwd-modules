@@ -12,6 +12,7 @@ namespace fwdSensors {
         //% group="Line"
         //% block="on $this state change"
         //% blockId=fwd_line_on_line_sensor_state_change
+        //% weight=100
         onLineSensorStateChange(handler: () => void): void {
             super.onReadingChangedBy(0.5, handler)
         }
@@ -22,6 +23,7 @@ namespace fwdSensors {
         //% group="Line"
         //% block="$this state"
         //% blockId=fwd_line_sensor_state
+        //% weight=99
         lineSensorState(): fwdEnums.OnOff {
             return Math.round(super.brightness() / 100)
         }
@@ -33,6 +35,7 @@ namespace fwdSensors {
         //% group="Line"
         //% block="$this is $state"
         //% blockId=fwd_line_is_line_sensor_state
+        //% weight=98
         isLineSensorState(state: fwdEnums.OnOff): boolean {
             return state === this.lineSensorState()
         }
