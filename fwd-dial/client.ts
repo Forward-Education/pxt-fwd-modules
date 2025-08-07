@@ -78,7 +78,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="on $this $event"
         //% blockId=fwd_dialbutton_on_event
-        //% weight=100
+        //% weight=98
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
         }
@@ -89,7 +89,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="$this hold duration (ms)"
         //% blockId=fwd_dialbutton_hold_duration
-        //% weight=99
+        //% weight=97
         holdDuration(): number {
             return super.holdDuration()
         }
@@ -100,7 +100,7 @@ namespace fwdButtons {
         //% group="Dial"
         //% block="$this is pressed"
         //% blockId=fwd_dialbutton_is_pressed
-        //% weight=98
+        //% weight=96
         isPressed(): boolean {
             return super.pressed()
         }
