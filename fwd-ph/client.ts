@@ -17,6 +17,7 @@ namespace fwdSensors {
         //% group="pH"
         //% block="$this pH"
         //% blockId=fwd_ph_get_ph
+        //% weight=100
         ph(): number {
             if (this.calibrated) {
                 const slope =
@@ -39,6 +40,7 @@ namespace fwdSensors {
         //% group="pH"
         //% block="$this is $direction $threshold pH"
         //% blockId=fwd_ph_is_past_threshold
+        //% weight=99
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder
@@ -62,6 +64,7 @@ namespace fwdSensors {
         //% block="calibrate $this measures $standard1 as $reading1 measures $standard2 as $reading2"
         //% blockId=fwd_ph_calibrate
         //% inlineInputMode=external
+        //% weight=98
         calibrate(
             standard1: number,
             reading1: number,
