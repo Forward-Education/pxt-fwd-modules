@@ -13,6 +13,7 @@ namespace fwdButtons {
         //% group="Touch"
         //% block="on $this $event"
         //% blockId=fwd_touch_on_event
+        //% weight=100
         onEvent(event: jacdac.ButtonEvent, handler: () => void) {
             super.onEvent(event, handler)
         }
@@ -23,6 +24,7 @@ namespace fwdButtons {
         //% group="Touch"
         //% block="$this hold duration (ms)"
         //% blockId=fwd_touch_hold_duration
+        //% weight=99
         holdDuration(): number {
             return super.holdDuration()
         }
@@ -33,6 +35,7 @@ namespace fwdButtons {
         //% group="Touch"
         //% block="$this is pressed"
         //% blockId=fwd_touch_is_pressed
+        //% weight=98
         isPressed(): boolean {
             return super.pressed()
         }
