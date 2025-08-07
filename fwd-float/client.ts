@@ -13,6 +13,7 @@ namespace fwdSensors {
         //% group="Float"
         //% block="on $this $event"
         //% blockId=fwd_float_on_change
+        //% weight=100
         onFloatChange(event: fwdEnums.RaisedLowered, handler: () => void) {
             if (event === fwdEnums.RaisedLowered.Raised) {
                 super.onEvent(jacdac.ButtonEvent.Up, handler)
@@ -27,6 +28,7 @@ namespace fwdSensors {
         //% group="Float"
         //% block="$this state"
         //% blockId=fwd_float_state
+        //% weight=99
         floatState(): number {
             if (super.pressed()) {
                 return fwdEnums.RaisedLowered.Lowered
@@ -42,6 +44,7 @@ namespace fwdSensors {
         //% group="Float"
         //% block="$this is $state"
         //% blockId=fwd_float_state_conditional
+        //% weight=98
         floatStateConditional(state: fwdEnums.RaisedLowered): boolean {
             if (state === fwdEnums.RaisedLowered.Raised) {
                 return !super.pressed()
