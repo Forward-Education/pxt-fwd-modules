@@ -28,6 +28,7 @@ namespace fwdSensors {
         //% group="Solar"
         //% block="$this light level (\\%)"
         //% blockId=fwd_solar_get_light_level
+        //% weight=100
         lightLevel(): number {
             return super.lightLevel()
         }
@@ -41,6 +42,7 @@ namespace fwdSensors {
         //% block="$this is $direction $threshold \\%"
         //% blockId=fwd_solar_is_past_threshold
         //% threshold.min=0 threshold.max=100 threshold.defl=5
+        //% weight=99
         isPastThreshold(
             threshold: number,
             direction: fwdEnums.OverUnder
