@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but with 
 ### Changed
 
 -   Explicitly defined block order using weight property rather than relying on order of declaration
+-   Updated pxt-fwd-base dependencies to v1.0.12
 
 ### Removed
 
