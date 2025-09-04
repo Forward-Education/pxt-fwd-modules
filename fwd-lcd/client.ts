@@ -45,6 +45,18 @@ namespace fwdSensors {
         }
 
         /**
+        * Clear the entire screen.
+         */
+        //% block="clear $this"
+        //% blockId=fwd_lcd_clear_screen
+        //% group="LCD"
+        //% weight=94
+        clearScreen() {
+            this.printLineString("                ", 1)
+            this.printLineString("                ", 2)
+        }
+
+        /**
          * Prints the provided text on the designated line of the LCD. Limited to 16 characters.
          * A string over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
@@ -62,18 +74,18 @@ namespace fwdSensors {
 
             if (line < 0 || line > 1) {
                 this.setCursorAndWait(0, 0)
-                this.printAndWait("err:!1-2        ")
+                this.printAndWait("err:!1-2", 'line', false)
                 return
             }
 
             if (string_.length > 16) {
                 this.setCursorAndWait(0, line)
-                this.printAndWait(">16 chars")
+                this.printAndWait(">16 chars", 'line', false)
                 return
             }
 
             this.setCursorAndWait(0, line)
-            this.printAndWait(string_)
+            this.printAndWait(string_, 'line', false)
         }
 
         /**
@@ -92,36 +104,39 @@ namespace fwdSensors {
         printQuadrantString(string_: string, quadrant: number) {
             let col = 0
             let row = 0
+            let rightAlign = false
 
             switch (quadrant) {
                 case 1:
                     break
                 case 2:
-                    col = 16 - string_.length
+                    col = 8
                     row = 0
+                    rightAlign = true
                     break
                 case 3:
                     col = 0
                     row = 1
                     break
                 case 4:
-                    col = 16 - string_.length
+                    col = 8
                     row = 1
+                    rightAlign = true
                     break
                 default:
                     this.setCursorAndWait(col, row)
-                    this.printAndWait("err:!1-4")
+                    this.printAndWait("err:!1-4", 'quadrant', rightAlign)
                     return
             }
 
             this.setCursorAndWait(col, row)
 
             if (string_.length > 8) {
-                this.printAndWait(">8 chars")
+                this.printAndWait(">8 chars", 'quadrant', rightAlign)
                 return
             }
 
-            this.printAndWait(string_)
+            this.printAndWait(string_, 'quadrant', rightAlign)
         }
 
         /**
@@ -163,15 +178,25 @@ namespace fwdSensors {
             pause(this.delay)
         }
 
-        printAndWait(string_: string) {
-            let blanks = this.makeBlanksString(string_.length, 16)
-            super.show(string_ + blanks)
+        printAndWait(string_: string, lineOrQuadrant: string, rightAlign: boolean) {
+            let blanks = ""
+            if (lineOrQuadrant === 'quadrant') {
+                blanks = this.makeBlanksString(8 - string_.length)
+            } else if (lineOrQuadrant === 'line') {
+                blanks = this.makeBlanksString(16 - string_.length)
+            }
+
+            if (rightAlign) {
+                super.show(blanks + string_)
+            } else {
+                super.show(string_ + blanks)
+            }
+            
             pause(this.delay)
         }
 
-        makeBlanksString(stringLength: number, totalChars: number): string {
+        makeBlanksString(numberOfBlanks: number): string {
             let blanks = ""
-            let numberOfBlanks = totalChars - stringLength
             for (let i = 0; i < numberOfBlanks; i++) {
                 blanks += " "
             }
