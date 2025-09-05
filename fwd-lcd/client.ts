@@ -179,6 +179,10 @@ namespace fwdSensors {
         }
 
         printAndWait(string_: string, lineOrQuadrant: string, rightAlign: boolean) {
+            if (string_ === 'undefined') {
+                string_ = '--'
+            }
+
             let blanks = ""
             if (lineOrQuadrant === 'quadrant') {
                 blanks = this.makeBlanksString(8 - string_.length)
