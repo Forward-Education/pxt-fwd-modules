@@ -47,7 +47,7 @@ namespace fwdSensors {
             threshold: number,
             direction: fwdEnums.OverUnder
         ): boolean {
-            const difference = super.lightLevel() - threshold > 0
+            const difference = this.lightLevel() - threshold > 0
             const isPastThreshold =
                 (direction === fwdEnums.OverUnder.Over && difference) ||
                 (direction === fwdEnums.OverUnder.Under && !difference)

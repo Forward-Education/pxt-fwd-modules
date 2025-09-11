@@ -9,7 +9,7 @@ namespace fwdSensors {
          * Returns the sensor's moisture level reading (%).
          */
         //% group="Moisture"
-        //% block="$this level (\\%)"
+        //% block="$this moisture level (\\%)"
         //% blockId=fwd_moisture_get_moisture_level
         //% weight=100
         moistureLevel(): number {
@@ -30,7 +30,7 @@ namespace fwdSensors {
             threshold: number,
             direction: fwdEnums.OverUnder
         ): boolean {
-            const difference = super.moisture() - threshold > 0
+            const difference = this.moisture() - threshold > 0
             const isPastThreshold =
                 (direction === fwdEnums.OverUnder.Over && difference) ||
                 (direction === fwdEnums.OverUnder.Under && !difference)

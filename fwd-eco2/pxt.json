@@ -1,0 +1,25 @@
+{
+    "name": "fwd-eco2",
+    "version": "1.0.10",
+    "description": "FWD Edu eCO2 sensor",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.12",
+        "jacdac-e-co2": "github:jacdac/pxt-jacdac/e-co2#v1.9.38",
+        "jacdac-tvoc": "github:jacdac/pxt-jacdac/tvoc#v1.9.38"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}

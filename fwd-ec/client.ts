@@ -9,10 +9,10 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's relative EC reading (mV).
+         * Returns the sensor's relative EC reading.
          */
         //% group="Relative EC"
-        //% block="$this mV"
+        //% block="$this reading"
         //% blockId=fwd_ec_get_ec
         //% weight=100
         ec(): number {
@@ -20,12 +20,12 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the relative EC (mV) is past the provided threshold in the designated direction.
-         * @param threshold the relative EC (mV) to check against
+         * Returns true when the relative EC is past the provided threshold in the designated direction.
+         * @param threshold the EC value to check against
          * @param direction over or under the threshold
          */
         //% group="Relative EC"
-        //% block="$this is $direction $threshold mV"
+        //% block="$this is $direction $threshold"
         //% blockId=fwd_ec_is_past_threshold
         //% weight=99
         isPastThreshold(
