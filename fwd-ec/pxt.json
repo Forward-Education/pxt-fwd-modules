@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-ec",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "FWD Edu Electrical Conductivity",
     "license": "MIT",
     "dependencies": {

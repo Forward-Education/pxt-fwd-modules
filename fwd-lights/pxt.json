@@ -1,6 +1,6 @@
 {
     "name": "fwd-lights",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Controls LED lights",
     "license": "MIT",
     "dependencies": {
