@@ -37,7 +37,7 @@ namespace fwdSensors {
 
     //% fixedInstances blockGap=8
     export class LCDClient extends modules.CursorCharacterScreenClient {
-        private readonly delay = 30
+        private readonly delay = 40
 
         constructor(role: string) {
             super(role)
