@@ -4,7 +4,8 @@
     "description": "FWD Edu RPM",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.12"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.12",
+        "jacdac-rotations-per-minute": "github:jacdac/pxt-jacdac/rotations-per-minute#v1.9.38"
     },
     "files": [
         "client.ts"
@@ -13,7 +14,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "7.0.61",
+        "target": "8.0.16",
         "targetId": "microbit"
     },
     "supportedTargets": [
