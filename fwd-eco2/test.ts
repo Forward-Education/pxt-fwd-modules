@@ -1,7 +1,16 @@
-// Moisture Sensor Tests
+// eCO2 Tests
 // Type: compilation
-//  moistureLevel(): number
+//  eco2(): number
 //  isPastThreshold(threshold: number, direction: fwdEnums.OverUnder): boolean
-if (fwdSensors.moisture1.isPastThreshold(5, fwdEnums.OverUnder.Over)) {
-    basic.showNumber(fwdSensors.moisture1.moistureLevel())
+if (fwdSensors.eCO2_1.isPastThreshold(fwdSensors.eCO2_1.eco2(), fwdEnums.OverUnder.Over)) {
+
+}
+
+
+// tVOC Tests
+// Type: compilation
+//  tvoc(): number
+//  isPastThreshold(threshold: number, direction: fwdEnums.OverUnder): boolean
+if (fwdSensors.tvoc1.isPastThreshold(fwdSensors.tvoc1.tvoc(), fwdEnums.OverUnder.Over)) {
+
 }

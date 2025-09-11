@@ -22,7 +22,7 @@ namespace fwdSensors {
          * @param direction over or under the threshold
          */
         //% group="eCO2"
-        //% block="$this is $direction $threshold \\%"
+        //% block="$this is $direction $threshold ppm"
         //% blockId=fwd_eco2_is_past_threshold
         //% weight=99
         isPastThreshold(
@@ -55,7 +55,7 @@ namespace fwdSensors {
         /**
          * Returns the sensor's total VOC (tVOC) reading.
          */
-        //% group="tVOC"
+        //% group="eCO2"
         //% block="$this reading"
         //% blockId=fwd_tvoc_get_tvoc
         //% weight=98
@@ -68,9 +68,9 @@ namespace fwdSensors {
          * @param threshold the tVOC value to check against
          * @param direction over or under the threshold
          */
-        //% group="tVOC"
+        //% group="eCO2"
         //% block="$this is $direction $threshold"
-        //% blockId=fwd_eco2_is_past_threshold
+        //% blockId=fwd_tvoc_is_past_threshold
         //% weight=97
         isPastThreshold(
             threshold: number,
