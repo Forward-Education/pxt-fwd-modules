@@ -15,37 +15,38 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns the sensor's red reading.
+         * Returns one of the sensor's color readings (%).
          */
         //% group="Color"
-        //% block="$this $color"
-        //% blockId=fwd_ph_get_ph
+        //% block="$this $color \\%"
+        //% blockId=fwd_color_get_color
         //% weight=100
-        reading(color: redGreenBlue): number {
+        color(color: redGreenBlue): number {
             this.setStreaming(true)
             const values = this._reading.pauseUntilValues() as any[]
-            return values[color] * 100
+            return Math.round(values[color] * 100)
         }
 
-        // /**
-        //  * Returns true when the pH is past the provided threshold in the designated direction.
-        //  * @param threshold the pH to check against
-        //  * @param direction over or under the threshold
-        //  */
-        // //% group="pH"
-        // //% block="$this is $direction $threshold pH"
-        // //% blockId=fwd_ph_is_past_threshold
-        // //% weight=99
-        // isPastThreshold(
-        //     threshold: number,
-        //     direction: fwdEnums.OverUnder
-        // ): boolean {
-        //     const difference = this.ph() - threshold > 0
-        //     const isPastThreshold =
-        //         (direction === fwdEnums.OverUnder.Over && difference) ||
-        //         (direction === fwdEnums.OverUnder.Under && !difference)
-        //     return isPastThreshold
-        // }
+        /**
+         * Returns true when the color (%) is past the provided threshold in the designated direction.
+         * @param threshold the color (%) to check against
+         * @param direction over or under the threshold
+         */
+        //% group="Color"
+        //% block="$this $color is $direction $threshold \\%"
+        //% blockId=fwd_color_is_past_threshold
+        //% weight=99
+        isPastThreshold(
+            color: redGreenBlue,
+            threshold: number,
+            direction: fwdEnums.OverUnder
+        ): boolean {
+            const difference = this.color(color) - threshold > 0
+            const isPastThreshold =
+                (direction === fwdEnums.OverUnder.Over && difference) ||
+                (direction === fwdEnums.OverUnder.Under && !difference)
+            return isPastThreshold
+        }
     }
 
     //% fixedInstance whenUsed
