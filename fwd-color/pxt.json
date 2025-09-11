@@ -1,0 +1,24 @@
+{
+    "name": "fwd-color",
+    "version": "1.0.10",
+    "description": "FWD Edu Color",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.12",
+        "jacdac-color": "github:jacdac/pxt-jacdac/color#v1.9.38"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
