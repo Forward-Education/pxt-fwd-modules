@@ -66,4 +66,46 @@ namespace fwdSensors {
     export const color3 = new FwdColorClient("color3")
     //% fixedInstance whenUsed
     export const color4 = new FwdColorClient("color4")
+
+    //% fixedInstances
+    export class FwdColorLEDClient extends fwdBase.LightbulbClient {
+        constructor(role: string) {
+            super(role)
+            this.setBrightness(100)
+        }
+
+        /**
+         * Set the brightness of the color sensor LED. Set it to 0% to turn it off.
+         * @param brightness 0%-100% intensity
+         */
+        //% group="Color"
+        //% blockId=fwd_color_set_brightness
+        //% block="set $this brightness to $brightness (\\%)"
+        //% brightness.min=0
+        //% brightness.max=100
+        //% weight=98
+        setBrightness(brightness: number) {
+            super.setBrightness(brightness)
+        }
+
+        /**
+         * Returns true if the color sensor LED brightness is anything other than 0%.
+         */
+        //% group="Color"
+        //% block="$this is on"
+        //% blockId=fwd_color_is_on
+        //% weight=97
+        isOn(): boolean {
+            return super.isOn()
+        }
+    }
+
+    //% fixedInstance whenUsed
+    export const colorLED1 = new FwdColorLEDClient("colorLED1")
+    //% fixedInstance whenUsed
+    export const colorLED2 = new FwdColorLEDClient("colorLED2")
+    //% fixedInstance whenUsed
+    export const colorLED3 = new FwdColorLEDClient("colorLED3")
+    //% fixedInstance whenUsed
+    export const colorLED4 = new FwdColorLEDClient("colorLED4")
 }
