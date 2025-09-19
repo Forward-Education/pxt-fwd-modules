@@ -28,24 +28,33 @@ namespace fwdSensors {
         }
 
         /**
-         * Returns true when the color (%) is past the provided threshold in the designated direction.
-         * @param threshold the color (%) to check against
-         * @param direction over or under the threshold
+         * Returns true when the color (%) is between the provided thresholds.
+         * @param threshold1 the first color (%) threshold
+         * @param threshold2 the second color (%) threshold
          */
         //% group="Color"
-        //% block="$this $color is $direction $threshold \\%"
-        //% blockId=fwd_color_is_past_threshold
+        //% block="$this $color is between $threshold1 and $threshold2 \\%"
+        //% threshold1.min=0 threshold1.max=100 threshold1.defl=0
+        //% threshold2.min=0 threshold2.max=100 threshold2.defl=100
+        //% blockId=fwd_color_is_between
         //% weight=99
-        isPastThreshold(
+        isBetween(
             color: redGreenBlue,
-            threshold: number,
-            direction: fwdEnums.OverUnder
+            threshold1: number,
+            threshold2: number,
         ): boolean {
-            const difference = this.color(color) - threshold > 0
-            const isPastThreshold =
-                (direction === fwdEnums.OverUnder.Over && difference) ||
-                (direction === fwdEnums.OverUnder.Under && !difference)
-            return isPastThreshold
+            if (threshold1 > threshold2) {
+                let holder = threshold1
+                threshold1 = threshold2
+                threshold2 = holder
+            } 
+            if (this.color(color) - threshold1 < 0) {
+                return false
+            }
+            if (this.color(color) - threshold2 > 0) {
+                return false
+            }
+            return true
         }
     }
 
