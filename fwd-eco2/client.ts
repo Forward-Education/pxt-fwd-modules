@@ -85,11 +85,11 @@ namespace fwdSensors {
     }
 
     //% fixedInstance whenUsed
-    export const tvoc1 = new FwdTvocClient("tVOC1")
+    export const tVOC1 = new FwdTvocClient("tVOC1")
     //% fixedInstance whenUsed
-    export const tvoc2 = new FwdTvocClient("tVOC2")
+    export const tVOC2 = new FwdTvocClient("tVOC2")
     //% fixedInstance whenUsed
-    export const tvoc3 = new FwdTvocClient("tVOC3")
+    export const tVOC3 = new FwdTvocClient("tVOC3")
     //% fixedInstance whenUsed
-    export const tvoc4 = new FwdTvocClient("tVOC4")
+    export const tVOC4 = new FwdTvocClient("tVOC4")
 }
