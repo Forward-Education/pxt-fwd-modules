@@ -16,7 +16,7 @@ namespace fwdSensors {
         //% blockId=fwd_ec_get_ec
         //% weight=100
         ec(): number {
-            return super.reading()
+            return Math.round(super.reading())
         }
 
         /**
