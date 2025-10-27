@@ -1,5 +1,4 @@
-//% weight=100 color=#1ABC9C icon="\uf130" block="AI Voice"
-namespace voiceRecognition {
+namespace fwdAiVoice {
     export enum MUTE {
         //% blockId="voiceRecognition_MUTEOFF" block="OFF"
         OFF = 0,
@@ -420,22 +419,20 @@ namespace voiceRecognition {
     let saveCmdID = 0;
 
     /**
-     *
+     * Initialize the AI Voice module in "on start" before using it.
      */
-
-    //% weight=100
-    //% blockId=voiceRecognition_init block="Voice Recognition setup I2C mode address 0x64"
+    //% block="initialize the AI Voice module"
+    //% weight=200
     export function init(): void {
         deviceAddress = DF2301Q_I2C_ADDR;
         while (!readKnock());
     }
 
     /**
-     *
+     * Set the volume between 1 (quietest) and 7 (loudest).
      */
-
-    //% weight=98
-    //% blockId=voiceRecognition_setVolume block="set volume|%volume"
+    //% block="set volume %volume"
+    //% weight=199
     //% volume.min=1 volume.max=7 volume.defl=4
     export function setVolume(volume: number): void {
         if (volume < 1) {
@@ -448,12 +445,10 @@ namespace voiceRecognition {
     }
 
     /**
-     *
+     * Mute or unmute the speaker.
      */
-
-    //% weight=95
-    //% blockId=voiceRecognition_setMuteMode block="set mute mode|%mute"
-    //% advanced=true
+    //% block="set mute mode %mute"
+    //% weight=198
     export function setMuteMode(mute: MUTE): void {
         if (mute != 0) {
             mute = 1;
@@ -462,23 +457,21 @@ namespace voiceRecognition {
     }
 
     /**
-     *
+     * Adjust the time (seconds) that the module stays in an awakened state after the wake-up word.
+     * Use in "on start" after initalization.
      */
-
+    //% block="set awake duration to %time seconds"
     //% weight=90
-    //% blockId=voiceRecognition_setWakeTime block="set wake time|%time"
     //% time.min=0 time.max=255 time.defl=20
     export function setWakeTime(time: number): void {
         writeData([DF2301Q_I2C_REG_WAKE_TIME, time]);
     }
 
     /**
-     *
+     * Return the awake duration (seconds).
      */
-
+    //% block="awake duration"
     //% weight=85
-    //% blockId=voiceRecognition_getWakeTime block="get wake time"
-    //% advanced=true
     export function getWakeTime(): number {
         const buf: Buffer = readData(DF2301Q_I2C_REG_WAKE_TIME, 1);
         if (!buf || buf.length < 1) return -1;
@@ -489,21 +482,20 @@ namespace voiceRecognition {
     /**
      *
      */
-
+    //% block="manully trigger command %id"
     //% weight=80
-    //% blockId=voiceRecognition_playByCMDID block="play|%id"
-    //% id.defl=23
+    //% id.defl=2
     export function playByCMDID(id: number): void {
         writeData([DF2301Q_I2C_REG_PLAY_CMDID, id]);
         basic.pause(1000);
     }
 
     /**
-     *
+     * The state of the AI Voice Module must be established using this block. 
+     * Then check for command recognition.
      */
-
+    //% block="collect command recognition data from module"
     //% weight=75
-    //% blockId=voiceRecognition_getCMDID block="identify once and save the results"
     export function getCMDID(): void {
         const buf: Buffer = readData(DF2301Q_I2C_REG_CMDID, 1);
         if (!buf || buf.length < 1) return;
@@ -512,11 +504,10 @@ namespace voiceRecognition {
     }
 
     /**
-     *
+     * Check if a command has been recognized.
      */
-
+    //% block="command recognized"
     //% weight=70
-    //% blockId=voiceRecognition_checkCMDID block="recognize it?"
     export function checkCMDID(): boolean {
         return saveCmdID == 0 ? false : true;
     }
@@ -524,9 +515,8 @@ namespace voiceRecognition {
     /**
      *
      */
-
+    //% block="command"
     //% weight=65
-    //% blockId=voiceRecognition_readCMDID block="get the result"
     export function readCMDID(): number {
         return saveCmdID;
     }
@@ -534,9 +524,8 @@ namespace voiceRecognition {
     /**
      *
      */
-
+    //% block="wake-up command %word"
     //% weight=60
-    //% blockId=voiceRecognition_checkWord1 block="Wake-up words %word ID"
     export function checkWord1(word: WakeupWords): number {
         return word;
     }
@@ -544,9 +533,8 @@ namespace voiceRecognition {
     /**
      *
      */
-
+    //% block="learned command %word"
     //% weight=55
-    //% blockId=voiceRecognition_checkWord2 block="Commands for learning %word ID"
     export function checkWord2(word: LearningCommandWords): number {
         return word;
     }
@@ -554,9 +542,8 @@ namespace voiceRecognition {
     /**
      *
      */
-
+    //% block="default command %word"
     //% weight=50
-    //% blockId=voiceRecognition_checkWord3 block="Fixed Command Words %word ID"
     export function checkWord3(word: FixedCommandWords): number {
         return word;
     }
@@ -564,9 +551,8 @@ namespace voiceRecognition {
     /**
      *
      */
-
+    //% block="learning command %word"
     //% weight=45
-    //% blockId=voiceRecognition_checkWord4 block="Learning-related commands %word ID"
     export function checkWord4(word: LearningRelatedCommands): number {
         return word;
     }
@@ -599,13 +585,13 @@ namespace voiceRecognition {
     function readData(reg: number, len: number): Buffer {
         const buf = pins.createBuffer(1);
         buf.setNumber(NumberFormat.UInt8BE, 0, reg & 0xff);
-        voiceRecognition.voicerecognition1.writeI2C(deviceAddress, buf, false);
+        fwdAiVoice.voicerecognition1.writeI2C(deviceAddress, buf, false);
         pause(10);
-        return voiceRecognition.voicerecognition1.readI2C(deviceAddress, len);
+        return fwdAiVoice.voicerecognition1.readI2C(deviceAddress, len);
     }
 
     function writeData(buf: number[]): void {
-        voiceRecognition.voicerecognition1.writeI2C(
+        fwdAiVoice.voicerecognition1.writeI2C(
             deviceAddress,
             pins.createBufferFromArray(buf)
         );
