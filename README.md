@@ -52,11 +52,9 @@ Test files are specified under "testFiles" in pxt.json can be executed in two wa
 
 One way is to import the extension using the import button on the MakeCode homepage. For the module library import an individual module rather than the whole library. The test files will compile into 1 program that automatically runs in the simulator. You can **generally** add the appropriate simulators using 'ADD SIMULATORS' button and view console logs in 'Show data' view. You can edit the module files in MakeCode and push / pull changes using the GitHub interface. This interface is accessible through a button next to the project name in the bottom bar.
 
-The other way is to run 'mkc' to see if the test files compile. This compilation test also happens through the makecode.yml GitHub action, where applicable (product extensions). You can deploy the program to a micro:bit with 'mkc -d'. There is a size limit on a package built by 'mkc'. That's why pxt-fwd-all-blocks doesn't have tests. There are too many blocks to stay under the file size limit.
+The other way is to run 'mkc' to see if the test files compile. You can deploy the program to a micro:bit with 'mkc -d'. There is a size limit on a package built by 'mkc', which is a roadblock for comprehensive testing. To get around that there is a script for product extensions, run-all-tests.py, which allows tests to be split into multiple builds. This allows a compilation test to be run for every MakeCode tutorial before making a new release for a product extension.
 
 It's admirable to strive for functional testing where you see the blocks in action, but simple compilation tests are always a great starting point. For a compilation test, all you have to do is drag one of each block into your program and copy that JavaScript. Functional tests can always be added later. Functional tests are only suitable for individual modules, not product extensions.
-
-For quick and comprehensive compilation testing of tutorial content, the code for each tutorial is included as a test file. Each tutorial test uses a unique namespace to avoid clashes. These tests should be run before updating product extension dependencies in the tutorials.
 
 ### Versioning
 

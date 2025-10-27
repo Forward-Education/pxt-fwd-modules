@@ -4,8 +4,8 @@
     "description": "FWD Edu Climate Action Kit Gen. 2 Moisture",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.12",
-        "jacdac-soil-moisture": "github:jacdac/pxt-jacdac/soil-moisture#v1.9.38"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#5735c40be78695ce49d034deeb24f74ac9f18cda",
+        "jacdac-soil-moisture": "github:jacdac/pxt-jacdac/soil-moisture#v1.9.40"
     },
     "files": [
         "client.ts"

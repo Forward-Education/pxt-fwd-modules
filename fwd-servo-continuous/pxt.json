@@ -4,7 +4,7 @@
     "description": "FWD Edu Servo Continuous",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.12",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#5735c40be78695ce49d034deeb24f74ac9f18cda",
         "fwd-servo-base": "github:Forward-Education/pxt-fwd-base/fwd-servo-base#v1.0.12"
     },
     "files": [

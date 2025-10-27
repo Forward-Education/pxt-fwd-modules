@@ -1,20 +1,20 @@
 {
-    "name": "fwd-temperature",
+    "name": "fwd-ai-vision",
     "version": "1.0.11",
-    "description": "FWD Edu Temperature",
+    "description": "FWD Edu AI Vision",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#5735c40be78695ce49d034deeb24f74ac9f18cda",
-        "jacdac-temperature": "github:jacdac/pxt-jacdac/temperature#v1.9.40"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#5735c40be78695ce49d034deeb24f74ac9f18cda"
     },
     "files": [
+        "constants.ts",
         "client.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "7.0.61",
+        "target": "8.0.16",
         "targetId": "microbit"
     },
     "supportedTargets": [
