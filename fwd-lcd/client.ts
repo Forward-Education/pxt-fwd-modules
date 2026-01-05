@@ -20,18 +20,18 @@ namespace fwdSensors {
     /**
      * Takes a number and rounds it to the provided decimal point.
      */
-    //% block="round $number_ to $decimals decimals"
+    //% block="round $value to $decimals decimals"
     //% decimals.min=0 decimals.max=4 decimals.defl=0
     //% blockId=fwd_lcd_round
     //% group="LCD"
     //% weight=95
-    export function round(number_: number, decimals: number): number {
+    export function round(value: number, decimals: number): number {
         if (decimals < 0) {
-            return number_
+            return value
         }
 
         const factor = Math.pow(10, decimals)
-        let rounded = Math.round(number_ * factor) / factor
+        let rounded = Math.round(value * factor) / factor
         return rounded
     }
 
@@ -45,7 +45,7 @@ namespace fwdSensors {
         }
 
         /**
-        * Clear the entire screen.
+         * Clear the entire screen.
          */
         //% block="clear $this"
         //% blockId=fwd_lcd_clear_screen
@@ -61,31 +61,31 @@ namespace fwdSensors {
          * A string over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
          * This block has a 40 ms pause built-in to ensure proper processing of commands.
-         * @param string_ the string to print
+         * @param text the string to print
          * @param line the line to print the string on
          */
-        //% block="print string $string_ on line $line of $this"
+        //% block="print string $text on line $line of $this"
         //% line.min=1 line.max=2 line.defl=1
         //% blockId=fwd_lcd_print_line_string
         //% group="LCD"
         //% weight=99
-        printLineString(string_: string, line: number) {
+        printLineString(text: string, line: number) {
             line -= 1
 
             if (line < 0 || line > 1) {
                 this.setCursorAndWait(0, 0)
-                this.printAndWait("err:!1-2", 'line', false)
+                this.printAndWait("err:!1-2", "line", false)
                 return
             }
 
-            if (string_.length > 16) {
+            if (text.length > 16) {
                 this.setCursorAndWait(0, line)
-                this.printAndWait(">16 chars", 'line', false)
+                this.printAndWait(">16 chars", "line", false)
                 return
             }
 
             this.setCursorAndWait(0, line)
-            this.printAndWait(string_, 'line', false)
+            this.printAndWait(text, "line", false)
         }
 
         /**
@@ -93,15 +93,15 @@ namespace fwdSensors {
          * A string over 8 characters is replaced with the message ">8 chars".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
          * This block has a 40 ms pause built-in to ensure proper processing of commands.
-         * @param string_ the string_ to print
-         * @param quadrant the quadrant to print the string_ on
+         * @param text the string to print
+         * @param quadrant the quadrant to print the string on
          */
-        //% block="print string $string_ on quadrant $quadrant of $this"
+        //% block="print string $text on quadrant $quadrant of $this"
         //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
         //% blockId=fwd_lcd_print_quadrant_string
         //% group="LCD"
         //% weight=98
-        printQuadrantString(string_: string, quadrant: number) {
+        printQuadrantString(text: string, quadrant: number) {
             let col = 0
             let row = 0
             let rightAlign = false
@@ -125,18 +125,18 @@ namespace fwdSensors {
                     break
                 default:
                     this.setCursorAndWait(col, row)
-                    this.printAndWait("err:!1-4", 'quadrant', rightAlign)
+                    this.printAndWait("err:!1-4", "quadrant", rightAlign)
                     return
             }
 
             this.setCursorAndWait(col, row)
 
-            if (string_.length > 8) {
-                this.printAndWait(">8 chars", 'quadrant', rightAlign)
+            if (text.length > 8) {
+                this.printAndWait(">8 chars", "quadrant", rightAlign)
                 return
             }
 
-            this.printAndWait(string_, 'quadrant', rightAlign)
+            this.printAndWait(text, "quadrant", rightAlign)
         }
 
         /**
@@ -144,16 +144,16 @@ namespace fwdSensors {
          * A number over 16 characters is replaced with the message ">16 chars".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
          * This block has a 40 ms pause built-in to ensure proper processing of commands.
-         * @param number_ the number to print
+         * @param value the number to print
          * @param line the line to print the number on
          */
-        //% block="print number $number_ on line $line of $this"
+        //% block="print number $value on line $line of $this"
         //% line.min=1 line.max=2 line.defl=1
         //% blockId=fwd_lcd_print_line_number
         //% group="LCD"
         //% weight=97
-        printLineNumber(number_: number, line: number) {
-            this.printLineString(number_.toString(), line)
+        printLineNumber(value: number, line: number) {
+            this.printLineString(value.toString(), line)
         }
 
         /**
@@ -161,16 +161,16 @@ namespace fwdSensors {
          * A number over 8 characters is replaced with the message ">8 chars".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
          * This block has a 40 ms pause built-in to ensure proper processing of commands.
-         * @param number_ the number to print
+         * @param value the number to print
          * @param quadrant the quadrant to print the number on
          */
-        //% block="print number $number_ on quadrant $quadrant of $this"
+        //% block="print number $value on quadrant $quadrant of $this"
         //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
         //% blockId=fwd_lcd_print_quadrant_number
         //% group="LCD"
         //% weight=96
-        printQuadrantNumber(number_: number, quadrant: number) {
-            this.printQuadrantString(number_.toString(), quadrant)
+        printQuadrantNumber(value: number, quadrant: number) {
+            this.printQuadrantString(value.toString(), quadrant)
         }
 
         setCursorAndWait(x: number, y: number) {
@@ -178,24 +178,28 @@ namespace fwdSensors {
             pause(this.delay)
         }
 
-        printAndWait(string_: string, lineOrQuadrant: string, rightAlign: boolean) {
-            if (string_ === 'undefined') {
-                string_ = '--'
+        printAndWait(
+            text: string,
+            lineOrQuadrant: string,
+            rightAlign: boolean
+        ) {
+            if (text === "undefined") {
+                text = "--"
             }
 
             let blanks = ""
-            if (lineOrQuadrant === 'quadrant') {
-                blanks = this.makeBlanksString(8 - string_.length)
-            } else if (lineOrQuadrant === 'line') {
-                blanks = this.makeBlanksString(16 - string_.length)
+            if (lineOrQuadrant === "quadrant") {
+                blanks = this.makeBlanksString(8 - text.length)
+            } else if (lineOrQuadrant === "line") {
+                blanks = this.makeBlanksString(16 - text.length)
             }
 
             if (rightAlign) {
-                super.show(blanks + string_)
+                super.show(blanks + text)
             } else {
-                super.show(string_ + blanks)
+                super.show(text + blanks)
             }
-            
+
             pause(this.delay)
         }
 

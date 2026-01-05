@@ -1,5 +1,5 @@
 namespace fwdSensors {
-    export const enum redGreenBlue {
+    export const enum RedGreenBlue {
         //% block="red"
         Red = 0,
         //% block="green"
@@ -21,7 +21,7 @@ namespace fwdSensors {
         //% block="$this $color \\%"
         //% blockId=fwd_color_get_color
         //% weight=100
-        color(color: redGreenBlue): number {
+        color(color: RedGreenBlue): number {
             this.setStreaming(true)
             const values = this._reading.pauseUntilValues() as any[]
             return Math.round(values[color] * 100)
@@ -39,15 +39,15 @@ namespace fwdSensors {
         //% blockId=fwd_color_is_between
         //% weight=99
         isBetween(
-            color: redGreenBlue,
+            color: RedGreenBlue,
             threshold1: number,
-            threshold2: number,
+            threshold2: number
         ): boolean {
             if (threshold1 > threshold2) {
                 let holder = threshold1
                 threshold1 = threshold2
                 threshold2 = holder
-            } 
+            }
             if (this.color(color) - threshold1 < 0) {
                 return false
             }
