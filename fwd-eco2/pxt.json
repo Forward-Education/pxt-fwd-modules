@@ -4,7 +4,7 @@
     "description": "FWD Edu eCO2 sensor",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#5735c40be78695ce49d034deeb24f74ac9f18cda",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.13",
         "jacdac-e-co2": "github:jacdac/pxt-jacdac/e-co2#v1.9.40",
         "jacdac-tvoc": "github:jacdac/pxt-jacdac/tvoc#v1.9.40"
     },

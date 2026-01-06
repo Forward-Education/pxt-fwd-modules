@@ -4,7 +4,7 @@
     "description": "FWD Edu PIR",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#5735c40be78695ce49d034deeb24f74ac9f18cda",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.13",
         "jacdac-motion": "github:jacdac/pxt-jacdac/motion#v1.9.40"
     },
     "files": [
