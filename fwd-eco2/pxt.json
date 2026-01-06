@@ -1,6 +1,6 @@
 {
     "name": "fwd-eco2",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "FWD Edu eCO2 sensor",
     "license": "MIT",
     "dependencies": {

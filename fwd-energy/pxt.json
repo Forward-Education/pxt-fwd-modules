@@ -1,6 +1,6 @@
 {
     "name": "fwd-energy",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "FWD Edu Energy",
     "license": "MIT",
     "dependencies": {

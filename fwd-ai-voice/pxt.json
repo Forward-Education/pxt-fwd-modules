@@ -1,6 +1,6 @@
 {
     "name": "fwd-ai-voice",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "FWD Edu AI Voice",
     "license": "MIT",
     "dependencies": {

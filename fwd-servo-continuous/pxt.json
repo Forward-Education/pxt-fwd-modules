@@ -1,6 +1,6 @@
 {
     "name": "fwd-servo-continuous",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "FWD Edu Servo Continuous",
     "license": "MIT",
     "dependencies": {
