@@ -4,9 +4,9 @@
     "description": "FWD Edu Energy",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.13",
-        "jacdac-dc-current": "github:jacdac/pxt-jacdac/dc-current-measurement#v1.9.40",
-        "jacdac-dc-voltage": "github:jacdac/pxt-jacdac/dc-voltage-measurement#v1.9.40"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.0",
+        "jacdac-dc-current": "github:jacdac/pxt-jacdac/dc-current-measurement#v1.9.41",
+        "jacdac-dc-voltage": "github:jacdac/pxt-jacdac/dc-voltage-measurement#v1.9.41"
     },
     "files": [
         "client.ts"

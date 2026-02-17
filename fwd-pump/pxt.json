@@ -4,8 +4,8 @@
     "description": "FWD Edu Climate Action Kit Gen. 2 Pump",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.13",
-        "jacdac-relay": "github:jacdac/pxt-jacdac/relay#v1.9.40"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.0",
+        "jacdac-relay": "github:jacdac/pxt-jacdac/relay#v1.9.41"
     },
     "files": [
         "client.ts"

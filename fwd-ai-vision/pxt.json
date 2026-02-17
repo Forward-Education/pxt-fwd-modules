@@ -4,7 +4,7 @@
     "description": "FWD Edu AI Vision",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.13"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.0"
     },
     "files": [
         "constants.ts",

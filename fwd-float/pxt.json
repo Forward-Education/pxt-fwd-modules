@@ -4,8 +4,8 @@
     "description": "FWD Edu Float",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.0.13",
-        "jacdac-button": "github:jacdac/pxt-jacdac/button#v1.9.40"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.0",
+        "jacdac-button": "github:jacdac/pxt-jacdac/button#v1.9.41"
     },
     "files": [
         "client.ts"
