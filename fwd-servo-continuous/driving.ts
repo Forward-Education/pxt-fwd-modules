@@ -10,8 +10,9 @@ namespace fwdMotors {
             leftMotor = left
             rightMotor = right
             leftMotor.setEnabled(true)
+            pause(500) // prevents next command from sporadically failing
             rightMotor.setEnabled(true)
-            pause(1000) // gives time for the servos to become enabled
+            pause(500) // gives time for the servo to become enabled
         }
 
         function stop() {
