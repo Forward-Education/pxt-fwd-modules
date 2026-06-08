@@ -47,9 +47,9 @@ enum Content4 {
 }
 
 enum HUSKYLENSResultType_t {
-    //% block="frame"
+    //%block="frame"
     HUSKYLENSResultBlock = 1,
-    //% block="arrow"
+    //%block="arrow"
     HUSKYLENSResultArrow = 2,
 }
 
@@ -63,19 +63,20 @@ let FIRST = {
 }
 
 enum HUSKYLENSMode {
-    //% block="save"
+    //%block="save"
     SAVE,
-    //% block="load"
+    //%block="load"
     LOAD,
 }
 enum HUSKYLENSphoto {
-    //% block="photo"
+    //%block="photo"
     PHOTO,
-    //% block="screenshot"
+    //%block="screenshot"
     SCREENSHOT,
 }
 
-namespace fwdAiVision {
+//% weight=100  color=#e7660b icon="\uf083"  block="HuskyLens"
+namespace modules {
     enum protocolCommand {
         COMMAND_REQUEST = 0x20,
         COMMAND_REQUEST_BLOCKS = 0x21,
@@ -98,23 +99,23 @@ namespace fwdAiVision {
     }
 
     export enum protocolAlgorithm {
-        //% block="Face Recognition"
+        //%block="Face Recognition"
         ALGORITHM_FACE_RECOGNITION = 0,
-        //% block="Object Tracking"
+        //%block="Object Tracking"
         ALGORITHM_OBJECT_TRACKING = 1,
-        //% block="Object Recognition"
+        //%block="Object Recognition"
         ALGORITHM_OBJECT_RECOGNITION = 2,
-        //% block="Line Tracking"
+        //%block="Line Tracking"
         ALGORITHM_LINE_TRACKING = 3,
-        //% block="Color Recognition"
+        //%block="Color Recognition"
         ALGORITHM_COLOR_RECOGNITION = 4,
-        //% block="Tag Recognition"
+        //%block="Tag Recognition"
         ALGORITHM_TAG_RECOGNITION = 5,
-        //% block="Object Classification"
+        //%block="Object Classification"
         OBJECTCLASSIFICATION,
-        //% block="QR Recogmition (EDU only)"
+        //%block="QR Recogmition (EDU only)"
         QRRECOGMITION,
-        //% block="Barcode Recognition (EDU only)"
+        //%block="Barcode Recognition (EDU only)"
         BARCODERECOGNITION,
     }
 
@@ -162,121 +163,48 @@ namespace fwdAiVision {
     let deviceAddress = 0
 
     /**
-     * Initialize the AI Vision module in "on start" before using it.
+     * HuskyLens init I2C until success
      */
-    //% block="initialize the AI Vision module"
-    //% weight=200
+    //%block="HuskyLens initialize I2C until success"
+    //% weight=90
     export function initI2c(): void {
         deviceAddress = HUSKYLENS_I2C_ADDR
         while (!readKnock());
     }
-
     /**
-     * Change the mode of the AI Vision module (i.e. face recognition, color recognition).
-     * @param mode the algorithm that will be used to analyze the image
+     * HuskyLens change mode algorithm until success.
      */
-    //% block="switch mode to %mode"
-    //% weight=199
+    //%block="HuskyLens switch algorithm to %mode"
+    //% weight=85
     export function initMode(mode: protocolAlgorithm) {
         writeAlgorithm(mode, protocolCommand.COMMAND_REQUEST_ALGORITHM)
         while (!wait(protocolCommand.COMMAND_RETURN_OK));
     }
-
     /**
-     * Train the algorithm to associate the on-screen frame(s) with a numeric ID.
-     * @param id ID for the training target(s)
+     * HuskyLens requests data and stores it in the result.
      */
-    //% block="train to recognize the on-screen target(s) as ID %id"
-    //% weight=198
-    export function writeLearn1(id: number): void {
-        writeAlgorithm(id, 0x36)
-    }
 
-    /**
-     * Set ID name
-     * @param id the id to assign the label
-     * @param name the label to assign to the id
-     */
-    //% block="label ID %id as %name"
-    //% weight=197
-    export function writeName(id: number, name: string): void {
-        //do{
-        let newname = name
-        let buffer = husky_lens_protocol_write_begin(0x2f)
-        send_buffer[send_index] = id
-        send_buffer[send_index + 1] = (newname.length + 1) * 2
-        send_index += 2
-        for (let i = 0; i < newname.length; i++) {
-            send_buffer[send_index] = newname.charCodeAt(i)
-            //serial.writeNumber(newname.charCodeAt(i))
-            send_index++
-        }
-        send_buffer[send_index] = 0
-        send_index += 1
-        let length = husky_lens_protocol_write_end()
-        let Buffer = pins.createBufferFromArray(buffer)
-        protocolWrite(Buffer)
-        //}while(!wait(protocolCommand.COMMAND_RETURN_OK));
-    }
-
-    /**
-     * Take a snapshot of the screen state. This snapshot is what other blocks analyze.
-     */
-    //% block="take a snapshot of the current screen state for analysis"
-    //% weight=196
+    //% block="HuskyLens request data once and save into the result"
+    //% weight=80
     export function request(): void {
         protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
         processReturn()
     }
-
     /**
-     * Determine whether the box or arrow corresponding to the provided ID is present in the snapshot.
-     * @param id the ID to check for the presence of
-     * @param resultType frame or arrow 
+     * HuskyLens get the number of the learned ID from result.
      */
-    //% block="ID %id %resultType is present in the snapshot"
-    //% weight=195
-    export function isAppear(id: number, resultType: HUSKYLENSResultType_t): boolean {
-        switch (resultType) {
-            case 1:
-                return countBlocks(id) != 0 ? true : false
-            case 2:
-                return countArrows(id) != 0 ? true : false
-            default:
-                return false
-        }
-    }
-
-    /**
-     * Reset all learning data of the current algorithm
-     */
-    //% block="reset all training"
-    //% weight=194
-    export function forgetLearn(): void {
-        writeAlgorithm(0x47, 0x37)
-        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
-    }
-
-    /**
-     * Get the number of unique, recognized ID's from result. 
-     * For example, if there are 4 frames identified as ID 1 then this returns 1. 
-     */
-    //% block="total number of recognized ID's from the snapshot"
-    //% advanced=true
+    //%block="HuskyLens get a total number of learned IDs from the result"
     //% weight=79
     export function getIds(): number {
         return Protocol_t[2]
     }
-
     /**
-     * Determine if any frames or arrows are present in the snapshot.
-     * @param resultType frame or arrow
+     * The box or arrow HuskyLens got from result appears in screen?
      */
-    //% block="a %resultType is in the snapshot"
-    //% advanced=true
+    //%block="HuskyLens check if %Ht is on screen from the result"
     //% weight=78
-    export function isAppear_s(resultType: HUSKYLENSResultType_t): boolean {
-        switch (resultType) {
+    export function isAppear_s(Ht: HUSKYLENSResultType_t): boolean {
+        switch (Ht) {
             case 1:
                 return countBlocks_s() != 0 ? true : false
             case 2:
@@ -285,13 +213,10 @@ namespace fwdAiVision {
                 return false
         }
     }
-
     /**
-     * HuskyLens get the parameter of box near the screen center in the snapshot.
-     * @param data the property to fetch
+     * HuskyLens get the parameter of box near the screen center from result.
      */
-    //% block="%data of frame closest to the center of screen in the snapshot"
-    //% advanced=true
+    //% block="HuskyLens get %data of frame closest to the center of screen from the result"
     //% weight=77
     export function readBox_s(data: Content3): number {
         let hk_x
@@ -316,13 +241,10 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
     /**
      * HuskyLens get the parameter of arrow near the screen center from result.
-     * @param data the property to fetch
      */
-    //% block="%data of arrow closest to the center of screen in the snapshot"
-    //% advanced=true
+    //% block="HuskyLens get %data of arrow closest to the center of screen from the result"
     //% weight=77
     export function readArrow_s(data: Content4): number {
         let hk_x
@@ -347,26 +269,38 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
     /**
      * The ID Huskylens got from result has been learned before?
-     * @param id the label to check training status for
+     * @param id to id ,eg: 1
      */
-    //% block="ID %id has been trained"
-    //% advanced=true
+    //% block="HuskyLens check if ID %id is learned from the result"
+    //% weight=76
     export function isLearned(id: number): boolean {
         let hk_x = countLearnedIDs()
         if (id <= hk_x) return true
         return false
     }
-
+    /**
+     * The box or arrow corresponding to ID obtained by HuskyLens from result appears in screen？
+     * @param id to id ,eg: 1
+     */
+    //% block="HuskyLens check if ID %id %Ht is on screen from the result"
+    //% weight=75
+    export function isAppear(id: number, Ht: HUSKYLENSResultType_t): boolean {
+        switch (Ht) {
+            case 1:
+                return countBlocks(id) != 0 ? true : false
+            case 2:
+                return countArrows(id) != 0 ? true : false
+            default:
+                return false
+        }
+    }
     /**
      * HuskyLens get the parameter of the box corresponding to ID from result.
-     * @param id the label to fetch data for
-     * @param number1 the property to fetch
+     * @param id to id ,eg: 1
      */
-    //% block="$number1 of ID $id frame in the snapshot"
-    //% advanced=true
+    //%block="HuskyLens get  $number1 of ID $id frame from the result"
     //% weight=65
     export function readeBox(id: number, number1: Content1): number {
         let hk_y = cycle_block(id, 1)
@@ -391,14 +325,12 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
     /**
      * HuskyLens get the parameter of the arrow corresponding to ID from result.
-     * @param id the label to fetch data for
-     * @param number1 the property to fetch
+     * @param id to id ,eg: 1
      */
-    //% block="$number1 of ID $id arrow in the snapshot"
-    //% advanced=true
+
+    //%block="HuskyLens get $number1 of ID $id arrow from the result"
     //% weight=60
     export function readeArrow(id: number, number1: Content2): number {
         let hk_y = cycle_arrow(id, 1)
@@ -425,16 +357,15 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
     /**
      * HuskyLens get the box or arrow total number from result.
-     * @param resultType frame or arrow
+     *
      */
-    //% block="total number of %resultType in the snapshot"
-    //% advanced=true
+    //%block="HuskyLens get a total number of %Ht total from the result"
     //% weight=90
-    export function getBox(resultType: HUSKYLENSResultType_t): number {
-        switch (resultType) {
+    //% advanced=true
+    export function getBox(Ht: HUSKYLENSResultType_t): number {
+        switch (Ht) {
             case 1:
                 return countBlocks_s()
             case 2:
@@ -443,15 +374,13 @@ namespace fwdAiVision {
                 return 0
         }
     }
-
     /**
      * HuskyLens get the parameter of Nth box from result.
-     * @param index the index of the box to fetch data for
-     * @param data the property to fetch
+     * @param index to index ,eg: 1
      */
-    //% block="$data of the No. $index frame in the snapshot"
-    //% advanced=true
+    //% block="HuskyLens get $data of the No. $index frame from the result"
     //% weight=60
+    //% advanced=true
     export function readBox_ss(index: number, data: Content3): number {
         let hk_x = -1
         let hk_i = index - 1
@@ -475,15 +404,13 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
     /**
      * HuskyLens get the parameter of the Nth arrow from result.
-     * @param index the index of box to fetch data for
-     * @param data the property to fetch
+     * @param index to index ,eg: 1
      */
-    //% block="$data of the No. $index arrow in the snapshot"
-    //% advanced=true
+    //% block="HuskyLens get $data of the No. $index arrow from the result"
     //% weight=60
+    //% advanced=true
     export function readArrow_ss(index: number, data: Content4): number {
         let hk_x
         let hk_i = index - 1
@@ -508,17 +435,15 @@ namespace fwdAiVision {
         //protocolPtr[hk_i][0] = 0;
         return hk_x
     }
-
     /**
      * HuskyLens get the total number of box or arrow from result.
-     * @param id the label to count instances of
-     * @param resultType frame or arrow
+     * @param id to id ,eg: 1
      */
-    //% block="total number of ID %id %resultType from the result"
-    //% advanced=true
+    //%block="HuskyLens get a total number of ID %id %Ht total from the result"
     //% weight=55
-    export function getBox_S(id: number, resultType: HUSKYLENSResultType_t): number {
-        switch (resultType) {
+    //% advanced=true
+    export function getBox_S(id: number, Ht: HUSKYLENSResultType_t): number {
+        switch (Ht) {
             case 1:
                 return countBlocks(id)
             case 2:
@@ -527,20 +452,18 @@ namespace fwdAiVision {
                 return 0
         }
     }
-
     /**
      * HuskyLens get the parameter of the Nth box corresponding to ID from result.
-     * @param id the label to get data for
-     * @param index the instance of the label to get data for
-     * @param number1 the property to fetch
+     * @param id to id ,eg: 1
+     * @param index to index ,eg: 1
      */
-    //% block="$number1 of the ID $id No. $index frame in the snapshot"
-    //% advanced=true
+    //%block="HuskyLens get $number1 of the ID $id  No. $index frame from the result"
     //% weight=45
+    //% advanced=true
     export function readeBox_index(
         id: number,
         index: number,
-        number1: Content1
+        number1: Content1,
     ): number {
         let hk_y = cycle_block(id, index)
         let hk_x
@@ -566,20 +489,18 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
     /**
      * HuskyLens get the parameter of the Nth arrow corresponding to ID from result.
-     * @param id the label to get data for
-     * @param index the instance of the label to get data for
-     * @param number1 the property to fetch
+     * @param id to id ,eg: 1
+     * @param index to index ,eg: 1
      */
-    //% block="$number1 of the ID $id No. $index arrow in the snapshot"
-    //% advanced=true
+    //%block="HuskyLens get $number1 of the ID $id No. $index arrow from the result"
     //% weight=35
+    //% advanced=true
     export function readeArrow_index(
         id: number,
         index: number,
-        number1: Content2
+        number1: Content2,
     ): number {
         let hk_y = cycle_arrow(id, index)
         let hk_x
@@ -605,16 +526,63 @@ namespace fwdAiVision {
         } else hk_x = -1
         return hk_x
     }
-
+    /**
+     * Huskylens automatic learning ID
+     * @param id to id ,eg: 1
+     */
+    //%block="HuskyLens learn ID %id once automatically"
+    //% weight=30
+    //% advanced=true
+    export function writeLearn1(id: number): void {
+        writeAlgorithm(id, 0x36)
+        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+    }
+    /**
+     * Huskylens forget all learning data of the current algorithm
+     */
+    //%block="HuskyLens forget all learning data of the current algorithm"
+    //% weight=29
+    //% advanced=true
+    export function forgetLearn(): void {
+        writeAlgorithm(0x47, 0x37)
+        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+    }
+    /**
+     * Set ID name
+     * @param id to id ,eg: 1
+     * @param name to name ,eg: "DFRobot"
+     */
+    //%block="HuskyLens name ID %id of the current algorithm as %name"
+    //% weight=28
+    //% advanced=true
+    export function writeName(id: number, name: string): void {
+        //do{
+        let newname = name
+        let buffer = husky_lens_protocol_write_begin(0x2f)
+        send_buffer[send_index] = id
+        send_buffer[send_index + 1] = (newname.length + 1) * 2
+        send_index += 2
+        for (let i = 0; i < newname.length; i++) {
+            send_buffer[send_index] = newname.charCodeAt(i)
+            //serial.writeNumber(newname.charCodeAt(i))
+            send_index++
+        }
+        send_buffer[send_index] = 0
+        send_index += 1
+        let length = husky_lens_protocol_write_end()
+        let Buffer = pins.createBufferFromArray(buffer)
+        protocolWrite(Buffer)
+        //}while(!wait(protocolCommand.COMMAND_RETURN_OK));
+    }
     /**
      * Display characters on the screen
      * @param name to name ,eg: "DFRobot"
      * @param x to x ,eg: 150
      * @param y to y ,eg: 30
      */
-    //% block="show custom texts %name at position x %x y %y on screen"
-    //% advanced=true
+    //%block="HuskyLens show custom texts %name at position x %x y %y on screen"
     //% weight=27
+    //% advanced=true
     //% x.min=0 x.max=319
     //% y.min=0 y.max=210
     export function writeOSD(name: string, x: number, y: number): void {
@@ -641,24 +609,22 @@ namespace fwdAiVision {
         protocolWrite(Buffer)
         //}while(!wait(protocolCommand.COMMAND_RETURN_OK));
     }
-
     /**
      * HuskyLens clear characters in the screen
      */
-    //% block="clear all custom texts on screen"
-    //% advanced=true
+    //%block="HuskyLens clear all custom texts on screen"
     //% weight=26
+    //% advanced=true
     export function clearOSD(): void {
         writeAlgorithm(0x45, 0x35)
         //while(!wait(protocolCommand.COMMAND_RETURN_OK));
     }
-
     /**
      * Photos and screenshots
      */
-    //% block="take %request and save to SD card"
-    //% advanced=true
+    //%block="HuskyLens take %request and save to SD card"
     //% weight=25
+    //% advanced=true
     export function takePhotoToSDCard(request: HUSKYLENSphoto): void {
         switch (request) {
             case HUSKYLENSphoto.PHOTO:
@@ -675,17 +641,16 @@ namespace fwdAiVision {
         }
         basic.pause(500)
     }
-
     /**
      * Save data model
      */
-    //% block="%command current algorithm data as No. %data model of SD card"
-    //% advanced=true
+    //%block="HuskyLens %command current algorithm data as No. %data model of SD card"
     //% weight=24
+    //% advanced=true
     //% data.min=0 data.max=5
     export function saveModelToTFCard(
         command: HUSKYLENSMode,
-        data: number
+        data: number,
     ): void {
         switch (command) {
             case HUSKYLENSMode.SAVE:
@@ -746,7 +711,8 @@ namespace fwdAiVision {
     }
 
     function protocolWrite(buffer: Buffer) {
-        fwdAiVision.huskylens1.writeI2C(deviceAddress, buffer)
+        // write-only I2C transaction (num_read = 0)
+        modules.huskylens1.transactionI2C(deviceAddress, 0, buffer)
         basic.pause(50)
     }
 
@@ -809,7 +775,12 @@ namespace fwdAiVision {
     function protocolAvailable() {
         let buf = pins.createBuffer(16)
         if (m_i == 16) {
-            buf = fwdAiVision.huskylens1.readI2C(deviceAddress, 16)
+            // read-only I2C transaction: empty write_buf, num_read = 16
+            buf = modules.huskylens1.transactionI2C(
+                deviceAddress,
+                16,
+                Buffer.create(0),
+            )
             m_i = 0
         }
         if (buf) {
@@ -1023,7 +994,7 @@ namespace fwdAiVision {
     function writeLearn(algorithmType: number) {
         protocolWriteOneInt16(
             algorithmType,
-            protocolCommand.COMMAND_REQUEST_LEARN
+            protocolCommand.COMMAND_REQUEST_LEARN,
         )
         return wait(protocolCommand.COMMAND_RETURN_OK)
     }
@@ -1071,7 +1042,7 @@ namespace fwdAiVision {
             if (protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_BLOCK) {
                 let distance =
                     Math.round(
-                        Math.sqrt(Math.abs(protocolPtr[i][1] - 320 / 2))
+                        Math.sqrt(Math.abs(protocolPtr[i][1] - 320 / 2)),
                     ) +
                     Math.round(Math.sqrt(Math.abs(protocolPtr[i][2] - 240 / 2)))
                 if (distance < distanceMin) {
@@ -1090,7 +1061,7 @@ namespace fwdAiVision {
             if (protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_ARROW) {
                 let distance =
                     Math.round(
-                        Math.sqrt(Math.abs(protocolPtr[i][1] - 320 / 2))
+                        Math.sqrt(Math.abs(protocolPtr[i][1] - 320 / 2)),
                     ) +
                     Math.round(Math.sqrt(Math.abs(protocolPtr[i][2] - 240 / 2)))
                 if (distance < distanceMin) {
@@ -1116,10 +1087,11 @@ namespace fwdAiVision {
 
     export class HuskylensClient extends jacdac.Client {
         constructor(role: string) {
-            super(jacdac.SRV_FWDI2CSVC, role)
+            super(fwdI2C.SRV_I2CSVC, role) // NEW service class
         }
 
-        _rx: Buffer
+        private _rx: Buffer
+        private _lastStatus: fwdI2C.Status = fwdI2C.Status.OK
 
         dumpHexBytes(buf: Buffer): string {
             if (!buf) return "(null)"
@@ -1136,37 +1108,57 @@ namespace fwdAiVision {
         public handlePacket(pkt: jacdac.JDPacket) {
             if (
                 pkt.isReport &&
-                pkt.serviceCommand === jacdac.FwdI2CSvcCmd.ReadI2C &&
+                pkt.serviceCommand ===
+                    fwdI2C.FwdI2CTransactionCmd.Transaction &&
                 (this.serviceIndex == null ||
                     pkt.serviceIndex === this.serviceIndex)
             ) {
-                this._rx = pkt.data
+                // report: [status: u8][read_buf: bytes...]
+                const data = pkt.data
+                this._lastStatus =
+                    data && data.length
+                        ? (data[0] as fwdI2C.Status)
+                        : fwdI2C.Status.OK
+                this._rx =
+                    data && data.length > 1 ? data.slice(1) : Buffer.create(0)
             }
         }
 
-        writeI2C(i2caddr: number, data: Buffer, sendStop: boolean = true) {
-            return this.sendCommand(
-                jacdac.JDPacket.from(
-                    jacdac.FwdI2CSvcCmd.WriteI2C,
-                    jacdac.jdpack(jacdac.FwdI2CSvcCmdPack.WriteI2C, [
-                        i2caddr,
-                        sendStop ? 1 : 0,
-                        data,
-                    ])
-                )
-            )
-        }
-
-        readI2C(i2caddr: number, n: number): Buffer {
+        /**
+         * Combined I2C transaction:
+         * cmd payload: [address: u8][num_read: u8][write_buf: bytes...]
+         * report:      [status: u8][read_buf: bytes...]
+         */
+        transactionI2C(
+            i2caddr: number,
+            numRead: number,
+            writeBuf: Buffer,
+        ): Buffer {
             this._rx = null
+            this._lastStatus = fwdI2C.Status.OK
+
             const pkt = jacdac.JDPacket.from(
-                jacdac.FwdI2CSvcCmd.ReadI2C,
-                jacdac.jdpack(jacdac.FwdI2CSvcCmdPack.ReadI2C, [i2caddr, n])
+                fwdI2C.FwdI2CTransactionCmd.Transaction,
+                jacdac.jdpack(
+                    fwdI2C.FwdI2CTransactionCmdPack.Transaction, // "u8 u8 b"
+                    [i2caddr & 0xff, numRead & 0xff, writeBuf],
+                ),
             )
+
             this.sendCommand(pkt)
+
             const t0 = control.millis()
             while (!this._rx && control.millis() - t0 < 200) pause(10)
+
             return this._rx
+        }
+
+        lastStatus(): fwdI2C.Status {
+            return this._lastStatus
+        }
+
+        ok(): boolean {
+            return this._lastStatus === fwdI2C.Status.OK
         }
     }
 
