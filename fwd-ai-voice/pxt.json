@@ -8,7 +8,7 @@
         "fwd-i2c": "github:Forward-Education/pxt-fwd-base/fwd-i2c#29ce861e2ad401fb2e9de4949831348c5657573e"
     },
     "files": [
-        "voiceRecognition.ts"
+        "client.ts"
     ],
     "testFiles": [
         "test.ts"
