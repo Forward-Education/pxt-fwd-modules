@@ -75,8 +75,7 @@ enum HUSKYLENSphoto {
     SCREENSHOT,
 }
 
-//% weight=100  color=#e7660b icon="\uf083"  block="HuskyLens"
-namespace modules {
+namespace fwdAiVision {
     enum protocolCommand {
         COMMAND_REQUEST = 0x20,
         COMMAND_REQUEST_BLOCKS = 0x21,
@@ -712,7 +711,7 @@ namespace modules {
 
     function protocolWrite(buffer: Buffer) {
         // write-only I2C transaction (num_read = 0)
-        modules.huskylens1.transactionI2C(deviceAddress, 0, buffer)
+        fwdAiVision.huskylens1.transactionI2C(deviceAddress, 0, buffer)
         basic.pause(50)
     }
 
@@ -776,7 +775,7 @@ namespace modules {
         let buf = pins.createBuffer(16)
         if (m_i == 16) {
             // read-only I2C transaction: empty write_buf, num_read = 16
-            buf = modules.huskylens1.transactionI2C(
+            buf = fwdAiVision.huskylens1.transactionI2C(
                 deviceAddress,
                 16,
                 Buffer.create(0),
@@ -1087,7 +1086,7 @@ namespace modules {
 
     export class HuskylensClient extends jacdac.Client {
         constructor(role: string) {
-            super(fwdI2C.SRV_I2CSVC, role) // NEW service class
+            super(fwdI2C.SRV_I2CSVC, role)
         }
 
         private _rx: Buffer

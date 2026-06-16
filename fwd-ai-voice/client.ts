@@ -614,7 +614,7 @@ namespace fwdAiVoice {
 
     export class VoiceRecognitionClient extends jacdac.Client {
         constructor(role: string) {
-            super(jacdac.SRV_I2CSVC, role) // NEW service class
+            super(fwdI2C.SRV_I2CSVC, role)
         }
 
         private _rx: Buffer
