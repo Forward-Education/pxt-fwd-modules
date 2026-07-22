@@ -140,36 +140,46 @@ namespace fwdSensors {
         }
 
         /**
-         * Prints the provided number on the designated line of the LCD. Limited to 16 characters.
-         * A number over 16 characters is replaced with the message ">16 chars".
+         * Prints the provided number on the designated line of the LCD. Limited to 7 digits.
+         * A number over 7 digits triggers the message "err:>|<".
          * An invalid line parameter triggers the message "err:!1-2" on line 1.
          * This block has a 40 ms pause built-in to ensure proper processing of commands.
          * @param value the number to print
          * @param line the line to print the number on
          */
         //% block="print number $value on line $line of $this"
+        //% value.min=-9999999 value.max=9999999
         //% line.min=1 line.max=2 line.defl=1
         //% blockId=fwd_lcd_print_line_number
         //% group="LCD"
         //% weight=97
         printLineNumber(value: number, line: number) {
+            if (!this.numberIsInRange(value)) {
+                this.printLineString("err:>|<", line);
+                return
+            }
             this.printLineString(value.toString(), line)
         }
 
         /**
-         * Prints the provided number on the designated quadrant of the LCD. Limited to 8 characters.
-         * A number over 8 characters is replaced with the message ">8 chars".
+         * Prints the provided number on the designated quadrant of the LCD. Limited to 7 digits.
+         * A number over 7 digits triggers the message "err:>|<".
          * An invalid quadrant parameter triggers the message "err:!1-4" in quadrant 1.
          * This block has a 40 ms pause built-in to ensure proper processing of commands.
          * @param value the number to print
          * @param quadrant the quadrant to print the number on
          */
         //% block="print number $value on quadrant $quadrant of $this"
+        //% value.min=-9999999 value.max=9999999
         //% quadrant.min=1 quadrant.max=4 quadrant.defl=1
         //% blockId=fwd_lcd_print_quadrant_number
         //% group="LCD"
         //% weight=96
         printQuadrantNumber(value: number, quadrant: number) {
+            if (!this.numberIsInRange(value)) {
+                this.printQuadrantString("err:>|<", quadrant);
+                return
+            }
             this.printQuadrantString(value.toString(), quadrant)
         }
 
@@ -209,6 +219,13 @@ namespace fwdSensors {
                 blanks += " "
             }
             return blanks
+        }
+
+        numberIsInRange(value: number): boolean {
+            if (value > 9999999 || value < -9999999) {
+                return false;
+            }
+            return true;
         }
     }
 
