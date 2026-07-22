@@ -20,23 +20,10 @@ namespace fwdLights {
 
     //% fixedInstances
     export class FwdLEDRingClient extends modules.LedClient {
-        MAX_REPORT_BRIGHTNESS = 10
-        MAX_SERVICE_BRIGHTNESS = 100
-        toBlocksBrightness(serviceBrightness: number): number {
-            return (
-                (this.MAX_REPORT_BRIGHTNESS * serviceBrightness) /
-                this.MAX_SERVICE_BRIGHTNESS
-            )
-        }
-        toServiceBrightness(reportBrightness: number): number {
-            return (
-                (this.MAX_SERVICE_BRIGHTNESS * reportBrightness) /
-                this.MAX_REPORT_BRIGHTNESS
-            )
-        }
-
+        BRIGHTNESS_LUT: number[]
         constructor(role: string) {
             super(role)
+            this.BRIGHTNESS_LUT = [0, 0.8, 1.2, 1.9, 2.6, 3.5, 4.6, 5.8, 7.1, 8.7, 10]
         }
 
         /**
@@ -64,6 +51,8 @@ namespace fwdLights {
             super.setAll(color)
         }
 
+        
+
         /**
          * Set the brightness of the pixels.
          * @param brightness a number between 0 (off) and 10 (full power)
@@ -74,7 +63,8 @@ namespace fwdLights {
         //% brightness.min=0 brightness.max=10 brightness.defl=10
         //% weight=98
         setBrightness(brightness: number): void {
-            super.setBrightness(this.toServiceBrightness(brightness))
+            console.log(this.BRIGHTNESS_LUT[brightness])
+            super.setBrightness(this.BRIGHTNESS_LUT[brightness])
         }
 
         /**
@@ -111,7 +101,16 @@ namespace fwdLights {
         //% group="LED Ring"
         //% weight=95
         brightness(): number {
-            return this.toBlocksBrightness(super.brightness())
+            const rawVal = super.brightness()
+            // Walk through the array until the raw value is less than the target
+            // As the value is passed around it always ends up lower than what was set
+            for (let i = 0; i < this.BRIGHTNESS_LUT.length; i++) {
+                if (rawVal <= this.BRIGHTNESS_LUT[i] + 0.05) { // add a tiny buffer to the set value
+                    return i
+                }
+            }
+            // fallback to the last index tested
+            return this.BRIGHTNESS_LUT.length - 1
         }
     }
 
