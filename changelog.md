@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), but without change categorization.
 
+## [1.1.1]
+
+- changed LED ring brightness blocks to use a visually-determined calibration curve
+- flipped float sensor state blocks
+- limited LCD number printing magnitude
+- updated I2C and AI voice/vision code
+
 ## [1.1.0]
 
 - removed isEnabled and setEnabled servo blocks
@@ -18,5 +25,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but witho
 - Updated pxt-fwd-base dependencies to v1.0.12
 - Removed update-dependency script, just use vs code search and replace instead
 
+[1.1.1]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.0...1.1.1
 [1.1.0]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.0.13...1.1.0
 [1.0.13]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.0.10...1.0.13
