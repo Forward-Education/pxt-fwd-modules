@@ -4,7 +4,7 @@
     "description": "FWD Edu RPM",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.1",
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.2",
         "jacdac-rotations-per-minute": "github:jacdac/pxt-jacdac/rotations-per-minute#v1.9.41"
     },
     "files": [

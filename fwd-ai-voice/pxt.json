@@ -4,8 +4,8 @@
     "description": "FWD Edu AI Voice",
     "license": "MIT",
     "dependencies": {
-        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.1",
-        "fwd-i2c": "github:Forward-Education/pxt-fwd-base/fwd-i2c#v1.1.1"
+        "fwd-base": "github:Forward-Education/pxt-fwd-base#v1.1.2",
+        "fwd-i2c": "github:Forward-Education/pxt-fwd-base/fwd-i2c#v1.1.2"
     },
     "files": [
         "client.ts"
