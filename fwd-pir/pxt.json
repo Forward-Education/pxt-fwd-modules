@@ -1,6 +1,6 @@
 {
     "name": "fwd-pir",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "FWD Edu PIR",
     "license": "MIT",
     "dependencies": {
