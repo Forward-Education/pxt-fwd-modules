@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but witho
 
 ## [1.1.4]
 
-- refactored AI voice and vision extensions for approval
+- refactored AI voice and vision modules for extension approval
 
 ## [1.1.4]
 
