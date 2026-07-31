@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but witho
 
 ## [1.1.4]
 
+- refactored AI voice and vision extensions for approval
+
+## [1.1.4]
+
 - fixed AI voice block id's clashing with DFRobot extension
 
 ## [1.1.3]
@@ -37,6 +41,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but witho
 - Updated pxt-fwd-base dependencies to v1.0.12
 - Removed update-dependency script, just use vs code search and replace instead
 
+[1.1.5]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.4...1.1.5
 [1.1.4]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.3...1.1.4
 [1.1.3]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.2...1.1.3
 [1.1.2]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.1...1.1.2
