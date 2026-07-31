@@ -1,121 +1,113 @@
-enum Content1 {
-    //% block="X center"
-    xCenter = 1,
-    //% block="Y center"
-    yCenter = 2,
-    //% block="width"
-    width = 3,
-    //% block="height"
-    height = 4,
-}
-
-enum Content2 {
-    //% block="X beginning"
-    xOrigin = 1,
-    //% block="Y beginning"
-    yOrigin = 2,
-    //% block="X endpoint"
-    xTarget = 3,
-    //% block="Y endpoint"
-    yTarget = 4,
-}
-
-enum Content3 {
-    //% block="ID"
-    ID = 5,
-    //% block="X center"
-    xCenter = 1,
-    //% block="Y center"
-    yCenter = 2,
-    //% block="width"
-    width = 3,
-    //% block="height"
-    height = 4,
-}
-
-enum Content4 {
-    //% block="ID"
-    ID = 5,
-    //% block="X beginning"
-    xOrigin = 1,
-    //% block="Y beginning"
-    yOrigin = 2,
-    //% block="X endpoint"
-    xTarget = 3,
-    //% block="Y endpoint"
-    yTarget = 4,
-}
-
-enum HUSKYLENSResultType_t {
-    //%block="frame"
-    HUSKYLENSResultBlock = 1,
-    //%block="arrow"
-    HUSKYLENSResultArrow = 2,
-}
-
-let FIRST = {
-    first: -1,
-    xCenter: -1,
-    xOrigin: -1,
-    protocolSize: -1,
-    algorithmType: -1,
-    requestID: -1,
-}
-
-enum HUSKYLENSMode {
-    //%block="save"
-    SAVE,
-    //%block="load"
-    LOAD,
-}
-enum HUSKYLENSphoto {
-    //%block="photo"
-    PHOTO,
-    //%block="screenshot"
-    SCREENSHOT,
-}
-
 namespace fwdAiVision {
-    enum protocolCommand {
-        COMMAND_REQUEST = 0x20,
-        COMMAND_REQUEST_BLOCKS = 0x21,
-        COMMAND_REQUEST_ARROWS = 0x22,
-        COMMAND_REQUEST_LEARNED = 0x23,
-        COMMAND_REQUEST_BLOCKS_LEARNED = 0x24,
-        COMMAND_REQUEST_ARROWS_LEARNED = 0x25,
-        COMMAND_REQUEST_BY_ID = 0x26,
-        COMMAND_REQUEST_BLOCKS_BY_ID = 0x27,
-        COMMAND_REQUEST_ARROWS_BY_ID = 0x28,
-        COMMAND_RETURN_INFO = 0x29,
-        COMMAND_RETURN_BLOCK = 0x2a,
-        COMMAND_RETURN_ARROW = 0x2b,
-        COMMAND_REQUEST_KNOCK = 0x2c,
-        COMMAND_REQUEST_ALGORITHM = 0x2d,
-        COMMAND_RETURN_OK = 0x2e,
-        COMMAND_REQUEST_LEARN = 0x2f,
-        COMMAND_REQUEST_FORGET = 0x30,
-        COMMAND_REQUEST_SENSOR = 0x31,
+    export enum BoxData {
+        //% block="x center"
+        XCenter = 1,
+        //% block="y center"
+        YCenter = 2,
+        //% block="width"
+        Width = 3,
+        //% block="height"
+        Height = 4,
     }
 
-    export enum protocolAlgorithm {
-        //%block="Face Recognition"
-        ALGORITHM_FACE_RECOGNITION = 0,
-        //%block="Object Tracking"
-        ALGORITHM_OBJECT_TRACKING = 1,
-        //%block="Object Recognition"
-        ALGORITHM_OBJECT_RECOGNITION = 2,
-        //%block="Line Tracking"
-        ALGORITHM_LINE_TRACKING = 3,
-        //%block="Color Recognition"
-        ALGORITHM_COLOR_RECOGNITION = 4,
-        //%block="Tag Recognition"
-        ALGORITHM_TAG_RECOGNITION = 5,
-        //%block="Object Classification"
-        OBJECTCLASSIFICATION,
-        //%block="QR Recogmition (EDU only)"
-        QRRECOGMITION,
-        //%block="Barcode Recognition (EDU only)"
-        BARCODERECOGNITION,
+    export enum ArrowData {
+        //% block="x beginning"
+        XOrigin = 1,
+        //% block="y beginning"
+        YOrigin = 2,
+        //% block="x endpoint"
+        XTarget = 3,
+        //% block="y endpoint"
+        YTarget = 4,
+    }
+
+    export enum BoxDataWithId {
+        //% block="ID"
+        ID = 5,
+        //% block="x center"
+        XCenter = 1,
+        //% block="y center"
+        YCenter = 2,
+        //% block="width"
+        Width = 3,
+        //% block="height"
+        Height = 4,
+    }
+
+    export enum ArrowDataWithId {
+        //% block="ID"
+        ID = 5,
+        //% block="x beginning"
+        XOrigin = 1,
+        //% block="y beginning"
+        YOrigin = 2,
+        //% block="x endpoint"
+        XTarget = 3,
+        //% block="y endpoint"
+        YTarget = 4,
+    }
+
+    export enum ResultType {
+        //%block="frame"
+        Frame = 1,
+        //%block="arrow"
+        Arrow = 2,
+    }
+
+    export enum ModelAction {
+        //%block="save"
+        Save,
+        //%block="load"
+        Load,
+    }
+
+    export enum Capture {
+        //%block="photo"
+        Photo,
+        //%block="screenshot"
+        Screenshot,
+    }
+
+    enum ProtocolCommand {
+        Request = 0x20,
+        RequestBlocks = 0x21,
+        RequestArrows = 0x22,
+        RequestLearned = 0x23,
+        RequestBlocksLearned = 0x24,
+        RequestArrowsLearned = 0x25,
+        RequestById = 0x26,
+        RequestBlocksById = 0x27,
+        RequestArrowsById = 0x28,
+        ReturnInfo = 0x29,
+        ReturnBlock = 0x2a,
+        ReturnArrow = 0x2b,
+        RequestKnock = 0x2c,
+        RequestAlgorithm = 0x2d,
+        ReturnOk = 0x2e,
+        RequestLearn = 0x2f,
+        RequestForget = 0x30,
+        RequestSensor = 0x31,
+    }
+
+    export enum ProtocolAlgorithm {
+        //%block="face recognition"
+        FaceRecognition = 0,
+        //%block="object tracking"
+        ObjectTracking = 1,
+        //%block="object recognition"
+        ObjectRecognition = 2,
+        //%block="line tracking"
+        LineTracking = 3,
+        //%block="color recognition"
+        ColorRecognition = 4,
+        //%block="tag recognition"
+        TagRecognition = 5,
+        //%block="object classification"
+        ObjectClassification,
+        //%block="QR recognition (EDU only)"
+        QRRecognition,
+        //%block="barcode recognition (EDU only)"
+        BarcodeRecognition,
     }
 
     const HUSKYLENS_I2C_ADDR = 0x32 // i2c address
@@ -131,8 +123,7 @@ namespace fwdAiVision {
         [0],
         [0],
     ]
-    let Protocol_t: number[] = [0, 0, 0, 0, 0, 0]
-    let i = 1
+    let protocolInfo: number[] = [0, 0, 0, 0, 0, 0]
     let FRAME_BUFFER_SIZE = 128
     let HEADER_0_INDEX = 0
     let HEADER_1_INDEX = 1
@@ -141,28 +132,22 @@ namespace fwdAiVision {
     let COMMAND_INDEX = 4
     let CONTENT_INDEX = 5
     let PROTOCOL_SIZE = 6
-    let send_index = 0
-    let receive_index = 0
+    let sendIndex = 0
+    let receiveIndex = 0
 
-    let COMMAND_REQUEST = 0x20
+    let receiveBuffer: number[] = []
+    let sendBuffer: number[] = []
 
-    let receive_buffer: number[] = []
-    let send_buffer: number[] = []
-    let buffer: number[] = []
-
-    let send_fail = false
-    let receive_fail = false
-    let content_current = 0
-    let content_end = 0
-    let content_read_end = false
-
-    let command: number
-    let content: number
+    let sendFail = false
+    let receiveFail = false
+    let contentCurrent = 0
+    let contentEnd = 0
+    let contentReadEnd = false
 
     let deviceAddress = 0
 
     /**
-     * HuskyLens init I2C until success
+     * Connect to the HuskyLens over I2C, retrying until the camera answers.
      */
     //%block="HuskyLens initialize I2C until success"
     //% weight=90
@@ -171,122 +156,130 @@ namespace fwdAiVision {
         while (!readKnock());
     }
     /**
-     * HuskyLens change mode algorithm until success.
+     * Switch the HuskyLens to a different recognition algorithm, retrying until
+     * the camera confirms the change.
+     * @param mode the recognition algorithm to switch to
      */
     //%block="HuskyLens switch algorithm to %mode"
     //% weight=85
-    export function initMode(mode: protocolAlgorithm) {
-        writeAlgorithm(mode, protocolCommand.COMMAND_REQUEST_ALGORITHM)
-        while (!wait(protocolCommand.COMMAND_RETURN_OK));
+    export function initMode(mode: ProtocolAlgorithm) {
+        writeAlgorithm(mode, ProtocolCommand.RequestAlgorithm)
+        while (!wait(ProtocolCommand.ReturnOk));
     }
     /**
-     * HuskyLens requests data and stores it in the result.
+     * Ask the HuskyLens what it can see right now and store it as the result.
+     * The other blocks all read from that stored result.
      */
-
     //% block="HuskyLens request data once and save into the result"
     //% weight=80
     export function request(): void {
-        protocolWriteCommand(protocolCommand.COMMAND_REQUEST)
+        protocolWriteCommand(ProtocolCommand.Request)
         processReturn()
     }
     /**
-     * HuskyLens get the number of the learned ID from result.
+     * How many IDs the current algorithm has learned, from the stored result.
      */
     //%block="HuskyLens get a total number of learned IDs from the result"
     //% weight=79
-    export function getIds(): number {
-        return Protocol_t[2]
+    export function learnedIdCount(): number {
+        return protocolInfo[2]
     }
     /**
-     * The box or arrow HuskyLens got from result appears in screen?
+     * Check whether anything at all is on screen in the stored result.
+     * @param resultType whether to look for frames or for arrows
      */
-    //%block="HuskyLens check if %Ht is on screen from the result"
+    //%block="HuskyLens check if %resultType is on screen from the result"
     //% weight=78
-    export function isAppear_s(Ht: HUSKYLENSResultType_t): boolean {
-        switch (Ht) {
+    export function isOnScreen(resultType: ResultType): boolean {
+        switch (resultType) {
             case 1:
-                return countBlocks_s() != 0 ? true : false
+                return countAllBlocks() != 0 ? true : false
             case 2:
-                return countArrows_s() != 0 ? true : false
+                return countAllArrows() != 0 ? true : false
             default:
                 return false
         }
     }
     /**
-     * HuskyLens get the parameter of box near the screen center from result.
+     * Read one measurement of the frame closest to the center of the screen,
+     * from the stored result. Gives -1 if there is no frame on screen.
+     * @param data which measurement of the frame to read
      */
     //% block="HuskyLens get %data of frame closest to the center of screen from the result"
     //% weight=77
-    export function readBox_s(data: Content3): number {
-        let hk_x
-        let hk_y = readBlockCenterParameterDirect()
-        if (hk_y != -1) {
+    export function readClosestBox(data: BoxDataWithId): number {
+        let value
+        let resultIndex = readBlockCenterParameterDirect()
+        if (resultIndex != -1) {
             switch (data) {
                 case 1:
-                    hk_x = protocolPtr[hk_y][1]
+                    value = protocolPtr[resultIndex][1]
                     break
                 case 2:
-                    hk_x = protocolPtr[hk_y][2]
+                    value = protocolPtr[resultIndex][2]
                     break
                 case 3:
-                    hk_x = protocolPtr[hk_y][3]
+                    value = protocolPtr[resultIndex][3]
                     break
                 case 4:
-                    hk_x = protocolPtr[hk_y][4]
+                    value = protocolPtr[resultIndex][4]
                     break
                 default:
-                    hk_x = protocolPtr[hk_y][5]
+                    value = protocolPtr[resultIndex][5]
             }
-        } else hk_x = -1
-        return hk_x
+        } else value = -1
+        return value
     }
     /**
-     * HuskyLens get the parameter of arrow near the screen center from result.
+     * Read one measurement of the arrow closest to the center of the screen,
+     * from the stored result. Gives -1 if there is no arrow on screen.
+     * @param data which measurement of the arrow to read
      */
     //% block="HuskyLens get %data of arrow closest to the center of screen from the result"
     //% weight=77
-    export function readArrow_s(data: Content4): number {
-        let hk_x
-        let hk_y = readArrowCenterParameterDirect()
-        if (hk_y != -1) {
+    export function readClosestArrow(data: ArrowDataWithId): number {
+        let value
+        let resultIndex = readArrowCenterParameterDirect()
+        if (resultIndex != -1) {
             switch (data) {
                 case 1:
-                    hk_x = protocolPtr[hk_y][1]
+                    value = protocolPtr[resultIndex][1]
                     break
                 case 2:
-                    hk_x = protocolPtr[hk_y][2]
+                    value = protocolPtr[resultIndex][2]
                     break
                 case 3:
-                    hk_x = protocolPtr[hk_y][3]
+                    value = protocolPtr[resultIndex][3]
                     break
                 case 4:
-                    hk_x = protocolPtr[hk_y][4]
+                    value = protocolPtr[resultIndex][4]
                     break
                 default:
-                    hk_x = protocolPtr[hk_y][5]
+                    value = protocolPtr[resultIndex][5]
             }
-        } else hk_x = -1
-        return hk_x
+        } else value = -1
+        return value
     }
     /**
-     * The ID Huskylens got from result has been learned before?
-     * @param id to id ,eg: 1
+     * Check whether the current algorithm has already learned an ID.
+     * @param id the ID to check for, eg: 1
      */
     //% block="HuskyLens check if ID %id is learned from the result"
     //% weight=76
     export function isLearned(id: number): boolean {
-        let hk_x = countLearnedIDs()
-        if (id <= hk_x) return true
+        let value = countLearnedIDs()
+        if (id <= value) return true
         return false
     }
     /**
-     * The box or arrow corresponding to ID obtained by HuskyLens from result appears in screen？
-     * @param id to id ,eg: 1
+     * Check whether something with a given ID is on screen in the stored result.
+     * @param id the learned ID to look for, eg: 1
+     * @param resultType whether to look for frames or for arrows
      */
-    //% block="HuskyLens check if ID %id %Ht is on screen from the result"
+    //% block="HuskyLens check if ID %id %resultType is on screen from the result"
     //% weight=75
-    export function isAppear(id: number, Ht: HUSKYLENSResultType_t): boolean {
-        switch (Ht) {
+    export function isIdOnScreen(id: number, resultType: ResultType): boolean {
+        switch (resultType) {
             case 1:
                 return countBlocks(id) != 0 ? true : false
             case 2:
@@ -296,153 +289,162 @@ namespace fwdAiVision {
         }
     }
     /**
-     * HuskyLens get the parameter of the box corresponding to ID from result.
-     * @param id to id ,eg: 1
+     * Read one measurement of the first frame with a given ID, from the stored
+     * result. Gives -1 if no frame on screen has that ID.
+     * @param id the learned ID of the frame to read, eg: 1
+     * @param data which measurement of the frame to read
      */
-    //%block="HuskyLens get  $number1 of ID $id frame from the result"
+    //%block="HuskyLens get $data of ID $id frame from the result"
     //% weight=65
-    export function readeBox(id: number, number1: Content1): number {
-        let hk_y = cycle_block(id, 1)
-        let hk_x
+    export function readIdBox(id: number, data: BoxData): number {
+        let resultIndex = findBlockIndex(id, 1)
+        let value
         if (countBlocks(id) != 0) {
-            if (hk_y != null) {
-                switch (number1) {
+            if (resultIndex != null) {
+                switch (data) {
                     case 1:
-                        hk_x = protocolPtr[hk_y][1]
+                        value = protocolPtr[resultIndex][1]
                         break
                     case 2:
-                        hk_x = protocolPtr[hk_y][2]
+                        value = protocolPtr[resultIndex][2]
                         break
                     case 3:
-                        hk_x = protocolPtr[hk_y][3]
+                        value = protocolPtr[resultIndex][3]
                         break
                     case 4:
-                        hk_x = protocolPtr[hk_y][4]
+                        value = protocolPtr[resultIndex][4]
                         break
                 }
-            } else hk_x = -1
-        } else hk_x = -1
-        return hk_x
+            } else value = -1
+        } else value = -1
+        return value
     }
     /**
-     * HuskyLens get the parameter of the arrow corresponding to ID from result.
-     * @param id to id ,eg: 1
+     * Read one measurement of the first arrow with a given ID, from the stored
+     * result. Gives -1 if no arrow on screen has that ID.
+     * @param id the learned ID of the arrow to read, eg: 1
+     * @param data which measurement of the arrow to read
      */
-
-    //%block="HuskyLens get $number1 of ID $id arrow from the result"
+    //%block="HuskyLens get $data of ID $id arrow from the result"
     //% weight=60
-    export function readeArrow(id: number, number1: Content2): number {
-        let hk_y = cycle_arrow(id, 1)
-        let hk_x
+    export function readIdArrow(id: number, data: ArrowData): number {
+        let resultIndex = findArrowIndex(id, 1)
+        let value
         if (countArrows(id) != 0) {
-            if (hk_y != null) {
-                switch (number1) {
+            if (resultIndex != null) {
+                switch (data) {
                     case 1:
-                        hk_x = protocolPtr[hk_y][1]
+                        value = protocolPtr[resultIndex][1]
                         break
                     case 2:
-                        hk_x = protocolPtr[hk_y][2]
+                        value = protocolPtr[resultIndex][2]
                         break
                     case 3:
-                        hk_x = protocolPtr[hk_y][3]
+                        value = protocolPtr[resultIndex][3]
                         break
                     case 4:
-                        hk_x = protocolPtr[hk_y][4]
+                        value = protocolPtr[resultIndex][4]
                         break
                     default:
-                        hk_x = -1
+                        value = -1
                 }
-            } else hk_x = -1
-        } else hk_x = -1
-        return hk_x
+            } else value = -1
+        } else value = -1
+        return value
     }
     /**
-     * HuskyLens get the box or arrow total number from result.
-     *
+     * How many frames or arrows are on screen in the stored result.
+     * @param resultType whether to count frames or arrows
      */
-    //%block="HuskyLens get a total number of %Ht total from the result"
+    //%block="HuskyLens get a total number of %resultType from the result"
     //% weight=90
     //% advanced=true
-    export function getBox(Ht: HUSKYLENSResultType_t): number {
-        switch (Ht) {
+    export function resultCount(resultType: ResultType): number {
+        switch (resultType) {
             case 1:
-                return countBlocks_s()
+                return countAllBlocks()
             case 2:
-                return countArrows_s()
+                return countAllArrows()
             default:
                 return 0
         }
     }
     /**
-     * HuskyLens get the parameter of Nth box from result.
-     * @param index to index ,eg: 1
+     * Read one measurement of a frame picked by its place in the stored result.
+     * Gives -1 if there is no frame in that place.
+     * @param index which frame to read, counting from 1, eg: 1
+     * @param data which measurement of the frame to read
      */
     //% block="HuskyLens get $data of the No. $index frame from the result"
     //% weight=60
     //% advanced=true
-    export function readBox_ss(index: number, data: Content3): number {
-        let hk_x = -1
-        let hk_i = index - 1
-        if (protocolPtr[hk_i][0] == protocolCommand.COMMAND_RETURN_BLOCK) {
+    export function readBoxAt(index: number, data: BoxDataWithId): number {
+        let value = -1
+        let resultIndex = index - 1
+        if (protocolPtr[resultIndex][0] == ProtocolCommand.ReturnBlock) {
             switch (data) {
                 case 1:
-                    hk_x = protocolPtr[hk_i][1]
+                    value = protocolPtr[resultIndex][1]
                     break
                 case 2:
-                    hk_x = protocolPtr[hk_i][2]
+                    value = protocolPtr[resultIndex][2]
                     break
                 case 3:
-                    hk_x = protocolPtr[hk_i][3]
+                    value = protocolPtr[resultIndex][3]
                     break
                 case 4:
-                    hk_x = protocolPtr[hk_i][4]
+                    value = protocolPtr[resultIndex][4]
                     break
                 default:
-                    hk_x = protocolPtr[hk_i][5]
+                    value = protocolPtr[resultIndex][5]
             }
-        } else hk_x = -1
-        return hk_x
+        } else value = -1
+        return value
     }
     /**
-     * HuskyLens get the parameter of the Nth arrow from result.
-     * @param index to index ,eg: 1
+     * Read one measurement of an arrow picked by its place in the stored result.
+     * Gives -1 if there is no arrow in that place.
+     * @param index which arrow to read, counting from 1, eg: 1
+     * @param data which measurement of the arrow to read
      */
     //% block="HuskyLens get $data of the No. $index arrow from the result"
     //% weight=60
     //% advanced=true
-    export function readArrow_ss(index: number, data: Content4): number {
-        let hk_x
-        let hk_i = index - 1
-        if (protocolPtr[hk_i][0] == protocolCommand.COMMAND_RETURN_ARROW) {
+    export function readArrowAt(index: number, data: ArrowDataWithId): number {
+        let value
+        let resultIndex = index - 1
+        if (protocolPtr[resultIndex][0] == ProtocolCommand.ReturnArrow) {
             switch (data) {
                 case 1:
-                    hk_x = protocolPtr[hk_i][1]
+                    value = protocolPtr[resultIndex][1]
                     break
                 case 2:
-                    hk_x = protocolPtr[hk_i][2]
+                    value = protocolPtr[resultIndex][2]
                     break
                 case 3:
-                    hk_x = protocolPtr[hk_i][3]
+                    value = protocolPtr[resultIndex][3]
                     break
                 case 4:
-                    hk_x = protocolPtr[hk_i][4]
+                    value = protocolPtr[resultIndex][4]
                     break
                 default:
-                    hk_x = protocolPtr[hk_i][5]
+                    value = protocolPtr[resultIndex][5]
             }
-        } else hk_x = -1
-        //protocolPtr[hk_i][0] = 0;
-        return hk_x
+        } else value = -1
+        //protocolPtr[resultIndex][0] = 0;
+        return value
     }
     /**
-     * HuskyLens get the total number of box or arrow from result.
-     * @param id to id ,eg: 1
+     * How many frames or arrows with a given ID are on screen in the stored
+     * result.
+     * @param id the learned ID to count, eg: 1
+     * @param resultType whether to count frames or arrows
      */
-    //%block="HuskyLens get a total number of ID %id %Ht total from the result"
+    //%block="HuskyLens get a total number of ID %id %resultType from the result"
     //% weight=55
     //% advanced=true
-    export function getBox_S(id: number, Ht: HUSKYLENSResultType_t): number {
-        switch (Ht) {
+    export function idResultCount(id: number, resultType: ResultType): number {
+        switch (resultType) {
             case 1:
                 return countBlocks(id)
             case 2:
@@ -452,104 +454,111 @@ namespace fwdAiVision {
         }
     }
     /**
-     * HuskyLens get the parameter of the Nth box corresponding to ID from result.
-     * @param id to id ,eg: 1
-     * @param index to index ,eg: 1
+     * Read one measurement of a frame with a given ID, picked by its place
+     * among that ID's frames in the stored result. Gives -1 if there is no such
+     * frame.
+     * @param id the learned ID of the frame to read, eg: 1
+     * @param index which of that ID's frames to read, counting from 1, eg: 1
+     * @param data which measurement of the frame to read
      */
-    //%block="HuskyLens get $number1 of the ID $id  No. $index frame from the result"
+    //%block="HuskyLens get $data of the ID $id No. $index frame from the result"
     //% weight=45
     //% advanced=true
-    export function readeBox_index(
+    export function readIdBoxAt(
         id: number,
         index: number,
-        number1: Content1,
+        data: BoxData,
     ): number {
-        let hk_y = cycle_block(id, index)
-        let hk_x
+        let resultIndex = findBlockIndex(id, index)
+        let value
         if (countBlocks(id) != 0) {
-            if (hk_y != null) {
-                switch (number1) {
+            if (resultIndex != null) {
+                switch (data) {
                     case 1:
-                        hk_x = protocolPtr[hk_y][1]
+                        value = protocolPtr[resultIndex][1]
                         break
                     case 2:
-                        hk_x = protocolPtr[hk_y][2]
+                        value = protocolPtr[resultIndex][2]
                         break
                     case 3:
-                        hk_x = protocolPtr[hk_y][3]
+                        value = protocolPtr[resultIndex][3]
                         break
                     case 4:
-                        hk_x = protocolPtr[hk_y][4]
+                        value = protocolPtr[resultIndex][4]
                         break
                     default:
-                        hk_x = -1
+                        value = -1
                 }
-            } else hk_x = -1
-        } else hk_x = -1
-        return hk_x
+            } else value = -1
+        } else value = -1
+        return value
     }
     /**
-     * HuskyLens get the parameter of the Nth arrow corresponding to ID from result.
-     * @param id to id ,eg: 1
-     * @param index to index ,eg: 1
+     * Read one measurement of an arrow with a given ID, picked by its place
+     * among that ID's arrows in the stored result. Gives -1 if there is no such
+     * arrow.
+     * @param id the learned ID of the arrow to read, eg: 1
+     * @param index which of that ID's arrows to read, counting from 1, eg: 1
+     * @param data which measurement of the arrow to read
      */
-    //%block="HuskyLens get $number1 of the ID $id No. $index arrow from the result"
+    //%block="HuskyLens get $data of the ID $id No. $index arrow from the result"
     //% weight=35
     //% advanced=true
-    export function readeArrow_index(
+    export function readIdArrowAt(
         id: number,
         index: number,
-        number1: Content2,
+        data: ArrowData,
     ): number {
-        let hk_y = cycle_arrow(id, index)
-        let hk_x
+        let resultIndex = findArrowIndex(id, index)
+        let value
         if (countArrows(id) != 0) {
-            if (hk_y != null) {
-                switch (number1) {
+            if (resultIndex != null) {
+                switch (data) {
                     case 1:
-                        hk_x = protocolPtr[hk_y][1]
+                        value = protocolPtr[resultIndex][1]
                         break
                     case 2:
-                        hk_x = protocolPtr[hk_y][2]
+                        value = protocolPtr[resultIndex][2]
                         break
                     case 3:
-                        hk_x = protocolPtr[hk_y][3]
+                        value = protocolPtr[resultIndex][3]
                         break
                     case 4:
-                        hk_x = protocolPtr[hk_y][4]
+                        value = protocolPtr[resultIndex][4]
                         break
                     default:
-                        hk_x = -1
+                        value = -1
                 }
-            } else hk_x = -1
-        } else hk_x = -1
-        return hk_x
+            } else value = -1
+        } else value = -1
+        return value
     }
     /**
-     * Huskylens automatic learning ID
-     * @param id to id ,eg: 1
+     * Learn whatever is in view once, and save it under an ID.
+     * @param id the ID to save what the camera sees as, eg: 1
      */
     //%block="HuskyLens learn ID %id once automatically"
     //% weight=30
     //% advanced=true
-    export function writeLearn1(id: number): void {
+    export function learnId(id: number): void {
         writeAlgorithm(id, 0x36)
-        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+        //while(!wait(ProtocolCommand.ReturnOk));
     }
     /**
-     * Huskylens forget all learning data of the current algorithm
+     * Forget everything the current algorithm has learned.
      */
     //%block="HuskyLens forget all learning data of the current algorithm"
     //% weight=29
     //% advanced=true
     export function forgetLearn(): void {
         writeAlgorithm(0x47, 0x37)
-        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+        //while(!wait(ProtocolCommand.ReturnOk));
     }
     /**
-     * Set ID name
-     * @param id to id ,eg: 1
-     * @param name to name ,eg: "DFRobot"
+     * Give one of the current algorithm's learned IDs a name, which the
+     * HuskyLens shows on screen next to it.
+     * @param id the learned ID to name, eg: 1
+     * @param name the name to give that ID, eg: "DFRobot"
      */
     //%block="HuskyLens name ID %id of the current algorithm as %name"
     //% weight=28
@@ -557,156 +566,156 @@ namespace fwdAiVision {
     export function writeName(id: number, name: string): void {
         //do{
         let newname = name
-        let buffer = husky_lens_protocol_write_begin(0x2f)
-        send_buffer[send_index] = id
-        send_buffer[send_index + 1] = (newname.length + 1) * 2
-        send_index += 2
+        let buffer = protocolWriteBegin(0x2f)
+        sendBuffer[sendIndex] = id
+        sendBuffer[sendIndex + 1] = (newname.length + 1) * 2
+        sendIndex += 2
         for (let i = 0; i < newname.length; i++) {
-            send_buffer[send_index] = newname.charCodeAt(i)
+            sendBuffer[sendIndex] = newname.charCodeAt(i)
             //serial.writeNumber(newname.charCodeAt(i))
-            send_index++
+            sendIndex++
         }
-        send_buffer[send_index] = 0
-        send_index += 1
-        let length = husky_lens_protocol_write_end()
+        sendBuffer[sendIndex] = 0
+        sendIndex += 1
+        protocolWriteEnd()
         let Buffer = pins.createBufferFromArray(buffer)
         protocolWrite(Buffer)
-        //}while(!wait(protocolCommand.COMMAND_RETURN_OK));
+        //}while(!wait(ProtocolCommand.ReturnOk));
     }
     /**
-     * Display characters on the screen
-     * @param name to name ,eg: "DFRobot"
-     * @param x to x ,eg: 150
-     * @param y to y ,eg: 30
+     * Show your own text on the HuskyLens screen.
+     * @param text the text to show, eg: "DFRobot"
+     * @param x how far across the screen to put the text, eg: 150
+     * @param y how far down the screen to put the text, eg: 30
      */
-    //%block="HuskyLens show custom texts %name at position x %x y %y on screen"
+    //%block="HuskyLens show custom texts %text at position x %x y %y on screen"
     //% weight=27
     //% advanced=true
     //% x.min=0 x.max=319
     //% y.min=0 y.max=210
-    export function writeOSD(name: string, x: number, y: number): void {
+    export function showCustomText(text: string, x: number, y: number): void {
         //do{
-        let buffer = husky_lens_protocol_write_begin(0x34)
-        send_buffer[send_index] = name.length
+        let buffer = protocolWriteBegin(0x34)
+        sendBuffer[sendIndex] = text.length
         if (x > 255) {
-            send_buffer[send_index + 2] = x % 255
-            send_buffer[send_index + 1] = 0xff
+            sendBuffer[sendIndex + 2] = x % 255
+            sendBuffer[sendIndex + 1] = 0xff
         } else {
-            send_buffer[send_index + 1] = 0
-            send_buffer[send_index + 2] = x
+            sendBuffer[sendIndex + 1] = 0
+            sendBuffer[sendIndex + 2] = x
         }
-        send_buffer[send_index + 3] = y
-        send_index += 4
-        for (let i = 0; i < name.length; i++) {
-            send_buffer[send_index] = name.charCodeAt(i)
-            //serial.writeNumber(name.charCodeAt(i));
-            send_index++
+        sendBuffer[sendIndex + 3] = y
+        sendIndex += 4
+        for (let i = 0; i < text.length; i++) {
+            sendBuffer[sendIndex] = text.charCodeAt(i)
+            //serial.writeNumber(text.charCodeAt(i));
+            sendIndex++
         }
-        let length = husky_lens_protocol_write_end()
-        //serial.writeNumber(length)
+        protocolWriteEnd()
         let Buffer = pins.createBufferFromArray(buffer)
         protocolWrite(Buffer)
-        //}while(!wait(protocolCommand.COMMAND_RETURN_OK));
+        //}while(!wait(ProtocolCommand.ReturnOk));
     }
     /**
-     * HuskyLens clear characters in the screen
+     * Remove all of your own text from the HuskyLens screen.
      */
     //%block="HuskyLens clear all custom texts on screen"
     //% weight=26
     //% advanced=true
-    export function clearOSD(): void {
+    export function clearCustomText(): void {
         writeAlgorithm(0x45, 0x35)
-        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+        //while(!wait(ProtocolCommand.ReturnOk));
     }
     /**
-     * Photos and screenshots
+     * Take a picture and save it to the SD card in the HuskyLens.
+     * @param capture whether to save a camera photo or a screenshot of the display
      */
-    //%block="HuskyLens take %request and save to SD card"
+    //%block="HuskyLens take %capture and save to SD card"
     //% weight=25
     //% advanced=true
-    export function takePhotoToSDCard(request: HUSKYLENSphoto): void {
-        switch (request) {
-            case HUSKYLENSphoto.PHOTO:
+    export function takePhotoToSDCard(capture: Capture): void {
+        switch (capture) {
+            case Capture.Photo:
                 writeAlgorithm(0x40, 0x30)
-                //while(!wait(protocolCommand.COMMAND_RETURN_OK))
+                //while(!wait(ProtocolCommand.ReturnOk))
                 break
-            case HUSKYLENSphoto.SCREENSHOT:
+            case Capture.Screenshot:
                 writeAlgorithm(0x49, 0x39)
-                //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+                //while(!wait(ProtocolCommand.ReturnOk));
                 break
             default:
                 writeAlgorithm(0x40, 0x30)
-            //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+            //while(!wait(ProtocolCommand.ReturnOk));
         }
         basic.pause(500)
     }
     /**
-     * Save data model
+     * Save what the current algorithm has learned to the SD card as a numbered
+     * model, or load a model back from the card.
+     * @param action whether to save the model or load it
+     * @param data which numbered model slot on the card to use, eg: 0
      */
-    //%block="HuskyLens %command current algorithm data as No. %data model of SD card"
+    //%block="HuskyLens %action current algorithm data as No. %data model of SD card"
     //% weight=24
     //% advanced=true
     //% data.min=0 data.max=5
-    export function saveModelToTFCard(
-        command: HUSKYLENSMode,
-        data: number,
-    ): void {
-        switch (command) {
-            case HUSKYLENSMode.SAVE:
+    export function saveModelToTFCard(action: ModelAction, data: number): void {
+        switch (action) {
+            case ModelAction.Save:
                 writeAlgorithm(data, 0x32)
-                //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+                //while(!wait(ProtocolCommand.ReturnOk));
                 break
-            case HUSKYLENSMode.LOAD:
+            case ModelAction.Load:
                 writeAlgorithm(data, 0x33)
-                //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+                //while(!wait(ProtocolCommand.ReturnOk));
                 break
             default:
                 writeAlgorithm(data, 0x32)
-            //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+            //while(!wait(ProtocolCommand.ReturnOk));
         }
         basic.pause(500)
     }
 
     function validateCheckSum() {
-        let stackSumIndex = receive_buffer[3] + CONTENT_INDEX
-        let hk_sum = 0
+        let stackSumIndex = receiveBuffer[3] + CONTENT_INDEX
+        let sum = 0
         for (let i = 0; i < stackSumIndex; i++) {
-            hk_sum += receive_buffer[i]
+            sum += receiveBuffer[i]
         }
-        hk_sum = hk_sum & 0xff
+        sum = sum & 0xff
 
-        return hk_sum == receive_buffer[stackSumIndex]
+        return sum == receiveBuffer[stackSumIndex]
     }
 
-    function husky_lens_protocol_write_end() {
-        if (send_fail) {
+    function protocolWriteEnd() {
+        if (sendFail) {
             return 0
         }
-        if (send_index + 1 >= FRAME_BUFFER_SIZE) {
+        if (sendIndex + 1 >= FRAME_BUFFER_SIZE) {
             return 0
         }
-        send_buffer[CONTENT_SIZE_INDEX] = send_index - CONTENT_INDEX
-        //serial.writeValue("618", send_buffer[CONTENT_SIZE_INDEX])
-        let hk_sum = 0
-        for (let i = 0; i < send_index; i++) {
-            hk_sum += send_buffer[i]
+        sendBuffer[CONTENT_SIZE_INDEX] = sendIndex - CONTENT_INDEX
+        //serial.writeValue("618", sendBuffer[CONTENT_SIZE_INDEX])
+        let sum = 0
+        for (let i = 0; i < sendIndex; i++) {
+            sum += sendBuffer[i]
         }
 
-        hk_sum = hk_sum & 0xff
-        send_buffer[send_index] = hk_sum
-        send_index++
-        return send_index
+        sum = sum & 0xff
+        sendBuffer[sendIndex] = sum
+        sendIndex++
+        return sendIndex
     }
 
-    function husky_lens_protocol_write_begin(command = 0) {
-        send_fail = false
-        send_buffer[HEADER_0_INDEX] = 0x55
-        send_buffer[HEADER_1_INDEX] = 0xaa
-        send_buffer[ADDRESS_INDEX] = 0x11
-        //send_buffer[CONTENT_SIZE_INDEX] = datalen;
-        send_buffer[COMMAND_INDEX] = command
-        send_index = CONTENT_INDEX
-        return send_buffer
+    function protocolWriteBegin(command = 0) {
+        sendFail = false
+        sendBuffer[HEADER_0_INDEX] = 0x55
+        sendBuffer[HEADER_1_INDEX] = 0xaa
+        sendBuffer[ADDRESS_INDEX] = 0x11
+        //sendBuffer[CONTENT_SIZE_INDEX] = datalen;
+        sendBuffer[COMMAND_INDEX] = command
+        sendIndex = CONTENT_INDEX
+        return sendBuffer
     }
 
     function protocolWrite(buffer: Buffer) {
@@ -716,15 +725,12 @@ namespace fwdAiVision {
     }
 
     function processReturn() {
-        if (!wait(protocolCommand.COMMAND_RETURN_INFO)) return false
-        protocolReadFiveInt16(protocolCommand.COMMAND_RETURN_INFO)
-        for (let i = 0; i < Protocol_t[1]; i++) {
+        if (!wait(ProtocolCommand.ReturnInfo)) return false
+        protocolReadInfo(ProtocolCommand.ReturnInfo)
+        for (let i = 0; i < protocolInfo[1]; i++) {
             if (!wait()) return false
-            if (protocolReadFiveInt161(i, protocolCommand.COMMAND_RETURN_BLOCK))
-                continue
-            else if (
-                protocolReadFiveInt161(i, protocolCommand.COMMAND_RETURN_ARROW)
-            )
+            if (protocolReadResult(i, ProtocolCommand.ReturnBlock)) continue
+            else if (protocolReadResult(i, ProtocolCommand.ReturnArrow))
                 continue
             else return false
         }
@@ -736,7 +742,7 @@ namespace fwdAiVision {
         while (!timerAvailable()) {
             if (protocolAvailable()) {
                 if (command) {
-                    if (husky_lens_protocol_read_begin(command)) {
+                    if (protocolReadBegin(command)) {
                         //serial.writeNumber(0);
                         return true
                     }
@@ -750,11 +756,11 @@ namespace fwdAiVision {
         return false
     }
 
-    function husky_lens_protocol_read_begin(command = 0) {
-        if (command == receive_buffer[COMMAND_INDEX]) {
-            content_current = CONTENT_INDEX
-            content_read_end = false
-            receive_fail = false
+    function protocolReadBegin(command = 0) {
+        if (command == receiveBuffer[COMMAND_INDEX]) {
+            contentCurrent = CONTENT_INDEX
+            contentReadEnd = false
+            receiveFail = false
             return true
         }
         return false
@@ -770,143 +776,143 @@ namespace fwdAiVision {
         return input.runningTime() - timeOutTimer > timeOutDuration
     }
 
-    let m_i = 16
+    let readBufferIndex = 16
     function protocolAvailable() {
         let buf = pins.createBuffer(16)
-        if (m_i == 16) {
+        if (readBufferIndex == 16) {
             // read-only I2C transaction: empty write_buf, num_read = 16
             buf = fwdAiVision.huskylens1.transactionI2C(
                 deviceAddress,
                 16,
                 Buffer.create(0),
             )
-            m_i = 0
+            readBufferIndex = 0
         }
         if (buf) {
-            for (let i = m_i; i < 16; i++) {
-                if (husky_lens_protocol_receive(buf[i])) {
-                    m_i++
+            for (let i = readBufferIndex; i < 16; i++) {
+                if (protocolReceive(buf[i])) {
+                    readBufferIndex++
                     return true
                 }
-                m_i++
+                readBufferIndex++
             }
         }
         return false
     }
 
-    function husky_lens_protocol_receive(data: number): boolean {
-        switch (receive_index) {
+    function protocolReceive(data: number): boolean {
+        switch (receiveIndex) {
             case HEADER_0_INDEX:
                 if (data != 0x55) {
-                    receive_index = 0
+                    receiveIndex = 0
                     return false
                 }
-                receive_buffer[HEADER_0_INDEX] = 0x55
+                receiveBuffer[HEADER_0_INDEX] = 0x55
                 break
             case HEADER_1_INDEX:
                 if (data != 0xaa) {
-                    receive_index = 0
+                    receiveIndex = 0
                     return false
                 }
-                receive_buffer[HEADER_1_INDEX] = 0xaa
+                receiveBuffer[HEADER_1_INDEX] = 0xaa
                 break
             case ADDRESS_INDEX:
-                receive_buffer[ADDRESS_INDEX] = data
+                receiveBuffer[ADDRESS_INDEX] = data
                 break
             case CONTENT_SIZE_INDEX:
                 if (data >= FRAME_BUFFER_SIZE - PROTOCOL_SIZE) {
-                    receive_index = 0
+                    receiveIndex = 0
                     return false
                 }
-                receive_buffer[CONTENT_SIZE_INDEX] = data
+                receiveBuffer[CONTENT_SIZE_INDEX] = data
                 break
             default:
-                receive_buffer[receive_index] = data
+                receiveBuffer[receiveIndex] = data
 
                 if (
-                    receive_index ==
-                    receive_buffer[CONTENT_SIZE_INDEX] + CONTENT_INDEX
+                    receiveIndex ==
+                    receiveBuffer[CONTENT_SIZE_INDEX] + CONTENT_INDEX
                 ) {
-                    content_end = receive_index
-                    receive_index = 0
+                    contentEnd = receiveIndex
+                    receiveIndex = 0
                     return validateCheckSum()
                 }
                 break
         }
-        receive_index++
+        receiveIndex++
         return false
     }
 
-    function husky_lens_protocol_write_int16(content = 0) {
+    function protocolWriteInt16(content = 0) {
         let x: number = content.toString().length
-        if (send_index + x >= FRAME_BUFFER_SIZE) {
-            send_fail = true
+        if (sendIndex + x >= FRAME_BUFFER_SIZE) {
+            sendFail = true
             return
         }
-        send_buffer[send_index] = content & 0xff
-        send_buffer[send_index + 1] = (content >> 8) & 0xff
-        send_index += 2
+        sendBuffer[sendIndex] = content & 0xff
+        sendBuffer[sendIndex + 1] = (content >> 8) & 0xff
+        sendIndex += 2
     }
 
-    function protocolReadFiveInt16(command = 0) {
-        if (husky_lens_protocol_read_begin(command)) {
-            Protocol_t[0] = command
-            Protocol_t[1] = husky_lens_protocol_read_int16()
-            Protocol_t[2] = husky_lens_protocol_read_int16()
-            Protocol_t[3] = husky_lens_protocol_read_int16()
-            Protocol_t[4] = husky_lens_protocol_read_int16()
-            Protocol_t[5] = husky_lens_protocol_read_int16()
-            husky_lens_protocol_read_end()
+    function protocolReadInfo(command = 0) {
+        if (protocolReadBegin(command)) {
+            protocolInfo[0] = command
+            protocolInfo[1] = protocolReadInt16()
+            protocolInfo[2] = protocolReadInt16()
+            protocolInfo[3] = protocolReadInt16()
+            protocolInfo[4] = protocolReadInt16()
+            protocolInfo[5] = protocolReadInt16()
+            protocolReadEnd()
             return true
         } else {
             return false
         }
     }
 
-    function protocolReadFiveInt161(i: number, command = 0) {
-        if (husky_lens_protocol_read_begin(command)) {
+    function protocolReadResult(i: number, command = 0) {
+        if (protocolReadBegin(command)) {
             protocolPtr[i][0] = command
-            protocolPtr[i][1] = husky_lens_protocol_read_int16()
-            protocolPtr[i][2] = husky_lens_protocol_read_int16()
-            protocolPtr[i][3] = husky_lens_protocol_read_int16()
-            protocolPtr[i][4] = husky_lens_protocol_read_int16()
-            protocolPtr[i][5] = husky_lens_protocol_read_int16()
-            husky_lens_protocol_read_end()
+            protocolPtr[i][1] = protocolReadInt16()
+            protocolPtr[i][2] = protocolReadInt16()
+            protocolPtr[i][3] = protocolReadInt16()
+            protocolPtr[i][4] = protocolReadInt16()
+            protocolPtr[i][5] = protocolReadInt16()
+            protocolReadEnd()
             return true
         } else {
             return false
         }
     }
 
-    function husky_lens_protocol_read_int16() {
-        if (content_current >= content_end || content_read_end) {
-            receive_fail = true
+    function protocolReadInt16() {
+        if (contentCurrent >= contentEnd || contentReadEnd) {
+            receiveFail = true
             return 0
         }
         let result =
-            (receive_buffer[content_current + 1] << 8) |
-            receive_buffer[content_current]
-        content_current += 2
+            (receiveBuffer[contentCurrent + 1] << 8) |
+            receiveBuffer[contentCurrent]
+        contentCurrent += 2
         return result
     }
 
-    function husky_lens_protocol_read_end() {
-        if (receive_fail) {
-            receive_fail = false
+    function protocolReadEnd() {
+        if (receiveFail) {
+            receiveFail = false
             return false
         }
-        return content_current == content_end
+        return contentCurrent == contentEnd
     }
 
     function countLearnedIDs() {
-        return Protocol_t[2]
+        return protocolInfo[2]
     }
 
     function countBlocks(ID: number) {
         let counter = 0
-        for (let i = 0; i < Protocol_t[1]; i++) {
+        for (let i = 0; i < protocolInfo[1]; i++) {
             if (
-                protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_BLOCK &&
+                protocolPtr[i][0] == ProtocolCommand.ReturnBlock &&
                 protocolPtr[i][5] == ID
             )
                 counter++
@@ -914,11 +920,10 @@ namespace fwdAiVision {
         return counter
     }
 
-    function countBlocks_s() {
+    function countAllBlocks() {
         let counter = 0
-        for (let i = 0; i < Protocol_t[1]; i++) {
-            if (protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_BLOCK)
-                counter++
+        for (let i = 0; i < protocolInfo[1]; i++) {
+            if (protocolPtr[i][0] == ProtocolCommand.ReturnBlock) counter++
         }
         //serial.writeNumber(counter)
         return counter
@@ -926,9 +931,9 @@ namespace fwdAiVision {
 
     function countArrows(ID: number) {
         let counter = 0
-        for (let i = 0; i < Protocol_t[1]; i++) {
+        for (let i = 0; i < protocolInfo[1]; i++) {
             if (
-                protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_ARROW &&
+                protocolPtr[i][0] == ProtocolCommand.ReturnArrow &&
                 protocolPtr[i][5] == ID
             )
                 counter++
@@ -936,29 +941,18 @@ namespace fwdAiVision {
         return counter
     }
 
-    function countArrows_s() {
+    function countAllArrows() {
         let counter = 0
-        for (let i = 0; i < Protocol_t[1]; i++) {
-            if (protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_ARROW)
-                counter++
+        for (let i = 0; i < protocolInfo[1]; i++) {
+            if (protocolPtr[i][0] == ProtocolCommand.ReturnArrow) counter++
         }
         return counter
     }
 
     function readKnock() {
         for (let i = 0; i < 5; i++) {
-            protocolWriteCommand(protocolCommand.COMMAND_REQUEST_KNOCK) //I2C
-            if (wait(protocolCommand.COMMAND_RETURN_OK)) {
-                return true
-            }
-        }
-        return false
-    }
-
-    function writeForget() {
-        for (let i = 0; i < 5; i++) {
-            protocolWriteCommand(protocolCommand.COMMAND_REQUEST_FORGET)
-            if (wait(protocolCommand.COMMAND_RETURN_OK)) {
+            protocolWriteCommand(ProtocolCommand.RequestKnock) //I2C
+            if (wait(ProtocolCommand.ReturnOk)) {
                 return true
             }
         }
@@ -966,51 +960,33 @@ namespace fwdAiVision {
     }
 
     function protocolWriteCommand(command = 0) {
-        Protocol_t[0] = command
-        let buffer = husky_lens_protocol_write_begin(Protocol_t[0])
-        let length = husky_lens_protocol_write_end()
+        protocolInfo[0] = command
+        let buffer = protocolWriteBegin(protocolInfo[0])
+        protocolWriteEnd()
         let Buffer = pins.createBufferFromArray(buffer)
         protocolWrite(Buffer)
-    }
-
-    function protocolReadCommand(command = 0) {
-        if (husky_lens_protocol_read_begin(command)) {
-            Protocol_t[0] = command
-            husky_lens_protocol_read_end()
-            return true
-        } else {
-            return false
-        }
     }
 
     function writeAlgorithm(algorithmType: number, comemand = 0) {
         protocolWriteOneInt16(algorithmType, comemand)
-        //return true//wait(protocolCommand.COMMAND_RETURN_OK);
-        //while(!wait(protocolCommand.COMMAND_RETURN_OK));
+        //return true//wait(ProtocolCommand.ReturnOk);
+        //while(!wait(ProtocolCommand.ReturnOk));
         //return true
     }
 
-    function writeLearn(algorithmType: number) {
-        protocolWriteOneInt16(
-            algorithmType,
-            protocolCommand.COMMAND_REQUEST_LEARN,
-        )
-        return wait(protocolCommand.COMMAND_RETURN_OK)
-    }
-
     function protocolWriteOneInt16(algorithmType: number, command = 0) {
-        let buffer = husky_lens_protocol_write_begin(command)
-        husky_lens_protocol_write_int16(algorithmType)
-        let length = husky_lens_protocol_write_end()
+        let buffer = protocolWriteBegin(command)
+        protocolWriteInt16(algorithmType)
+        protocolWriteEnd()
         let Buffer = pins.createBufferFromArray(buffer)
         protocolWrite(Buffer)
     }
 
-    function cycle_block(ID: number, index = 1): number {
+    function findBlockIndex(ID: number, index = 1): number {
         let counter = 0
-        for (let i = 0; i < Protocol_t[1]; i++) {
+        for (let i = 0; i < protocolInfo[1]; i++) {
             if (
-                protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_BLOCK &&
+                protocolPtr[i][0] == ProtocolCommand.ReturnBlock &&
                 protocolPtr[i][5] == ID
             ) {
                 counter++
@@ -1020,11 +996,11 @@ namespace fwdAiVision {
         return null
     }
 
-    function cycle_arrow(ID: number, index = 1): number {
+    function findArrowIndex(ID: number, index = 1): number {
         let counter = 0
-        for (let i = 0; i < Protocol_t[1]; i++) {
+        for (let i = 0; i < protocolInfo[1]; i++) {
             if (
-                protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_ARROW &&
+                protocolPtr[i][0] == ProtocolCommand.ReturnArrow &&
                 protocolPtr[i][5] == ID
             ) {
                 counter++
@@ -1037,8 +1013,8 @@ namespace fwdAiVision {
     function readBlockCenterParameterDirect(): number {
         let distanceMinIndex = -1
         let distanceMin = 65535
-        for (let i = 0; i < Protocol_t[1]; i++) {
-            if (protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_BLOCK) {
+        for (let i = 0; i < protocolInfo[1]; i++) {
+            if (protocolPtr[i][0] == ProtocolCommand.ReturnBlock) {
                 let distance =
                     Math.round(
                         Math.sqrt(Math.abs(protocolPtr[i][1] - 320 / 2)),
@@ -1056,8 +1032,8 @@ namespace fwdAiVision {
     function readArrowCenterParameterDirect(): number {
         let distanceMinIndex = -1
         let distanceMin = 65535
-        for (let i = 0; i < Protocol_t[1]; i++) {
-            if (protocolPtr[i][0] == protocolCommand.COMMAND_RETURN_ARROW) {
+        for (let i = 0; i < protocolInfo[1]; i++) {
+            if (protocolPtr[i][0] == ProtocolCommand.ReturnArrow) {
                 let distance =
                     Math.round(
                         Math.sqrt(Math.abs(protocolPtr[i][1] - 320 / 2)),
@@ -1070,18 +1046,6 @@ namespace fwdAiVision {
             }
         }
         return distanceMinIndex
-    }
-
-    function no(): void {
-        basic.showIcon(IconNames.No)
-        basic.pause(100)
-        basic.clearScreen()
-        basic.pause(100)
-    }
-    function yes(): void {
-        basic.showIcon(IconNames.Yes)
-        basic.pause(100)
-        basic.clearScreen()
     }
 
     export class HuskylensClient extends jacdac.Client {
