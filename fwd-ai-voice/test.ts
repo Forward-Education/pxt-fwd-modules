@@ -16,5 +16,5 @@ fwdAiVoice.playByCMDID(fwdAiVoice.checkWord3(fwdAiVoice.FixedCommandWords.W22))
 fwdAiVoice.playByCMDID(
     fwdAiVoice.checkWord4(fwdAiVoice.LearningRelatedCommands.W200),
 )
-fwdAiVoice.setMuteMode(fwdAiVoice.MUTE.OFF)
+fwdAiVoice.setMuteMode(fwdEnums.OnOff.Off)
 fwdAiVoice.playByCMDID(fwdAiVoice.getWakeTime())
