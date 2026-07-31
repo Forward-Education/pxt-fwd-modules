@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), but without change categorization.
 
-## [1.1.4]
+## [1.1.5]
 
 - refactored AI voice and vision modules for extension approval
 
