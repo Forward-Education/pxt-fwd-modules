@@ -1,0 +1,14 @@
+{
+    "fwdLights.FwdLEDRingClient.brightness": "Renvoie le niveau de luminosité de l'anneau (0-10).",
+    "fwdLights.FwdLEDRingClient.rotate": "Fait tourner le motif lumineux vers la gauche ou la droite, le dernier pixel revenant au premier",
+    "fwdLights.FwdLEDRingClient.rotate|param|offset": "le nombre de positions à tourner, positif = sens horaire et négatif = sens antihoraire",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor": "Définit tous les pixels à une couleur.",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor|param|color": "la valeur hexadécimale de la couleur",
+    "fwdLights.FwdLEDRingClient.setBrightness": "Définit la luminosité des pixels.",
+    "fwdLights.FwdLEDRingClient.setBrightness|param|brightness": "un nombre entre 0 (éteint) et 10 (pleine puissance)",
+    "fwdLights.FwdLEDRingClient.setPixelColor": "Définit un pixel spécifique à une couleur.",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|color": "la valeur hexadécimale de la couleur",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|pixel": "le numéro du pixel (1-8)",
+    "fwdLights.FwdLEDRingClient.shift": "Décale le motif lumineux vers la gauche ou la droite. Si le motif est décalé au-delà du premier ou du dernier pixel, cette partie du motif est supprimée.",
+    "fwdLights.FwdLEDRingClient.shift|param|offset": "le nombre de positions à décaler, positif = sens horaire et négatif = sens antihoraire"
+}

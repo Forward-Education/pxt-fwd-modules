@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn|block": "$this ist eingeschaltet",
+    "fwdMotors.FwdPumpClient.setOn|block": "schalte $this $on",
+    "fwdMotors.FwdPumpClient.timedRun|block": "lasse $this für $duration ms laufen",
+    "{id:category}FwdMotors": "FwdMotors",
+    "{id:group}Pump": "Pumpe"
+}

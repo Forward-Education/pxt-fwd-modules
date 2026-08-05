@@ -1,0 +1,8 @@
+{
+    "fwdSensors.FwdDcCurrentClient.current|block": "$this mA",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|block": "$this est $direction $threshold mA",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|block": "$this est $direction $threshold V",
+    "fwdSensors.FwdDcVoltageClient.voltage|block": "$this V",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Energy": "Énergie"
+}

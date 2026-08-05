@@ -8,7 +8,13 @@
         "jacdac-soil-moisture": "github:jacdac/pxt-jacdac/soil-moisture#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-moisture-jsdoc-strings.json",
+        "_locales/fr/fwd-moisture-strings.json",
+        "_locales/es/fwd-moisture-jsdoc-strings.json",
+        "_locales/es/fwd-moisture-strings.json",
+        "_locales/de/fwd-moisture-jsdoc-strings.json",
+        "_locales/de/fwd-moisture-strings.json"
     ],
     "testFiles": [
         "test.ts"

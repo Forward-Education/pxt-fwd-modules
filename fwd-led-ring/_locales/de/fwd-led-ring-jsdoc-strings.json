@@ -1,0 +1,14 @@
+{
+    "fwdLights.FwdLEDRingClient.brightness": "Gibt die Helligkeitsstufe des Rings zurück (0-10).",
+    "fwdLights.FwdLEDRingClient.rotate": "Rotiert das Lichtmuster nach links oder rechts, wobei das letzte Pixel wieder zum ersten wird",
+    "fwdLights.FwdLEDRingClient.rotate|param|offset": "die Anzahl der Positionen, positiv = im Uhrzeigersinn und negativ = gegen den Uhrzeigersinn",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor": "Setzt alle Pixel auf eine Farbe.",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor|param|color": "der Hex-Wert der Farbe",
+    "fwdLights.FwdLEDRingClient.setBrightness": "Legt die Helligkeit der Pixel fest.",
+    "fwdLights.FwdLEDRingClient.setBrightness|param|brightness": "eine Zahl zwischen 0 (aus) und 10 (volle Leistung)",
+    "fwdLights.FwdLEDRingClient.setPixelColor": "Setzt ein bestimmtes Pixel auf eine Farbe.",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|color": "der Hex-Wert der Farbe",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|pixel": "die Pixelnummer (1-8)",
+    "fwdLights.FwdLEDRingClient.shift": "Verschiebt das Lichtmuster nach links oder rechts. Wird das Muster über das erste oder letzte Pixel hinaus verschoben, wird dieser Teil des Musters entfernt.",
+    "fwdLights.FwdLEDRingClient.shift|param|offset": "die Anzahl der Positionen, positiv = im Uhrzeigersinn und negativ = gegen den Uhrzeigersinn"
+}

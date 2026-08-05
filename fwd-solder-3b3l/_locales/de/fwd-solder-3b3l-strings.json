@@ -1,0 +1,10 @@
+{
+    "fwdButtons.FwdSolder3b3lBtnClient.holdDuration|block": "Haltedauer von $this (ms)",
+    "fwdButtons.FwdSolder3b3lBtnClient.isPressed|block": "$this ist gedrückt",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|block": "wenn $this $event",
+    "fwdLights.FwdSolder3b3lLightClient.isOn|block": "$this ist eingeschaltet",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff|block": "schalte $this $on",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:category}FwdLights": "FwdLights",
+    "{id:group}Smart Solder": "Smart Solder"
+}

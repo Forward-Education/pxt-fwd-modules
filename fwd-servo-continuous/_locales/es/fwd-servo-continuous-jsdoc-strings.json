@@ -1,0 +1,14 @@
+{
+    "fwdMotors.drive": "Establece los motores izquierdo y derecho a las velocidades indicadas.\nPausa la ejecución durante el tiempo indicado y luego detiene los motores.\nPara avanzar, pon el izquierdo en positivo y el derecho en negativo.\nPara retroceder, pon el izquierdo en negativo y el derecho en positivo.\nPara girar a la derecha, pon el izquierdo en positivo y el derecho en positivo.\nPara girar a la izquierda, pon el izquierdo en negativo y el derecho en negativo.",
+    "fwdMotors.drive|param|duration": "cuánto tiempo hacer funcionar los motores a estas velocidades",
+    "fwdMotors.drive|param|leftSpeed": "la velocidad del motor izquierdo",
+    "fwdMotors.drive|param|rightSpeed": "la velocidad del motor derecho",
+    "fwdMotors.getSpeed": "Devuelve la velocidad a la que está configurado el servomotor (%).",
+    "fwdMotors.getSpeed|param|servo": "el cliente de servomotor del que obtener la velocidad",
+    "fwdMotors.setSpeed": "Establece la velocidad del servomotor entre 100% y -100%. Las velocidades negativas son la dirección inversa.",
+    "fwdMotors.setSpeed|param|servo": "el cliente de servomotor al que establecer la velocidad",
+    "fwdMotors.setSpeed|param|speed": "la velocidad a establecer en el servomotor (%)",
+    "fwdMotors.setupDriving": "Usa este bloque en \"al iniciar\" para asegurar que los servomotores estén habilitados y los controles de conducción inicializados.",
+    "fwdMotors.setupDriving|param|left": "el cliente de servomotor a usar como motor izquierdo",
+    "fwdMotors.setupDriving|param|right": "el cliente de servomotor a usar como motor derecho"
+}

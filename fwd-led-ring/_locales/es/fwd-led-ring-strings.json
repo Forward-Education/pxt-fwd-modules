@@ -1,0 +1,18 @@
+{
+    "fwdLights.FwdLEDRingClient.brightness|block": "brillo de $this",
+    "fwdLights.FwdLEDRingClient.rotate|block": "rotar patrón de $this en $offset",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor|block": "establecer todos los píxeles de $this a $color=colorNumberPicker",
+    "fwdLights.FwdLEDRingClient.setBrightness|block": "establecer brillo de $this a $brightness",
+    "fwdLights.FwdLEDRingClient.setPixelColor|block": "establecer píxel $pixel de $this a $color=colorNumberPicker",
+    "fwdLights.FwdLEDRingClient.shift|block": "desplazar patrón de $this en $offset",
+    "fwdLights.LEDRingPixels.Pixel1|block": "1",
+    "fwdLights.LEDRingPixels.Pixel2|block": "2",
+    "fwdLights.LEDRingPixels.Pixel3|block": "3",
+    "fwdLights.LEDRingPixels.Pixel4|block": "4",
+    "fwdLights.LEDRingPixels.Pixel5|block": "5",
+    "fwdLights.LEDRingPixels.Pixel6|block": "6",
+    "fwdLights.LEDRingPixels.Pixel7|block": "7",
+    "fwdLights.LEDRingPixels.Pixel8|block": "8",
+    "{id:category}FwdLights": "FwdLights",
+    "{id:group}LED Ring": "Anillo de luces"
+}

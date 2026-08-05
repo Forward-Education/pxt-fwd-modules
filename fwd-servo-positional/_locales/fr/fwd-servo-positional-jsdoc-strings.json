@@ -1,0 +1,10 @@
+{
+    "fwdMotors.getAngle": "Renvoie l'angle auquel le servomoteur est réglé.",
+    "fwdMotors.getAngle|param|servo": "le servomoteur dont obtenir l'angle",
+    "fwdMotors.setAngle": "Règle l'angle du servomoteur et exécute immédiatement le bloc suivant.",
+    "fwdMotors.setAngleAndWait": "Règle l'angle du servomoteur et attend 1 seconde pour que le mouvement se termine avant d'exécuter le bloc suivant.",
+    "fwdMotors.setAngleAndWait|param|angle": "l'angle du servomoteur",
+    "fwdMotors.setAngleAndWait|param|servo": "le servomoteur dont régler l'angle",
+    "fwdMotors.setAngle|param|angle": "l'angle du servomoteur",
+    "fwdMotors.setAngle|param|servo": "le servomoteur dont régler l'angle"
+}

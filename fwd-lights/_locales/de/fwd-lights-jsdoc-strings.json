@@ -1,0 +1,6 @@
+{
+    "fwdLights.LightsClient": "Steuert LED-Lichter",
+    "fwdLights.LightsClient.isOn": "Gibt wahr zurück, wenn die Helligkeit des Lichts nicht 0% beträgt.",
+    "fwdLights.LightsClient.setBrightness": "Legt die Helligkeit eines Lichts oder Lichtstreifens fest. Die maximale Helligkeit wird je nach Licht bei unterschiedlichen Prozentwerten erreicht.\nProbiere verschiedene Prozentwerte aus, um den Regelbereich deines Lichts zu finden.",
+    "fwdLights.LightsClient.setBrightness|param|brightness": "0%-100%"
+}

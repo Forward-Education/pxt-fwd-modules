@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdPhClient.calibrate|block": "kalibriere $this misst $standard1 als $reading1 misst $standard2 als $reading2",
+    "fwdSensors.FwdPhClient.isPastThreshold|block": "$this ist $direction $threshold pH",
+    "fwdSensors.FwdPhClient.ph|block": "pH-Wert von $this",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}pH": "pH"
+}

@@ -8,7 +8,13 @@
         "jacdac-motion": "github:jacdac/pxt-jacdac/motion#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-pir-jsdoc-strings.json",
+        "_locales/fr/fwd-pir-strings.json",
+        "_locales/es/fwd-pir-jsdoc-strings.json",
+        "_locales/es/fwd-pir-strings.json",
+        "_locales/de/fwd-pir-jsdoc-strings.json",
+        "_locales/de/fwd-pir-strings.json"
     ],
     "testFiles": [
         "test.ts"

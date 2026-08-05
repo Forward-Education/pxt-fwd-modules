@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdDcCurrentClient.current": "Renvoie la mesure de courant du capteur (mA).",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold": "Renvoie vrai lorsque le courant (mA) est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|threshold": "le courant (mA) à comparer",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold": "Renvoie vrai lorsque la tension (V) est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|threshold": "la tension (V) à comparer",
+    "fwdSensors.FwdDcVoltageClient.voltage": "Renvoie la mesure de tension du capteur (V)."
+}

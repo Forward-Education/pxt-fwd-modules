@@ -1,0 +1,10 @@
+{
+    "fwdButtons.FwdSolder3b3lBtnClient.holdDuration": "Renvoie la durée du dernier maintien du bouton, en ms",
+    "fwdButtons.FwdSolder3b3lBtnClient.isPressed": "Renvoie vrai si le bouton est actuellement enfoncé, sinon faux",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent": "Code à exécuter lorsque l'événement choisi se produit",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|event": "bouton enfoncé, maintenu ou relâché",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|handler": "le code à exécuter",
+    "fwdLights.FwdSolder3b3lLightClient.isOn": "Renvoie vrai si la luminosité de la lumière est différente de 0 %.",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff": "Allume ou éteint la lumière.",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff|param|on": "vrai pour allumer, faux pour éteindre"
+}

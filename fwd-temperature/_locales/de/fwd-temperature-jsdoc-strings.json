@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdTemperatureClient.isPastThreshold": "Gibt wahr zurück, wenn die Temperatur (°C) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|threshold": "die Temperatur (°C), mit der verglichen wird",
+    "fwdSensors.FwdTemperatureClient.temperature": "Gibt die vom Sensor gemessene Temperatur zurück (°C)."
+}

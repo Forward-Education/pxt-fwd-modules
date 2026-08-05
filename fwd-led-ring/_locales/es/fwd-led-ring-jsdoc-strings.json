@@ -1,0 +1,14 @@
+{
+    "fwdLights.FwdLEDRingClient.brightness": "Devuelve el nivel de brillo del anillo (0-10).",
+    "fwdLights.FwdLEDRingClient.rotate": "Rota el patrón de luces a la izquierda o a la derecha; el último píxel vuelve al primero",
+    "fwdLights.FwdLEDRingClient.rotate|param|offset": "el número de posiciones a rotar, positivo = sentido horario y negativo = antihorario",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor": "Establece todos los píxeles a un color.",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor|param|color": "el valor hexadecimal del color",
+    "fwdLights.FwdLEDRingClient.setBrightness": "Establece el brillo de los píxeles.",
+    "fwdLights.FwdLEDRingClient.setBrightness|param|brightness": "un número entre 0 (apagado) y 10 (máxima potencia)",
+    "fwdLights.FwdLEDRingClient.setPixelColor": "Establece un píxel específico a un color.",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|color": "el valor hexadecimal del color",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|pixel": "el número de píxel (1-8)",
+    "fwdLights.FwdLEDRingClient.shift": "Desplaza el patrón de luces a la izquierda o a la derecha. Si el patrón se desplaza más allá del primer o del último píxel, esa parte del patrón se elimina.",
+    "fwdLights.FwdLEDRingClient.shift|param|offset": "el número de posiciones a desplazar, positivo = sentido horario y negativo = antihorario"
+}

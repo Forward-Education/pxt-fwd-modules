@@ -1,0 +1,6 @@
+{
+    "fwdLights.LightsClient": "Contrôle les lumières LED",
+    "fwdLights.LightsClient.isOn": "Renvoie vrai si la luminosité de la lumière est différente de 0 %.",
+    "fwdLights.LightsClient.setBrightness": "Définit la luminosité d'une lumière ou d'un ruban lumineux. La luminosité atteint son maximum à des pourcentages différents selon les lumières.\nEssayer plusieurs pourcentages pour trouver la plage de contrôle de la lumière utilisée.",
+    "fwdLights.LightsClient.setBrightness|param|brightness": "0 % à 100 %"
+}

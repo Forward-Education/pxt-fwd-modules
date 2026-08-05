@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdEco2Client.eco2": "Renvoie la mesure de CO2 estimé (eCO2) du capteur (ppm).",
+    "fwdSensors.FwdEco2Client.isPastThreshold": "Renvoie vrai lorsque l'eCO2 (ppm) est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|threshold": "la valeur d'eCO2 (ppm) à comparer",
+    "fwdSensors.FwdTvocClient.isPastThreshold": "Renvoie vrai lorsque la mesure de tVOC est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|threshold": "la valeur de tVOC à comparer",
+    "fwdSensors.FwdTvocClient.tvoc": "Renvoie la mesure de COV totaux (tVOC) du capteur."
+}

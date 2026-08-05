@@ -1,0 +1,7 @@
+{
+    "fwdLights.LightsClient.isOn|block": "$this est allumé",
+    "fwdLights.LightsClient.setBrightness|block": "définir la luminosité de $this à $brightness (\\%)",
+    "fwdLights|block": "Lumières",
+    "{id:category}FwdLights": "FwdLights",
+    "{id:group}Lights": "Lumières"
+}

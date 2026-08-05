@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSonarClient.distance": "Gibt die vom Sensor gemessene Entfernung zurück (m).",
+    "fwdSensors.FwdSonarClient.isPastThreshold": "Gibt wahr zurück, wenn die Entfernung (m) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|threshold": "die Entfernung (m), mit der verglichen wird"
+}

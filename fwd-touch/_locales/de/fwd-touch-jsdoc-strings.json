@@ -1,0 +1,7 @@
+{
+    "fwdButtons.FwdTouchClient.holdDuration": "Gibt die Dauer (ms) des Knopfhaltens in ms zurück",
+    "fwdButtons.FwdTouchClient.isPressed": "Gibt wahr zurück, wenn der Knopf gerade gedrückt ist, sonst falsch",
+    "fwdButtons.FwdTouchClient.onEvent": "Code, der ausgeführt wird, wenn ein gewähltes Ereignis eintritt",
+    "fwdButtons.FwdTouchClient.onEvent|param|event": "Knopf gedrückt, gehalten oder losgelassen",
+    "fwdButtons.FwdTouchClient.onEvent|param|handler": "der auszuführende Code"
+}

@@ -9,7 +9,13 @@
         "jacdac-color": "github:jacdac/pxt-jacdac/color#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-color-jsdoc-strings.json",
+        "_locales/fr/fwd-color-strings.json",
+        "_locales/es/fwd-color-jsdoc-strings.json",
+        "_locales/es/fwd-color-strings.json",
+        "_locales/de/fwd-color-jsdoc-strings.json",
+        "_locales/de/fwd-color-strings.json"
     ],
     "testFiles": [
         "test.ts"

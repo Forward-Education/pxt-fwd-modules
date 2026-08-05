@@ -1,0 +1,8 @@
+{
+    "fwdSensors.FwdEco2Client.eco2|block": "$this ppm",
+    "fwdSensors.FwdEco2Client.isPastThreshold|block": "$this est $direction $threshold ppm",
+    "fwdSensors.FwdTvocClient.isPastThreshold|block": "$this est $direction $threshold",
+    "fwdSensors.FwdTvocClient.tvoc|block": "mesure de $this",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}eCO2": "eCO2"
+}

@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdDcCurrentClient.current": "Gibt die vom Sensor gemessene Stromstärke zurück (mA).",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold": "Gibt wahr zurück, wenn die Stromstärke (mA) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|threshold": "die Stromstärke (mA), mit der verglichen wird",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold": "Gibt wahr zurück, wenn die Spannung (V) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|threshold": "die Spannung (V), mit der verglichen wird",
+    "fwdSensors.FwdDcVoltageClient.voltage": "Gibt die vom Sensor gemessene Spannung zurück (V)."
+}

@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdTemperatureClient.isPastThreshold": "Devuelve verdadero cuando la temperatura (°C) pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|threshold": "la temperatura (°C) con la que comparar",
+    "fwdSensors.FwdTemperatureClient.temperature": "Devuelve la lectura de temperatura del sensor (°C)."
+}

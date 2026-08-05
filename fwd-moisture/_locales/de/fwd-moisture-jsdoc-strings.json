@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold": "Gibt wahr zurück, wenn die Bodenfeuchtigkeit (%) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|threshold": "die Bodenfeuchtigkeit (%), mit der verglichen wird",
+    "fwdSensors.FwdSoilMoistureClient.moistureLevel": "Gibt die vom Sensor gemessene Bodenfeuchtigkeit zurück (%)."
+}

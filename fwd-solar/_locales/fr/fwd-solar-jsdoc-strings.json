@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSolarClient.isPastThreshold": "Renvoie vrai lorsque le niveau de lumière (%) est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdSolarClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdSolarClient.isPastThreshold|param|threshold": "le niveau de lumière (%) à comparer",
+    "fwdSensors.FwdSolarClient.lightLevel": "Renvoie la mesure du niveau de lumière du capteur (%)."
+}

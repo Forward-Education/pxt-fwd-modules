@@ -1,0 +1,10 @@
+{
+    "fwdButtons.FwdSolder3b3lBtnClient.holdDuration": "Gibt die Dauer des letzten Knopfhaltens in ms zurück",
+    "fwdButtons.FwdSolder3b3lBtnClient.isPressed": "Gibt wahr zurück, wenn der Knopf gerade gedrückt ist, sonst falsch",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent": "Code, der ausgeführt wird, wenn ein gewähltes Ereignis eintritt",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|event": "Knopf gedrückt, gehalten oder losgelassen",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|handler": "der auszuführende Code",
+    "fwdLights.FwdSolder3b3lLightClient.isOn": "Gibt wahr zurück, wenn die Helligkeit des Lichts nicht 0% beträgt.",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff": "Schaltet das Licht ein oder aus.",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff|param|on": "wahr zum Einschalten, falsch zum Ausschalten"
+}

@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn": "Devuelve verdadero si la bomba está funcionando y falso si está detenida.",
+    "fwdMotors.FwdPumpClient.setOn": "Enciende o apaga la bomba.",
+    "fwdMotors.FwdPumpClient.setOn|param|on": "encendido = verdadero, apagado = falso",
+    "fwdMotors.FwdPumpClient.timedRun": "Enciende la bomba durante el tiempo seleccionado (ms).",
+    "fwdMotors.FwdPumpClient.timedRun|param|duration": "cuánto tiempo hacer funcionar la bomba (ms)"
+}

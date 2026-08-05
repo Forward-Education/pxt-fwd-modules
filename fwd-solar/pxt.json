@@ -8,7 +8,13 @@
         "jacdac-light-level": "github:jacdac/pxt-jacdac/light-level#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-solar-jsdoc-strings.json",
+        "_locales/fr/fwd-solar-strings.json",
+        "_locales/es/fwd-solar-jsdoc-strings.json",
+        "_locales/es/fwd-solar-strings.json",
+        "_locales/de/fwd-solar-jsdoc-strings.json",
+        "_locales/de/fwd-solar-strings.json"
     ],
     "testFiles": [
         "test.ts"

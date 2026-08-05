@@ -8,7 +8,13 @@
         "fwd-lightbulb": "github:Forward-Education/pxt-fwd-base/lightbulb#v1.1.2"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-lights-jsdoc-strings.json",
+        "_locales/fr/fwd-lights-strings.json",
+        "_locales/es/fwd-lights-jsdoc-strings.json",
+        "_locales/es/fwd-lights-strings.json",
+        "_locales/de/fwd-lights-jsdoc-strings.json",
+        "_locales/de/fwd-lights-strings.json"
     ],
     "testFiles": [
         "test.ts"

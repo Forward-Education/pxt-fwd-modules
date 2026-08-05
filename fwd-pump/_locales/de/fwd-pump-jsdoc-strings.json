@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn": "Gibt wahr zurück, wenn die Pumpe läuft, und falsch, wenn sie gestoppt ist.",
+    "fwdMotors.FwdPumpClient.setOn": "Schaltet die Pumpe ein oder aus.",
+    "fwdMotors.FwdPumpClient.setOn|param|on": "ein = wahr, aus = falsch",
+    "fwdMotors.FwdPumpClient.timedRun": "Schaltet die Pumpe für die gewählte Dauer ein (ms).",
+    "fwdMotors.FwdPumpClient.timedRun|param|duration": "wie lange die Pumpe laufen soll (ms)"
+}

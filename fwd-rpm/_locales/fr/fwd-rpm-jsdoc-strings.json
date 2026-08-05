@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdRpmClient.isPastThreshold": "Renvoie vrai lorsque le RPM est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|threshold": "la valeur de RPM à comparer",
+    "fwdSensors.FwdRpmClient.rpm": "Vitesse mesurée par le capteur.\nLes valeurs positives correspondent à une rotation horaire et les négatives à une rotation antihoraire."
+}

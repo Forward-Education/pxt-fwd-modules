@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn": "Renvoie vrai si la pompe fonctionne et faux si elle est arrêtée.",
+    "fwdMotors.FwdPumpClient.setOn": "Active ou désactive la pompe.",
+    "fwdMotors.FwdPumpClient.setOn|param|on": "activé = vrai, désactivé = faux",
+    "fwdMotors.FwdPumpClient.timedRun": "Active la pompe pendant la durée choisie (ms).",
+    "fwdMotors.FwdPumpClient.timedRun|param|duration": "la durée de fonctionnement de la pompe (ms)"
+}

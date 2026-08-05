@@ -8,7 +8,13 @@
         "jacdac-relay": "github:jacdac/pxt-jacdac/relay#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-pump-jsdoc-strings.json",
+        "_locales/fr/fwd-pump-strings.json",
+        "_locales/es/fwd-pump-jsdoc-strings.json",
+        "_locales/es/fwd-pump-strings.json",
+        "_locales/de/fwd-pump-jsdoc-strings.json",
+        "_locales/de/fwd-pump-strings.json"
     ],
     "testFiles": [
         "test.ts"

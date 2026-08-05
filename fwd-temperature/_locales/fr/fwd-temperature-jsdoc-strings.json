@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdTemperatureClient.isPastThreshold": "Renvoie vrai lorsque la température (°C) est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|threshold": "la température (°C) à comparer",
+    "fwdSensors.FwdTemperatureClient.temperature": "Renvoie la mesure de température du capteur (°C)."
+}

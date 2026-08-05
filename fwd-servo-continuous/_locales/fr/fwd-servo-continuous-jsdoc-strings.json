@@ -1,0 +1,14 @@
+{
+    "fwdMotors.drive": "Règle les moteurs gauche et droit aux vitesses fournies.\nMet l'exécution en pause pendant la durée fournie, puis arrête les moteurs.\nPour avancer, régler la gauche en positif et la droite en négatif.\nPour reculer, régler la gauche en négatif et la droite en positif.\nPour pivoter à droite, régler la gauche en positif et la droite en positif.\nPour pivoter à gauche, régler la gauche en négatif et la droite en négatif.",
+    "fwdMotors.drive|param|duration": "la durée de fonctionnement des moteurs à ces vitesses",
+    "fwdMotors.drive|param|leftSpeed": "la vitesse à donner au moteur gauche",
+    "fwdMotors.drive|param|rightSpeed": "la vitesse à donner au moteur droit",
+    "fwdMotors.getSpeed": "Renvoie la vitesse à laquelle le servomoteur est réglé (%).",
+    "fwdMotors.getSpeed|param|servo": "le servomoteur dont obtenir la vitesse",
+    "fwdMotors.setSpeed": "Règle la vitesse du servomoteur entre 100 % et -100 %. Les vitesses négatives correspondent au sens inverse.",
+    "fwdMotors.setSpeed|param|servo": "le servomoteur dont régler la vitesse",
+    "fwdMotors.setSpeed|param|speed": "la vitesse à donner au servomoteur (%)",
+    "fwdMotors.setupDriving": "Utiliser ce bloc dans « au démarrage » pour s'assurer que les servomoteurs sont activés et que les commandes de conduite sont initialisées.",
+    "fwdMotors.setupDriving|param|left": "le servomoteur à utiliser comme moteur gauche",
+    "fwdMotors.setupDriving|param|right": "le servomoteur à utiliser comme moteur droit"
+}

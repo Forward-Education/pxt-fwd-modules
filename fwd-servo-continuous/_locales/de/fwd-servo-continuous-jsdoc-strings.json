@@ -1,0 +1,14 @@
+{
+    "fwdMotors.drive": "Setzt den linken und rechten Motor auf die angegebenen Geschwindigkeiten.\nHält die Ausführung für die angegebene Dauer an und stoppt dann die Motoren.\nZum Vorwärtsfahren setze links auf positiv und rechts auf negativ.\nZum Rückwärtsfahren setze links auf negativ und rechts auf positiv.\nZum Rechtsdrehen setze links auf positiv und rechts auf positiv.\nZum Linksdrehen setze links auf negativ und rechts auf negativ.",
+    "fwdMotors.drive|param|duration": "wie lange die Motoren mit diesen Geschwindigkeiten laufen",
+    "fwdMotors.drive|param|leftSpeed": "die Geschwindigkeit für den linken Motor",
+    "fwdMotors.drive|param|rightSpeed": "die Geschwindigkeit für den rechten Motor",
+    "fwdMotors.getSpeed": "Gibt die eingestellte Geschwindigkeit des Servomotors zurück (%).",
+    "fwdMotors.getSpeed|param|servo": "der Servo-Client, dessen Geschwindigkeit abgefragt wird",
+    "fwdMotors.setSpeed": "Setzt die Geschwindigkeit des Servomotors auf einen Wert zwischen 100% und -100%. Negative Geschwindigkeiten bedeuten Rückwärtsrichtung.",
+    "fwdMotors.setSpeed|param|servo": "der Servo-Client, dessen Geschwindigkeit gesetzt wird",
+    "fwdMotors.setSpeed|param|speed": "die Geschwindigkeit für den Servomotor (%)",
+    "fwdMotors.setupDriving": "Verwende diesen Block in \"beim Start\", um sicherzustellen, dass die Servomotoren aktiviert sind und die Fahrsteuerung initialisiert ist.",
+    "fwdMotors.setupDriving|param|left": "der Servo-Client für den linken Motor",
+    "fwdMotors.setupDriving|param|right": "der Servo-Client für den rechten Motor"
+}

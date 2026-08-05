@@ -1,0 +1,11 @@
+{
+    "fwdSensors.FwdColorClient.color|block": "$this $color \\%",
+    "fwdSensors.FwdColorClient.isBetween|block": "$this $color ist zwischen $threshold1 und $threshold2 \\%",
+    "fwdSensors.FwdColorLEDClient.isOn|block": "$this ist eingeschaltet",
+    "fwdSensors.FwdColorLEDClient.setBrightness|block": "setze Helligkeit von $this auf $brightness (\\%)",
+    "fwdSensors.RedGreenBlue.Blue|block": "blau",
+    "fwdSensors.RedGreenBlue.Green|block": "grün",
+    "fwdSensors.RedGreenBlue.Red|block": "rot",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Color": "Farbe"
+}

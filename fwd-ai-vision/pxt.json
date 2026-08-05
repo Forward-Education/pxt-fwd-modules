@@ -8,7 +8,13 @@
         "fwd-i2c": "github:Forward-Education/pxt-fwd-base/fwd-i2c#v1.1.2"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-ai-vision-jsdoc-strings.json",
+        "_locales/fr/fwd-ai-vision-strings.json",
+        "_locales/es/fwd-ai-vision-jsdoc-strings.json",
+        "_locales/es/fwd-ai-vision-strings.json",
+        "_locales/de/fwd-ai-vision-jsdoc-strings.json",
+        "_locales/de/fwd-ai-vision-strings.json"
     ],
     "testFiles": [
         "test.ts"

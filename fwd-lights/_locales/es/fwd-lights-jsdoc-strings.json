@@ -1,0 +1,6 @@
+{
+    "fwdLights.LightsClient": "Controla luces LED",
+    "fwdLights.LightsClient.isOn": "Devuelve verdadero si el brillo de la luz es distinto de 0%.",
+    "fwdLights.LightsClient.setBrightness": "Establece el brillo de una luz o tira de luces. El brillo alcanza su máximo en porcentajes distintos según la luz.\nPrueba varios porcentajes para encontrar el rango de control de tu luz específica.",
+    "fwdLights.LightsClient.setBrightness|param|brightness": "0%-100%"
+}

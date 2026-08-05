@@ -8,7 +8,13 @@
         "jacdac-cursor-character-screen": "github:jacdac/pxt-jacdac/cursor-character-screen#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-lcd-jsdoc-strings.json",
+        "_locales/fr/fwd-lcd-strings.json",
+        "_locales/es/fwd-lcd-jsdoc-strings.json",
+        "_locales/es/fwd-lcd-strings.json",
+        "_locales/de/fwd-lcd-jsdoc-strings.json",
+        "_locales/de/fwd-lcd-strings.json"
     ],
     "testFiles": [
         "test.ts"

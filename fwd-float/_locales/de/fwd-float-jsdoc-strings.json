@@ -1,0 +1,8 @@
+{
+    "fwdSensors.FwdFloatClient.floatState": "Gibt den Zustand des Sensors zurück: 1 ist angehoben und 0 ist gesenkt.",
+    "fwdSensors.FwdFloatClient.floatStateConditional": "Gibt wahr zurück, wenn der Sensor im gewählten Zustand ist.",
+    "fwdSensors.FwdFloatClient.floatStateConditional|param|state": "angehoben oder gesenkt",
+    "fwdSensors.FwdFloatClient.onFloatChange": "Code, der ausgeführt wird, wenn das gewählte Ereignis eintritt.",
+    "fwdSensors.FwdFloatClient.onFloatChange|param|event": "angehoben oder gesenkt",
+    "fwdSensors.FwdFloatClient.onFloatChange|param|handler": "der auszuführende Code"
+}

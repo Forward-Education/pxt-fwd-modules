@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSolarClient.isPastThreshold": "Gibt wahr zurück, wenn die Lichtstärke (%) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdSolarClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdSolarClient.isPastThreshold|param|threshold": "die Lichtstärke (%), mit der verglichen wird",
+    "fwdSensors.FwdSolarClient.lightLevel": "Gibt die vom Sensor gemessene Lichtstärke zurück (%)."
+}

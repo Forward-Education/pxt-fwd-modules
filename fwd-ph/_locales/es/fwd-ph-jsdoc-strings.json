@@ -1,0 +1,11 @@
+{
+    "fwdSensors.FwdPhClient.calibrate": "Calibra la sonda de pH con 2 soluciones de pH conocido para asegurar lecturas precisas.\nLa calibración no se aplica al valor en vivo que se muestra en MakeCode cuando el micro:bit está conectado.",
+    "fwdSensors.FwdPhClient.calibrate|param|reading1": "el pH medido de standard1",
+    "fwdSensors.FwdPhClient.calibrate|param|reading2": "el pH medido de standard2",
+    "fwdSensors.FwdPhClient.calibrate|param|standard1": "el pH conocido de standard1, generalmente 4, 7 o 10",
+    "fwdSensors.FwdPhClient.calibrate|param|standard2": "el pH conocido de standard2, generalmente 4, 7 o 10",
+    "fwdSensors.FwdPhClient.isPastThreshold": "Devuelve verdadero cuando el pH pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdPhClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdPhClient.isPastThreshold|param|threshold": "el pH con el que comparar",
+    "fwdSensors.FwdPhClient.ph": "Devuelve la lectura de pH del sensor."
+}

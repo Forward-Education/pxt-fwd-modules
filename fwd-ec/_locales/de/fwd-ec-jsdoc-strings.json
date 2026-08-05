@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdEcClient": "Ein Sensor, der die elektrische Leitfähigkeit misst.",
+    "fwdSensors.FwdEcClient.ec": "Gibt den relativen EC-Messwert des Sensors zurück.",
+    "fwdSensors.FwdEcClient.isPastThreshold": "Gibt wahr zurück, wenn der relative EC-Wert in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|threshold": "der EC-Wert, mit dem verglichen wird"
+}

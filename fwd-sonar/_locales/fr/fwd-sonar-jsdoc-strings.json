@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSonarClient.distance": "Renvoie la mesure de distance du capteur (m).",
+    "fwdSensors.FwdSonarClient.isPastThreshold": "Renvoie vrai lorsque la distance (m) est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|threshold": "la distance (m) à comparer"
+}

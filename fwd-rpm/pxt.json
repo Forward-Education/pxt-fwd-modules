@@ -8,7 +8,13 @@
         "jacdac-rotations-per-minute": "github:jacdac/pxt-jacdac/rotations-per-minute#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-rpm-jsdoc-strings.json",
+        "_locales/fr/fwd-rpm-strings.json",
+        "_locales/es/fwd-rpm-jsdoc-strings.json",
+        "_locales/es/fwd-rpm-strings.json",
+        "_locales/de/fwd-rpm-jsdoc-strings.json",
+        "_locales/de/fwd-rpm-strings.json"
     ],
     "testFiles": [
         "test.ts"

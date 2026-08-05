@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState": "Renvoie vrai si le capteur est dans l'état indiqué.",
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState|param|state": "activé ou désactivé",
+    "fwdSensors.FwdLineFollowerClient.lineSensorState": "Renvoie l'état du capteur : vrai signifie détection et faux absence de détection.",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange": "Exécute du code lorsque le capteur passe de l'état détection à absence de détection ou inversement.",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange|param|handler": "le code à exécuter"
+}

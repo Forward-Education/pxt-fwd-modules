@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdRpmClient.isPastThreshold": "Gibt wahr zurück, wenn die RPM in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|threshold": "der RPM-Wert, mit dem verglichen wird",
+    "fwdSensors.FwdRpmClient.rpm": "Die vom Sensor gemessene Drehzahl.\nPositive Werte bedeuten Drehung im Uhrzeigersinn, negative gegen den Uhrzeigersinn."
+}

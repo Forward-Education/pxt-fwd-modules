@@ -9,7 +9,13 @@
         "jacdac-tvoc": "github:jacdac/pxt-jacdac/tvoc#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-eco2-jsdoc-strings.json",
+        "_locales/fr/fwd-eco2-strings.json",
+        "_locales/es/fwd-eco2-jsdoc-strings.json",
+        "_locales/es/fwd-eco2-strings.json",
+        "_locales/de/fwd-eco2-jsdoc-strings.json",
+        "_locales/de/fwd-eco2-strings.json"
     ],
     "testFiles": [
         "test.ts"

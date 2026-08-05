@@ -1,0 +1,10 @@
+{
+    "fwdMotors.drive|block": "establecer izquierdo a $leftSpeed \\% y derecho a $rightSpeed \\% durante $duration ms",
+    "fwdMotors.getSpeed|block": "velocidad de $servo (\\%)",
+    "fwdMotors.setSpeed|block": "establecer $servo a $speed \\%",
+    "fwdMotors.setupDriving|block": "configurar conducción|motor izquierdo es $left|motor derecho es $right",
+    "fwdMotors|block": "Motores",
+    "{id:category}FwdMotors": "FwdMotors",
+    "{id:group}Driving": "Conducción",
+    "{id:group}Servo - Continuous": "Servomotor - Continuo"
+}

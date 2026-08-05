@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdPirClient.motionDetected|block": "$this erkennt Bewegung",
+    "fwdSensors.FwdPirClient.onMovement|block": "wenn $this Bewegung erkennt",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}PIR": "PIR"
+}

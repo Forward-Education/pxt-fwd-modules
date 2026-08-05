@@ -1,0 +1,17 @@
+{
+    "fwdSensors.LCDClient.clearScreen": "Efface tout l'écran.",
+    "fwdSensors.LCDClient.printLineNumber": "Affiche le nombre fourni sur la ligne indiquée du LCD. Limité à 16 caractères.\nUn nombre de plus de 16 caractères est remplacé par le message \">16 chars\".\nUn paramètre de ligne invalide déclenche le message \"err:!1-2\" sur la ligne 1.\nCe bloc inclut une pause de 40 ms pour assurer le bon traitement des commandes.",
+    "fwdSensors.LCDClient.printLineNumber|param|line": "la ligne où afficher le nombre",
+    "fwdSensors.LCDClient.printLineNumber|param|value": "le nombre à afficher",
+    "fwdSensors.LCDClient.printLineString": "Affiche le texte fourni sur la ligne indiquée du LCD. Limité à 16 caractères.\nUn texte de plus de 16 caractères est remplacé par le message \">16 chars\".\nUn paramètre de ligne invalide déclenche le message \"err:!1-2\" sur la ligne 1.\nCe bloc inclut une pause de 40 ms pour assurer le bon traitement des commandes.",
+    "fwdSensors.LCDClient.printLineString|param|line": "la ligne où afficher le texte",
+    "fwdSensors.LCDClient.printLineString|param|text": "le texte à afficher",
+    "fwdSensors.LCDClient.printQuadrantNumber": "Affiche le nombre fourni sur le quadrant indiqué du LCD. Limité à 8 caractères.\nUn nombre de plus de 8 caractères est remplacé par le message \">8 chars\".\nUn paramètre de quadrant invalide déclenche le message \"err:!1-4\" dans le quadrant 1.\nCe bloc inclut une pause de 40 ms pour assurer le bon traitement des commandes.",
+    "fwdSensors.LCDClient.printQuadrantNumber|param|quadrant": "le quadrant où afficher le nombre",
+    "fwdSensors.LCDClient.printQuadrantNumber|param|value": "le nombre à afficher",
+    "fwdSensors.LCDClient.printQuadrantString": "Affiche le texte fourni sur le quadrant indiqué du LCD. Limité à 8 caractères.\nUn texte de plus de 8 caractères est remplacé par le message \">8 chars\".\nUn paramètre de quadrant invalide déclenche le message \"err:!1-4\" dans le quadrant 1.\nCe bloc inclut une pause de 40 ms pour assurer le bon traitement des commandes.",
+    "fwdSensors.LCDClient.printQuadrantString|param|quadrant": "le quadrant où afficher le texte",
+    "fwdSensors.LCDClient.printQuadrantString|param|text": "le texte à afficher",
+    "fwdSensors.initializeLcd": "L'initialisation rend les blocs LCD plus fiables dans « au démarrage ».\nPlacer ce bloc dans « au démarrage » avant les blocs LCD.\nIl retarde simplement l'exécution du programme d'une seconde.",
+    "fwdSensors.round": "Prend un nombre et l'arrondit au nombre de décimales indiqué."
+}

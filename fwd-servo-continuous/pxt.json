@@ -9,7 +9,13 @@
     },
     "files": [
         "blocks.ts",
-        "driving.ts"
+        "driving.ts",
+        "_locales/fr/fwd-servo-continuous-jsdoc-strings.json",
+        "_locales/fr/fwd-servo-continuous-strings.json",
+        "_locales/es/fwd-servo-continuous-jsdoc-strings.json",
+        "_locales/es/fwd-servo-continuous-strings.json",
+        "_locales/de/fwd-servo-continuous-jsdoc-strings.json",
+        "_locales/de/fwd-servo-continuous-strings.json"
     ],
     "testFiles": [
         "test.ts"

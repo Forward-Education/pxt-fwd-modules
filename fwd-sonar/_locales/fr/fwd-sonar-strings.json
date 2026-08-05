@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSonarClient.distance|block": "distance de $this (m)",
+    "fwdSensors.FwdSonarClient.isPastThreshold|block": "$this est $direction $threshold m",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Sonar": "Sonar"
+}

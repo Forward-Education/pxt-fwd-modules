@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdDcCurrentClient.current": "Devuelve la lectura de corriente del sensor (mA).",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold": "Devuelve verdadero cuando la corriente (mA) pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|threshold": "la corriente (mA) con la que comparar",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold": "Devuelve verdadero cuando el voltaje (V) pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|threshold": "el voltaje (V) con el que comparar",
+    "fwdSensors.FwdDcVoltageClient.voltage": "Devuelve la lectura de voltaje del sensor (V)."
+}

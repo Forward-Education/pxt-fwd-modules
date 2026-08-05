@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold": "Devuelve verdadero cuando el nivel de humedad del suelo (%) pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|threshold": "el nivel de humedad del suelo (%) con el que comparar",
+    "fwdSensors.FwdSoilMoistureClient.moistureLevel": "Devuelve la lectura del nivel de humedad del suelo del sensor (%)."
+}

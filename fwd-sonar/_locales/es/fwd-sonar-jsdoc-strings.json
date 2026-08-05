@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSonarClient.distance": "Devuelve la lectura de distancia del sensor (m).",
+    "fwdSensors.FwdSonarClient.isPastThreshold": "Devuelve verdadero cuando la distancia (m) pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|threshold": "la distancia (m) con la que comparar"
+}

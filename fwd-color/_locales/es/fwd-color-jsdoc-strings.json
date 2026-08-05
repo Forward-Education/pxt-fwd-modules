@@ -1,0 +1,9 @@
+{
+    "fwdSensors.FwdColorClient.color": "Devuelve una de las lecturas de color del sensor (%).",
+    "fwdSensors.FwdColorClient.isBetween": "Devuelve verdadero cuando el color (%) está entre los umbrales indicados.",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold1": "el primer umbral de color (%)",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold2": "el segundo umbral de color (%)",
+    "fwdSensors.FwdColorLEDClient.isOn": "Devuelve verdadero si el brillo del LED del sensor de color es distinto de 0%.",
+    "fwdSensors.FwdColorLEDClient.setBrightness": "Establece el brillo del LED del sensor de color. Ponlo en 0% para apagarlo.",
+    "fwdSensors.FwdColorLEDClient.setBrightness|param|brightness": "intensidad de 0% a 100%"
+}

@@ -1,0 +1,5 @@
+{
+    "fwdSensors.FwdPirClient.motionDetected": "Gibt wahr zurück, wenn der Sensor in den letzten 3 Sekunden eine Bewegung erkannt hat.",
+    "fwdSensors.FwdPirClient.onMovement": "Führt Code aus, wenn der Sensor nach einer Phase des Stillstands zum ersten Mal eine Bewegung erkennt.",
+    "fwdSensors.FwdPirClient.onMovement|param|handler": "der auszuführende Code"
+}

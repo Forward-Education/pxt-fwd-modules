@@ -1,0 +1,7 @@
+{
+    "fwdButtons.FwdTouchClient.holdDuration|block": "durée de maintien de $this (ms)",
+    "fwdButtons.FwdTouchClient.isPressed|block": "$this est enfoncé",
+    "fwdButtons.FwdTouchClient.onEvent|block": "quand $this $event",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:group}Touch": "Tactile"
+}

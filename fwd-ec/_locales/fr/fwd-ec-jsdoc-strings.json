@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdEcClient": "Un capteur mesurant la conductivité électrique.",
+    "fwdSensors.FwdEcClient.ec": "Renvoie la mesure d'EC relative du capteur.",
+    "fwdSensors.FwdEcClient.isPastThreshold": "Renvoie vrai lorsque l'EC relative est au-delà du seuil fourni dans la direction indiquée.",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|direction": "au-dessus ou en dessous du seuil",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|threshold": "la valeur d'EC à comparer"
+}

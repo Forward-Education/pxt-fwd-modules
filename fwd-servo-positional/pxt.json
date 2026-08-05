@@ -8,7 +8,13 @@
         "fwd-servo-base": "github:Forward-Education/pxt-fwd-base/fwd-servo-base#v1.1.2"
     },
     "files": [
-        "blocks.ts"
+        "blocks.ts",
+        "_locales/fr/fwd-servo-positional-jsdoc-strings.json",
+        "_locales/fr/fwd-servo-positional-strings.json",
+        "_locales/es/fwd-servo-positional-jsdoc-strings.json",
+        "_locales/es/fwd-servo-positional-strings.json",
+        "_locales/de/fwd-servo-positional-jsdoc-strings.json",
+        "_locales/de/fwd-servo-positional-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdEcClient": "Un sensor que mide la conductividad eléctrica.",
+    "fwdSensors.FwdEcClient.ec": "Devuelve la lectura de EC relativa del sensor.",
+    "fwdSensors.FwdEcClient.isPastThreshold": "Devuelve verdadero cuando la EC relativa pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|threshold": "el valor de EC con el que comparar"
+}

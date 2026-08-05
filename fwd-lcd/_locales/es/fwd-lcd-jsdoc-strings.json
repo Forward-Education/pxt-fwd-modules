@@ -1,0 +1,17 @@
+{
+    "fwdSensors.LCDClient.clearScreen": "Borra toda la pantalla.",
+    "fwdSensors.LCDClient.printLineNumber": "Imprime el número indicado en la línea designada de la LCD. Limitado a 16 caracteres.\nUn número de más de 16 caracteres se reemplaza con el mensaje \">16 chars\".\nUn parámetro de línea no válido muestra el mensaje \"err:!1-2\" en la línea 1.\nEste bloque incluye una pausa de 40 ms para asegurar el procesamiento correcto de los comandos.",
+    "fwdSensors.LCDClient.printLineNumber|param|line": "la línea donde imprimir el número",
+    "fwdSensors.LCDClient.printLineNumber|param|value": "el número a imprimir",
+    "fwdSensors.LCDClient.printLineString": "Imprime el texto indicado en la línea designada de la LCD. Limitado a 16 caracteres.\nUn texto de más de 16 caracteres se reemplaza con el mensaje \">16 chars\".\nUn parámetro de línea no válido muestra el mensaje \"err:!1-2\" en la línea 1.\nEste bloque incluye una pausa de 40 ms para asegurar el procesamiento correcto de los comandos.",
+    "fwdSensors.LCDClient.printLineString|param|line": "la línea donde imprimir el texto",
+    "fwdSensors.LCDClient.printLineString|param|text": "el texto a imprimir",
+    "fwdSensors.LCDClient.printQuadrantNumber": "Imprime el número indicado en el cuadrante designado de la LCD. Limitado a 8 caracteres.\nUn número de más de 8 caracteres se reemplaza con el mensaje \">8 chars\".\nUn parámetro de cuadrante no válido muestra el mensaje \"err:!1-4\" en el cuadrante 1.\nEste bloque incluye una pausa de 40 ms para asegurar el procesamiento correcto de los comandos.",
+    "fwdSensors.LCDClient.printQuadrantNumber|param|quadrant": "el cuadrante donde imprimir el número",
+    "fwdSensors.LCDClient.printQuadrantNumber|param|value": "el número a imprimir",
+    "fwdSensors.LCDClient.printQuadrantString": "Imprime el texto indicado en el cuadrante designado de la LCD. Limitado a 8 caracteres.\nUn texto de más de 8 caracteres se reemplaza con el mensaje \">8 chars\".\nUn parámetro de cuadrante no válido muestra el mensaje \"err:!1-4\" en el cuadrante 1.\nEste bloque incluye una pausa de 40 ms para asegurar el procesamiento correcto de los comandos.",
+    "fwdSensors.LCDClient.printQuadrantString|param|quadrant": "el cuadrante donde imprimir el texto",
+    "fwdSensors.LCDClient.printQuadrantString|param|text": "el texto a imprimir",
+    "fwdSensors.initializeLcd": "Inicializar hace que los bloques de la LCD funcionen de forma más confiable en \"al iniciar\".\nColoca este bloque en \"al iniciar\" antes de los bloques de la LCD.\nSimplemente retrasa la ejecución del programa 1 segundo.",
+    "fwdSensors.round": "Toma un número y lo redondea a la cantidad de decimales indicada."
+}

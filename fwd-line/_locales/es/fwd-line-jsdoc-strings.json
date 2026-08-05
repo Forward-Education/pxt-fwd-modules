@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState": "Devuelve verdadero si el sensor está en el estado designado.",
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState|param|state": "encendido o apagado",
+    "fwdSensors.FwdLineFollowerClient.lineSensorState": "Devuelve el estado del sensor: verdadero es detección y falso es sin detección.",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange": "Ejecuta código cuando el sensor cambia entre los estados de detección y sin detección.",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange|param|handler": "el código a ejecutar"
+}

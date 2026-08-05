@@ -1,0 +1,9 @@
+{
+    "fwdSensors.FwdColorClient.color": "Renvoie l'une des mesures de couleur du capteur (%).",
+    "fwdSensors.FwdColorClient.isBetween": "Renvoie vrai lorsque la couleur (%) est comprise entre les seuils fournis.",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold1": "le premier seuil de couleur (%)",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold2": "le second seuil de couleur (%)",
+    "fwdSensors.FwdColorLEDClient.isOn": "Renvoie vrai si la luminosité de la LED du capteur de couleur est différente de 0 %.",
+    "fwdSensors.FwdColorLEDClient.setBrightness": "Définit la luminosité de la LED du capteur de couleur. Une valeur de 0 % l'éteint.",
+    "fwdSensors.FwdColorLEDClient.setBrightness|param|brightness": "intensité de 0 % à 100 %"
+}

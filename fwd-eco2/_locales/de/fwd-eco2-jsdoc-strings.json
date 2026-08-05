@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdEco2Client.eco2": "Gibt den geschätzten CO2-Messwert (eCO2) des Sensors zurück (ppm).",
+    "fwdSensors.FwdEco2Client.isPastThreshold": "Gibt wahr zurück, wenn der eCO2-Wert (ppm) in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|threshold": "der eCO2-Wert (ppm), mit dem verglichen wird",
+    "fwdSensors.FwdTvocClient.isPastThreshold": "Gibt wahr zurück, wenn der tVOC-Messwert in der gewählten Richtung über oder unter dem angegebenen Schwellenwert liegt.",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|direction": "über oder unter dem Schwellenwert",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|threshold": "der tVOC-Wert, mit dem verglichen wird",
+    "fwdSensors.FwdTvocClient.tvoc": "Gibt den Gesamt-VOC-Messwert (tVOC) des Sensors zurück."
+}

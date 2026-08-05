@@ -1,0 +1,5 @@
+{
+    "fwdSensors.FwdPirClient.motionDetected": "Renvoie vrai lorsque le capteur a détecté un mouvement au cours des 3 dernières secondes.",
+    "fwdSensors.FwdPirClient.onMovement": "Exécute du code lorsque le capteur détecte un mouvement après une période d'immobilité.",
+    "fwdSensors.FwdPirClient.onMovement|param|handler": "le code à exécuter"
+}

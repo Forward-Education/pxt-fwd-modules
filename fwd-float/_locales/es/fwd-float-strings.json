@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdFloatClient.floatStateConditional|block": "$this está $state",
+    "fwdSensors.FwdFloatClient.floatState|block": "estado de $this",
+    "fwdSensors.FwdFloatClient.onFloatChange|block": "cuando $this $event",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Float": "Flotador"
+}

@@ -8,7 +8,13 @@
         "jacdac-button": "github:jacdac/pxt-jacdac/button#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-touch-jsdoc-strings.json",
+        "_locales/fr/fwd-touch-strings.json",
+        "_locales/es/fwd-touch-jsdoc-strings.json",
+        "_locales/es/fwd-touch-strings.json",
+        "_locales/de/fwd-touch-jsdoc-strings.json",
+        "_locales/de/fwd-touch-strings.json"
     ],
     "testFiles": [
         "test.ts"

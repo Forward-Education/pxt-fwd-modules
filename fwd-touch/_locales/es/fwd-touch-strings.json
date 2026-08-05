@@ -1,0 +1,7 @@
+{
+    "fwdButtons.FwdTouchClient.holdDuration|block": "tiempo presionado de $this (ms)",
+    "fwdButtons.FwdTouchClient.isPressed|block": "$this está presionado",
+    "fwdButtons.FwdTouchClient.onEvent|block": "cuando $this $event",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:group}Touch": "Táctil"
+}

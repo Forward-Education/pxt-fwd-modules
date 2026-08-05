@@ -1,0 +1,17 @@
+{
+    "fwdSensors.LCDClient.clearScreen": "Löscht den gesamten Bildschirm.",
+    "fwdSensors.LCDClient.printLineNumber": "Zeigt die angegebene Zahl in der gewählten Zeile des LCD an. Begrenzt auf 16 Zeichen.\nEine Zahl mit mehr als 16 Zeichen wird durch die Meldung \">16 chars\" ersetzt.\nEine ungültige Zeilenangabe löst die Meldung \"err:!1-2\" in Zeile 1 aus.\nDieser Block enthält eine eingebaute Pause von 40 ms, damit Befehle richtig verarbeitet werden.",
+    "fwdSensors.LCDClient.printLineNumber|param|line": "die Zeile, in der die Zahl angezeigt wird",
+    "fwdSensors.LCDClient.printLineNumber|param|value": "die anzuzeigende Zahl",
+    "fwdSensors.LCDClient.printLineString": "Zeigt den angegebenen Text in der gewählten Zeile des LCD an. Begrenzt auf 16 Zeichen.\nEin Text mit mehr als 16 Zeichen wird durch die Meldung \">16 chars\" ersetzt.\nEine ungültige Zeilenangabe löst die Meldung \"err:!1-2\" in Zeile 1 aus.\nDieser Block enthält eine eingebaute Pause von 40 ms, damit Befehle richtig verarbeitet werden.",
+    "fwdSensors.LCDClient.printLineString|param|line": "die Zeile, in der der Text angezeigt wird",
+    "fwdSensors.LCDClient.printLineString|param|text": "der anzuzeigende Text",
+    "fwdSensors.LCDClient.printQuadrantNumber": "Zeigt die angegebene Zahl im gewählten Quadranten des LCD an. Begrenzt auf 8 Zeichen.\nEine Zahl mit mehr als 8 Zeichen wird durch die Meldung \">8 chars\" ersetzt.\nEine ungültige Quadrantenangabe löst die Meldung \"err:!1-4\" in Quadrant 1 aus.\nDieser Block enthält eine eingebaute Pause von 40 ms, damit Befehle richtig verarbeitet werden.",
+    "fwdSensors.LCDClient.printQuadrantNumber|param|quadrant": "der Quadrant, in dem die Zahl angezeigt wird",
+    "fwdSensors.LCDClient.printQuadrantNumber|param|value": "die anzuzeigende Zahl",
+    "fwdSensors.LCDClient.printQuadrantString": "Zeigt den angegebenen Text im gewählten Quadranten des LCD an. Begrenzt auf 8 Zeichen.\nEin Text mit mehr als 8 Zeichen wird durch die Meldung \">8 chars\" ersetzt.\nEine ungültige Quadrantenangabe löst die Meldung \"err:!1-4\" in Quadrant 1 aus.\nDieser Block enthält eine eingebaute Pause von 40 ms, damit Befehle richtig verarbeitet werden.",
+    "fwdSensors.LCDClient.printQuadrantString|param|quadrant": "der Quadrant, in dem der Text angezeigt wird",
+    "fwdSensors.LCDClient.printQuadrantString|param|text": "der anzuzeigende Text",
+    "fwdSensors.initializeLcd": "Das Initialisieren lässt LCD-Blöcke in \"beim Start\" zuverlässiger arbeiten.\nPlatziere diesen Block in \"beim Start\" vor den LCD-Blöcken.\nEr verzögert die Programmausführung einfach um 1 Sekunde.",
+    "fwdSensors.round": "Rundet eine Zahl auf die angegebene Dezimalstelle."
+}

@@ -8,7 +8,13 @@
         "jacdac-acidity": "github:jacdac/pxt-jacdac/acidity#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-ph-jsdoc-strings.json",
+        "_locales/fr/fwd-ph-strings.json",
+        "_locales/es/fwd-ph-jsdoc-strings.json",
+        "_locales/es/fwd-ph-strings.json",
+        "_locales/de/fwd-ph-jsdoc-strings.json",
+        "_locales/de/fwd-ph-strings.json"
     ],
     "testFiles": [
         "test.ts"

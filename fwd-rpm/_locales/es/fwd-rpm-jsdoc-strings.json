@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdRpmClient.isPastThreshold": "Devuelve verdadero cuando las RPM pasan el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|threshold": "el valor de RPM con el que comparar",
+    "fwdSensors.FwdRpmClient.rpm": "Velocidad medida por el sensor.\nLos valores positivos son rotación en sentido horario y los negativos en sentido antihorario."
+}

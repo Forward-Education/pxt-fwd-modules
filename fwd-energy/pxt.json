@@ -9,7 +9,13 @@
         "jacdac-dc-voltage": "github:jacdac/pxt-jacdac/dc-voltage-measurement#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-energy-jsdoc-strings.json",
+        "_locales/fr/fwd-energy-strings.json",
+        "_locales/es/fwd-energy-jsdoc-strings.json",
+        "_locales/es/fwd-energy-strings.json",
+        "_locales/de/fwd-energy-jsdoc-strings.json",
+        "_locales/de/fwd-energy-strings.json"
     ],
     "testFiles": [
         "test.ts"

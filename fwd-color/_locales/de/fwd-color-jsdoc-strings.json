@@ -1,0 +1,9 @@
+{
+    "fwdSensors.FwdColorClient.color": "Gibt einen der Farbmesswerte des Sensors zurück (%).",
+    "fwdSensors.FwdColorClient.isBetween": "Gibt wahr zurück, wenn der Farbwert (%) zwischen den angegebenen Schwellenwerten liegt.",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold1": "der erste Farb-Schwellenwert (%)",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold2": "der zweite Farb-Schwellenwert (%)",
+    "fwdSensors.FwdColorLEDClient.isOn": "Gibt wahr zurück, wenn die Helligkeit der LED des Farbsensors nicht 0% beträgt.",
+    "fwdSensors.FwdColorLEDClient.setBrightness": "Legt die Helligkeit der LED des Farbsensors fest. Setze sie auf 0%, um sie auszuschalten.",
+    "fwdSensors.FwdColorLEDClient.setBrightness|param|brightness": "0%-100% Intensität"
+}

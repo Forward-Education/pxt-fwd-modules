@@ -1,0 +1,10 @@
+{
+    "fwdMotors.getAngle": "Gibt den eingestellten Winkel des Servomotors zurück.",
+    "fwdMotors.getAngle|param|servo": "der Servo-Client, dessen Winkel abgefragt wird",
+    "fwdMotors.setAngle": "Setzt den Winkel des Servomotors und führt sofort den nächsten Block aus.",
+    "fwdMotors.setAngleAndWait": "Setzt den Winkel des Servomotors und wartet 1 Sekunde, damit die Bewegung abgeschlossen ist, bevor der nächste Block ausgeführt wird.",
+    "fwdMotors.setAngleAndWait|param|angle": "Winkel des Servomotors",
+    "fwdMotors.setAngleAndWait|param|servo": "der Servo-Client, dessen Winkel gesetzt wird",
+    "fwdMotors.setAngle|param|angle": "Winkel des Servomotors",
+    "fwdMotors.setAngle|param|servo": "der Servo-Client, dessen Winkel gesetzt wird"
+}

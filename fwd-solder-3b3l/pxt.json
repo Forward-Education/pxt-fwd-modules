@@ -9,7 +9,13 @@
         "fwd-lightbulb": "github:Forward-Education/pxt-fwd-base/lightbulb#v1.1.2"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-solder-3b3l-jsdoc-strings.json",
+        "_locales/fr/fwd-solder-3b3l-strings.json",
+        "_locales/es/fwd-solder-3b3l-jsdoc-strings.json",
+        "_locales/es/fwd-solder-3b3l-strings.json",
+        "_locales/de/fwd-solder-3b3l-jsdoc-strings.json",
+        "_locales/de/fwd-solder-3b3l-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn|block": "$this está encendida",
+    "fwdMotors.FwdPumpClient.setOn|block": "poner $this en $on",
+    "fwdMotors.FwdPumpClient.timedRun|block": "hacer funcionar $this durante $duration ms",
+    "{id:category}FwdMotors": "FwdMotors",
+    "{id:group}Pump": "Bomba"
+}

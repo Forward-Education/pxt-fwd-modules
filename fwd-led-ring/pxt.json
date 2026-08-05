@@ -8,7 +8,13 @@
         "jacdac-led": "github:jacdac/pxt-jacdac/led#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-led-ring-jsdoc-strings.json",
+        "_locales/fr/fwd-led-ring-strings.json",
+        "_locales/es/fwd-led-ring-jsdoc-strings.json",
+        "_locales/es/fwd-led-ring-strings.json",
+        "_locales/de/fwd-led-ring-jsdoc-strings.json",
+        "_locales/de/fwd-led-ring-strings.json"
     ],
     "testFiles": [
         "test.ts"

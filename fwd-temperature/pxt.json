@@ -8,7 +8,13 @@
         "jacdac-temperature": "github:jacdac/pxt-jacdac/temperature#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-temperature-jsdoc-strings.json",
+        "_locales/fr/fwd-temperature-strings.json",
+        "_locales/es/fwd-temperature-jsdoc-strings.json",
+        "_locales/es/fwd-temperature-strings.json",
+        "_locales/de/fwd-temperature-jsdoc-strings.json",
+        "_locales/de/fwd-temperature-strings.json"
     ],
     "testFiles": [
         "test.ts"

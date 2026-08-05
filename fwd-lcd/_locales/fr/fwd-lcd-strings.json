@@ -1,0 +1,12 @@
+{
+    "fwdSensors.LCDClient.clearScreen|block": "effacer $this",
+    "fwdSensors.LCDClient.printLineNumber|block": "afficher le nombre $value sur la ligne $line de $this",
+    "fwdSensors.LCDClient.printLineString|block": "afficher le texte $text sur la ligne $line de $this",
+    "fwdSensors.LCDClient.printQuadrantNumber|block": "afficher le nombre $value sur le quadrant $quadrant de $this",
+    "fwdSensors.LCDClient.printQuadrantString|block": "afficher le texte $text sur le quadrant $quadrant de $this",
+    "fwdSensors.initializeLcd|block": "initialiser le LCD",
+    "fwdSensors.round|block": "arrondir $value à $decimals décimales",
+    "fwdSensors|block": "Capteurs",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}LCD": "LCD"
+}

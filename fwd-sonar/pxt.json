@@ -8,7 +8,13 @@
         "jacdac-distance": "github:jacdac/pxt-jacdac/distance#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-sonar-jsdoc-strings.json",
+        "_locales/fr/fwd-sonar-strings.json",
+        "_locales/es/fwd-sonar-jsdoc-strings.json",
+        "_locales/es/fwd-sonar-strings.json",
+        "_locales/de/fwd-sonar-jsdoc-strings.json",
+        "_locales/de/fwd-sonar-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,5 +1,5 @@
 {
-    "name": "fwd-edu-ec",
+    "name": "fwd-ec",
     "version": "1.1.5",
     "description": "FWD Edu Electrical Conductivity",
     "license": "MIT",
@@ -8,7 +8,13 @@
         "jacdac-electrical-conductivity": "github:jacdac/pxt-jacdac/electrical-conductivity#v1.9.41"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/fr/fwd-ec-jsdoc-strings.json",
+        "_locales/fr/fwd-ec-strings.json",
+        "_locales/es/fwd-ec-jsdoc-strings.json",
+        "_locales/es/fwd-ec-strings.json",
+        "_locales/de/fwd-ec-jsdoc-strings.json",
+        "_locales/de/fwd-ec-strings.json"
     ],
     "testFiles": [
         "test.ts"

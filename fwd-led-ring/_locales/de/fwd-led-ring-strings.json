@@ -1,0 +1,18 @@
+{
+    "fwdLights.FwdLEDRingClient.brightness|block": "Helligkeit von $this",
+    "fwdLights.FwdLEDRingClient.rotate|block": "rotiere Muster von $this um $offset",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor|block": "setze alle Pixel von $this auf $color=colorNumberPicker",
+    "fwdLights.FwdLEDRingClient.setBrightness|block": "setze Helligkeit von $this auf $brightness",
+    "fwdLights.FwdLEDRingClient.setPixelColor|block": "setze Pixel $pixel von $this auf $color=colorNumberPicker",
+    "fwdLights.FwdLEDRingClient.shift|block": "verschiebe Muster von $this um $offset",
+    "fwdLights.LEDRingPixels.Pixel1|block": "1",
+    "fwdLights.LEDRingPixels.Pixel2|block": "2",
+    "fwdLights.LEDRingPixels.Pixel3|block": "3",
+    "fwdLights.LEDRingPixels.Pixel4|block": "4",
+    "fwdLights.LEDRingPixels.Pixel5|block": "5",
+    "fwdLights.LEDRingPixels.Pixel6|block": "6",
+    "fwdLights.LEDRingPixels.Pixel7|block": "7",
+    "fwdLights.LEDRingPixels.Pixel8|block": "8",
+    "{id:category}FwdLights": "FwdLights",
+    "{id:group}LED Ring": "LED-Ring"
+}

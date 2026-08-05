@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdEco2Client.eco2": "Devuelve la lectura de CO2 estimado (eCO2) del sensor (ppm).",
+    "fwdSensors.FwdEco2Client.isPastThreshold": "Devuelve verdadero cuando el eCO2 (ppm) pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|threshold": "el valor de eCO2 (ppm) con el que comparar",
+    "fwdSensors.FwdTvocClient.isPastThreshold": "Devuelve verdadero cuando la lectura de tVOC pasa el umbral indicado en la dirección elegida.",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|direction": "por encima o por debajo del umbral",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|threshold": "el valor de tVOC con el que comparar",
+    "fwdSensors.FwdTvocClient.tvoc": "Devuelve la lectura de VOC totales (tVOC) del sensor."
+}
