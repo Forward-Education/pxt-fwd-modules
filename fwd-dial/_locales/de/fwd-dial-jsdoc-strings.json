@@ -1,0 +1,11 @@
+{
+    "fwdButtons.FwdDialButtonClient.holdDuration": "Gibt zurück, wie lange der Knopf gehalten wurde (ms).",
+    "fwdButtons.FwdDialButtonClient.isPressed": "Gibt wahr zurück, wenn der Knopf gerade gedrückt ist, sonst falsch.",
+    "fwdButtons.FwdDialButtonClient.onEvent": "Code, der ausgeführt wird, wenn das gewählte Ereignis eintritt. Das Halten-Ereignis wird alle 100ms ausgelöst, solange der Knopf gehalten wird.",
+    "fwdButtons.FwdDialButtonClient.onEvent|param|event": "Knopf gedrückt, gehalten oder losgelassen",
+    "fwdButtons.FwdDialButtonClient.onEvent|param|handler": "der auszuführende Code",
+    "fwdButtons.FwdDialClient.onRotated": "Führt Code aus, wenn der Drehregler in die gewählte Richtung gedreht wird.",
+    "fwdButtons.FwdDialClient.onRotated|param|direction": "wähle zwischen im Uhrzeigersinn (CW) und gegen den Uhrzeigersinn (CCW)",
+    "fwdButtons.FwdDialClient.onRotated|param|handler": "der auszuführende Code",
+    "fwdButtons.FwdDialClient.position": "Die Position des Drehreglers relativ zu seiner Startposition beim Verbinden.\n0 ist die Startposition. Ein Klick im Uhrzeigersinn ist +1. Ein Klick gegen den Uhrzeigersinn ist -1.\nNach 1 vollen Umdrehung wird nicht auf 0 zurückgesetzt, sondern weitergezählt."
+}

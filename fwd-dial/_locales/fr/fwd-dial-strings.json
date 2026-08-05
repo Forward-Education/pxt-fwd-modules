@@ -1,0 +1,9 @@
+{
+    "fwdButtons.FwdDialButtonClient.holdDuration|block": "durée de maintien de $this (ms)",
+    "fwdButtons.FwdDialButtonClient.isPressed|block": "$this est enfoncé",
+    "fwdButtons.FwdDialButtonClient.onEvent|block": "quand $this $event",
+    "fwdButtons.FwdDialClient.onRotated|block": "quand $this est tourné $direction",
+    "fwdButtons.FwdDialClient.position|block": "position de $this",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:group}Dial": "Molette"
+}

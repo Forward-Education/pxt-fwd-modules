@@ -1,0 +1,11 @@
+{
+    "fwdButtons.FwdDialButtonClient.holdDuration": "Devuelve cuánto tiempo se ha mantenido presionado el botón en ms.",
+    "fwdButtons.FwdDialButtonClient.isPressed": "Devuelve verdadero si el botón está presionado en este momento; de lo contrario, falso.",
+    "fwdButtons.FwdDialButtonClient.onEvent": "Código que se ejecuta cuando ocurre el evento elegido. El evento de mantener presionado se dispara cada 100 ms mientras el botón está presionado.",
+    "fwdButtons.FwdDialButtonClient.onEvent|param|event": "botón presionado, mantenido o soltado",
+    "fwdButtons.FwdDialButtonClient.onEvent|param|handler": "el código a ejecutar",
+    "fwdButtons.FwdDialClient.onRotated": "Ejecuta código cuando la rueda giratoria se gira en la dirección elegida.",
+    "fwdButtons.FwdDialClient.onRotated|param|direction": "elige entre sentido horario (CW) y antihorario (CCW)",
+    "fwdButtons.FwdDialClient.onRotated|param|handler": "el código a ejecutar",
+    "fwdButtons.FwdDialClient.position": "La posición de la rueda giratoria relativa a su posición inicial cuando se conectó.\n0 es la posición inicial. Un clic en sentido horario es +1. Un clic en sentido antihorario es -1.\nNo se reinicia a 0 tras una vuelta completa, sino que sigue aumentando."
+}

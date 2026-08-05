@@ -1,0 +1,11 @@
+{
+    "fwdButtons.FwdDialButtonClient.holdDuration": "Renvoie depuis combien de temps le bouton est maintenu enfoncé, en ms.",
+    "fwdButtons.FwdDialButtonClient.isPressed": "Renvoie vrai si le bouton est actuellement enfoncé, sinon faux.",
+    "fwdButtons.FwdDialButtonClient.onEvent": "Code à exécuter lorsque l'événement choisi se produit. L'événement de maintien se déclenche toutes les 100 ms tant que le bouton est maintenu.",
+    "fwdButtons.FwdDialButtonClient.onEvent|param|event": "bouton enfoncé, maintenu ou relâché",
+    "fwdButtons.FwdDialButtonClient.onEvent|param|handler": "le code à exécuter",
+    "fwdButtons.FwdDialClient.onRotated": "Exécute du code lorsque la molette est tournée dans la direction choisie.",
+    "fwdButtons.FwdDialClient.onRotated|param|direction": "choisir entre le sens horaire (CW) et le sens antihoraire (CCW)",
+    "fwdButtons.FwdDialClient.onRotated|param|handler": "le code à exécuter",
+    "fwdButtons.FwdDialClient.position": "La position de la molette par rapport à sa position de départ au moment de la connexion.\n0 est la position de départ. Un cran dans le sens horaire ajoute +1. Un cran dans le sens antihoraire ajoute -1.\nElle ne revient pas à 0 après un tour complet. Elle continue plutôt à s'incrémenter."
+}
