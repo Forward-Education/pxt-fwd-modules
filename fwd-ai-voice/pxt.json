@@ -9,12 +9,12 @@
     },
     "files": [
         "client.ts",
-        "_locales/fr/fwd-ai-voice-jsdoc-strings.json",
-        "_locales/fr/fwd-ai-voice-strings.json",
-        "_locales/es/fwd-ai-voice-jsdoc-strings.json",
-        "_locales/es/fwd-ai-voice-strings.json",
-        "_locales/de/fwd-ai-voice-jsdoc-strings.json",
-        "_locales/de/fwd-ai-voice-strings.json"
+        "_locales/fr/fwd-ai-voice-module-jsdoc-strings.json",
+        "_locales/fr/fwd-ai-voice-module-strings.json",
+        "_locales/es/fwd-ai-voice-module-jsdoc-strings.json",
+        "_locales/es/fwd-ai-voice-module-strings.json",
+        "_locales/de/fwd-ai-voice-module-jsdoc-strings.json",
+        "_locales/de/fwd-ai-voice-module-strings.json"
     ],
     "testFiles": [
         "test.ts"

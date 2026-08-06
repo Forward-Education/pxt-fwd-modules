@@ -9,12 +9,12 @@
     },
     "files": [
         "client.ts",
-        "_locales/fr/fwd-ai-vision-jsdoc-strings.json",
-        "_locales/fr/fwd-ai-vision-strings.json",
-        "_locales/es/fwd-ai-vision-jsdoc-strings.json",
-        "_locales/es/fwd-ai-vision-strings.json",
-        "_locales/de/fwd-ai-vision-jsdoc-strings.json",
-        "_locales/de/fwd-ai-vision-strings.json"
+        "_locales/fr/fwd-ai-vision-module-jsdoc-strings.json",
+        "_locales/fr/fwd-ai-vision-module-strings.json",
+        "_locales/es/fwd-ai-vision-module-jsdoc-strings.json",
+        "_locales/es/fwd-ai-vision-module-strings.json",
+        "_locales/de/fwd-ai-vision-module-jsdoc-strings.json",
+        "_locales/de/fwd-ai-vision-module-strings.json"
     ],
     "testFiles": [
         "test.ts"
