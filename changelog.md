@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), but without change categorization.
 
+## [1.1.6] 08/06/2026
+
+- refactored AI voice and vision modules for extension approval
+
 ## [1.1.5]
 
 - refactored AI voice and vision modules for extension approval
@@ -41,6 +45,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), but witho
 - Updated pxt-fwd-base dependencies to v1.0.12
 - Removed update-dependency script, just use vs code search and replace instead
 
+[1.1.6]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.5...1.1.6
 [1.1.5]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.4...1.1.5
 [1.1.4]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.3...1.1.4
 [1.1.3]: https://github.com/Forward-Education/pxt-fwd-modules/compare/v1.1.2...1.1.3
