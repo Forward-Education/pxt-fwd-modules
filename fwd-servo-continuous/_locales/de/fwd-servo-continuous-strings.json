@@ -3,7 +3,6 @@
     "fwdMotors.getSpeed|block": "Geschwindigkeit von $servo (\\%)",
     "fwdMotors.setSpeed|block": "setze $servo auf $speed \\%",
     "fwdMotors.setupDriving|block": "Fahren einrichten|linker Motor ist $left|rechter Motor ist $right",
-    "fwdMotors|block": "Motoren",
     "{id:category}FwdMotors": "FwdMotors",
     "{id:group}Driving": "Fahren",
     "{id:group}Servo - Continuous": "Servomotor - kontinuierlich"

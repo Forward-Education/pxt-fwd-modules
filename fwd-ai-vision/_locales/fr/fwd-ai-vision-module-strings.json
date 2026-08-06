@@ -57,6 +57,5 @@
     "fwdAiVision.showCustomText|block": "HuskyLens afficher le texte personnalisé %text à la position x %x y %y à l'écran",
     "fwdAiVision.takePhotoToSDCard|block": "HuskyLens prendre %capture et enregistrer sur la carte SD",
     "fwdAiVision.writeName|block": "HuskyLens nommer l'ID %id de l'algorithme actuel %name",
-    "fwdAiVision|block": "Vision IA",
     "{id:category}FwdAiVision": "FwdAiVision"
 }

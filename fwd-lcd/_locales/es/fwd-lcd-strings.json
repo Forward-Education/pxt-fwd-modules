@@ -6,7 +6,6 @@
     "fwdSensors.LCDClient.printQuadrantString|block": "imprimir texto $text en el cuadrante $quadrant de $this",
     "fwdSensors.initializeLcd|block": "inicializar LCD",
     "fwdSensors.round|block": "redondear $value a $decimals decimales",
-    "fwdSensors|block": "Sensores",
     "{id:category}FwdSensors": "FwdSensors",
     "{id:group}LCD": "LCD"
 }

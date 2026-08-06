@@ -3,7 +3,6 @@
     "fwdMotors.getSpeed|block": "vitesse de $servo (\\%)",
     "fwdMotors.setSpeed|block": "définir $servo à $speed \\%",
     "fwdMotors.setupDriving|block": "configurer la conduite|le moteur gauche est $left|le moteur droit est $right",
-    "fwdMotors|block": "Moteurs",
     "{id:category}FwdMotors": "FwdMotors",
     "{id:group}Driving": "Conduite",
     "{id:group}Servo - Continuous": "Servomoteur - Rotation continue"

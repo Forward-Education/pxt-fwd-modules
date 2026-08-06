@@ -2,7 +2,6 @@
     "fwdMotors.getAngle|block": "Winkel von $servo (°)",
     "fwdMotors.setAngleAndWait|block": "setze $servo auf $angle ° und warte",
     "fwdMotors.setAngle|block": "setze $servo auf $angle °",
-    "fwdMotors|block": "Motoren",
     "{id:category}FwdMotors": "FwdMotors",
     "{id:group}Servo - 270° Positional": "Servomotor - 270° Positionierung"
 }

@@ -1,7 +1,6 @@
 {
     "fwdSensors.FwdEcClient.ec|block": "lectura de $this",
     "fwdSensors.FwdEcClient.isPastThreshold|block": "$this está $direction $threshold",
-    "fwdSensors|block": "Sensores",
     "{id:category}FwdSensors": "FwdSensors",
     "{id:group}Relative EC": "EC relativa"
 }

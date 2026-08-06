@@ -6,7 +6,6 @@
     "fwdSensors.LCDClient.printQuadrantString|block": "schreibe Text $text in Quadrant $quadrant von $this",
     "fwdSensors.initializeLcd|block": "initialisiere LCD",
     "fwdSensors.round|block": "runde $value auf $decimals Dezimalstellen",
-    "fwdSensors|block": "Sensoren",
     "{id:category}FwdSensors": "FwdSensors",
     "{id:group}LCD": "LCD"
 }
