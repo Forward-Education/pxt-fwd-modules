@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), but without change categorization.
 
+## [1.1.7] 08/06/2026
+
+- fixed naming of locale files for voice and vision ai
+
 ## [1.1.6] 08/06/2026
 
 - added locales folders
