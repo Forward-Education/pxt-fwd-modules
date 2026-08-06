@@ -1,0 +1,23 @@
+{
+    "fwdAiVoice.checkCMDID": "Renvoie vrai lorsque le résultat enregistré contient un mot de commande reconnu.",
+    "fwdAiVoice.checkWord1": "L'ID d'un mot de réveil, à comparer au résultat enregistré.",
+    "fwdAiVoice.checkWord1|param|word": "le mot de réveil à rechercher",
+    "fwdAiVoice.checkWord2": "L'ID d'une commande personnalisée que vous avez apprise au module, à comparer au résultat enregistré.",
+    "fwdAiVoice.checkWord2|param|word": "l'emplacement de commande personnalisée à rechercher",
+    "fwdAiVoice.checkWord3": "L'ID d'un des mots de commande intégrés du module, à comparer au résultat enregistré.",
+    "fwdAiVoice.checkWord3|param|word": "le mot de commande intégré à rechercher",
+    "fwdAiVoice.checkWord4": "L'ID d'une commande qui démarre ou arrête l'apprentissage, à comparer au résultat enregistré.",
+    "fwdAiVoice.checkWord4|param|word": "la commande d'apprentissage à rechercher",
+    "fwdAiVoice.getCMDID": "Demande au module ce qu'il a entendu et l'enregistre comme résultat. Tous les autres blocs lisent ce résultat enregistré.",
+    "fwdAiVoice.getWakeTime": "Combien de temps le module reste réveillé après le mot de réveil, en secondes.",
+    "fwdAiVoice.init": "Se connecte au module de reconnaissance vocale en I2C, en réessayant jusqu'à ce que le module réponde.",
+    "fwdAiVoice.playByCMDID": "Fait dire au module l'annonce associée à un mot de commande.",
+    "fwdAiVoice.playByCMDID|param|id": "l'ID du mot de commande à annoncer",
+    "fwdAiVoice.readCMDID": "L'ID du mot de commande dans le résultat enregistré, ou 0 si rien n'a été reconnu.",
+    "fwdAiVoice.setMuteMode": "Coupe ou rétablit le haut-parleur du module.",
+    "fwdAiVoice.setMuteMode|param|mute": "on pour couper le haut-parleur, off pour le rétablir",
+    "fwdAiVoice.setVolume": "Définit le volume auquel le module joue ses annonces.",
+    "fwdAiVoice.setVolume|param|volume": "le niveau de volume, de 1 (le plus faible) à 7 (le plus fort)",
+    "fwdAiVoice.setWakeTime": "Définit combien de temps le module continue d'écouter les commandes après avoir entendu le mot de réveil.",
+    "fwdAiVoice.setWakeTime|param|time": "la durée de réveil en secondes, de 0 à 255"
+}

@@ -1,0 +1,23 @@
+{
+    "fwdAiVoice.checkCMDID": "Devuelve verdadero cuando el resultado guardado contiene una palabra de comando reconocida.",
+    "fwdAiVoice.checkWord1": "El ID de una palabra de activación, para comparar con el resultado guardado.",
+    "fwdAiVoice.checkWord1|param|word": "la palabra de activación que se va a consultar",
+    "fwdAiVoice.checkWord2": "El ID de un comando personalizado que has enseñado al módulo, para comparar con el resultado guardado.",
+    "fwdAiVoice.checkWord2|param|word": "la ranura de comando personalizado que se va a consultar",
+    "fwdAiVoice.checkWord3": "El ID de una de las palabras de comando integradas del módulo, para comparar con el resultado guardado.",
+    "fwdAiVoice.checkWord3|param|word": "la palabra de comando integrada que se va a consultar",
+    "fwdAiVoice.checkWord4": "El ID de un comando que inicia o detiene el aprendizaje, para comparar con el resultado guardado.",
+    "fwdAiVoice.checkWord4|param|word": "el comando de aprendizaje que se va a consultar",
+    "fwdAiVoice.getCMDID": "Pregunta al módulo qué ha oído y lo guarda como el resultado. Los demás bloques leen todos ese resultado guardado.",
+    "fwdAiVoice.getWakeTime": "Cuánto tiempo permanece activo el módulo después de la palabra de activación, en segundos.",
+    "fwdAiVoice.init": "Se conecta al módulo de reconocimiento de voz por I2C, reintentando hasta que el módulo responda.",
+    "fwdAiVoice.playByCMDID": "Hace que el módulo diga el anuncio asociado a una palabra de comando.",
+    "fwdAiVoice.playByCMDID|param|id": "el ID de la palabra de comando que se va a anunciar",
+    "fwdAiVoice.readCMDID": "El ID de la palabra de comando en el resultado guardado, o 0 si no se ha reconocido nada.",
+    "fwdAiVoice.setMuteMode": "Silencia o reactiva el altavoz del módulo.",
+    "fwdAiVoice.setMuteMode|param|mute": "on para silenciar el altavoz, off para volver a activarlo",
+    "fwdAiVoice.setVolume": "Define el volumen con el que el módulo reproduce sus anuncios.",
+    "fwdAiVoice.setVolume|param|volume": "el nivel de volumen, de 1 (el más bajo) a 7 (el más alto)",
+    "fwdAiVoice.setWakeTime": "Define cuánto tiempo el módulo sigue escuchando comandos después de oír la palabra de activación.",
+    "fwdAiVoice.setWakeTime|param|time": "la duración de activación en segundos, de 0 a 255"
+}

@@ -1,0 +1,23 @@
+{
+    "fwdAiVoice.checkCMDID": "Gibt wahr zurück, wenn das gespeicherte Ergebnis ein erkanntes Befehlswort enthält.",
+    "fwdAiVoice.checkWord1": "Die ID eines Aktivierungsworts, zum Vergleich mit dem gespeicherten Ergebnis.",
+    "fwdAiVoice.checkWord1|param|word": "das Aktivierungswort, das nachgeschlagen wird",
+    "fwdAiVoice.checkWord2": "Die ID eines benutzerdefinierten Befehls, den du dem Modul beigebracht hast, zum Vergleich mit dem gespeicherten Ergebnis.",
+    "fwdAiVoice.checkWord2|param|word": "der Platz für den benutzerdefinierten Befehl, der nachgeschlagen wird",
+    "fwdAiVoice.checkWord3": "Die ID eines der integrierten Befehlswörter des Moduls, zum Vergleich mit dem gespeicherten Ergebnis.",
+    "fwdAiVoice.checkWord3|param|word": "das integrierte Befehlswort, das nachgeschlagen wird",
+    "fwdAiVoice.checkWord4": "Die ID eines Befehls, der das Lernen startet oder beendet, zum Vergleich mit dem gespeicherten Ergebnis.",
+    "fwdAiVoice.checkWord4|param|word": "der Lernbefehl, der nachgeschlagen wird",
+    "fwdAiVoice.getCMDID": "Fragt das Modul, was es gehört hat, und speichert es als Ergebnis. Alle anderen Blöcke lesen aus diesem gespeicherten Ergebnis.",
+    "fwdAiVoice.getWakeTime": "Wie lange das Modul nach dem Aktivierungswort wach bleibt, in Sekunden.",
+    "fwdAiVoice.init": "Verbindet sich per I2C mit dem Spracherkennungsmodul und versucht es erneut, bis das Modul antwortet.",
+    "fwdAiVoice.playByCMDID": "Lässt das Modul die Ansage sagen, die zu einem Befehlswort gehört.",
+    "fwdAiVoice.playByCMDID|param|id": "die ID des Befehlsworts, das angesagt wird",
+    "fwdAiVoice.readCMDID": "Die ID des Befehlsworts im gespeicherten Ergebnis oder 0, wenn nichts erkannt wurde.",
+    "fwdAiVoice.setMuteMode": "Schaltet den Lautsprecher des Moduls stumm oder wieder ein.",
+    "fwdAiVoice.setMuteMode|param|mute": "on, um den Lautsprecher stummzuschalten, off, um ihn wieder abspielen zu lassen",
+    "fwdAiVoice.setVolume": "Legt fest, wie laut das Modul seine Ansagen abspielt.",
+    "fwdAiVoice.setVolume|param|volume": "die Lautstärkestufe, von 1 (am leisesten) bis 7 (am lautesten)",
+    "fwdAiVoice.setWakeTime": "Legt fest, wie lange das Modul nach dem Aktivierungswort weiter auf Befehle hört.",
+    "fwdAiVoice.setWakeTime|param|time": "die Wachdauer in Sekunden, von 0 bis 255"
+}
