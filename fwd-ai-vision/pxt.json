@@ -1,6 +1,6 @@
 {
     "name": "fwd-ai-vision-module",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "FWD Edu AI Vision",
     "license": "MIT",
     "dependencies": {
