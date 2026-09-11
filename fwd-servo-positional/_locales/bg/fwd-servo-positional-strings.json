@@ -1,0 +1,7 @@
+{
+    "fwdMotors.getAngle|block": "ъгъл на $servo (°)",
+    "fwdMotors.setAngleAndWait|block": "задай $servo на $angle ° и изчакай",
+    "fwdMotors.setAngle|block": "задай $servo на $angle °",
+    "{id:category}FwdMotors": "FwdMotors",
+    "{id:group}Servo - 270° Positional": "Серво - позиционно 270°"
+}

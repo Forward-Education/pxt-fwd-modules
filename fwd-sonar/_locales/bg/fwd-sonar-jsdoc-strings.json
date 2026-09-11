@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSonarClient.distance": "Връща отчитането на разстояние на сензора (m).",
+    "fwdSensors.FwdSonarClient.isPastThreshold": "Връща вярно, когато разстоянието (m) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdSonarClient.isPastThreshold|param|threshold": "разстоянието (m), с което да се сравнява"
+}

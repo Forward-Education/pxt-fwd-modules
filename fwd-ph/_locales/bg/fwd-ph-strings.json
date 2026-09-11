@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdPhClient.calibrate|block": "калибрирай $this измерва $standard1 като $reading1 измерва $standard2 като $reading2",
+    "fwdSensors.FwdPhClient.isPastThreshold|block": "$this е $direction $threshold pH",
+    "fwdSensors.FwdPhClient.ph|block": "pH на $this",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}pH": "pH"
+}

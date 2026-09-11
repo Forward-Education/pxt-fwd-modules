@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold": "Връща вярно, когато нивото на влажност на почвата (%) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|threshold": "нивото на влажност на почвата (%), с което да се сравнява",
+    "fwdSensors.FwdSoilMoistureClient.moistureLevel": "Връща отчитането на нивото на влажност на почвата на сензора (%)."
+}

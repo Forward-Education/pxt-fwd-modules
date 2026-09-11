@@ -1,0 +1,7 @@
+{
+    "fwdButtons.FwdTouchClient.holdDuration|block": "време на задържане на $this (ms)",
+    "fwdButtons.FwdTouchClient.isPressed|block": "$this е натиснат",
+    "fwdButtons.FwdTouchClient.onEvent|block": "когато $this $event",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:group}Touch": "Докосване"
+}

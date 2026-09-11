@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdEco2Client.eco2": "Връща отчитането на изчислен CO2 (eCO2) на сензора (ppm).",
+    "fwdSensors.FwdEco2Client.isPastThreshold": "Връща вярно, когато eCO2 (ppm) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdEco2Client.isPastThreshold|param|threshold": "стойността на eCO2 (ppm), с която да се сравнява",
+    "fwdSensors.FwdTvocClient.isPastThreshold": "Връща вярно, когато отчитането на tVOC премине зададения праг в избраната посока.",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdTvocClient.isPastThreshold|param|threshold": "стойността на tVOC, с която да се сравнява",
+    "fwdSensors.FwdTvocClient.tvoc": "Връща отчитането на общи летливи органични съединения (tVOC) на сензора."
+}

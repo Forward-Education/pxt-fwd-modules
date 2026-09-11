@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState|block": "$this е $state",
+    "fwdSensors.FwdLineFollowerClient.lineSensorState|block": "състояние на $this",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange|block": "когато $this смени състоянието си",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Line": "Линия"
+}

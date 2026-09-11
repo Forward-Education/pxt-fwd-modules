@@ -1,0 +1,10 @@
+{
+    "fwdButtons.FwdSolder3b3lBtnClient.holdDuration": "Връща продължителността в ms на последното задържане на бутона",
+    "fwdButtons.FwdSolder3b3lBtnClient.isPressed": "Връща вярно, ако бутонът е натиснат в момента, иначе невярно",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent": "Код, който се изпълнява, когато настъпи избраното събитие",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|event": "бутонът е натиснат, задържан или отпуснат",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|handler": "кодът, който да се изпълни",
+    "fwdLights.FwdSolder3b3lLightClient.isOn": "Връща вярно, ако яркостта на светлината е различна от 0%.",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff": "Включва или изключва светлината.",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff|param|on": "вярно за включване, невярно за изключване"
+}

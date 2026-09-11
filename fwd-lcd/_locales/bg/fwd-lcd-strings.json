@@ -1,0 +1,11 @@
+{
+    "fwdSensors.LCDClient.clearScreen|block": "изчисти $this",
+    "fwdSensors.LCDClient.printLineNumber|block": "отпечатай числото $value на ред $line на $this",
+    "fwdSensors.LCDClient.printLineString|block": "отпечатай текста $text на ред $line на $this",
+    "fwdSensors.LCDClient.printQuadrantNumber|block": "отпечатай числото $value в квадрант $quadrant на $this",
+    "fwdSensors.LCDClient.printQuadrantString|block": "отпечатай текста $text в квадрант $quadrant на $this",
+    "fwdSensors.initializeLcd|block": "инициализирай LCD",
+    "fwdSensors.round|block": "закръгли $value до $decimals знака след десетичната запетая",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}LCD": "LCD"
+}

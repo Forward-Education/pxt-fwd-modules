@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdRpmClient.isPastThreshold": "Връща вярно, когато оборотите преминат зададения праг в избраната посока.",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdRpmClient.isPastThreshold|param|threshold": "стойността на RPM, с която да се сравнява",
+    "fwdSensors.FwdRpmClient.rpm": "Скорост, измерена от сензора.\nПоложителните стойности са въртене по часовниковата стрелка, а отрицателните — обратно на часовниковата стрелка."
+}

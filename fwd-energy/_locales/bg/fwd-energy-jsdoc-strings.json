@@ -1,0 +1,10 @@
+{
+    "fwdSensors.FwdDcCurrentClient.current": "Връща отчитането на ток на сензора (mA).",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold": "Връща вярно, когато токът (mA) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|threshold": "токът (mA), с който да се сравнява",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold": "Връща вярно, когато напрежението (V) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|threshold": "напрежението (V), с което да се сравнява",
+    "fwdSensors.FwdDcVoltageClient.voltage": "Връща отчитането на напрежение на сензора (V)."
+}

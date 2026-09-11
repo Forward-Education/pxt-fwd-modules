@@ -1,0 +1,14 @@
+{
+    "fwdLights.FwdLEDRingClient.brightness": "Връща нивото на яркост на пръстена (0-10).",
+    "fwdLights.FwdLEDRingClient.rotate": "Завърта светлинния шаблон наляво или надясно; последният пиксел се връща на първия",
+    "fwdLights.FwdLEDRingClient.rotate|param|offset": "броят позиции за завъртане, положително = по часовниковата стрелка, отрицателно = обратно на часовниковата стрелка",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor": "Задава всички пиксели на един цвят.",
+    "fwdLights.FwdLEDRingClient.setAllPixelsColor|param|color": "шестнадесетичната стойност на цвета",
+    "fwdLights.FwdLEDRingClient.setBrightness": "Задава яркостта на пикселите.",
+    "fwdLights.FwdLEDRingClient.setBrightness|param|brightness": "число между 0 (изключено) и 10 (пълна мощност)",
+    "fwdLights.FwdLEDRingClient.setPixelColor": "Задава определен пиксел на даден цвят.",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|color": "шестнадесетичната стойност на цвета",
+    "fwdLights.FwdLEDRingClient.setPixelColor|param|pixel": "номерът на пиксела (1-8)",
+    "fwdLights.FwdLEDRingClient.shift": "Измества светлинния шаблон наляво или надясно. Ако шаблонът се измести отвъд първия или последния пиксел, тази част от шаблона се премахва.",
+    "fwdLights.FwdLEDRingClient.shift|param|offset": "броят позиции за изместване, положително = по часовниковата стрелка, отрицателно = обратно на часовниковата стрелка"
+}

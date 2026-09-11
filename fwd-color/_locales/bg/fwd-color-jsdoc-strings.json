@@ -1,0 +1,9 @@
+{
+    "fwdSensors.FwdColorClient.color": "Връща едно от отчитанията на цвят на сензора (%).",
+    "fwdSensors.FwdColorClient.isBetween": "Връща вярно, когато цветът (%) е между зададените прагове.",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold1": "първият праг за цвят (%)",
+    "fwdSensors.FwdColorClient.isBetween|param|threshold2": "вторият праг за цвят (%)",
+    "fwdSensors.FwdColorLEDClient.isOn": "Връща вярно, ако яркостта на светодиода на сензора за цвят е различна от 0%.",
+    "fwdSensors.FwdColorLEDClient.setBrightness": "Задава яркостта на светодиода на сензора за цвят. Задай 0%, за да го изключиш.",
+    "fwdSensors.FwdColorLEDClient.setBrightness|param|brightness": "интензитет от 0% до 100%"
+}

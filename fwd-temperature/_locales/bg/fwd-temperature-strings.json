@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|block": "$this е $direction $threshold °C",
+    "fwdSensors.FwdTemperatureClient.temperature|block": "°C на $this",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Temperature Probe": "Температурна сонда"
+}

@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSoilMoistureClient.isPastThreshold|block": "$this е $direction $threshold \\%",
+    "fwdSensors.FwdSoilMoistureClient.moistureLevel|block": "влажност на почвата на $this (\\%)",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Moisture": "Влажност на почвата"
+}

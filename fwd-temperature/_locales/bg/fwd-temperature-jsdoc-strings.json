@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdTemperatureClient.isPastThreshold": "Връща вярно, когато температурата (°C) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdTemperatureClient.isPastThreshold|param|threshold": "температурата (°C), с която да се сравнява",
+    "fwdSensors.FwdTemperatureClient.temperature": "Връща отчитането на температура на сензора (°C)."
+}

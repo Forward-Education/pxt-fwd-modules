@@ -1,0 +1,7 @@
+{
+    "fwdButtons.FwdTouchClient.holdDuration": "Връща продължителността (ms) на задържането на бутона в ms",
+    "fwdButtons.FwdTouchClient.isPressed": "Връща вярно, ако бутонът е натиснат в момента, иначе невярно",
+    "fwdButtons.FwdTouchClient.onEvent": "Код, който се изпълнява, когато настъпи избраното събитие",
+    "fwdButtons.FwdTouchClient.onEvent|param|event": "бутонът е натиснат, задържан или отпуснат",
+    "fwdButtons.FwdTouchClient.onEvent|param|handler": "кодът, който да се изпълни"
+}

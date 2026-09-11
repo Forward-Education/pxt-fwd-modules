@@ -1,0 +1,8 @@
+{
+    "fwdSensors.FwdFloatClient.floatState": "Връща състоянието на сензора: 1 е повдигнат, а 0 е спуснат.",
+    "fwdSensors.FwdFloatClient.floatStateConditional": "Връща вярно, ако сензорът е в зададеното състояние.",
+    "fwdSensors.FwdFloatClient.floatStateConditional|param|state": "повдигнат или спуснат",
+    "fwdSensors.FwdFloatClient.onFloatChange": "Код, който се изпълнява, когато настъпи избраното събитие.",
+    "fwdSensors.FwdFloatClient.onFloatChange|param|event": "повдигнат или спуснат",
+    "fwdSensors.FwdFloatClient.onFloatChange|param|handler": "кодът, който да се изпълни"
+}

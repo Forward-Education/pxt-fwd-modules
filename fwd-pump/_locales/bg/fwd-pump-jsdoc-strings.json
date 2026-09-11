@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn": "Връща вярно, ако помпата работи, и невярно, ако е спряна.",
+    "fwdMotors.FwdPumpClient.setOn": "Включва или изключва помпата.",
+    "fwdMotors.FwdPumpClient.setOn|param|on": "включено = вярно, изключено = невярно",
+    "fwdMotors.FwdPumpClient.timedRun": "Пуска помпата за избраното време (ms).",
+    "fwdMotors.FwdPumpClient.timedRun|param|duration": "колко дълго да работи помпата (ms)"
+}

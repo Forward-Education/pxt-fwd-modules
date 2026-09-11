@@ -1,0 +1,11 @@
+{
+    "fwdSensors.FwdColorClient.color|block": "$this $color \\%",
+    "fwdSensors.FwdColorClient.isBetween|block": "$this $color е между $threshold1 и $threshold2 \\%",
+    "fwdSensors.FwdColorLEDClient.isOn|block": "$this е включен",
+    "fwdSensors.FwdColorLEDClient.setBrightness|block": "задай яркост на $this на $brightness (\\%)",
+    "fwdSensors.RedGreenBlue.Blue|block": "синьо",
+    "fwdSensors.RedGreenBlue.Green|block": "зелено",
+    "fwdSensors.RedGreenBlue.Red|block": "червено",
+    "{id:category}FwdSensors": "FwdSensors",
+    "{id:group}Color": "Цвят"
+}

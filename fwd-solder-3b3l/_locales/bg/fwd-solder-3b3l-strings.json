@@ -1,0 +1,10 @@
+{
+    "fwdButtons.FwdSolder3b3lBtnClient.holdDuration|block": "време на задържане на $this (ms)",
+    "fwdButtons.FwdSolder3b3lBtnClient.isPressed|block": "$this е натиснат",
+    "fwdButtons.FwdSolder3b3lBtnClient.onEvent|block": "когато $this $event",
+    "fwdLights.FwdSolder3b3lLightClient.isOn|block": "$this е включена",
+    "fwdLights.FwdSolder3b3lLightClient.setOnOff|block": "задай $this на $on",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:category}FwdLights": "FwdLights",
+    "{id:group}Smart Solder": "Smart Solder"
+}

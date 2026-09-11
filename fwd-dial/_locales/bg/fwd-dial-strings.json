@@ -1,0 +1,12 @@
+{
+    "fwdButtons.FwdDialButtonClient.holdDuration|block": "време на задържане на $this (ms)",
+    "fwdButtons.FwdDialButtonClient.isPressed|block": "$this е натиснат",
+    "fwdButtons.FwdDialButtonClient.onEvent|block": "когато $this $event",
+    "fwdButtons.FwdDialClient.onRotated|block": "когато $this се завърти $direction",
+    "fwdButtons.FwdDialClient.position|block": "позиция на $this",
+    "jacdac.ButtonEvent.Down|block": "натиснат",
+    "jacdac.ButtonEvent.Hold|block": "задържан",
+    "jacdac.ButtonEvent.Up|block": "отпуснат",
+    "{id:category}FwdButtons": "FwdButtons",
+    "{id:group}Dial": "Въртящ се диск"
+}

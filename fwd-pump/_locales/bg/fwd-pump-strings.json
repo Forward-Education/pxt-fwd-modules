@@ -1,0 +1,7 @@
+{
+    "fwdMotors.FwdPumpClient.isOn|block": "$this е включена",
+    "fwdMotors.FwdPumpClient.setOn|block": "задай $this на $on",
+    "fwdMotors.FwdPumpClient.timedRun|block": "пусни $this за $duration ms",
+    "{id:category}FwdMotors": "FwdMotors",
+    "{id:group}Pump": "Помпа"
+}

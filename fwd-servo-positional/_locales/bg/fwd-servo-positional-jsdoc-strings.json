@@ -1,0 +1,10 @@
+{
+    "fwdMotors.getAngle": "Връща ъгъла, на който е зададено сервото.",
+    "fwdMotors.getAngle|param|servo": "серво клиентът, от който да се вземе ъгълът",
+    "fwdMotors.setAngle": "Задава ъгъла на сервото и веднага изпълнява следващия блок.",
+    "fwdMotors.setAngleAndWait": "Задава ъгъла на сервото и изчаква 1 секунда движението да завърши, преди да изпълни следващия блок.",
+    "fwdMotors.setAngleAndWait|param|angle": "ъгъл на сервото",
+    "fwdMotors.setAngleAndWait|param|servo": "серво клиентът, на който да се зададе ъгълът",
+    "fwdMotors.setAngle|param|angle": "ъгъл на сервото",
+    "fwdMotors.setAngle|param|servo": "серво клиентът, на който да се зададе ъгълът"
+}

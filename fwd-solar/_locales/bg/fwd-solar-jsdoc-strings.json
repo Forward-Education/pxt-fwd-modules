@@ -1,0 +1,6 @@
+{
+    "fwdSensors.FwdSolarClient.isPastThreshold": "Връща вярно, когато нивото на светлина (%) премине зададения праг в избраната посока.",
+    "fwdSensors.FwdSolarClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdSolarClient.isPastThreshold|param|threshold": "нивото на светлина (%), с което да се сравнява",
+    "fwdSensors.FwdSolarClient.lightLevel": "Връща отчитането на нивото на светлина на сензора (%)."
+}

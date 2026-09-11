@@ -1,0 +1,5 @@
+{
+    "fwdSensors.FwdPirClient.motionDetected": "Връща вярно, когато сензорът е засякъл движение през последните 3 секунди.",
+    "fwdSensors.FwdPirClient.onMovement": "Изпълнява код, когато сензорът засече движение за първи път след период на покой.",
+    "fwdSensors.FwdPirClient.onMovement|param|handler": "кодът, който да се изпълни"
+}

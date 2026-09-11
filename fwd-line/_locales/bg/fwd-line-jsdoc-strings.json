@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState": "Връща вярно, ако сензорът е в зададеното състояние.",
+    "fwdSensors.FwdLineFollowerClient.isLineSensorState|param|state": "включено или изключено",
+    "fwdSensors.FwdLineFollowerClient.lineSensorState": "Връща състоянието на сензора: вярно е засичане, а невярно е без засичане.",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange": "Изпълнява код, когато сензорът превключва между състояния със засичане и без засичане.",
+    "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange|param|handler": "кодът, който да се изпълни"
+}

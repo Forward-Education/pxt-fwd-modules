@@ -1,0 +1,7 @@
+{
+    "fwdSensors.FwdEcClient": "Сензор, който измерва електропроводимост.",
+    "fwdSensors.FwdEcClient.ec": "Връща отчитането на относителна EC на сензора.",
+    "fwdSensors.FwdEcClient.isPastThreshold": "Връща вярно, когато относителната EC премине зададения праг в избраната посока.",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|direction": "над или под прага",
+    "fwdSensors.FwdEcClient.isPastThreshold|param|threshold": "стойността на EC, с която да се сравнява"
+}
