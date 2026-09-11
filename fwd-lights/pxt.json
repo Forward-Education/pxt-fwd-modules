@@ -16,7 +16,9 @@
         "_locales/de/fwd-lights-jsdoc-strings.json",
         "_locales/de/fwd-lights-strings.json",
         "_locales/ar/fwd-lights-jsdoc-strings.json",
-        "_locales/ar/fwd-lights-strings.json"
+        "_locales/ar/fwd-lights-strings.json",
+        "_locales/bg/fwd-lights-jsdoc-strings.json",
+        "_locales/bg/fwd-lights-strings.json"
     ],
     "testFiles": [
         "test.ts"

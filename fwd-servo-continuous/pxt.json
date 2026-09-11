@@ -17,7 +17,9 @@
         "_locales/de/fwd-servo-continuous-jsdoc-strings.json",
         "_locales/de/fwd-servo-continuous-strings.json",
         "_locales/ar/fwd-servo-continuous-jsdoc-strings.json",
-        "_locales/ar/fwd-servo-continuous-strings.json"
+        "_locales/ar/fwd-servo-continuous-strings.json",
+        "_locales/bg/fwd-servo-continuous-jsdoc-strings.json",
+        "_locales/bg/fwd-servo-continuous-strings.json"
     ],
     "testFiles": [
         "test.ts"

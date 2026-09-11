@@ -16,7 +16,9 @@
         "_locales/de/fwd-servo-positional-jsdoc-strings.json",
         "_locales/de/fwd-servo-positional-strings.json",
         "_locales/ar/fwd-servo-positional-jsdoc-strings.json",
-        "_locales/ar/fwd-servo-positional-strings.json"
+        "_locales/ar/fwd-servo-positional-strings.json",
+        "_locales/bg/fwd-servo-positional-jsdoc-strings.json",
+        "_locales/bg/fwd-servo-positional-strings.json"
     ],
     "testFiles": [
         "test.ts"

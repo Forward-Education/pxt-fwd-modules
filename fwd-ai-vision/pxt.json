@@ -16,7 +16,9 @@
         "_locales/de/fwd-ai-vision-module-jsdoc-strings.json",
         "_locales/de/fwd-ai-vision-module-strings.json",
         "_locales/ar/fwd-ai-vision-module-jsdoc-strings.json",
-        "_locales/ar/fwd-ai-vision-module-strings.json"
+        "_locales/ar/fwd-ai-vision-module-strings.json",
+        "_locales/bg/fwd-ai-vision-module-jsdoc-strings.json",
+        "_locales/bg/fwd-ai-vision-module-strings.json"
     ],
     "testFiles": [
         "test.ts"

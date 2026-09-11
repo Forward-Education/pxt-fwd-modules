@@ -16,7 +16,9 @@
         "_locales/de/fwd-line-jsdoc-strings.json",
         "_locales/de/fwd-line-strings.json",
         "_locales/ar/fwd-line-jsdoc-strings.json",
-        "_locales/ar/fwd-line-strings.json"
+        "_locales/ar/fwd-line-strings.json",
+        "_locales/bg/fwd-line-jsdoc-strings.json",
+        "_locales/bg/fwd-line-strings.json"
     ],
     "testFiles": [
         "test.ts"

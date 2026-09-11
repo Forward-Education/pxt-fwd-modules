@@ -17,7 +17,9 @@
         "_locales/de/fwd-solder-3b3l-jsdoc-strings.json",
         "_locales/de/fwd-solder-3b3l-strings.json",
         "_locales/ar/fwd-solder-3b3l-jsdoc-strings.json",
-        "_locales/ar/fwd-solder-3b3l-strings.json"
+        "_locales/ar/fwd-solder-3b3l-strings.json",
+        "_locales/bg/fwd-solder-3b3l-jsdoc-strings.json",
+        "_locales/bg/fwd-solder-3b3l-strings.json"
     ],
     "testFiles": [
         "test.ts"
