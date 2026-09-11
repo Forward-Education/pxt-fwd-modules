@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), but without change categorization.
 
+## [1.1.9] 09/11/2026
+
+- added Arabic locale to all modules
+- backfilled missing fr/de/es translations for a few block strings
+- removed DFRobot placeholder example text from AI vision module
+- bumped pxt-fwd-base dependencies to v1.1.5
+
 ## [1.1.8] 08/06/2026
 
 - moved drawer translations to base
