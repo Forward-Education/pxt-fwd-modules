@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com), but without change categorization.
 
+## [1.1.11] 09/11/2026
+
+- registered Bulgarian locale files in each module pxt.json
+
 ## [1.1.10] 09/11/2026
 
 - added Bulgarian locale to all modules
