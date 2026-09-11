@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdSolarClient.isPastThreshold|block": "إضاءة $this $direction $threshold \\%",
+  "fwdSensors.FwdSolarClient.lightLevel|block": "مستوى إضاءة $this (\\%)",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}Solar": "الطاقة الشمسية"
+}

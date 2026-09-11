@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdSoilMoistureClient.isPastThreshold": "يعيد true عندما يكون مستوى الرطوبة (%) أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdSoilMoistureClient.isPastThreshold|param|threshold": "مستوى الرطوبة (%) المطلوب المقارنة به",
+  "fwdSensors.FwdSoilMoistureClient.moistureLevel": "يعيد قراءة مستوى الرطوبة من المستشعر (%)."
+}

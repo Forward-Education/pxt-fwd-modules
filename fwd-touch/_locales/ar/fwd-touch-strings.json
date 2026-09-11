@@ -1,0 +1,7 @@
+{
+  "fwdButtons.FwdTouchClient.holdDuration|block": "مدة ضغط $this (ms)",
+  "fwdButtons.FwdTouchClient.isPressed|block": "$this مضغوط",
+  "fwdButtons.FwdTouchClient.onEvent|block": "عند $this $event",
+  "{id:category}FwdButtons": "FwdButtons",
+  "{id:group}Touch": "اللمس"
+}

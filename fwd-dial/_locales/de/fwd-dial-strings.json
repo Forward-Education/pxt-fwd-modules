@@ -4,6 +4,9 @@
     "fwdButtons.FwdDialButtonClient.onEvent|block": "wenn $this $event",
     "fwdButtons.FwdDialClient.onRotated|block": "wenn $this $direction gedreht wird",
     "fwdButtons.FwdDialClient.position|block": "Position von $this",
+    "jacdac.ButtonEvent.Down|block": "gedrückt",
+    "jacdac.ButtonEvent.Hold|block": "gehalten",
+    "jacdac.ButtonEvent.Up|block": "losgelassen",
     "{id:category}FwdButtons": "FwdButtons",
     "{id:group}Dial": "Drehregler"
 }

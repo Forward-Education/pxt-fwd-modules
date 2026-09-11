@@ -14,7 +14,9 @@
         "_locales/es/fwd-temperature-jsdoc-strings.json",
         "_locales/es/fwd-temperature-strings.json",
         "_locales/de/fwd-temperature-jsdoc-strings.json",
-        "_locales/de/fwd-temperature-strings.json"
+        "_locales/de/fwd-temperature-strings.json",
+        "_locales/ar/fwd-temperature-jsdoc-strings.json",
+        "_locales/ar/fwd-temperature-strings.json"
     ],
     "testFiles": [
         "test.ts"

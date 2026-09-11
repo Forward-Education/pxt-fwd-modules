@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdSonarClient.distance": "يعيد قراءة المسافة من المستشعر (m).",
+  "fwdSensors.FwdSonarClient.isPastThreshold": "يعيد true عندما تكون المسافة (m) أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdSonarClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdSonarClient.isPastThreshold|param|threshold": "المسافة (m) المطلوب المقارنة بها"
+}

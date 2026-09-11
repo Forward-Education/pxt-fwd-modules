@@ -55,7 +55,9 @@
     "fwdAiVision.resultCount|block": "HuskyLens obtenir le nombre total de %resultType à partir du résultat",
     "fwdAiVision.saveModelToTFCard|block": "HuskyLens %action les données de l'algorithme actuel comme modèle n° %data de la carte SD",
     "fwdAiVision.showCustomText|block": "HuskyLens afficher le texte personnalisé %text à la position x %x y %y à l'écran",
+    "fwdAiVision.showCustomText|param|text|defl": "FWD Edu",
     "fwdAiVision.takePhotoToSDCard|block": "HuskyLens prendre %capture et enregistrer sur la carte SD",
     "fwdAiVision.writeName|block": "HuskyLens nommer l'ID %id de l'algorithme actuel %name",
+    "fwdAiVision.writeName|param|name|defl": "Alex",
     "{id:category}FwdAiVision": "FwdAiVision"
 }

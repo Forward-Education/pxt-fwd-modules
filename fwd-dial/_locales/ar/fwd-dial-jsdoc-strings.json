@@ -1,0 +1,14 @@
+{
+  "fwdButtons.FwdDialButtonClient.holdDuration": "يعيد مدة الضغط المستمر على الزر بالمللي ثانية (ms).",
+  "fwdButtons.FwdDialButtonClient.isPressed": "يعيد true إذا كان الزر مضغوطًا حاليًا، وإلا false.",
+  "fwdButtons.FwdDialButtonClient.onEvent": "كود يعمل عند وقوع الحدث المختار. يتكرر حدث الاستمرار كل 100ms أثناء الضغط على الزر.",
+  "fwdButtons.FwdDialButtonClient.onEvent|param|event": "ضغط الزر، أو الاستمرار، أو تحريره",
+  "fwdButtons.FwdDialButtonClient.onEvent|param|handler": "الكود المطلوب تشغيله",
+  "fwdButtons.FwdDialClient.onRotated": "يشغّل الكود عند تدوير القرص الدوّار في الاتجاه المختار.",
+  "fwdButtons.FwdDialClient.onRotated|param|direction": "اختر بين اتجاه عقارب الساعة (CW) وعكس عقارب الساعة (CCW)",
+  "fwdButtons.FwdDialClient.onRotated|param|handler": "الكود المطلوب تشغيله",
+  "fwdButtons.FwdDialClient.position": "موضع القرص الدوّار نسبةً إلى موضعه عند توصيله.\n0 هو موضع البداية. كل نقرة باتجاه عقارب الساعة +1، وكل نقرة بعكس عقارب الساعة -1.\nلا يعود إلى 0 بعد دورة كاملة، بل يستمر في الزيادة.",
+  "jacdac.ButtonEvent.Down": "يُصدَر عند انتقال الزر من غير نشط إلى نشط.",
+  "jacdac.ButtonEvent.Hold": "المعامل: الزمن ms uint32_t. يُصدَر عندما تتجاوز مدة الضغط 500 ميلي ثانية، ثم كل 500 ميلي ثانية على الأقل طالما ظل الزر مضغوطًا. يسجل معامل \"الزمن\" المدة التي ظل فيها الزر مضغوطًا (منذ حدث الضغط).",
+  "jacdac.ButtonEvent.Up": "المعامل: الزمن ms uint32_t. يُصدَر عند انتقال الزر من نشط إلى غير نشط. يسجل معامل \"الزمن\" المدة الفاصلة بين حدثي الضغط والتحرير."
+}

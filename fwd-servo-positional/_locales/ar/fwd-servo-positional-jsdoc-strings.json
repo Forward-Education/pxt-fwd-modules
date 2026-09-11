@@ -1,0 +1,10 @@
+{
+  "fwdMotors.getAngle": "يعيد الزاوية المضبوط عليها السيرفو.",
+  "fwdMotors.getAngle|param|servo": "عميل السيرفو المطلوب الحصول على زاويته",
+  "fwdMotors.setAngle": "يضبط زاوية السيرفو ويشغّل اللبنة التالية فورًا.",
+  "fwdMotors.setAngleAndWait": "يضبط زاوية السيرفو وينتظر ثانية واحدة حتى تكتمل الحركة قبل تشغيل اللبنة التالية.",
+  "fwdMotors.setAngleAndWait|param|angle": "زاوية السيرفو",
+  "fwdMotors.setAngleAndWait|param|servo": "عميل السيرفو المطلوب ضبط زاويته",
+  "fwdMotors.setAngle|param|angle": "زاوية السيرفو",
+  "fwdMotors.setAngle|param|servo": "عميل السيرفو المطلوب ضبط زاويته"
+}

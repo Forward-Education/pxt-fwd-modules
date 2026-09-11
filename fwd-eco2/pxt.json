@@ -15,7 +15,9 @@
         "_locales/es/fwd-eco2-jsdoc-strings.json",
         "_locales/es/fwd-eco2-strings.json",
         "_locales/de/fwd-eco2-jsdoc-strings.json",
-        "_locales/de/fwd-eco2-strings.json"
+        "_locales/de/fwd-eco2-strings.json",
+        "_locales/ar/fwd-eco2-jsdoc-strings.json",
+        "_locales/ar/fwd-eco2-strings.json"
     ],
     "testFiles": [
         "test.ts"

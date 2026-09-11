@@ -14,7 +14,9 @@
         "_locales/es/fwd-led-ring-jsdoc-strings.json",
         "_locales/es/fwd-led-ring-strings.json",
         "_locales/de/fwd-led-ring-jsdoc-strings.json",
-        "_locales/de/fwd-led-ring-strings.json"
+        "_locales/de/fwd-led-ring-strings.json",
+        "_locales/ar/fwd-led-ring-jsdoc-strings.json",
+        "_locales/ar/fwd-led-ring-strings.json"
     ],
     "testFiles": [
         "test.ts"

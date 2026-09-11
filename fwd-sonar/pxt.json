@@ -14,7 +14,9 @@
         "_locales/es/fwd-sonar-jsdoc-strings.json",
         "_locales/es/fwd-sonar-strings.json",
         "_locales/de/fwd-sonar-jsdoc-strings.json",
-        "_locales/de/fwd-sonar-strings.json"
+        "_locales/de/fwd-sonar-strings.json",
+        "_locales/ar/fwd-sonar-jsdoc-strings.json",
+        "_locales/ar/fwd-sonar-strings.json"
     ],
     "testFiles": [
         "test.ts"

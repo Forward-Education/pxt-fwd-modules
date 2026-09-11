@@ -1,4 +1,5 @@
 {
+    "fwdAiVision.HuskylensClient.transactionI2C": "Combined I2C transaction:\ncmd payload: [address: u8][num_read: u8][write_buf: bytes...]\nreport:      [status: u8][read_buf: bytes...]",
     "fwdAiVision.clearCustomText": "Efface tous vos propres textes de l'écran du HuskyLens.",
     "fwdAiVision.forgetLearn": "Oublie tout ce que l'algorithme actuel a appris.",
     "fwdAiVision.idResultCount": "Combien de cadres ou de flèches portant un ID donné sont à l'écran dans le résultat enregistré.",
@@ -48,12 +49,12 @@
     "fwdAiVision.saveModelToTFCard|param|action": "s'il faut enregistrer le modèle ou le charger",
     "fwdAiVision.saveModelToTFCard|param|data": "quel emplacement de modèle numéroté utiliser sur la carte, p. ex. 0",
     "fwdAiVision.showCustomText": "Affiche votre propre texte à l'écran du HuskyLens.",
-    "fwdAiVision.showCustomText|param|text": "le texte à afficher, p. ex. \"DFRobot\"",
+    "fwdAiVision.showCustomText|param|text": "le texte à afficher, p. ex. \"FWD Edu\"",
     "fwdAiVision.showCustomText|param|x": "à quelle distance horizontale placer le texte à l'écran, p. ex. 150",
     "fwdAiVision.showCustomText|param|y": "à quelle distance verticale placer le texte à l'écran, p. ex. 30",
     "fwdAiVision.takePhotoToSDCard": "Prend une image et l'enregistre sur la carte SD du HuskyLens.",
     "fwdAiVision.takePhotoToSDCard|param|capture": "s'il faut enregistrer une photo de la caméra ou une capture de l'écran",
     "fwdAiVision.writeName": "Donne un nom à l'un des ID appris par l'algorithme actuel ; le HuskyLens l'affiche à l'écran à côté.",
     "fwdAiVision.writeName|param|id": "l'ID appris à nommer, p. ex. 1",
-    "fwdAiVision.writeName|param|name": "le nom à donner à cet ID, p. ex. \"DFRobot\""
+    "fwdAiVision.writeName|param|name": "le nom à donner à cet ID, p. ex. \"Alex\""
 }

@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdRpmClient.isPastThreshold": "يعيد true عندما تكون قيمة RPM أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdRpmClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdRpmClient.isPastThreshold|param|threshold": "قيمة RPM المطلوب المقارنة بها",
+  "fwdSensors.FwdRpmClient.rpm": "السرعة المقيسة بواسطة المستشعر.\nالقيم الموجبة تعني دورانًا باتجاه عقارب الساعة والسالبة عكسها."
+}

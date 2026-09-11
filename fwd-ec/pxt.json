@@ -14,7 +14,9 @@
         "_locales/es/fwd-ec-jsdoc-strings.json",
         "_locales/es/fwd-ec-strings.json",
         "_locales/de/fwd-ec-jsdoc-strings.json",
-        "_locales/de/fwd-ec-strings.json"
+        "_locales/de/fwd-ec-strings.json",
+        "_locales/ar/fwd-ec-jsdoc-strings.json",
+        "_locales/ar/fwd-ec-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdTemperatureClient.isPastThreshold": "يعيد true عندما تكون درجة الحرارة (°C) أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdTemperatureClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdTemperatureClient.isPastThreshold|param|threshold": "درجة الحرارة (°C) المطلوب المقارنة بها",
+  "fwdSensors.FwdTemperatureClient.temperature": "يعيد قراءة درجة الحرارة من المستشعر (°C)."
+}

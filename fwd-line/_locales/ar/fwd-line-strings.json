@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdLineFollowerClient.isLineSensorState|block": "$this $state",
+  "fwdSensors.FwdLineFollowerClient.lineSensorState|block": "حالة $this",
+  "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange|block": "عند تغيّر حالة $this",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}Line": "الخط"
+}

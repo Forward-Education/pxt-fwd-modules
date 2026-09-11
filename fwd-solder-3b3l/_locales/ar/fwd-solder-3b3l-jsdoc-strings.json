@@ -1,0 +1,10 @@
+{
+  "fwdButtons.FwdSolder3b3lBtnClient.holdDuration": "يعيد مدة آخر ضغط مستمر على الزر بالمللي ثانية (ms)",
+  "fwdButtons.FwdSolder3b3lBtnClient.isPressed": "يعيد true إذا كان الزر مضغوطًا حاليًا، وإلا false",
+  "fwdButtons.FwdSolder3b3lBtnClient.onEvent": "كود يعمل عند وقوع حدث مختار",
+  "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|event": "ضغط الزر، أو الاستمرار، أو تحريره",
+  "fwdButtons.FwdSolder3b3lBtnClient.onEvent|param|handler": "الكود المطلوب تشغيله",
+  "fwdLights.FwdSolder3b3lLightClient.isOn": "يعيد true إذا كان سطوع الضوء أي قيمة غير 0%.",
+  "fwdLights.FwdSolder3b3lLightClient.setOnOff": "يشغّل الضوء أو يطفئه.",
+  "fwdLights.FwdSolder3b3lLightClient.setOnOff|param|on": "true للتشغيل، false للإيقاف"
+}

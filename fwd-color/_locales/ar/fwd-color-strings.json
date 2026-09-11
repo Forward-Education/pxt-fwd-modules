@@ -1,0 +1,11 @@
+{
+  "fwdSensors.FwdColorClient.color|block": "نسبة $color في $this \\%",
+  "fwdSensors.FwdColorClient.isBetween|block": "$color في $this بين $threshold1 و $threshold2 \\%",
+  "fwdSensors.FwdColorLEDClient.isOn|block": "$this قيد التشغيل",
+  "fwdSensors.FwdColorLEDClient.setBrightness|block": "اضبط سطوع $this على $brightness (\\%)",
+  "fwdSensors.RedGreenBlue.Blue|block": "أزرق",
+  "fwdSensors.RedGreenBlue.Green|block": "أخضر",
+  "fwdSensors.RedGreenBlue.Red|block": "أحمر",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}Color": "اللون"
+}

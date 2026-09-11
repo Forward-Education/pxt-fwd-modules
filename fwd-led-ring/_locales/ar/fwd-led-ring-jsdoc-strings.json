@@ -1,0 +1,14 @@
+{
+  "fwdLights.FwdLEDRingClient.brightness": "يعيد مستوى سطوع الحلقة (0-10).",
+  "fwdLights.FwdLEDRingClient.rotate": "يدوّر نمط الإضاءة يسارًا أو يمينًا، مع عودة البكسل الأخير إلى الأول",
+  "fwdLights.FwdLEDRingClient.rotate|param|offset": "عدد المواضع المطلوب التدوير بها، الموجب = باتجاه عقارب الساعة والسالب = عكسها",
+  "fwdLights.FwdLEDRingClient.setAllPixelsColor": "يضبط كل البكسلات على لون واحد.",
+  "fwdLights.FwdLEDRingClient.setAllPixelsColor|param|color": "القيمة الست عشرية للون",
+  "fwdLights.FwdLEDRingClient.setBrightness": "يضبط سطوع البكسلات.",
+  "fwdLights.FwdLEDRingClient.setBrightness|param|brightness": "رقم بين 0 (إيقاف) و10 (أقصى قدرة)",
+  "fwdLights.FwdLEDRingClient.setPixelColor": "يضبط بكسلًا محددًا على لون.",
+  "fwdLights.FwdLEDRingClient.setPixelColor|param|color": "القيمة الست عشرية للون",
+  "fwdLights.FwdLEDRingClient.setPixelColor|param|pixel": "رقم البكسل (1-8)",
+  "fwdLights.FwdLEDRingClient.shift": "يزيح نمط الإضاءة يسارًا أو يمينًا. إذا أزيح نمط الإضاءة إلى ما بعد البكسل الأول أو الأخير، يُحذف ذلك الجزء من النمط.",
+  "fwdLights.FwdLEDRingClient.shift|param|offset": "عدد المواضع المطلوب الإزاحة بها، الموجب = باتجاه عقارب الساعة والسالب = عكسها"
+}

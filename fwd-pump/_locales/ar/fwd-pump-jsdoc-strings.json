@@ -1,0 +1,7 @@
+{
+  "fwdMotors.FwdPumpClient.isOn": "يعيد true إذا كانت المضخة تعمل وfalse إذا كانت متوقفة.",
+  "fwdMotors.FwdPumpClient.setOn": "يشغّل المضخة أو يوقفها.",
+  "fwdMotors.FwdPumpClient.setOn|param|on": "تشغيل = true، إيقاف = false",
+  "fwdMotors.FwdPumpClient.timedRun": "يشغّل المضخة للمدة المحددة (ms).",
+  "fwdMotors.FwdPumpClient.timedRun|param|duration": "مدة تشغيل المضخة (ms)"
+}

@@ -14,7 +14,9 @@
         "_locales/es/fwd-ai-voice-module-jsdoc-strings.json",
         "_locales/es/fwd-ai-voice-module-strings.json",
         "_locales/de/fwd-ai-voice-module-jsdoc-strings.json",
-        "_locales/de/fwd-ai-voice-module-strings.json"
+        "_locales/de/fwd-ai-voice-module-strings.json",
+        "_locales/ar/fwd-ai-voice-module-jsdoc-strings.json",
+        "_locales/ar/fwd-ai-voice-module-strings.json"
     ],
     "testFiles": [
         "test.ts"

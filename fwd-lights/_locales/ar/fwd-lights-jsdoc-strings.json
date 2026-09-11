@@ -1,0 +1,6 @@
+{
+  "fwdLights.LightsClient": "يتحكم في أضواء LED",
+  "fwdLights.LightsClient.isOn": "يعيد true إذا كان سطوع الضوء أي قيمة غير 0%.",
+  "fwdLights.LightsClient.setBrightness": "يضبط سطوع ضوء أو شريط إضاءة. يبلغ السطوع ذروته عند نسب مختلفة باختلاف الأضواء.\nجرّب نطاقًا من النسب لإيجاد مجال التحكم المناسب لضوئك.",
+  "fwdLights.LightsClient.setBrightness|param|brightness": "0%-100%"
+}

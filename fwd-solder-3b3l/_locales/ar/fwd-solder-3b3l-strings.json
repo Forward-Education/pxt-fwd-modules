@@ -1,0 +1,10 @@
+{
+  "fwdButtons.FwdSolder3b3lBtnClient.holdDuration|block": "مدة ضغط $this (ms)",
+  "fwdButtons.FwdSolder3b3lBtnClient.isPressed|block": "$this مضغوط",
+  "fwdButtons.FwdSolder3b3lBtnClient.onEvent|block": "عند $this $event",
+  "fwdLights.FwdSolder3b3lLightClient.isOn|block": "$this قيد التشغيل",
+  "fwdLights.FwdSolder3b3lLightClient.setOnOff|block": "اضبط $this على $on",
+  "{id:category}FwdButtons": "FwdButtons",
+  "{id:category}FwdLights": "FwdLights",
+  "{id:group}Smart Solder": "اللحام الذكي"
+}

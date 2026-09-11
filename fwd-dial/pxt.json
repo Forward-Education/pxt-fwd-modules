@@ -15,7 +15,9 @@
         "_locales/es/fwd-dial-jsdoc-strings.json",
         "_locales/es/fwd-dial-strings.json",
         "_locales/de/fwd-dial-jsdoc-strings.json",
-        "_locales/de/fwd-dial-strings.json"
+        "_locales/de/fwd-dial-strings.json",
+        "_locales/ar/fwd-dial-jsdoc-strings.json",
+        "_locales/ar/fwd-dial-strings.json"
     ],
     "testFiles": [
         "test.ts"

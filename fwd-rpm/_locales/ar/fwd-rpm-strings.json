@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdRpmClient.isPastThreshold|block": "$this $direction $threshold RPM",
+  "fwdSensors.FwdRpmClient.rpm|block": "$this RPM",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}RPM": "RPM"
+}

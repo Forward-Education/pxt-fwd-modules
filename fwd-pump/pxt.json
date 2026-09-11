@@ -14,7 +14,9 @@
         "_locales/es/fwd-pump-jsdoc-strings.json",
         "_locales/es/fwd-pump-strings.json",
         "_locales/de/fwd-pump-jsdoc-strings.json",
-        "_locales/de/fwd-pump-strings.json"
+        "_locales/de/fwd-pump-strings.json",
+        "_locales/ar/fwd-pump-jsdoc-strings.json",
+        "_locales/ar/fwd-pump-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,10 @@
+{
+  "fwdSensors.FwdDcCurrentClient.current": "يعيد قراءة التيار من المستشعر (mA).",
+  "fwdSensors.FwdDcCurrentClient.isPastThreshold": "يعيد true عندما يكون التيار (mA) أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdDcCurrentClient.isPastThreshold|param|threshold": "قيمة التيار (mA) المطلوب المقارنة بها",
+  "fwdSensors.FwdDcVoltageClient.isPastThreshold": "يعيد true عندما يكون الجهد (V) أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdDcVoltageClient.isPastThreshold|param|threshold": "قيمة الجهد (V) المطلوب المقارنة بها",
+  "fwdSensors.FwdDcVoltageClient.voltage": "يعيد قراءة الجهد من المستشعر (V)."
+}

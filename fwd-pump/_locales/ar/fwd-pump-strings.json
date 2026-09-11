@@ -1,0 +1,7 @@
+{
+  "fwdMotors.FwdPumpClient.isOn|block": "$this قيد التشغيل",
+  "fwdMotors.FwdPumpClient.setOn|block": "اضبط $this على $on",
+  "fwdMotors.FwdPumpClient.timedRun|block": "تشغيل $this لمدة $duration ms",
+  "{id:category}FwdMotors": "FwdMotors",
+  "{id:group}Pump": "المضخة"
+}

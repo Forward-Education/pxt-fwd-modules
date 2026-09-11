@@ -1,0 +1,9 @@
+{
+  "fwdSensors.FwdColorClient.color": "يعيد إحدى قراءات اللون من المستشعر (%).",
+  "fwdSensors.FwdColorClient.isBetween": "يعيد true عندما يكون اللون (%) بين الحدّين المحددين.",
+  "fwdSensors.FwdColorClient.isBetween|param|threshold1": "حد اللون (%) الأول",
+  "fwdSensors.FwdColorClient.isBetween|param|threshold2": "حد اللون (%) الثاني",
+  "fwdSensors.FwdColorLEDClient.isOn": "يعيد true إذا كان سطوع LED مستشعر اللون أي قيمة غير 0%.",
+  "fwdSensors.FwdColorLEDClient.setBrightness": "يضبط سطوع LED الخاص بمستشعر اللون. اضبطه على 0% لإطفائه.",
+  "fwdSensors.FwdColorLEDClient.setBrightness|param|brightness": "شدة من 0% إلى 100%"
+}

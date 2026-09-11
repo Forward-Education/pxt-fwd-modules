@@ -1,0 +1,8 @@
+{
+  "fwdSensors.FwdFloatClient.floatState": "يعيد حالة المستشعر، 1 تعني مرفوع و0 تعني منخفض.",
+  "fwdSensors.FwdFloatClient.floatStateConditional": "يعيد true إذا كان المستشعر في الحالة المحددة.",
+  "fwdSensors.FwdFloatClient.floatStateConditional|param|state": "مرفوع أو منخفض",
+  "fwdSensors.FwdFloatClient.onFloatChange": "كود يعمل عند وقوع الحدث المختار.",
+  "fwdSensors.FwdFloatClient.onFloatChange|param|event": "مرفوع أو منخفض",
+  "fwdSensors.FwdFloatClient.onFloatChange|param|handler": "الكود المطلوب تشغيله"
+}

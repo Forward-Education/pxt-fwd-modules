@@ -14,7 +14,9 @@
         "_locales/es/fwd-rpm-jsdoc-strings.json",
         "_locales/es/fwd-rpm-strings.json",
         "_locales/de/fwd-rpm-jsdoc-strings.json",
-        "_locales/de/fwd-rpm-strings.json"
+        "_locales/de/fwd-rpm-strings.json",
+        "_locales/ar/fwd-rpm-jsdoc-strings.json",
+        "_locales/ar/fwd-rpm-strings.json"
     ],
     "testFiles": [
         "test.ts"

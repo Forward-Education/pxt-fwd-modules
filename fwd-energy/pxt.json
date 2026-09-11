@@ -15,7 +15,9 @@
         "_locales/es/fwd-energy-jsdoc-strings.json",
         "_locales/es/fwd-energy-strings.json",
         "_locales/de/fwd-energy-jsdoc-strings.json",
-        "_locales/de/fwd-energy-strings.json"
+        "_locales/de/fwd-energy-strings.json",
+        "_locales/ar/fwd-energy-jsdoc-strings.json",
+        "_locales/ar/fwd-energy-strings.json"
     ],
     "testFiles": [
         "test.ts"

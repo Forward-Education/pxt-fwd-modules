@@ -15,7 +15,9 @@
         "_locales/es/fwd-color-jsdoc-strings.json",
         "_locales/es/fwd-color-strings.json",
         "_locales/de/fwd-color-jsdoc-strings.json",
-        "_locales/de/fwd-color-strings.json"
+        "_locales/de/fwd-color-strings.json",
+        "_locales/ar/fwd-color-jsdoc-strings.json",
+        "_locales/ar/fwd-color-strings.json"
     ],
     "testFiles": [
         "test.ts"

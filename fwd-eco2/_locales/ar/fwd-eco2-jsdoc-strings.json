@@ -1,0 +1,10 @@
+{
+  "fwdSensors.FwdEco2Client.eco2": "يعيد قراءة ثاني أكسيد الكربون المقدَّر (eCO2) من المستشعر (ppm).",
+  "fwdSensors.FwdEco2Client.isPastThreshold": "يعيد true عندما تكون قيمة eCO2 (ppm) أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdEco2Client.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdEco2Client.isPastThreshold|param|threshold": "قيمة eCO2 (ppm) المطلوب المقارنة بها",
+  "fwdSensors.FwdTvocClient.isPastThreshold": "يعيد true عندما تكون قراءة tVOC أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdTvocClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdTvocClient.isPastThreshold|param|threshold": "قيمة tVOC المطلوب المقارنة بها",
+  "fwdSensors.FwdTvocClient.tvoc": "يعيد قراءة المركّبات العضوية المتطايرة الكلية (tVOC) من المستشعر."
+}

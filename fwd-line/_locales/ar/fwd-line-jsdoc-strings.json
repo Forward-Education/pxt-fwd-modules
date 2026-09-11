@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdLineFollowerClient.isLineSensorState": "يعيد true إذا كان المستشعر في الحالة المحددة.",
+  "fwdSensors.FwdLineFollowerClient.isLineSensorState|param|state": "تشغيل أو إيقاف",
+  "fwdSensors.FwdLineFollowerClient.lineSensorState": "يعيد حالة المستشعر، true تعني وجود كشف وfalse تعني عدم وجوده.",
+  "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange": "يشغّل الكود عندما ينتقل المستشعر بين حالتي الكشف وعدم الكشف.",
+  "fwdSensors.FwdLineFollowerClient.onLineSensorStateChange|param|handler": "الكود المطلوب تشغيله"
+}

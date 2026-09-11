@@ -7,5 +7,8 @@
     "fwdButtons.FwdDialClient.onRotated": "Führt Code aus, wenn der Drehregler in die gewählte Richtung gedreht wird.",
     "fwdButtons.FwdDialClient.onRotated|param|direction": "wähle zwischen im Uhrzeigersinn (CW) und gegen den Uhrzeigersinn (CCW)",
     "fwdButtons.FwdDialClient.onRotated|param|handler": "der auszuführende Code",
-    "fwdButtons.FwdDialClient.position": "Die Position des Drehreglers relativ zu seiner Startposition beim Verbinden.\n0 ist die Startposition. Ein Klick im Uhrzeigersinn ist +1. Ein Klick gegen den Uhrzeigersinn ist -1.\nNach 1 vollen Umdrehung wird nicht auf 0 zurückgesetzt, sondern weitergezählt."
+    "fwdButtons.FwdDialClient.position": "Die Position des Drehreglers relativ zu seiner Startposition beim Verbinden.\n0 ist die Startposition. Ein Klick im Uhrzeigersinn ist +1. Ein Klick gegen den Uhrzeigersinn ist -1.\nNach 1 vollen Umdrehung wird nicht auf 0 zurückgesetzt, sondern weitergezählt.",
+    "jacdac.ButtonEvent.Down": "Wird ausgelöst, wenn der Knopf von inaktiv zu aktiv wechselt.",
+    "jacdac.ButtonEvent.Hold": "Parameter: Zeit ms uint32_t. Wird ausgelöst, wenn die Druckzeit 500 ms überschreitet, und danach mindestens alle 500 ms, solange der Knopf gedrückt bleibt. Der Parameter „Zeit“ erfasst, wie lange der Knopf gedrückt gehalten wurde (seit dem Drück-Ereignis).",
+    "jacdac.ButtonEvent.Up": "Parameter: Zeit ms uint32_t. Wird ausgelöst, wenn der Knopf von aktiv zu inaktiv wechselt. Der Parameter „Zeit“ erfasst die Dauer zwischen dem Drück- und dem Loslass-Ereignis."
 }

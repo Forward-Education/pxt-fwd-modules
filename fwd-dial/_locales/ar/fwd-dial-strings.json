@@ -1,0 +1,12 @@
+{
+  "fwdButtons.FwdDialButtonClient.holdDuration|block": "مدة ضغط $this (ms)",
+  "fwdButtons.FwdDialButtonClient.isPressed|block": "$this مضغوط",
+  "fwdButtons.FwdDialButtonClient.onEvent|block": "عند $this $event",
+  "fwdButtons.FwdDialClient.onRotated|block": "عند تدوير $this $direction",
+  "fwdButtons.FwdDialClient.position|block": "موضع $this",
+  "jacdac.ButtonEvent.Down|block": "ضغط",
+  "jacdac.ButtonEvent.Hold|block": "استمرار الضغط",
+  "jacdac.ButtonEvent.Up|block": "تحرير",
+  "{id:category}FwdButtons": "FwdButtons",
+  "{id:group}Dial": "القرص الدوّار"
+}

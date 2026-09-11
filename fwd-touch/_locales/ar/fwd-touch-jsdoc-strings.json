@@ -1,0 +1,7 @@
+{
+  "fwdButtons.FwdTouchClient.holdDuration": "يعيد مدة الضغط المستمر على الزر بالمللي ثانية (ms)",
+  "fwdButtons.FwdTouchClient.isPressed": "يعيد true إذا كان الزر مضغوطًا حاليًا، وإلا false",
+  "fwdButtons.FwdTouchClient.onEvent": "كود يعمل عند وقوع حدث مختار",
+  "fwdButtons.FwdTouchClient.onEvent|param|event": "ضغط الزر، أو الاستمرار، أو تحريره",
+  "fwdButtons.FwdTouchClient.onEvent|param|handler": "الكود المطلوب تشغيله"
+}

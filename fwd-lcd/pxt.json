@@ -14,7 +14,9 @@
         "_locales/es/fwd-lcd-jsdoc-strings.json",
         "_locales/es/fwd-lcd-strings.json",
         "_locales/de/fwd-lcd-jsdoc-strings.json",
-        "_locales/de/fwd-lcd-strings.json"
+        "_locales/de/fwd-lcd-strings.json",
+        "_locales/ar/fwd-lcd-jsdoc-strings.json",
+        "_locales/ar/fwd-lcd-strings.json"
     ],
     "testFiles": [
         "test.ts"

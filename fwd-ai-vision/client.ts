@@ -558,7 +558,7 @@ namespace fwdAiVision {
      * Give one of the current algorithm's learned IDs a name, which the
      * HuskyLens shows on screen next to it.
      * @param id the learned ID to name, eg: 1
-     * @param name the name to give that ID, eg: "DFRobot"
+     * @param name the name to give that ID, eg: "Alex"
      */
     //%block="HuskyLens name ID %id of the current algorithm as %name"
     //% weight=28
@@ -584,7 +584,7 @@ namespace fwdAiVision {
     }
     /**
      * Show your own text on the HuskyLens screen.
-     * @param text the text to show, eg: "DFRobot"
+     * @param text the text to show, eg: "FWD Edu"
      * @param x how far across the screen to put the text, eg: 150
      * @param y how far down the screen to put the text, eg: 30
      */

@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdEcClient": "مستشعر يقيس الموصلية الكهربائية (EC).",
+  "fwdSensors.FwdEcClient.ec": "يعيد قراءة EC النسبية من المستشعر.",
+  "fwdSensors.FwdEcClient.isPastThreshold": "يعيد true عندما تكون قيمة EC النسبية أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdEcClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdEcClient.isPastThreshold|param|threshold": "قيمة EC المطلوب المقارنة بها"
+}

@@ -14,7 +14,9 @@
         "_locales/es/fwd-float-jsdoc-strings.json",
         "_locales/es/fwd-float-strings.json",
         "_locales/de/fwd-float-jsdoc-strings.json",
-        "_locales/de/fwd-float-strings.json"
+        "_locales/de/fwd-float-strings.json",
+        "_locales/ar/fwd-float-jsdoc-strings.json",
+        "_locales/ar/fwd-float-strings.json"
     ],
     "testFiles": [
         "test.ts"

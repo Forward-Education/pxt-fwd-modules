@@ -14,7 +14,9 @@
         "_locales/es/fwd-moisture-jsdoc-strings.json",
         "_locales/es/fwd-moisture-strings.json",
         "_locales/de/fwd-moisture-jsdoc-strings.json",
-        "_locales/de/fwd-moisture-strings.json"
+        "_locales/de/fwd-moisture-strings.json",
+        "_locales/ar/fwd-moisture-jsdoc-strings.json",
+        "_locales/ar/fwd-moisture-strings.json"
     ],
     "testFiles": [
         "test.ts"

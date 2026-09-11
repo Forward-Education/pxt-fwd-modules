@@ -14,7 +14,9 @@
         "_locales/es/fwd-pir-jsdoc-strings.json",
         "_locales/es/fwd-pir-strings.json",
         "_locales/de/fwd-pir-jsdoc-strings.json",
-        "_locales/de/fwd-pir-strings.json"
+        "_locales/de/fwd-pir-strings.json",
+        "_locales/ar/fwd-pir-jsdoc-strings.json",
+        "_locales/ar/fwd-pir-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdFloatClient.floatStateConditional|block": "$this $state",
+  "fwdSensors.FwdFloatClient.floatState|block": "حالة $this",
+  "fwdSensors.FwdFloatClient.onFloatChange|block": "عند $this $event",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}Float": "العوّامة"
+}

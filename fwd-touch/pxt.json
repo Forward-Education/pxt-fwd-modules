@@ -14,7 +14,9 @@
         "_locales/es/fwd-touch-jsdoc-strings.json",
         "_locales/es/fwd-touch-strings.json",
         "_locales/de/fwd-touch-jsdoc-strings.json",
-        "_locales/de/fwd-touch-strings.json"
+        "_locales/de/fwd-touch-strings.json",
+        "_locales/ar/fwd-touch-jsdoc-strings.json",
+        "_locales/ar/fwd-touch-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -7,5 +7,8 @@
     "fwdButtons.FwdDialClient.onRotated": "Exécute du code lorsque la molette est tournée dans la direction choisie.",
     "fwdButtons.FwdDialClient.onRotated|param|direction": "choisir entre le sens horaire (CW) et le sens antihoraire (CCW)",
     "fwdButtons.FwdDialClient.onRotated|param|handler": "le code à exécuter",
-    "fwdButtons.FwdDialClient.position": "La position de la molette par rapport à sa position de départ au moment de la connexion.\n0 est la position de départ. Un cran dans le sens horaire ajoute +1. Un cran dans le sens antihoraire ajoute -1.\nElle ne revient pas à 0 après un tour complet. Elle continue plutôt à s'incrémenter."
+    "fwdButtons.FwdDialClient.position": "La position de la molette par rapport à sa position de départ au moment de la connexion.\n0 est la position de départ. Un cran dans le sens horaire ajoute +1. Un cran dans le sens antihoraire ajoute -1.\nElle ne revient pas à 0 après un tour complet. Elle continue plutôt à s'incrémenter.",
+    "jacdac.ButtonEvent.Down": "Déclenché lorsque le bouton passe d'inactif à actif.",
+    "jacdac.ButtonEvent.Hold": "Argument : temps ms uint32_t. Déclenché lorsque la durée d'appui dépasse 500 ms, puis au moins toutes les 500 ms tant que le bouton reste enfoncé. Le paramètre « temps » enregistre la durée pendant laquelle le bouton est resté enfoncé (depuis l'événement d'appui).",
+    "jacdac.ButtonEvent.Up": "Argument : temps ms uint32_t. Déclenché lorsque le bouton passe d'actif à inactif. Le paramètre « temps » enregistre la durée entre les événements d'appui et de relâchement."
 }

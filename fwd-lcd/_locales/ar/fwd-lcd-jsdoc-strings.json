@@ -1,0 +1,17 @@
+{
+  "fwdSensors.LCDClient.clearScreen": "يمسح الشاشة بالكامل.",
+  "fwdSensors.LCDClient.printLineNumber": "يطبع الرقم المحدد على السطر المعيّن من شاشة LCD. الحد الأقصى 7 أرقام.\nالرقم الذي يتجاوز 7 أرقام يعرض الرسالة \"err:>|<\".\nقيمة سطر غير صالحة تعرض الرسالة \"err:!1-2\" على السطر 1.\nتتضمن هذه اللبنة توقفًا مدته 40 ms لضمان معالجة الأوامر بشكل صحيح.",
+  "fwdSensors.LCDClient.printLineNumber|param|line": "السطر المطلوب طباعة الرقم عليه",
+  "fwdSensors.LCDClient.printLineNumber|param|value": "الرقم المطلوب طباعته",
+  "fwdSensors.LCDClient.printLineString": "يطبع النص المحدد على السطر المعيّن من شاشة LCD. الحد الأقصى 16 حرفًا.\nالنص الذي يتجاوز 16 حرفًا يُستبدل بالرسالة \">16 chars\".\nقيمة سطر غير صالحة تعرض الرسالة \"err:!1-2\" على السطر 1.\nتتضمن هذه اللبنة توقفًا مدته 40 ms لضمان معالجة الأوامر بشكل صحيح.",
+  "fwdSensors.LCDClient.printLineString|param|line": "السطر المطلوب طباعة النص عليه",
+  "fwdSensors.LCDClient.printLineString|param|text": "النص المطلوب طباعته",
+  "fwdSensors.LCDClient.printQuadrantNumber": "يطبع الرقم المحدد على الربع المعيّن من شاشة LCD. الحد الأقصى 7 أرقام.\nالرقم الذي يتجاوز 7 أرقام يعرض الرسالة \"err:>|<\".\nقيمة ربع غير صالحة تعرض الرسالة \"err:!1-4\" في الربع 1.\nتتضمن هذه اللبنة توقفًا مدته 40 ms لضمان معالجة الأوامر بشكل صحيح.",
+  "fwdSensors.LCDClient.printQuadrantNumber|param|quadrant": "الربع المطلوب طباعة الرقم عليه",
+  "fwdSensors.LCDClient.printQuadrantNumber|param|value": "الرقم المطلوب طباعته",
+  "fwdSensors.LCDClient.printQuadrantString": "يطبع النص المحدد على الربع المعيّن من شاشة LCD. الحد الأقصى 8 أحرف.\nالنص الذي يتجاوز 8 أحرف يُستبدل بالرسالة \">8 chars\".\nقيمة ربع غير صالحة تعرض الرسالة \"err:!1-4\" في الربع 1.\nتتضمن هذه اللبنة توقفًا مدته 40 ms لضمان معالجة الأوامر بشكل صحيح.",
+  "fwdSensors.LCDClient.printQuadrantString|param|quadrant": "الربع المطلوب طباعة النص عليه",
+  "fwdSensors.LCDClient.printQuadrantString|param|text": "النص المطلوب طباعته",
+  "fwdSensors.initializeLcd": "التهيئة تجعل لبنات LCD تعمل بموثوقية أكبر داخل \"on start\".\nضع هذه اللبنة في \"on start\" قبل لبنات LCD.\nهي ببساطة تؤخر تنفيذ البرنامج لمدة ثانية واحدة.",
+  "fwdSensors.round": "يأخذ رقمًا ويقرّبه إلى عدد المنازل العشرية المحدد."
+}

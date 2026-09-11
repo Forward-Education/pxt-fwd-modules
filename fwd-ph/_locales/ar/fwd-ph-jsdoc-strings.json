@@ -1,0 +1,11 @@
+{
+  "fwdSensors.FwdPhClient.calibrate": "يعاير مسبار pH باستخدام محلولين معلومَي الرقم الهيدروجيني لضمان دقة القراءات.\nلا تنطبق المعايرة على القيمة الحية المعروضة في MakeCode عندما يكون micro:bit متصلًا.",
+  "fwdSensors.FwdPhClient.calibrate|param|reading1": "قيمة pH المقيسة للمحلول القياسي الأول",
+  "fwdSensors.FwdPhClient.calibrate|param|reading2": "قيمة pH المقيسة للمحلول القياسي الثاني",
+  "fwdSensors.FwdPhClient.calibrate|param|standard1": "قيمة pH المعروفة للمحلول القياسي الأول، عادةً 4 أو 7 أو 10",
+  "fwdSensors.FwdPhClient.calibrate|param|standard2": "قيمة pH المعروفة للمحلول القياسي الثاني، عادةً 4 أو 7 أو 10",
+  "fwdSensors.FwdPhClient.isPastThreshold": "يعيد true عندما تكون قيمة pH أعلى من الحد المحدد أو أقل منه حسب الاتجاه المختار.",
+  "fwdSensors.FwdPhClient.isPastThreshold|param|direction": "أعلى من الحد أو أقل منه",
+  "fwdSensors.FwdPhClient.isPastThreshold|param|threshold": "قيمة pH المطلوب المقارنة بها",
+  "fwdSensors.FwdPhClient.ph": "يعيد قراءة pH من المستشعر."
+}

@@ -14,7 +14,9 @@
         "_locales/es/fwd-solar-jsdoc-strings.json",
         "_locales/es/fwd-solar-strings.json",
         "_locales/de/fwd-solar-jsdoc-strings.json",
-        "_locales/de/fwd-solar-strings.json"
+        "_locales/de/fwd-solar-strings.json",
+        "_locales/ar/fwd-solar-jsdoc-strings.json",
+        "_locales/ar/fwd-solar-strings.json"
     ],
     "testFiles": [
         "test.ts"

@@ -1,0 +1,5 @@
+{
+  "fwdSensors.FwdPirClient.motionDetected": "يعيد true عندما يكون المستشعر قد رصد حركة خلال آخر 3 ثوانٍ.",
+  "fwdSensors.FwdPirClient.onMovement": "يشغّل الكود عندما يرصد المستشعر حركة لأول مرة بعد فترة سكون.",
+  "fwdSensors.FwdPirClient.onMovement|param|handler": "الكود المطلوب تشغيله"
+}
