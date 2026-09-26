@@ -52,8 +52,41 @@ namespace fwdMotors {
     }
 
     /**
+     * Sets the left and right motors to the provided speeds and leaves them running.
+     * Execution continues immediately, so the micro:bit can keep reading sensors while
+     * the vehicle is moving. Use "stop motors" to stop.
+     * To go forward set left to positive and right to negative.
+     * To reverse set left to negative and right to positive.
+     * To spin right set left to positive and right to positive.
+     * To spin left set left to negative and right to negative.
+     * @param leftSpeed the speed to set the left motor to
+     * @param rightSpeed the speed to set the right motor to
+     */
+    //% group="Driving"
+    //% block="set left to $leftSpeed \\% and right to $rightSpeed \\%"
+    //% blockId=fwd_driving_drive
+    //% leftSpeed.min=-100 leftSpeed.max=100 leftSpeed.defl=50
+    //% rightSpeed.min=-100 rightSpeed.max=100 rightSpeed.defl=-50
+    //% weight=99
+    export function drive(leftSpeed: number, rightSpeed: number) {
+        drivingControls.drive(leftSpeed, rightSpeed)
+    }
+
+    /**
+     * Stops both driving motors.
+     */
+    //% group="Driving"
+    //% block="stop driving"
+    //% blockId=fwd_driving_stop
+    //% weight=98
+    export function stop() {
+        drivingControls.stop()
+    }
+
+    /**
      * Sets the left and right motors to the provided speeds.
      * Pauses execution for the provided duration and then sets the motors to be stationary.
+     * This is a blocking call which means sensors won't work while driving.
      * To go forward set left to positive and right to negative.
      * To reverse set left to negative and right to positive.
      * To spin right set left to positive and right to positive.
@@ -66,7 +99,7 @@ namespace fwdMotors {
     //% block="set left to $leftSpeed \\% and right to $rightSpeed \\% for $duration ms"
     //% blockId=fwd_driving_drive_timed
     //% leftSpeed.min=-100 leftSpeed.max=100 rightSpeed.min=-100 rightSpeed.max=100 duration.min=0
-    //% weight=99
+    //% weight=97
     export function driveTimed(
         leftSpeed: number,
         rightSpeed: number,
@@ -77,36 +110,4 @@ namespace fwdMotors {
         drivingControls.stop()
     }
 
-    /**
-     * Sets the left and right motors to the provided speeds and leaves them running.
-     * Execution continues immediately, so the micro:bit can keep reading sensors while
-     * the vehicle is moving. Use "stop motors" to stop.
-     * To go forward set left to positive and right to negative.
-     * To reverse set left to negative and right to positive.
-     * To spin right set left to positive and right to positive.
-     * To spin left set left to negative and right to negative.
-     * @param leftSpeed the speed to set the left motor to
-     * @param rightSpeed the speed to set the right motor to
-     */
-    //% group="Driving"
-    //% block="start driving|left at $leftSpeed \\%|right at $rightSpeed \\%"
-    //% blockId=fwd_driving_drive
-    //% leftSpeed.min=-100 leftSpeed.max=100 leftSpeed.defl=50
-    //% rightSpeed.min=-100 rightSpeed.max=100 rightSpeed.defl=-50
-    //% inlineInputMode=external
-    //% weight=98
-    export function drive(leftSpeed: number, rightSpeed: number) {
-        drivingControls.drive(leftSpeed, rightSpeed)
-    }
-
-    /**
-     * Stops both driving motors.
-     */
-    //% group="Driving"
-    //% block="stop motors"
-    //% blockId=fwd_driving_stop
-    //% weight=97
-    export function stop() {
-        drivingControls.stop()
-    }
 }
