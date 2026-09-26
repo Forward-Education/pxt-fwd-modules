@@ -1,8 +1,10 @@
 {
-    "fwdMotors.drive|block": "задай ляв на $leftSpeed \\% и десен на $rightSpeed \\% за $duration ms",
+    "fwdMotors.driveTimed|block": "задай ляв на $leftSpeed \\% и десен на $rightSpeed \\% за $duration ms",
+    "fwdMotors.drive|block": "започни движение|ляв на $leftSpeed \\%|десен на $rightSpeed \\%",
     "fwdMotors.getSpeed|block": "скорост на $servo (\\%)",
     "fwdMotors.setSpeed|block": "задай $servo на $speed \\%",
     "fwdMotors.setupDriving|block": "настрой движението|левият мотор е $left|десният мотор е $right",
+    "fwdMotors.stop|block": "спри моторите",
     "{id:category}FwdMotors": "FwdMotors",
     "{id:group}Driving": "Движение",
     "{id:group}Servo - Continuous": "Серво - непрекъснато"

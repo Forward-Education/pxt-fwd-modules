@@ -1,6 +1,9 @@
 {
-    "fwdMotors.drive": "Setzt den linken und rechten Motor auf die angegebenen Geschwindigkeiten.\nHält die Ausführung für die angegebene Dauer an und stoppt dann die Motoren.\nZum Vorwärtsfahren setze links auf positiv und rechts auf negativ.\nZum Rückwärtsfahren setze links auf negativ und rechts auf positiv.\nZum Rechtsdrehen setze links auf positiv und rechts auf positiv.\nZum Linksdrehen setze links auf negativ und rechts auf negativ.",
-    "fwdMotors.drive|param|duration": "wie lange die Motoren mit diesen Geschwindigkeiten laufen",
+    "fwdMotors.drive": "Setzt den linken und rechten Motor auf die angegebenen Geschwindigkeiten und lässt sie laufen.\nDie Ausführung wird sofort fortgesetzt, sodass der micro:bit weiterhin Sensoren auslesen kann, während das Fahrzeug fährt. Verwende \"Motoren stoppen\" zum Anhalten.\nZum Vorwärtsfahren setze links auf positiv und rechts auf negativ.\nZum Rückwärtsfahren setze links auf negativ und rechts auf positiv.\nZum Rechtsdrehen setze links auf positiv und rechts auf positiv.\nZum Linksdrehen setze links auf negativ und rechts auf negativ.",
+    "fwdMotors.driveTimed": "Setzt den linken und rechten Motor auf die angegebenen Geschwindigkeiten.\nHält die Ausführung für die angegebene Dauer an und stoppt dann die Motoren.\nZum Vorwärtsfahren setze links auf positiv und rechts auf negativ.\nZum Rückwärtsfahren setze links auf negativ und rechts auf positiv.\nZum Rechtsdrehen setze links auf positiv und rechts auf positiv.\nZum Linksdrehen setze links auf negativ und rechts auf negativ.",
+    "fwdMotors.driveTimed|param|duration": "wie lange die Motoren mit diesen Geschwindigkeiten laufen",
+    "fwdMotors.driveTimed|param|leftSpeed": "die Geschwindigkeit für den linken Motor",
+    "fwdMotors.driveTimed|param|rightSpeed": "die Geschwindigkeit für den rechten Motor",
     "fwdMotors.drive|param|leftSpeed": "die Geschwindigkeit für den linken Motor",
     "fwdMotors.drive|param|rightSpeed": "die Geschwindigkeit für den rechten Motor",
     "fwdMotors.getSpeed": "Gibt die eingestellte Geschwindigkeit des Servomotors zurück (%).",
@@ -10,5 +13,6 @@
     "fwdMotors.setSpeed|param|speed": "die Geschwindigkeit für den Servomotor (%)",
     "fwdMotors.setupDriving": "Verwende diesen Block in \"beim Start\", um sicherzustellen, dass die Servomotoren aktiviert sind und die Fahrsteuerung initialisiert ist.",
     "fwdMotors.setupDriving|param|left": "der Servo-Client für den linken Motor",
-    "fwdMotors.setupDriving|param|right": "der Servo-Client für den rechten Motor"
+    "fwdMotors.setupDriving|param|right": "der Servo-Client für den rechten Motor",
+    "fwdMotors.stop": "Stoppt beide Fahrmotoren."
 }

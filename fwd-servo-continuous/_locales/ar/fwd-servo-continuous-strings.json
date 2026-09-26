@@ -1,9 +1,10 @@
 {
-  "fwdMotors.drive|block": "اضبط الأيسر على $leftSpeed \\% والأيمن على $rightSpeed \\% لمدة $duration ms",
+  "fwdMotors.driveTimed|block": "اضبط الأيسر على $leftSpeed \\% والأيمن على $rightSpeed \\% لمدة $duration ms",
+  "fwdMotors.drive|block": "ابدأ القيادة|الأيسر على $leftSpeed \\%|الأيمن على $rightSpeed \\%",
   "fwdMotors.getSpeed|block": "سرعة $servo (\\%)",
   "fwdMotors.setSpeed|block": "اضبط $servo على $speed \\%",
   "fwdMotors.setupDriving|block": "إعداد القيادة|المحرك الأيسر هو $left|المحرك الأيمن هو $right",
-  "fwdMotors|block": "المحركات",
+  "fwdMotors.stop|block": "أوقف المحركات",
   "{id:category}FwdMotors": "FwdMotors",
   "{id:group}Driving": "القيادة",
   "{id:group}Servo - Continuous": "سيرفو - مستمر"

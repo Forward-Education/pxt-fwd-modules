@@ -1,8 +1,10 @@
 {
-    "fwdMotors.drive|block": "définir la gauche à $leftSpeed \\% et la droite à $rightSpeed \\% pendant $duration ms",
+    "fwdMotors.driveTimed|block": "définir la gauche à $leftSpeed \\% et la droite à $rightSpeed \\% pendant $duration ms",
+    "fwdMotors.drive|block": "démarrer la conduite|gauche à $leftSpeed \\%|droite à $rightSpeed \\%",
     "fwdMotors.getSpeed|block": "vitesse de $servo (\\%)",
     "fwdMotors.setSpeed|block": "définir $servo à $speed \\%",
     "fwdMotors.setupDriving|block": "configurer la conduite|le moteur gauche est $left|le moteur droit est $right",
+    "fwdMotors.stop|block": "arrêter les moteurs",
     "{id:category}FwdMotors": "FwdMotors",
     "{id:group}Driving": "Conduite",
     "{id:group}Servo - Continuous": "Servomoteur - Rotation continue"

@@ -64,10 +64,10 @@ namespace fwdMotors {
      */
     //% group="Driving"
     //% block="set left to $leftSpeed \\% and right to $rightSpeed \\% for $duration ms"
-    //% blockId=fwd_driving_drive
+    //% blockId=fwd_driving_drive_timed
     //% leftSpeed.min=-100 leftSpeed.max=100 rightSpeed.min=-100 rightSpeed.max=100 duration.min=0
     //% weight=99
-    export function drive(
+    export function driveTimed(
         leftSpeed: number,
         rightSpeed: number,
         duration: number,
@@ -90,12 +90,12 @@ namespace fwdMotors {
      */
     //% group="Driving"
     //% block="start driving|left at $leftSpeed \\%|right at $rightSpeed \\%"
-    //% blockId=fwd_driving_start
+    //% blockId=fwd_driving_drive
     //% leftSpeed.min=-100 leftSpeed.max=100 leftSpeed.defl=50
     //% rightSpeed.min=-100 rightSpeed.max=100 rightSpeed.defl=-50
     //% inlineInputMode=external
     //% weight=98
-    export function startDriving(leftSpeed: number, rightSpeed: number) {
+    export function drive(leftSpeed: number, rightSpeed: number) {
         drivingControls.drive(leftSpeed, rightSpeed)
     }
 

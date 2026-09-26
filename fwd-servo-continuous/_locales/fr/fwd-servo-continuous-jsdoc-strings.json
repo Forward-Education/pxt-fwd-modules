@@ -1,6 +1,9 @@
 {
-    "fwdMotors.drive": "Règle les moteurs gauche et droit aux vitesses fournies.\nMet l'exécution en pause pendant la durée fournie, puis arrête les moteurs.\nPour avancer, régler la gauche en positif et la droite en négatif.\nPour reculer, régler la gauche en négatif et la droite en positif.\nPour pivoter à droite, régler la gauche en positif et la droite en positif.\nPour pivoter à gauche, régler la gauche en négatif et la droite en négatif.",
-    "fwdMotors.drive|param|duration": "la durée de fonctionnement des moteurs à ces vitesses",
+    "fwdMotors.drive": "Règle les moteurs gauche et droit aux vitesses fournies et les laisse tourner.\nL'exécution se poursuit immédiatement, ce qui permet au micro:bit de continuer à lire les capteurs pendant que le véhicule roule. Utiliser « arrêter les moteurs » pour les arrêter.\nPour avancer, régler la gauche en positif et la droite en négatif.\nPour reculer, régler la gauche en négatif et la droite en positif.\nPour pivoter à droite, régler la gauche en positif et la droite en positif.\nPour pivoter à gauche, régler la gauche en négatif et la droite en négatif.",
+    "fwdMotors.driveTimed": "Règle les moteurs gauche et droit aux vitesses fournies.\nMet l'exécution en pause pendant la durée fournie, puis arrête les moteurs.\nPour avancer, régler la gauche en positif et la droite en négatif.\nPour reculer, régler la gauche en négatif et la droite en positif.\nPour pivoter à droite, régler la gauche en positif et la droite en positif.\nPour pivoter à gauche, régler la gauche en négatif et la droite en négatif.",
+    "fwdMotors.driveTimed|param|duration": "la durée de fonctionnement des moteurs à ces vitesses",
+    "fwdMotors.driveTimed|param|leftSpeed": "la vitesse à donner au moteur gauche",
+    "fwdMotors.driveTimed|param|rightSpeed": "la vitesse à donner au moteur droit",
     "fwdMotors.drive|param|leftSpeed": "la vitesse à donner au moteur gauche",
     "fwdMotors.drive|param|rightSpeed": "la vitesse à donner au moteur droit",
     "fwdMotors.getSpeed": "Renvoie la vitesse à laquelle le servomoteur est réglé (%).",
@@ -10,5 +13,6 @@
     "fwdMotors.setSpeed|param|speed": "la vitesse à donner au servomoteur (%)",
     "fwdMotors.setupDriving": "Utiliser ce bloc dans « au démarrage » pour s'assurer que les servomoteurs sont activés et que les commandes de conduite sont initialisées.",
     "fwdMotors.setupDriving|param|left": "le servomoteur à utiliser comme moteur gauche",
-    "fwdMotors.setupDriving|param|right": "le servomoteur à utiliser comme moteur droit"
+    "fwdMotors.setupDriving|param|right": "le servomoteur à utiliser comme moteur droit",
+    "fwdMotors.stop": "Arrête les deux moteurs de conduite."
 }
