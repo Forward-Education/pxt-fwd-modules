@@ -2,7 +2,6 @@
   "fwdMotors.getAngle|block": "زاوية $servo (°)",
   "fwdMotors.setAngleAndWait|block": "اضبط $servo على $angle ° وانتظر",
   "fwdMotors.setAngle|block": "اضبط $servo على $angle °",
-  "fwdMotors|block": "المحركات",
   "{id:category}FwdMotors": "FwdMotors",
   "{id:group}Servo - 270° Positional": "سيرفو - موضعي 270°"
 }

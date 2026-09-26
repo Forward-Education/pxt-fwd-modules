@@ -6,7 +6,6 @@
   "fwdSensors.LCDClient.printQuadrantString|block": "طباعة النص $text على الربع $quadrant من $this",
   "fwdSensors.initializeLcd|block": "تهيئة LCD",
   "fwdSensors.round|block": "تقريب $value إلى $decimals منازل عشرية",
-  "fwdSensors|block": "المستشعرات",
   "{id:category}FwdSensors": "FwdSensors",
   "{id:group}LCD": "LCD"
 }

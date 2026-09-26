@@ -59,6 +59,5 @@
     "fwdAiVision.takePhotoToSDCard|block": "HuskyLens: التقاط %capture والحفظ على بطاقة SD",
     "fwdAiVision.writeName|block": "HuskyLens: تسمية المعرّف %id للخوارزمية الحالية باسم %name",
     "fwdAiVision.writeName|param|name|defl": "Alex",
-    "fwdAiVision|block": "الذكاء الاصطناعي للرؤية",
     "{id:category}FwdAiVision": "FwdAiVision"
 }

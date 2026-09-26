@@ -1,7 +1,6 @@
 {
   "fwdLights.LightsClient.isOn|block": "$this قيد التشغيل",
   "fwdLights.LightsClient.setBrightness|block": "اضبط سطوع $this على $brightness (\\%)",
-  "fwdLights|block": "الأضواء",
   "{id:category}FwdLights": "FwdLights",
   "{id:group}Lights": "الأضواء"
 }
