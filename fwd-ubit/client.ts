@@ -1,7 +1,7 @@
 //% block="UBit"
 //% color=#226F54
 //% icon="\uf29a"
-//% weight=100
+//% weight=197
 namespace fwdUbit {
     let _remoteLight: number = -999 // Variable to store the last received light level
     let _waitingForLight: boolean = false // Flag to indicate if we are currently waiting for a response
